@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="ParleHub — a platform for open dialogue and community discussion." />
+  <title>ParleHub</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav container">
+      <a class="nav__logo" href="/">ParleHub</a>
+      <button class="nav__toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav__links" role="list">
+        <li><a href="#features">Features</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero__inner">
+        <h1 class="hero__title">Where Conversations<br />Come to Life</h1>
+        <p class="hero__subtitle">
+          ParleHub is an open platform for meaningful dialogue,<br />
+          connecting communities through the power of conversation.
+        </p>
+        <div class="hero__actions">
+          <a href="#features" class="btn btn--primary">Explore Features</a>
+          <a href="#about" class="btn btn--outline">Learn More</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="features" class="section features">
+      <div class="container">
+        <h2 class="section__title">Features</h2>
+        <p class="section__subtitle">Everything you need for productive discussions</p>
+        <div class="features__grid">
+          <article class="card">
+            <div class="card__icon" aria-hidden="true">💬</div>
+            <h3 class="card__title">Open Discussions</h3>
+            <p class="card__body">Create and participate in threaded conversations on any topic that matters to your community.</p>
+          </article>
+          <article class="card">
+            <div class="card__icon" aria-hidden="true">🌐</div>
+            <h3 class="card__title">Community Hubs</h3>
+            <p class="card__body">Organise conversations into dedicated hubs so members can find the discussions they care about most.</p>
+          </article>
+          <article class="card">
+            <div class="card__icon" aria-hidden="true">🔒</div>
+            <h3 class="card__title">Safe &amp; Transparent</h3>
+            <p class="card__body">Built-in moderation tools and transparent guidelines keep every hub welcoming and respectful.</p>
+          </article>
+          <article class="card">
+            <div class="card__icon" aria-hidden="true">📣</div>
+            <h3 class="card__title">Amplify Voices</h3>
+            <p class="card__body">Surface the most valuable contributions with community-driven voting and highlight features.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section about">
+      <div class="container about__inner">
+        <div class="about__text">
+          <h2 class="section__title">About ParleHub</h2>
+          <p>
+            ParleHub was built on the belief that great ideas emerge from open, inclusive conversations.
+            We provide the space and tools communities need to discuss what matters — from local issues
+            to global topics — in a structured and respectful environment.
+          </p>
+          <p>
+            Whether you are a grassroots group, a professional network, or an organisation seeking
+            public input, ParleHub scales to your needs.
+          </p>
+        </div>
+        <div class="about__visual" aria-hidden="true">
+          <div class="about__bubble about__bubble--1">Engage</div>
+          <div class="about__bubble about__bubble--2">Discuss</div>
+          <div class="about__bubble about__bubble--3">Decide</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact">
+      <div class="container contact__inner">
+        <h2 class="section__title">Get in Touch</h2>
+        <p class="section__subtitle">Have a question or want to get involved? We'd love to hear from you.</p>
+        <form class="contact__form">
+          <div class="form__group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name" required />
+          </div>
+          <div class="form__group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="you@example.com" required />
+          </div>
+          <div class="form__group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Your message…" required></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary">Send Message</button>
+          <p class="contact__notice" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer__inner">
+      <p class="footer__brand">ParleHub</p>
+      <nav class="footer__nav" aria-label="Footer navigation">
+        <a href="#features">Features</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <p class="footer__copy">&copy; <span id="year"></span> ParleHub. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
