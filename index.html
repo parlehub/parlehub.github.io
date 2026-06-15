@@ -673,7 +673,7 @@
         button.innerText = "Submitting…";
         setMessage("One moment…", false);
 
-        const endpoint = `https://assets.mailerlite.com/jsonp/${MAILERLITE_ACCOUNT_ID}/forms/${MAILERLITE_FORM_ID}/subscribe
+        const endpoint = `https://assets.mailerlite.com/jsonp/${MAILERLITE_ACCOUNT_ID}/forms/${MAILERLITE_FORM_ID}/subscribe`;
         const body = new FormData();
         body.append("fields[email]", email);
         body.append("ml-submit", "1");
