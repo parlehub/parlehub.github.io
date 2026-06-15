@@ -1,129 +1,407 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="ParleHub — a platform for open dialogue and community discussion." />
-  <title>ParleHub</title>
-  <link rel="stylesheet" href="css/style.css" />
+<!DOCTYPE html><html class="dark" lang="en"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>ParleHub | The Shared Workspace for AI Conversations</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;family=Geist:wght@400;500&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-primary-fixed-variant": "#004395",
+                        "inverse-on-surface": "#2e3038",
+                        "on-background": "#e1e2ec",
+                        "inverse-surface": "#e1e2ec",
+                        "on-primary-fixed": "#001a42",
+                        "surface-container-lowest": "#0b0e15",
+                        "primary": "#adc6ff",
+                        "surface-tint": "#adc6ff",
+                        "secondary": "#b7c8e1",
+                        "surface-container-high": "#272a31",
+                        "surface-container-highest": "#32353c",
+                        "surface-bright": "#363941",
+                        "on-surface-variant": "#c2c6d6",
+                        "outline-variant": "#424754",
+                        "surface": "#10131a",
+                        "tertiary-container": "#df7412",
+                        "error": "#ffb4ab",
+                        "on-tertiary-fixed": "#311400",
+                        "tertiary-fixed": "#ffdcc6",
+                        "on-secondary-fixed": "#0b1c30",
+                        "primary-fixed-dim": "#adc6ff",
+                        "on-tertiary-fixed-variant": "#723600",
+                        "primary-fixed": "#d8e2ff",
+                        "inverse-primary": "#005ac2",
+                        "background": "#10131a",
+                        "secondary-fixed-dim": "#b7c8e1",
+                        "on-error-container": "#ffdad6",
+                        "surface-container-low": "#191b23",
+                        "surface-dim": "#10131a",
+                        "error-container": "#93000a",
+                        "primary-container": "#4d8eff",
+                        "on-tertiary": "#502400",
+                        "tertiary": "#ffb786",
+                        "on-secondary": "#213145",
+                        "secondary-fixed": "#d3e4fe",
+                        "on-surface": "#e1e2ec",
+                        "on-primary-container": "#00285d",
+                        "on-tertiary-container": "#461f00",
+                        "tertiary-fixed-dim": "#ffb786",
+                        "outline": "#8c909f",
+                        "on-primary": "#002e6a",
+                        "on-secondary-container": "#a9bad3",
+                        "surface-container": "#1d2027",
+                        "on-secondary-fixed-variant": "#38485d",
+                        "secondary-container": "#3a4a5f",
+                        "on-error": "#690005",
+                        "surface-variant": "#32353c"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "stack-lg": "32px",
+                        "margin-desktop": "40px",
+                        "gutter": "24px",
+                        "stack-sm": "8px",
+                        "stack-md": "16px",
+                        "margin-mobile": "16px",
+                        "unit": "4px",
+                        "container-max": "1440px"
+                    },
+                    "fontFamily": {
+                        "label-sm": ["Geist", "sans-serif"],
+                        "headline-md": ["Inter", "sans-serif"],
+                        "display-lg": ["Inter", "sans-serif"],
+                        "display-lg-mobile": ["Inter", "sans-serif"],
+                        "title-lg": ["Inter", "sans-serif"],
+                        "body-lg": ["Inter", "sans-serif"],
+                        "body-md": ["Inter", "sans-serif"]
+                    },
+                    "fontSize": {
+                        "label-sm": ["12px", {"lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "500"}],
+                        "headline-md": ["30px", {"lineHeight": "38px", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+                        "display-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "display-lg-mobile": ["36px", {"lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "title-lg": ["20px", {"lineHeight": "28px", "letterSpacing": "0.02em", "fontWeight": "600"}],
+                        "body-lg": ["16px", {"lineHeight": "24px", "letterSpacing": "0.01em", "fontWeight": "400"}],
+                        "body-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0em", "fontWeight": "400"}]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+        body {
+            background-color: #0f172a; /* Specific brand requirement */
+            color: #e1e2ec;
+            -webkit-font-smoothing: antialiased;
+        }
+        .hero-glow {
+            background: radial-gradient(circle at 50% 50%, rgba(59, 130, 246, 0.15) 0%, rgba(15, 23, 42, 0) 70%);
+        }
+        .glass-card {
+            background: rgba(30, 41, 59, 0.5);
+            backdrop-filter: blur(8px);
+            border: 1px solid rgba(51, 65, 85, 0.5);
+        }
+        .text-gradient {
+            background: linear-gradient(135deg, #ffffff 0%, #adc6ff 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
 </head>
-<body>
-  <header class="site-header">
-    <nav class="nav container">
-      <a class="nav__logo" href="/">ParleHub</a>
-      <button class="nav__toggle" aria-label="Toggle navigation" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
-      <ul class="nav__links" role="list">
-        <li><a href="#features">Features</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+<body class="font-body-md selection:bg-primary-container selection:text-on-primary-container">
+<!-- Top Bar -->
+    <!-- HEADER -->
+      <header class="w-full max-w-7xl mx-auto px-6 py-6 flex items-center justify-between border-b border-[#272a31]/40" id="main-header">
+        <a href="/" class="flex items-center space-x-2.5 group">
+          <div class="w-9 h-9 rounded-lg bg-gradient-to-tr from-[#005ac2] via-[#4d8eff] to-[#adc6ff] flex items-center justify-center shadow-lg transition-transform duration-300 group-hover:scale-105">
+            <svg class="w-5 h-5 text-black" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+              <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+            </svg>
+          </div>
+          <div>
+            <span class="text-lg font-bold tracking-tight text-white group-hover:text-[#adc6ff] transition-colors">ParleHub</span>
+            <span class="hidden sm:inline-block text-[10px] font-mono text-[#adc6ff] ml-2 px-1.5 py-0.5 bg-blue-950/40 rounded border border-blue-900/40">Enterprise</span>
+          </div>
+        </a>
 
-  <main>
-    <section class="hero">
-      <div class="container hero__inner">
-        <h1 class="hero__title">Where Conversations<br />Come to Life</h1>
-        <p class="hero__subtitle">
-          ParleHub is an open platform for meaningful dialogue,<br />
-          connecting communities through the power of conversation.
-        </p>
-        <div class="hero__actions">
-          <a href="#features" class="btn btn--primary">Explore Features</a>
-          <a href="#about" class="btn btn--outline">Learn More</a>
+        <div class="flex items-center space-x-6">
+          <a href="https://parlehub.com" target="_blank" rel="noopener noreferrer" class="text-xs font-mono text-[#c2c6d6] hover:text-[#adc6ff] transition-colors">
+            www.ParleHub.com
+          </a>
         </div>
-      </div>
-    </section>
+      </header>
 
-    <section id="features" class="section features">
-      <div class="container">
-        <h2 class="section__title">Features</h2>
-        <p class="section__subtitle">Everything you need for productive discussions</p>
-        <div class="features__grid">
-          <article class="card">
-            <div class="card__icon" aria-hidden="true">💬</div>
-            <h3 class="card__title">Open Discussions</h3>
-            <p class="card__body">Create and participate in threaded conversations on any topic that matters to your community.</p>
-          </article>
-          <article class="card">
-            <div class="card__icon" aria-hidden="true">🌐</div>
-            <h3 class="card__title">Community Hubs</h3>
-            <p class="card__body">Organise conversations into dedicated hubs so members can find the discussions they care about most.</p>
-          </article>
-          <article class="card">
-            <div class="card__icon" aria-hidden="true">🔒</div>
-            <h3 class="card__title">Safe &amp; Transparent</h3>
-            <p class="card__body">Built-in moderation tools and transparent guidelines keep every hub welcoming and respectful.</p>
-          </article>
-          <article class="card">
-            <div class="card__icon" aria-hidden="true">📣</div>
-            <h3 class="card__title">Amplify Voices</h3>
-            <p class="card__body">Surface the most valuable contributions with community-driven voting and highlight features.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section id="about" class="section about">
-      <div class="container about__inner">
-        <div class="about__text">
-          <h2 class="section__title">About ParleHub</h2>
-          <p>
-            ParleHub was built on the belief that great ideas emerge from open, inclusive conversations.
-            We provide the space and tools communities need to discuss what matters — from local issues
-            to global topics — in a structured and respectful environment.
+<!-- Hero Section -->
+<main class="relative min-h-[calc(100vh-80px)] flex flex-col items-center justify-center overflow-hidden">
+<!-- Background Effects -->
+<div class="absolute inset-0 hero-glow -z-10"></div>
+<div class="absolute top-1/4 left-1/2 -translate-x-1/2 w-[800px] h-[800px] bg-primary/5 rounded-full blur-[120px] -z-10"></div>
+<div class="max-w-4xl mx-auto px-margin-desktop text-center space-y-stack-lg py-stack-lg">
+<!-- Pill Badge -->
+<div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-primary/30 bg-primary/10 text-primary font-label-sm text-label-sm animate-pulse">
+<span class="w-2 h-2 rounded-full bg-primary shadow-[0_0_8px_rgba(173,198,255,0.8)]"></span>
+                Coming Soon
+            </div>
+<!-- Headline -->
+<h1 class="font-display-lg text-display-lg leading-tight text-white tracking-tight text-gradient">
+                The shared workspace for AI conversations
+            </h1>
+<!-- Subheadline -->
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto leading-relaxed">
+                Shared threads, project budgets, connected files, and a full audit trail — model-agnostic and built for teams. <span class="text-white font-medium">Think of it as the Jira of AI conversations.</span>
+</p>
+<!-- Email Capture -->
+<div class="max-w-xl mx-auto w-full pt-stack-md">
+<form id="signup-form" class="flex flex-col md:flex-row gap-gutter" novalidate>
+<!-- Honeypot: hidden from humans, bots tend to fill it. Submissions with a value are silently dropped. -->
+<div class="absolute left-[-9999px] top-auto w-px h-px overflow-hidden" aria-hidden="true">
+<label for="signup-website">Leave this field empty</label>
+<input id="signup-website" name="signup-website" type="text" tabindex="-1" autocomplete="off">
+</div>
+<div class="relative flex-grow group">
+<input id="signup-email" name="fields[email]" autocomplete="email" class="w-full h-14 px-6 bg-surface-container-low border border-outline-variant focus:border-primary focus:ring-4 focus:ring-primary/10 rounded-lg text-white transition-all outline-none" placeholder="Enter your work email" required="" type="email">
+</div>
+<button id="signup-button" class="h-14 px-8 bg-gradient-to-b from-primary-container to-on-primary-fixed-variant text-white font-semibold rounded-lg hover:shadow-lg hover:shadow-primary/20 active:scale-[0.98] transition-all whitespace-nowrap disabled:opacity-60 disabled:cursor-not-allowed" type="submit">
+                        Notify me at launch
+                    </button>
+</form>
+<p id="signup-message" class="mt-4 text-label-sm font-label-sm text-outline" role="status" aria-live="polite">
+                    Be the first to know when we launch. No spam.
+                </p>
+</div>
+</div>
+<!-- Feature Row -->
+<div class="max-w-[1440px] mx-auto px-margin-desktop w-full mt-stack-lg pb-stack-lg">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter">
+<div class="glass-card p-stack-md rounded-xl space-y-3 hover:border-primary/40 transition-colors group">
+<span class="material-symbols-outlined text-primary group-hover:scale-110 transition-transform" data-icon="hub">hub</span>
+<p class="font-label-sm text-label-sm text-white uppercase tracking-widest">Shared AI workspaces</p>
+</div>
+<div class="glass-card p-stack-md rounded-xl space-y-3 hover:border-primary/40 transition-colors group">
+<span class="material-symbols-outlined text-primary group-hover:scale-110 transition-transform" data-icon="account_balance_wallet">account_balance_wallet</span>
+<p class="font-label-sm text-label-sm text-white uppercase tracking-widest">Budgets &amp; cost control</p>
+</div>
+<div class="glass-card p-stack-md rounded-xl space-y-3 hover:border-primary/40 transition-colors group">
+<span class="material-symbols-outlined text-primary group-hover:scale-110 transition-transform" data-icon="cloud_sync">cloud_sync</span>
+<p class="font-label-sm text-label-sm text-white uppercase tracking-widest">Bring your own AI model</p>
+</div>
+<div class="glass-card p-stack-md rounded-xl space-y-3 hover:border-primary/40 transition-colors group">
+<span class="material-symbols-outlined text-primary group-hover:scale-110 transition-transform" data-icon="verified_user">verified_user</span>
+<p class="font-label-sm text-label-sm text-white uppercase tracking-widest">Enterprise audit trail</p>
+</div>
+</div>
+</div>
+<!-- Trust Signal -->
+<section class="w-full max-w-[1440px] mx-auto px-margin-desktop space-y-24 py-24" id="product-deep-dive">
+<div class="text-center space-y-4 mb-16">
+<h2 class="font-display-lg text-headline-md text-white tracking-tight">Product Deep Dive</h2>
+<p class="text-on-surface-variant font-body-lg max-w-2xl mx-auto">Explore how ParleHub transforms AI collaboration for modern enterprise teams.</p>
+</div>
+<!-- Feature 1: Unified AI Workspaces -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-gutter items-center">
+<div class="space-y-6">
+<div class="space-y-2">
+<h3 class="text-white font-display-lg text-title-lg">Unified AI Workspaces</h3>
+<p class="text-on-surface-variant font-body-lg">Break down silos and collaborate across any AI model with shared context and persistent threads.</p>
+</div>
+<ul class="space-y-3">
+<li class="flex items-center gap-3 text-on-surface-variant font-body-md">
+<span class="material-symbols-outlined text-primary">check_circle</span>
+                    Shared conversation history for entire teams
+                </li>
+<li class="flex items-center gap-3 text-on-surface-variant font-body-md">
+<span class="material-symbols-outlined text-primary">check_circle</span>
+                    Context-aware threading across different models
+                </li>
+<li class="flex items-center gap-3 text-on-surface-variant font-body-md">
+<span class="material-symbols-outlined text-primary">check_circle</span>
+                    Real-time collaborative prompting
+                </li>
+</ul>
+</div>
+<div class="glass-card rounded-xl border border-outline-variant/30 aspect-video flex items-center justify-center bg-surface-container-low">
+<div class="text-center space-y-2">
+<span class="material-symbols-outlined text-outline text-4xl">image</span>
+<p class="text-outline font-label-sm uppercase tracking-widest">Application Screenshot Placeholder</p>
+</div>
+</div>
+</div>
+<!-- Feature 2: Advanced Governance & Budgets -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-gutter items-center">
+<div class="glass-card rounded-xl border border-outline-variant/30 aspect-video flex items-center justify-center bg-surface-container-low md:order-1 order-2">
+<div class="text-center space-y-2">
+<span class="material-symbols-outlined text-outline text-4xl">analytics</span>
+<p class="text-outline font-label-sm uppercase tracking-widest">Application Screenshot Placeholder</p>
+</div>
+</div>
+<div class="space-y-6 md:order-2 order-1">
+<div class="space-y-2">
+<h3 class="text-white font-display-lg text-title-lg">Advanced Governance &amp; Budgets</h3>
+<p class="text-on-surface-variant font-body-lg">Maintain full control over your AI spend and security with enterprise-grade tools.</p>
+</div>
+<ul class="space-y-3">
+<li class="flex items-center gap-3 text-on-surface-variant font-body-md">
+<span class="material-symbols-outlined text-primary">check_circle</span>
+                    Granular budget limits per project or team
+                </li>
+<li class="flex items-center gap-3 text-on-surface-variant font-body-md">
+<span class="material-symbols-outlined text-primary">check_circle</span>
+                    Comprehensive audit trails for compliance
+                </li>
+<li class="flex items-center gap-3 text-on-surface-variant font-body-md">
+<span class="material-symbols-outlined text-primary">check_circle</span>
+                    Role-based access control (RBAC)
+                </li>
+</ul>
+</div>
+</div>
+<!-- Feature 3: Model-Agnostic Infrastructure -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-gutter items-center">
+<div class="space-y-6">
+<div class="space-y-2">
+<h3 class="text-white font-display-lg text-title-lg">Model-Agnostic Infrastructure</h3>
+<p class="text-on-surface-variant font-body-lg">Seamlessly switch between the world's leading AI models without changing your workflow.</p>
+</div>
+<ul class="space-y-3">
+<li class="flex items-center gap-3 text-on-surface-variant font-body-md">
+<span class="material-symbols-outlined text-primary">check_circle</span>
+                    Native support for OpenAI, Anthropic, and Gemini
+                </li>
+<li class="flex items-center gap-3 text-on-surface-variant font-body-md">
+<span class="material-symbols-outlined text-primary">check_circle</span>
+                    Unified API for custom internal integrations
+                </li>
+<li class="flex items-center gap-3 text-on-surface-variant font-body-md">
+<span class="material-symbols-outlined text-primary">check_circle</span>
+                    Future-proof architecture for new model releases
+                </li>
+</ul>
+</div>
+<div class="glass-card rounded-xl border border-outline-variant/30 aspect-video flex items-center justify-center bg-surface-container-low">
+<div class="text-center space-y-2">
+<span class="material-symbols-outlined text-outline text-4xl">hub</span>
+<p class="text-outline font-label-sm uppercase tracking-widest">Application Screenshot Placeholder</p>
+</div>
+</div>
+</div>
+</section><div class="mt-12 mb-24 text-center opacity-70">
+<p class="font-label-sm text-label-sm text-on-surface-variant tracking-widest">
+                MODEL-AGNOSTIC — WORKS WITH ANTHROPIC, OPENAI, AZURE OPENAI &amp; GOOGLE GEMINI
+            </p>
+</div>
+</main>
+<!-- Footer -->
+    <footer class="w-full bg-[#10131a] pt-16 pb-8 border-t border-[#272a31]/20 relative z-10" id="main-footer">
+      <div class="max-w-7xl mx-auto px-6 space-y-12">
+        <div class="text-center py-4 bg-[#161820]/40 border-y border-[#272a31]/30">
+          <p class="text-[10px] md:text-sm font-mono tracking-widest text-[#adc6ff] font-bold uppercase">
+            MODEL-AGNOSTIC — WORKS WITH ANTHROPIC, OPENAI, AZURE OPENAI & GOOGLE GEMINI
           </p>
-          <p>
-            Whether you are a grassroots group, a professional network, or an organisation seeking
-            public input, ParleHub scales to your needs.
-          </p>
         </div>
-        <div class="about__visual" aria-hidden="true">
-          <div class="about__bubble about__bubble--1">Engage</div>
-          <div class="about__bubble about__bubble--2">Discuss</div>
-          <div class="about__bubble about__bubble--3">Decide</div>
+
+        <div class="flex flex-col sm:flex-row items-center justify-between pt-4 text-xs text-[#c2c6d6]/60">
+          <div class="flex items-center space-x-2.5 mb-4 sm:mb-0">
+            <div class="w-6.5 h-6.5 rounded bg-blue-950 border border-blue-900 flex items-center justify-center text-[#adc6ff]">
+              <svg class="w-3.5 h-3.5 text-[#adc6ff]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
+                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+              </svg>
+            </div>
+            <span class="font-mono">© 2026 ParleHub</span>
+          </div>
+
+          <div class="flex items-center space-x-6 font-medium">
+            <button disabled type="button" id="footer-privacy-btn" class="hover:text-white hover:underline transition-colors cursor-pointer">Privacy</button>
+            <button disabled type="button" id="footer-contact-btn" class="hover:text-white hover:underline transition-colors cursor-pointer">Contact</button>
+          </div>
         </div>
       </div>
-    </section>
+    </footer>
 
-    <section id="contact" class="section contact">
-      <div class="container contact__inner">
-        <h2 class="section__title">Get in Touch</h2>
-        <p class="section__subtitle">Have a question or want to get involved? We'd love to hear from you.</p>
-        <form class="contact__form">
-          <div class="form__group">
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" placeholder="Your name" required />
-          </div>
-          <div class="form__group">
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" placeholder="you@example.com" required />
-          </div>
-          <div class="form__group">
-            <label for="message">Message</label>
-            <textarea id="message" name="message" rows="5" placeholder="Your message…" required></textarea>
-          </div>
-          <button type="submit" class="btn btn--primary">Send Message</button>
-          <p class="contact__notice" role="status" aria-live="polite"></p>
-        </form>
-      </div>
-    </section>
-  </main>
+<script>
+        // ---------------------------------------------------------------
+        // MailerLite signup
+        // ---------------------------------------------------------------
+        // Paste the two IDs from your MailerLite embedded form code.
+        // In MailerLite: Forms > Embedded forms > create/select a form >
+        // "Embed form" / view HTML. The generated <form action="..."> looks like:
+        //   https://assets.mailerlite.com/jsonp/<ACCOUNT_ID>/forms/<FORM_ID>/subscribe
+        // Copy those two numbers into the constants below.
+        const MAILERLITE_ACCOUNT_ID = "2444403";
+        const MAILERLITE_FORM_ID = "WEnKpL";
 
-  <footer class="site-footer">
-    <div class="container footer__inner">
-      <p class="footer__brand">ParleHub</p>
-      <nav class="footer__nav" aria-label="Footer navigation">
-        <a href="#features">Features</a>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
-      </nav>
-      <p class="footer__copy">&copy; <span id="year"></span> ParleHub. All rights reserved.</p>
-    </div>
-  </footer>
+        const form = document.getElementById('signup-form');
+        const emailInput = document.getElementById('signup-email');
+        const honeypot = document.getElementById('signup-website');
+        const button = document.getElementById('signup-button');
+        const message = document.getElementById('signup-message');
 
-  <script src="js/main.js"></script>
-</body>
-</html>
+        const setMessage = (text, isError) => {
+            message.textContent = text;
+            message.classList.toggle('text-error', !!isError);
+            message.classList.toggle('text-outline', !isError);
+        };
+
+        form.addEventListener('submit', async (e) => {
+            e.preventDefault();
+
+            // Honeypot tripped: silently pretend success so bots get no signal.
+            if (honeypot.value) {
+                button.disabled = true;
+                button.innerText = 'Subscribed!';
+                setMessage('You’re on the list. We’ll email you at launch.', false);
+                return;
+            }
+
+            const email = emailInput.value.trim();
+            if (!emailInput.checkValidity() || !email) {
+                setMessage('Please enter a valid email address.', true);
+                emailInput.focus();
+                return;
+            }
+
+            button.disabled = true;
+            button.innerText = 'Submitting…';
+            setMessage('One moment…', false);
+
+            const endpoint = `https://assets.mailerlite.com/jsonp/${MAILERLITE_ACCOUNT_ID}/forms/${MAILERLITE_FORM_ID}/subscribe`;
+            const body = new FormData();
+            body.append('fields[email]', email);
+            body.append('ml-submit', '1');
+            body.append('anticsrf', 'true');
+
+            try {
+                // MailerLite's subscribe endpoint doesn't send CORS headers, so the
+                // response is opaque. The submission still records; we optimistically
+                // confirm and only surface an error on a true network failure.
+                await fetch(endpoint, { method: 'POST', body, mode: 'no-cors' });
+                button.innerText = 'Subscribed!';
+                emailInput.value = '';
+                emailInput.disabled = true;
+                emailInput.placeholder = 'Thank you for your interest.';
+                setMessage('You’re on the list. We’ll email you at launch.', false);
+            } catch (err) {
+                button.disabled = false;
+                button.innerText = 'Notify me at launch';
+                setMessage('Something went wrong. Please try again.', true);
+            }
+        });
+    </script>
+
+
+
+
+</body></html>
