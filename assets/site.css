@@ -1,0 +1,142 @@
+/* Shared styles for every page in this repo. Loaded via <link rel="stylesheet" href="/assets/site.css">
+   after the Tailwind CDN script + /assets/tailwind.config.js. */
+
+:root {
+  color-scheme: dark;
+}
+
+* {
+  scrollbar-color: #232a3a #0b0e17;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #0b0e17;
+  color: #ede9dd;
+  -webkit-font-smoothing: antialiased;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+    "FILL" 0,
+    "wght" 400,
+    "GRAD" 0,
+    "opsz" 24;
+  vertical-align: middle;
+}
+
+/* Visible, on-brand focus ring everywhere — buttons, links, form fields */
+:focus-visible {
+  outline: 2px solid #4d8eff;
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+/* Hero ambient glow — tinted with the real app's brand blue */
+.hero-glow {
+  background: radial-gradient(
+    circle at 50% 40%,
+    rgba(77, 142, 255, 0.12) 0%,
+    rgba(11, 14, 23, 0) 70%
+  );
+}
+
+/* Frosted surface used for screenshot frames + section cards */
+.ledger-card {
+  background: rgba(19, 24, 38, 0.6);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(35, 42, 58, 0.8);
+}
+
+.primary-text {
+  background: linear-gradient(135deg, #adc6ff 0%, #4d8eff 60%, #005ac2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Eyebrow labels — small-caps mono tags, styled like a ledger column header */
+.eyebrow {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 12px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+/* ---- Hub diagram (hero signature element) ---- */
+
+.hub-diagram {
+  position: relative;
+  aspect-ratio: 1 / 1;
+}
+
+.hub-node {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+  opacity: 0;
+  animation: hub-node-in 0.6s ease-out forwards;
+}
+
+.hub-lines line {
+  stroke: #4d8eff;
+  stroke-opacity: 0.35;
+  stroke-width: 0.4;
+  stroke-dasharray: 60;
+  stroke-dashoffset: 60;
+  animation: hub-line-draw 1s ease-out forwards;
+}
+
+.hub-center {
+  animation: hub-center-in 0.5s ease-out forwards;
+}
+
+@keyframes hub-line-draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes hub-node-in {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+
+@keyframes hub-center-in {
+  from {
+    opacity: 0;
+    transform: scale(0.96);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .hub-node,
+  .hub-center,
+  .hub-lines line {
+    animation: none !important;
+    opacity: 1 !important;
+    stroke-dashoffset: 0 !important;
+  }
+}
+
+/* ---- Ledger-style pricing table ---- */
+
+.ledger-table td,
+.ledger-table th {
+  font-family: "IBM Plex Mono", monospace;
+}
