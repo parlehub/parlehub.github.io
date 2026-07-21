@@ -1,0 +1,382 @@
+<!doctype html>
+<html class="dark" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Terms of Service | ParleHub</title>
+    <meta
+      name="description"
+      content="ParleHub's Terms of Service: the agreement between ParleHub LLC and organizations using the ParleHub shared AI workspace."
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,500;0,600;1,500;1,600&family=Inter:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script src="/assets/tailwind.config.js"></script>
+    <link href="/assets/site.css" rel="stylesheet" />
+    <link rel="icon" type="image/png" href="/images/grad-215x215.png" />
+    <link rel="apple-touch-icon" href="/images/apple-touch-icon.png" />
+  </head>
+  <body class="font-body selection:bg-primary/30 selection:text-parchment">
+    <!-- HEADER -->
+    <header
+      class="w-full max-w-[1440px] mx-auto px-margin-mobile md:px-margin-desktop py-6 flex items-center justify-between"
+      id="main-header"
+    >
+      <a href="/" class="flex items-center space-x-3 group">
+        <div
+          class="w-9 h-9 rounded-lg bg-gradient-to-tr from-[#005ac2] via-[#4d8eff] to-[#adc6ff] flex items-center justify-center shadow-lg transition-transform duration-300 group-hover:scale-105"
+        >
+          <svg
+            class="w-5 h-5"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+          </svg>
+        </div>
+        <span class="font-display font-semibold text-lg tracking-tight text-parchment group-hover:text-primary transition-colors">ParleHub</span>
+      </a>
+
+      <nav class="hidden md:flex items-center gap-8">
+        <a href="/security.html" class="text-sm text-parchment-dim hover:text-parchment transition-colors">Security</a>
+        <a href="/pricing.html" class="text-sm text-parchment-dim hover:text-parchment transition-colors">Pricing</a>
+      </nav>
+
+      <div class="flex items-center gap-4 md:gap-6">
+        <a href="https://app.parlehub.com" class="hidden sm:inline text-sm text-parchment-dim hover:text-parchment transition-colors">Sign in</a>
+        <a
+          href="https://app.parlehub.com"
+          class="h-10 px-5 inline-flex items-center rounded-lg bg-primary text-ink font-semibold text-sm hover:bg-primary-bright transition-colors"
+        >
+          Start free
+        </a>
+      </div>
+    </header>
+
+    <div class="md:hidden flex items-center justify-center gap-6 pb-4 -mt-2 border-b border-ink-line/40">
+      <a href="/security.html" class="text-sm text-parchment-dim hover:text-parchment transition-colors">Security</a>
+      <a href="/pricing.html" class="text-sm text-parchment-dim hover:text-parchment transition-colors">Pricing</a>
+      <a href="https://app.parlehub.com" class="text-sm text-parchment-dim hover:text-parchment transition-colors">Sign in</a>
+    </div>
+
+    <main class="relative">
+      <!-- HERO -->
+      <section class="relative max-w-[1440px] mx-auto px-margin-mobile md:px-margin-desktop pt-stack-lg pb-12">
+        <div class="absolute inset-0 hero-glow -z-10"></div>
+        <span class="eyebrow text-primary">Legal</span>
+        <h1 class="font-display text-display-lg-mobile md:text-display-lg text-parchment mt-4">
+          Terms of Service
+        </h1>
+        <p class="font-mono text-sm text-parchment-dim mt-4">Effective July 14, 2026</p>
+      </section>
+
+      <div class="max-w-[1440px] mx-auto px-margin-mobile md:px-margin-desktop pb-24 grid grid-cols-1 lg:grid-cols-[240px_1fr] gap-gutter items-start">
+        <!-- TOC -->
+        <nav class="ledger-card rounded-xl p-6 lg:sticky lg:top-8 space-y-1 text-sm">
+          <p class="eyebrow text-parchment-dim mb-3">Contents</p>
+          <a href="#acceptance" class="block py-1 text-parchment-dim hover:text-primary transition-colors">1. Acceptance</a>
+          <a href="#service" class="block py-1 text-parchment-dim hover:text-primary transition-colors">2. The Service</a>
+          <a href="#accounts" class="block py-1 text-parchment-dim hover:text-primary transition-colors">3. Accounts &amp; Eligibility</a>
+          <a href="#plans-billing" class="block py-1 text-parchment-dim hover:text-primary transition-colors">4. Plans &amp; Billing</a>
+          <a href="#byok" class="block py-1 text-parchment-dim hover:text-primary transition-colors">5. Your Own AI Provider Keys</a>
+          <a href="#storage" class="block py-1 text-parchment-dim hover:text-primary transition-colors">6. Enterprise Storage</a>
+          <a href="#content" class="block py-1 text-parchment-dim hover:text-primary transition-colors">7. Your Content</a>
+          <a href="#acceptable-use" class="block py-1 text-parchment-dim hover:text-primary transition-colors">8. Acceptable Use</a>
+          <a href="#ai-disclaimer" class="block py-1 text-parchment-dim hover:text-primary transition-colors">9. AI-Generated Output</a>
+          <a href="#ip" class="block py-1 text-parchment-dim hover:text-primary transition-colors">10. Intellectual Property</a>
+          <a href="#confidentiality" class="block py-1 text-parchment-dim hover:text-primary transition-colors">11. Confidentiality</a>
+          <a href="#term-termination" class="block py-1 text-parchment-dim hover:text-primary transition-colors">12. Term &amp; Termination</a>
+          <a href="#disclaimers" class="block py-1 text-parchment-dim hover:text-primary transition-colors">13. Disclaimers</a>
+          <a href="#liability" class="block py-1 text-parchment-dim hover:text-primary transition-colors">14. Limitation of Liability</a>
+          <a href="#indemnification" class="block py-1 text-parchment-dim hover:text-primary transition-colors">15. Indemnification</a>
+          <a href="#governing-law" class="block py-1 text-parchment-dim hover:text-primary transition-colors">16. Governing Law</a>
+          <a href="#changes" class="block py-1 text-parchment-dim hover:text-primary transition-colors">17. Changes</a>
+          <a href="#general" class="block py-1 text-parchment-dim hover:text-primary transition-colors">18. General Terms</a>
+          <a href="#contact" class="block py-1 text-parchment-dim hover:text-primary transition-colors">19. Contact</a>
+        </nav>
+
+        <!-- BODY -->
+        <div class="prose-legal space-y-14 text-parchment-dim leading-relaxed max-w-3xl">
+          <p>
+            These Terms of Service ("<strong class="text-parchment">Terms</strong>") are an
+            agreement between <strong class="text-parchment">ParleHub LLC</strong>, a North
+            Carolina limited liability company ("<strong class="text-parchment">ParleHub</strong>,"
+            "<strong class="text-parchment">we</strong>," "<strong class="text-parchment">us</strong>"),
+            and the organization or individual creating or using a ParleHub account ("<strong class="text-parchment">you</strong>,"
+            "<strong class="text-parchment">your organization</strong>"). They govern your access
+            to and use of the ParleHub shared AI workspace, including app.parlehub.com and related
+            services (the "<strong class="text-parchment">Service</strong>").
+          </p>
+
+          <section id="acceptance" class="space-y-3 scroll-mt-24">
+            <h2 class="font-display text-display-sm text-parchment">1. Acceptance of These Terms</h2>
+            <p>
+              By creating an account, signing in, or otherwise using the Service, you agree to
+              these Terms on behalf of yourself and, if you're acting for an organization, on
+              behalf of that organization — in which case "you" refers to that organization, and
+              you confirm you have the authority to bind it. If you don't agree, don't use the
+              Service.
+            </p>
+          </section>
+
+          <section id="service" class="space-y-3 scroll-mt-24">
+            <h2 class="font-display text-display-sm text-parchment">2. The Service</h2>
+            <p>
+              ParleHub is a shared workspace for team AI conversations, organized into
+              organizations and projects. Depending on your plan, the Service may include: shared
+              conversation threads with live presence and search; project-level spend budgets;
+              bring-your-own-key access to third-party AI model providers; single sign-on;
+              managed or enterprise-native file storage; role-based access control; and an
+              append-only audit log. Available features vary by plan — see
+              <a href="/pricing.html" class="text-primary hover:text-primary-bright">Pricing</a> and
+              <a href="/security.html" class="text-primary hover:text-primary-bright">Security &amp; Compliance</a>
+              for current details, which we may update from time to time.
+            </p>
+          </section>
+
+          <section id="accounts" class="space-y-3 scroll-mt-24">
+            <h2 class="font-display text-display-sm text-parchment">3. Accounts &amp; Eligibility</h2>
+            <p>
+              You must be at least 18 years old and able to form a binding contract to use the
+              Service. Accounts are created by an organization administrator, directly or through
+              single sign-on with an identity provider (such as Microsoft Entra ID or Google
+              Workspace) your organization configures. You're responsible for maintaining the
+              confidentiality of your credentials and for all activity under your account. Notify
+              us promptly at
+              <a href="mailto:legal@parlehub.com" class="text-primary hover:text-primary-bright">legal@parlehub.com</a>
+              if you suspect unauthorized use.
+            </p>
+          </section>
+
+          <section id="plans-billing" class="space-y-3 scroll-mt-24">
+            <h2 class="font-display text-display-sm text-parchment">4. Plans &amp; Billing</h2>
+            <p>
+              ParleHub offers Free, Team, and Enterprise plans with different limits on seats,
+              projects, storage, and features. Paid plans are billed through our payment
+              processor, Stripe, on a recurring basis (with an initial trial period where
+              offered) and renew automatically until canceled. Fees are charged in advance and,
+              except where required by law, are non-refundable for partial billing periods. We
+              may change plan pricing or features with reasonable advance notice; continued use
+              of a paid plan after a price change takes effect constitutes acceptance of the new
+              price. You're responsible for any usage charges you incur directly with a
+              third-party AI provider under Section 5, which we do not bill or refund.
+            </p>
+          </section>
+
+          <section id="byok" class="space-y-3 scroll-mt-24">
+            <h2 class="font-display text-display-sm text-parchment">5. Your Own AI Provider Keys (BYOK)</h2>
+            <p>
+              The Service lets your organization connect its own API credentials for third-party
+              AI model providers (currently Anthropic, OpenAI, Google, and Azure OpenAI) so your
+              team can use those models through ParleHub. When you do this:
+            </p>
+            <ul class="list-disc pl-6 space-y-2">
+              <li>Your use of that provider's models is governed by your own agreement and that provider's own terms and acceptable use policies, in addition to these Terms.</li>
+              <li>You're solely responsible for the validity of your credentials, for any usage fees the provider charges you directly, and for your organization's compliance with that provider's policies.</li>
+              <li>We store provider credentials encrypted and never display them in full once saved, but we are not responsible for a provider's availability, pricing changes, output, or acts or omissions.</li>
+              <li>Content you send through a connected provider is transmitted to that provider as necessary to generate a response; it is not sent to any provider you haven't configured.</li>
+            </ul>
+            <p>
+              Where ParleHub instead offers managed, prepaid access to models on your behalf
+              (rather than your own credentials), that access is subject to any additional terms
+              presented at the time it's offered.
+            </p>
+          </section>
+
+          <section id="storage" class="space-y-3 scroll-mt-24">
+            <h2 class="font-display text-display-sm text-parchment">6. Enterprise Storage Connections</h2>
+            <p>
+              On eligible plans, a project may be configured to store its files in storage you
+              control — such as a Microsoft SharePoint site or a Google Drive shared drive —
+              instead of ParleHub's own managed storage. When you connect enterprise storage:
+            </p>
+            <ul class="list-disc pl-6 space-y-2">
+              <li>Your files remain in your own Microsoft 365 or Google Workspace tenant, governed by your agreement with Microsoft or Google, not by ParleHub.</li>
+              <li>ParleHub accesses that storage only through the permissions your administrator grants (for example, access scoped to a specific site or shared drive), to read, write, and search files as directed by your project members' use of the Service.</li>
+              <li>You're responsible for managing who has access to the connected storage location itself, independent of ParleHub's own project membership controls.</li>
+            </ul>
+          </section>
+
+          <section id="content" class="space-y-3 scroll-mt-24">
+            <h2 class="font-display text-display-sm text-parchment">7. Your Content</h2>
+            <p>
+              "Your Content" means the conversations, prompts, files, and other materials you or
+              your organization submit to the Service. You retain all ownership rights in Your
+              Content. You grant ParleHub a limited license to host, process, transmit, and
+              display Your Content solely as necessary to provide and support the Service
+              (including sending it to the AI providers and storage locations your organization
+              configures). We do not use Your Content to train our own foundation models, and we
+              do not sell Your Content. You're responsible for having the rights necessary to
+              submit Your Content and for its legality.
+            </p>
+          </section>
+
+          <section id="acceptable-use" class="space-y-3 scroll-mt-24">
+            <h2 class="font-display text-display-sm text-parchment">8. Acceptable Use</h2>
+            <p>You agree not to:</p>
+            <ul class="list-disc pl-6 space-y-2">
+              <li>Use the Service for any unlawful purpose, or to generate or store content that infringes others' rights or violates applicable law;</li>
+              <li>Attempt to circumvent budget controls, rate limits, or other technical safeguards, or otherwise abuse shared infrastructure in a way that degrades the Service for others;</li>
+              <li>Attempt to gain unauthorized access to another organization's data, reverse-engineer the Service, or probe it for vulnerabilities outside an authorized security engagement;</li>
+              <li>Resell or provide the Service to third parties outside your own organization without our written consent; or</li>
+              <li>Violate the acceptable use policy of any third-party AI provider or storage provider you connect through the Service.</li>
+            </ul>
+          </section>
+
+          <section id="ai-disclaimer" class="space-y-3 scroll-mt-24">
+            <h2 class="font-display text-display-sm text-parchment">9. AI-Generated Output</h2>
+            <p>
+              Responses generated through connected AI models may be inaccurate, incomplete, or
+              unsuitable for your purpose — this is an inherent limitation of the underlying
+              models, not something ParleHub controls or guarantees against. You're responsible
+              for reviewing and validating any AI-generated output before relying on it, and
+              especially before using it to inform legal, medical, financial, or other
+              high-stakes decisions.
+            </p>
+          </section>
+
+          <section id="ip" class="space-y-3 scroll-mt-24">
+            <h2 class="font-display text-display-sm text-parchment">10. Intellectual Property</h2>
+            <p>
+              ParleHub and its licensors own all right, title, and interest in the Service
+              itself, including its software, design, and trademarks, apart from Your Content.
+              These Terms don't grant you any rights to our trademarks or branding without
+              separate written permission.
+            </p>
+          </section>
+
+          <section id="confidentiality" class="space-y-3 scroll-mt-24">
+            <h2 class="font-display text-display-sm text-parchment">11. Confidentiality</h2>
+            <p>
+              Each party may receive non-public information from the other in connection with
+              the Service. Each party agrees to protect the other's confidential information with
+              reasonable care and to use it only as necessary to perform under these Terms, except
+              as required to be disclosed by law.
+            </p>
+          </section>
+
+          <section id="term-termination" class="space-y-3 scroll-mt-24">
+            <h2 class="font-display text-display-sm text-parchment">12. Term &amp; Termination</h2>
+            <p>
+              These Terms apply for as long as you use the Service. You may stop using the
+              Service and close your account at any time. We may suspend or terminate access if
+              you materially breach these Terms and don't cure the breach within a reasonable
+              time after notice, or immediately if needed to protect the Service or other
+              customers. On termination, your right to access the Service ends; we'll make
+              reasonable efforts to allow export of Your Content for a limited period afterward,
+              except where you've requested earlier deletion.
+            </p>
+          </section>
+
+          <section id="disclaimers" class="space-y-3 scroll-mt-24">
+            <h2 class="font-display text-display-sm text-parchment">13. Disclaimers</h2>
+            <p>
+              THE SERVICE IS PROVIDED "AS IS" WITHOUT WARRANTIES OF ANY KIND, EXPRESS OR IMPLIED,
+              INCLUDING WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND
+              NON-INFRINGEMENT. WE DON'T WARRANT THAT THE SERVICE WILL BE UNINTERRUPTED,
+              ERROR-FREE, OR THAT AI-GENERATED OUTPUT WILL BE ACCURATE OR RELIABLE.
+            </p>
+          </section>
+
+          <section id="liability" class="space-y-3 scroll-mt-24">
+            <h2 class="font-display text-display-sm text-parchment">14. Limitation of Liability</h2>
+            <p>
+              TO THE MAXIMUM EXTENT PERMITTED BY LAW, PARLEHUB WILL NOT BE LIABLE FOR ANY
+              INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES, OR ANY LOSS OF
+              PROFITS, DATA, OR GOODWILL, ARISING FROM YOUR USE OF THE SERVICE. OUR TOTAL
+              LIABILITY FOR ANY CLAIM ARISING FROM THESE TERMS OR THE SERVICE WILL NOT EXCEED THE
+              FEES YOU PAID TO PARLEHUB IN THE TWELVE (12) MONTHS BEFORE THE CLAIM AROSE.
+            </p>
+          </section>
+
+          <section id="indemnification" class="space-y-3 scroll-mt-24">
+            <h2 class="font-display text-display-sm text-parchment">15. Indemnification</h2>
+            <p>
+              You agree to indemnify and hold ParleHub harmless from third-party claims arising
+              from Your Content, your breach of these Terms, or your misuse of the Service. We
+              agree to indemnify you against third-party claims that the Service, as provided by
+              us and used in accordance with these Terms, infringes that third party's
+              intellectual property rights.
+            </p>
+          </section>
+
+          <section id="governing-law" class="space-y-3 scroll-mt-24">
+            <h2 class="font-display text-display-sm text-parchment">16. Governing Law &amp; Disputes</h2>
+            <p>
+              These Terms are governed by the laws of the State of North Carolina, without
+              regard to its conflict-of-laws principles. Any dispute arising from these Terms or
+              the Service will be brought exclusively in the state or federal courts located in
+              North Carolina, and you consent to their jurisdiction.
+            </p>
+          </section>
+
+          <section id="changes" class="space-y-3 scroll-mt-24">
+            <h2 class="font-display text-display-sm text-parchment">17. Changes to These Terms</h2>
+            <p>
+              We may update these Terms from time to time. We'll post the updated version here
+              with a new effective date, and for material changes we'll make reasonable efforts
+              to notify organization administrators. Continued use of the Service after changes
+              take effect constitutes acceptance of the updated Terms.
+            </p>
+          </section>
+
+          <section id="general" class="space-y-3 scroll-mt-24">
+            <h2 class="font-display text-display-sm text-parchment">18. General Terms</h2>
+            <p>
+              These Terms, together with our
+              <a href="/privacy.html" class="text-primary hover:text-primary-bright">Privacy Policy</a>,
+              are the entire agreement between you and ParleHub regarding the Service. If any
+              provision is found unenforceable, the rest remain in effect. Our failure to enforce
+              a provision isn't a waiver of it. You may not assign these Terms without our
+              consent; we may assign them in connection with a merger, acquisition, or sale of
+              assets. Neither party is liable for delays caused by events outside its reasonable
+              control.
+            </p>
+          </section>
+
+          <section id="contact" class="space-y-3 scroll-mt-24">
+            <h2 class="font-display text-display-sm text-parchment">19. Contact</h2>
+            <p>
+              Questions about these Terms can be sent to
+              <a href="mailto:legal@parlehub.com" class="text-primary hover:text-primary-bright">legal@parlehub.com</a>.
+            </p>
+          </section>
+        </div>
+      </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="w-full border-t border-ink-line/60" id="main-footer">
+      <div class="max-w-[1440px] mx-auto px-margin-mobile md:px-margin-desktop py-16 space-y-12">
+        <div class="text-center py-4 border-y border-ink-line/40">
+          <p class="eyebrow text-primary-dim">
+            Works with Anthropic &middot; OpenAI &middot; Google Gemini &middot; Azure OpenAI
+          </p>
+        </div>
+        <div class="flex flex-col sm:flex-row items-center justify-between gap-6 text-xs text-parchment-dim/70">
+          <div class="flex items-center gap-2.5">
+            <div class="w-6 h-6 rounded-md bg-gradient-to-tr from-[#005ac2] via-[#4d8eff] to-[#adc6ff] flex items-center justify-center">
+              <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+              </svg>
+            </div>
+            <span class="font-mono">© 2026 ParleHub</span>
+          </div>
+          <nav class="flex flex-wrap items-center justify-center gap-x-6 gap-y-2">
+            <a href="/security.html" class="hover:text-parchment transition-colors">Security</a>
+            <a href="/pricing.html" class="hover:text-parchment transition-colors">Pricing</a>
+            <a href="/terms.html" class="text-parchment transition-colors">Terms</a>
+            <a href="/privacy.html" class="hover:text-parchment transition-colors">Privacy</a>
+            <button disabled type="button" class="cursor-not-allowed">Contact</button>
+          </nav>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,96 @@
+# CLAUDE.md
+
+This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
+
+## What this is
+
+The marketing site for ParleHub ("The Shared Hub for Team AI Conversations"), served via GitHub Pages at www.parlehub.com (see `CNAME`). There is no build system, package manager, or test suite — plain static HTML/CSS/JS. Deployment is simply pushing to `main`; GitHub Pages serves the repo root directly.
+
+The site is multi-page: `index.html` (home), `security.html` (security & compliance deep dive), `pricing.html` (plan comparison), `terms.html` (Terms of Service), `privacy.html` (Privacy Policy). Every "Sign in" / "Start free" / "Start free trial" CTA links straight to **`https://app.parlehub.com`** — the live product. There is no email-capture/waitlist form anymore; the product is live, so the CTA is always the real signup, not a "notify me" form.
+
+The contracting entity in `terms.html`/`privacy.html` is **ParleHub LLC** (North Carolina), governed by North Carolina law; legal/privacy contact addresses are `legal@parlehub.com` / `privacy@parlehub.com`. These were confirmed by the site owner, not invented — if the entity, jurisdiction, or contact addresses ever change, update both files (and their cross-references to each other) together. These pages are a solid drafting starting point but haven't been reviewed by a lawyer — flag that if asked to substantively change liability, indemnification, or governing-law language rather than just editing prose.
+
+## The product (what we're marketing)
+
+ParleHub's product engineering plans and build log live outside this repo, at `C:\Users\ciara\source\github\parlehub\Locutus\Plans` (start with `index.md` and `build-plan.md` there for the current source of truth on what's actually shipped). This site markets that product, so copy must stay accurate to what's real — see the status labels below before writing claims.
+
+**Positioning:** ParleHub is a team-based, shared workspace for AI conversations — built for orgs (not solo users) who want their team's AI usage centralized, cost-controlled, and auditable, with the flexibility to use their own models/keys or enterprise storage instead of trusting every provider with their data individually.
+
+**Status legend used throughout this doc:**
+- **[LIVE]** — shipped and verified working against a real production tenant/provider. Strongest, safest claims.
+- **[SHIPPED]** — fully built and tested in the app, but not yet field-proven against a live external tenant. Safe to market as a real, working feature; avoid implying it's been battle-tested at scale.
+- **[ROADMAP]** — not yet built, or built but not wired to a real backend. Do not present as available today. Fine to tease as "coming soon" if the page is explicitly forward-looking.
+
+### Core features to showcase
+
+**1. Team-based shared workspace [LIVE]**
+Projects contain shared conversation threads visible to every project member in real time — not per-person silos. Live presence indicators show who's viewing/typing/waiting on a response; a teammate's in-flight message and the AI's streamed reply appear live to everyone watching. Conversations support branching (edit-and-resend), rename/archive, full history search (keyword + semantic), and promoting a personal chat into a shared project. This is the core "stop running your team's AI in a thousand private browser tabs" story.
+
+**2. Project-based budgeting for people who multitask [LIVE]**
+Budgets are scoped to *projects*, not just individuals — built for people juggling several projects who need to cap spend per initiative rather than per head. Pre-flight enforcement hard-blocks a send before it would exceed the project budget (with an 80% warning), plus complementary personal (per-user) and org-wide spend caps as backstops. Users blocked by budget can self-serve request an increase, routed to admins for approve/reject.
+
+**3. Enterprise SSO [LIVE / SHIPPED]**
+- Microsoft Entra ID (OIDC) — **[LIVE]**, verified in production. Domain-based auto-provisioning, tenant-pinned, org can enforce SSO-only login.
+- Google Workspace (OIDC) — **[SHIPPED]**, fully built and tested; live round-trip against a real Google tenant is the one thing still outstanding, so don't claim it's battle-tested yet.
+- SAML (Entra, Google Workspace, or generic/Okta) — **[ROADMAP]**, not built. Do not mention SAML.
+
+**4. Enterprise-native file storage for security & compliance [LIVE / SHIPPED]**
+Project files can live in the org's own enterprise store instead of ParleHub's storage — files never leave the customer's tenant.
+- SharePoint (Microsoft 365) — **[LIVE]**, verified against a real production tenant. Least-privilege, per-site Graph access (`Sites.Selected`), native SharePoint search, deletes go to SharePoint's own recycle bin.
+- Google Drive (Shared Drives) — **[SHIPPED]**, fully built (auth, path resolution, native Docs/Sheets/Slides export, Drive full-text search) but not yet live-smoked against a real Drive.
+- Both are Enterprise-tier only, with a two-step enable (org enables the provider → project connects a specific site/drive). The default managed storage (Azure Blob) is always available on every tier, with its own recycle bin, versioning, and inline previews.
+
+**5. Flexible model access: BYOK, Azure OpenAI & managed credits [SHIPPED / ROADMAP — see caution note]**
+- Bring-your-own-key (BYOK) — **[LIVE]**, the default access mode today. Orgs supply their own provider API keys (stored via Azure Key Vault, never exposed). Fully working, production-quality for **Anthropic, OpenAI, and Google Gemini**; **Azure OpenAI** is also supported as a BYOK provider for Azure-native orgs (this is the closest existing match to an "Azure AI Foundry connection" story).
+- BYOK Gemini — **[SHIPPED]** (as of ADR-024 / APP-162). Targets the Gemini Developer API (Google AI Studio key, same one-key-per-provider shape as every other provider — no separate GCP project/service-account setup). Full tool-calling support (MCP tools work over Gemini, not deferred), vision/PDF attachments, streaming. Code-complete and unit-tested; like Anthropic/OpenAI, live streaming is only exercised on the paid gated test track, not yet clicked through against production traffic — safe to market as a real, working provider, just not "battle-tested at scale" yet. Vertex AI (the GCP-enterprise auth flavor of Gemini, as opposed to this Developer-API flavor) is a distinct, not-yet-built follow-on provider — don't imply Vertex/enterprise GCP support.
+- Managed, prepaid model credits ("buy tokens from us, no key setup") — **[ROADMAP]**. The billing/wallet mechanics (prepaid credits, auto-recharge, ledger) are built, but the inference backend (Azure AI Foundry) isn't deployed yet, and the "transferable across OpenAI/Anthropic/Gemini" framing doesn't match that architecture — Foundry's catalog is Azure OpenAI plus Azure-resold third-party models, and does **not** include Anthropic or Gemini. **Caution:** market this as "managed access coming soon" at most, not as a live cross-provider credit system, until Foundry ships. Flag this to the user before publishing copy that promises it.
+- Net effect: BYOK today already covers all three major model families (Anthropic, OpenAI, Gemini) plus Azure OpenAI — that's a legitimate "bring the models you already trust and pay for" story even before managed credits exist.
+
+### Everything else real and worth showcasing
+
+- **AI agent file tooling [LIVE]** — the assistant isn't just a chatbot; it can read, search (grep/glob/semantic), edit (exact find-replace, multi-edit, diff/patch), outline, query structured data (JSON/YAML), work with spreadsheets (Excel/CSV — filter, aggregate, no code execution), and convert documents (PDF/Word/PowerPoint) to markdown, all as real tool calls against project files.
+- **Inline file preview [LIVE]** — markdown, code (syntax highlighted), PDF, images/SVG, video, and sandboxed HTML preview in-browser, no download needed.
+- **RBAC & org governance [LIVE]** — four-level roles (SystemAdmin → OrgAdmin → ProjectAdmin → ProjectMember), member invites, project visibility controls (public vs. restricted, Enterprise-tier).
+- **Tamper-proof audit log [LIVE]** — every sensitive action logged, enforced append-only at the database level (SQL triggers block even a compromised app credential from editing history). Good compliance talking point. Note: this is *not* currently a self-service org-admin export/SIEM feature — don't claim customer-facing SIEM export.
+- **Usage & spend analytics [LIVE]** — org-facing dashboard: filter/group by project, person, provider, or model; CSV export.
+- **Subscription tiers: Free / Team / Enterprise [LIVE]** — Stripe-backed, 7-day trial on paid tiers, per-seat Enterprise pricing with auto-expand. Free: 3 seats/3 projects/$10 BYOK cap/2GB. Team: 10 seats/10 projects/unlimited BYOK spend/10GB/SSO. Enterprise: unlimited seats & projects, restricted projects, external storage, 1GB/seat.
+- **Notifications, PWA install, stop/cancel mid-response, per-conversation model switching [LIVE]** — day-to-day UX polish worth a mention but not a headline feature.
+- **Security hardening [LIVE]** — denial-of-wallet protection (rate limits + bounded agent loops), two-vault secret broker, managed-identity-first Azure auth (minimal static secrets), CSP/HSTS/secure cookies.
+
+## Working with this codebase
+
+- **Shared assets, per-page markup.** `assets/tailwind.config.js` (the Tailwind Play-CDN config) and `assets/site.css` (custom CSS) are each a single file included by every page — edit once, it applies everywhere. Header, nav, and footer markup, by contrast, is hand-duplicated inside each of the 5 `.html` files (there's no templating/build step, and 5 pages is few enough that copy-paste beats adding tooling). When you change the header/footer/nav, apply the same change to all five HTML files, including the mobile nav row (see below) and each page's active-nav-link state (the current page's nav link/mobile-nav link is `text-parchment`, the others are `text-parchment-dim`).
+- **Logo mark.** The header icon and the small footer icon are the *real* ParleHub product logo — a `bg-gradient-to-tr from-[#005ac2] via-[#4d8eff] to-[#adc6ff]` rounded square containing the speech-bubble `<path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z">` — not an invented mark, and it must be byte-identical across all 5 pages (header) and all 5 footers. The favicon (`<link rel="icon">`, all 5 pages) points at `/images/grad-215x215.png`, the same mark as a pre-rendered PNG; `apple-touch-icon` points at `/images/apple-touch-icon.png`. Both were supplied by the site owner from the real app, not generated here.
+- Tailwind loads from the CDN (`cdn.tailwindcss.com?plugins=forms,container-queries`), then `<script src="/assets/tailwind.config.js"></script>` sets `tailwind.config` — same load order the Play CDN requires (config script *after* the CDN script). There's no PostCSS step or npm install.
+- **Mobile nav.** The desktop nav (`Security` / `Pricing`) is `hidden md:flex` in the header. Below `md`, a separate `<div class="md:hidden flex ...">` row (right after `</header>`, before `<main>`) repeats those links plus "Sign in" — without it, mobile visitors have no way to reach Security/Pricing except scrolling to the footer. Keep this row in sync with the desktop nav if links are added/removed.
+- No local dev server is required for static preview, but because pages use root-relative paths (`/assets/...`, `/security.html`), open them through a static file server (e.g. `python -m http.server`) rather than as bare `file://` URLs, or those paths will 404.
+- No linter, formatter, or test command is configured. Verify changes visually in a browser (Playwright + a static server works well for this, since there's no project-specific run skill).
+- Every CTA points at the literal string `https://app.parlehub.com` (root, no subpath) — the app's actual `/signup` or `/login` routes weren't confirmed, so don't invent deep links. Ask before adding one.
+- **`<main>` must not have `overflow-hidden` on a page with a sticky element.** `index.html`'s `<main>` has `class="relative overflow-hidden"` to clip the hero's decorative glow/hub-diagram; that class was originally copy-pasted onto every page. On `terms.html`/`privacy.html`, which use a `position: sticky` table-of-contents sidebar next to the long-form legal text, `overflow-hidden` on an ancestor silently breaks the sticky behavior (it stops sticking after ~1 viewport height, with no console error). Those two pages' `<main>` is just `class="relative"` — don't "fix" that back to match the other pages.
+
+### Design system
+
+The design is a deliberate departure from generic "dark SaaS" — themed around ParleHub's name (a conversational **hub**) and its ledger/governance angle (budgets, audit trail), rendered as a control-room-meets-accounting-ledger aesthetic. Don't casually revert to generic gold/brass or invented palettes; `primary` specifically must stay matched to the real product below.
+
+- **Color** (defined in `assets/tailwind.config.js`): `ink` (#0b0e17, background — a cooler, more "control room" near-black, not neutral), `ink-raised`/`ink-line` (surfaces/borders), `parchment`/`parchment-dim` (warm off-white text, evokes ledger paper rather than clinical white), `verdigris`/`verdigris-dim`/`verdigris-bright` (secondary accent — a muted teal-green, reserved for budget/ledger/audit contexts specifically, not used everywhere, to keep it meaningful).
+- **`primary`/`primary-bright`/`primary-dim` (#4d8eff / #7fabff / #3e5f8f) is the real app.parlehub.com brand blue, not a design choice to riff on.** An earlier pass of this site used an invented gold/brass accent; the site owner corrected that because it didn't match the actual product. The blue values were obtained by loading real screenshots of the live app (`images/modelconnection.png`, `images/billing.png`) into a headless browser, drawing them to a `<canvas>`, and reading exact pixel colors with `getImageData` — not eyeballed. Confirmed data points: the logo's gradient is `from-[#005ac2] via-[#4d8eff] to-[#adc6ff]` (used literally in the header/footer logo mark and the hero's `.primary-text` gradient), the app's solid interactive-blue (checkboxes, avatars) samples to `#155dfc`, and its sidebar/dark surface samples to `#0f172a` (Tailwind `slate-900`). If asked to adjust brand colors again, re-derive them the same way (sample the real app or ask for a current screenshot) rather than picking an aesthetically-pleasing color — this is a real brand, not a free palette choice.
+- **Type**: `font-display` (Fraunces, a characterful serif) for headlines, `font-body` (Inter) for body copy, `font-mono` (IBM Plex Mono) for eyebrow labels, prices, and any "ledger figure" (token counts, budget numbers, table data) — the mono face is doing real conceptual work (money/data reads as a ledger entry), not just decoration.
+- **Signature element**: the hero's hub diagram (`index.html`, `.hub-diagram`/`.hub-node`/`.hub-center` in `assets/site.css`) — a central card (mini shared conversation + presence avatars + a budget meter, encoding collaboration *and* budgeting at once) with blue wire-lines radiating to 8 labeled nodes (Anthropic/OpenAI/Gemini/Azure OpenAI on one arc, SharePoint/Google Drive/Entra ID/Google Workspace on the other). Built with an inline SVG (percentage-based `viewBox="0 0 100 100"`) for the lines and Tailwind arbitrary-value classes (`top-[10%] left-[50%]`) for node positions — this only appears once, at full size, in the hero; don't recreate the full orbit elsewhere. It collapses to a static stacked card + wrapped pill list below `md` (there's a separate `md:hidden` block for this — the absolute/orbit version is real content, not decorative, so it needs a working non-JS fallback, not just `overflow: hidden`). Entrance animation respects `prefers-reduced-motion` (see the media query at the bottom of `site.css`).
+- **Ledger table** (`pricing.html`): sets the whole table (labels included) to `font-mono` via a `.ledger-table td/th` rule — a `font-body` utility class was tried on the label column but loses the CSS specificity fight against that rule, so the whole row ends up monospace. Left as-is; it reads fine as an intentional "everything in the ledger is mono" choice, but know why before "fixing" it.
+
+### Images
+
+`images/` holds real product screenshots. Alt text in the HTML is the spec for what each one should show — when recapturing, keep the alt text and the screenshot in sync.
+
+Already in place and wired up: `projectlist.png` (shared projects/conversations view), `billing.png` (project budget panel), `modelconnection.png` (org model/BYOK settings).
+
+Still needed (referenced in HTML, files don't exist yet — they 404 harmlessly until added):
+- `images/agent-tools.png` (home) — the AI assistant reading/querying a spreadsheet in a project conversation.
+- `images/sso.png` (security.html) — org sign-in settings showing Entra ID + Google Workspace SSO with enforcement on.
+- `images/storage.png` (security.html) — a project's storage settings with SharePoint connected as the document library.
+- `images/audit-log.png` (security.html) — the org audit log, showing chronological admin/account actions.
+
+## Notes
+
+- `.gitignore` excludes `test.html` — a local scratch file for previewing changes without touching the real pages; don't assume it exists or needs to be created.
+- Footer "Contact" is intentionally a `disabled` placeholder button (no contact page yet). "Privacy" and "Terms" are real links to `privacy.html`/`terms.html`.
