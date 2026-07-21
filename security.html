@@ -191,7 +191,7 @@
         </div>
       </section>
 
-      <!-- AUDIT LOG -->
+      <!-- AUDIT TRAIL -->
       <section class="max-w-[1440px] mx-auto px-margin-mobile md:px-margin-desktop py-16 grid grid-cols-1 md:grid-cols-2 gap-gutter items-center">
         <div class="space-y-4">
           <span class="eyebrow text-verdigris">Audit trail</span>
@@ -210,20 +210,51 @@
             </li>
             <li class="flex items-start gap-3 text-parchment-dim">
               <span class="material-symbols-outlined text-verdigris mt-0.5">check_circle</span>
-              Even a compromised admin credential can't rewrite history
+              Even a compromised admin credential can't rewrite or delete history
             </li>
             <li class="flex items-start gap-3 text-parchment-dim">
               <span class="material-symbols-outlined text-verdigris mt-0.5">check_circle</span>
-              Org-wide usage and spend analytics, exportable to CSV
+              Covers sign-ins, role &amp; membership changes, budget edits, and SSO / model / storage configuration
             </li>
           </ul>
         </div>
-        <div class="ledger-card rounded-xl border border-ink-line/60 aspect-video flex items-center justify-center overflow-hidden">
-          <img
-            src="/images/audit-log.png"
-            alt="Screenshot of ParleHub's organization audit log, showing a chronological, tamper-evident record of admin and account actions"
-            class="w-full h-full object-cover"
-          />
+        <div class="ledger-card rounded-xl border border-ink-line/60 p-6 md:p-8 space-y-5">
+          <div class="flex items-center justify-between">
+            <span class="font-mono text-xs uppercase tracking-widest text-parchment-dim">Audit ledger</span>
+            <span class="inline-flex items-center gap-1.5 font-mono text-[11px] uppercase tracking-wider text-verdigris border border-verdigris-dim/40 rounded-full px-2.5 py-1">
+              <span class="material-symbols-outlined text-[14px] leading-none">lock</span>Append-only
+            </span>
+          </div>
+          <div class="font-mono text-sm">
+            <div class="flex items-center gap-4 py-2.5 border-b border-ink-line/50">
+              <span class="text-verdigris-dim tabular-nums">#00482</span>
+              <span class="text-parchment flex-1 truncate">member.role.changed</span>
+              <span class="text-parchment-dim/60 text-xs tabular-nums">sha·9f3c…</span>
+            </div>
+            <div class="flex items-center gap-4 py-2.5 border-b border-ink-line/50">
+              <span class="text-verdigris-dim tabular-nums">#00481</span>
+              <span class="text-parchment flex-1 truncate">budget.updated</span>
+              <span class="text-parchment-dim/60 text-xs tabular-nums">sha·1a7e…</span>
+            </div>
+            <div class="flex items-center gap-4 py-2.5 border-b border-ink-line/50">
+              <span class="text-verdigris-dim tabular-nums">#00480</span>
+              <span class="text-parchment flex-1 truncate">sso.enforcement.enabled</span>
+              <span class="text-parchment-dim/60 text-xs tabular-nums">sha·c42b…</span>
+            </div>
+            <div class="flex items-center gap-4 py-2.5 border-b border-ink-line/50">
+              <span class="text-verdigris-dim tabular-nums">#00479</span>
+              <span class="text-parchment flex-1 truncate">storage.connected</span>
+              <span class="text-parchment-dim/60 text-xs tabular-nums">sha·77d0…</span>
+            </div>
+            <div class="flex items-center gap-4 py-2.5">
+              <span class="text-verdigris-dim tabular-nums">#00478</span>
+              <span class="text-parchment flex-1 truncate">member.invited</span>
+              <span class="text-parchment-dim/60 text-xs tabular-nums">sha·e5b9…</span>
+            </div>
+          </div>
+          <p class="text-xs text-parchment-dim/70 leading-relaxed pt-1">
+            Rows are only ever appended. <span class="text-parchment-dim">UPDATE</span> and <span class="text-parchment-dim">DELETE</span> are blocked by a database trigger — each entry is hash-chained to the one before it, so any tampering is evident.
+          </p>
         </div>
       </section>
 
