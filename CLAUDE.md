@@ -82,13 +82,11 @@ The design is a deliberate departure from generic "dark SaaS" — themed around 
 
 `images/` holds real product screenshots. Alt text in the HTML is the spec for what each one should show — when recapturing, keep the alt text and the screenshot in sync.
 
-Already in place and wired up: `projectlist.png` (shared projects/conversations view), `billing.png` (project budget panel), `modelconnection.png` (org model/BYOK settings).
+In place and wired up: `projectlist.png` (shared projects/conversations view), `billing.png` (project budget panel), `modelconnection.png` (org model/BYOK settings), `agent-tools.png` (home — AI assistant querying a spreadsheet), `sso.png` (security.html — org Single sign-on settings), `storage.png` (security.html — org File storage settings).
 
-Still needed (referenced in HTML, files don't exist yet — they 404 harmlessly until added):
-- `images/agent-tools.png` (home) — the AI assistant reading/querying a spreadsheet in a project conversation.
-- `images/sso.png` (security.html) — org sign-in settings showing Entra ID + Google Workspace SSO with enforcement on.
-- `images/storage.png` (security.html) — a project's storage settings with SharePoint connected as the document library.
-- `images/audit-log.png` (security.html) — the org audit log, showing chronological admin/account actions.
+**`sso.png` and `storage.png` are *representative* mockups, not raw captures.** They were built to match the real app's live SSO and File-storage pages (structure taken from real dark-theme screenshots the owner provided), then rendered on a **white background** with the org shown as **Acme Inc** / user **Jordan Avery** and sample values (tenant ID deliberately masked as `••••…7a6b`, host `acme.sharepoint.com`) so they match the existing light-theme screenshot set. If the app's SSO/storage UI changes, regenerate them from the real pages the same way rather than hand-editing the PNGs. The HTML+headless-Chrome generator (`build.js`) lives in the session scratchpad, not the repo.
+
+**There is no `audit-log.png`, and don't reintroduce one.** The product has no customer-facing audit-log UI screen — the audit log is a database-level, append-only guarantee (see the LIVE audit-log feature note above), so a screenshot would misrepresent it. The security page's **Audit trail** section instead uses an inline HTML "append-only ledger" graphic (styled like the RBAC role card, `font-mono` + verdigris, with hash-chained rows), which is clearly a design element rather than a claimed product screen.
 
 ## Notes
 
