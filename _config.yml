@@ -1,0 +1,20 @@
+title: ParleHub
+url: "https://www.parlehub.com"
+baseurl: ""
+markdown: kramdown
+permalink: /blog/:year/:month/:day/:title/
+timezone: America/New_York
+
+collections:
+  posts:
+    output: true
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+      nav: blog
+      section: blog
