@@ -53,6 +53,7 @@ body {
 
 .primary-text {
   background: linear-gradient(135deg, #adc6ff 0%, #4d8eff 60%, #005ac2 100%);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -139,4 +140,115 @@ body {
 .ledger-table td,
 .ledger-table th {
   font-family: "IBM Plex Mono", monospace;
+}
+
+/* ---- Blog typography ---- */
+
+.blog-content {
+  color: #d6d0c4;
+  line-height: 1.8;
+  font-size: 1.06rem;
+}
+
+.blog-content > :first-child {
+  margin-top: 0;
+}
+
+.blog-content > :last-child {
+  margin-bottom: 0;
+}
+
+.blog-content h2,
+.blog-content h3,
+.blog-content h4 {
+  font-family: "Fraunces", serif;
+  color: #ede9dd;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+  margin-top: 2.25rem;
+  margin-bottom: 0.85rem;
+}
+
+.blog-content h2 {
+  font-size: clamp(1.55rem, 3vw, 2.05rem);
+}
+
+.blog-content h3 {
+  font-size: clamp(1.3rem, 2.3vw, 1.6rem);
+}
+
+.blog-content h4 {
+  font-size: clamp(1.1rem, 1.9vw, 1.25rem);
+}
+
+.blog-content p,
+.blog-content ul,
+.blog-content ol,
+.blog-content blockquote,
+.blog-content pre {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.blog-content ul,
+.blog-content ol {
+  padding-left: 1.25rem;
+}
+
+.blog-content li {
+  margin: 0.45rem 0;
+}
+
+.blog-content a {
+  color: #7fabff;
+  text-underline-offset: 3px;
+  transition: color 0.2s ease;
+}
+
+.blog-content a:hover {
+  color: #adc6ff;
+}
+
+.blog-content strong {
+  color: #ede9dd;
+}
+
+.blog-content em {
+  color: #e8e2d6;
+}
+
+.blog-content blockquote {
+  border-left: 3px solid rgba(77, 142, 255, 0.55);
+  padding-left: 1rem;
+  color: #cfc8ba;
+}
+
+.blog-content hr {
+  border: 0;
+  border-top: 1px solid rgba(35, 42, 58, 0.9);
+  margin: 2.25rem 0;
+}
+
+.blog-content code {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.92em;
+  background: rgba(35, 42, 58, 0.65);
+  color: #ede9dd;
+  border: 1px solid rgba(35, 42, 58, 1);
+  border-radius: 0.35rem;
+  padding: 0.1rem 0.35rem;
+}
+
+.blog-content pre {
+  overflow-x: auto;
+  background: rgba(35, 42, 58, 0.6);
+  border: 1px solid rgba(35, 42, 58, 1);
+  border-radius: 0.65rem;
+  padding: 0.85rem 1rem;
+}
+
+.blog-content pre code {
+  border: 0;
+  background: transparent;
+  padding: 0;
 }

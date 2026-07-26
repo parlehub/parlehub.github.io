@@ -7,7 +7,7 @@ nav: blog
   class="relative max-w-[1440px] mx-auto px-margin-mobile md:px-margin-desktop pt-stack-lg pb-8"
 >
   <div class="absolute inset-0 hero-glow -z-10"></div>
-  <div class="max-w-3xl space-y-4">
+  <div class="max-w-3xl mx-auto space-y-4">
     <span class="eyebrow text-primary">Blog</span>
     <h1
       class="font-display text-display-lg-mobile md:text-display-lg text-parchment"
@@ -17,9 +17,6 @@ nav: blog
     <p class="font-mono text-xs uppercase tracking-wider text-parchment-dim">
       {{ page.date | date: "%B %-d, %Y" }}
     </p>
-    {% if page.excerpt %}
-    <p class="text-lg leading-relaxed text-parchment-dim">{{ page.excerpt }}</p>
-    {% endif %}
   </div>
 </section>
 
@@ -27,11 +24,11 @@ nav: blog
   class="max-w-[1440px] mx-auto px-margin-mobile md:px-margin-desktop pb-20"
 >
   <article
-    class="ledger-card rounded-xl p-6 md:p-8 max-w-3xl prose prose-invert prose-headings:font-display prose-headings:text-parchment prose-p:text-parchment-dim prose-strong:text-parchment prose-a:text-primary hover:prose-a:text-primary-bright prose-code:text-parchment prose-pre:bg-ink-line/40 prose-pre:border prose-pre:border-ink-line"
+    class="ledger-card rounded-xl p-6 md:p-8 max-w-3xl mx-auto blog-content"
   >
     {{ content }}
   </article>
-  <div class="max-w-3xl mt-8">
+  <div class="max-w-3xl mx-auto mt-8">
     <a
       href="/blog/"
       class="inline-flex items-center gap-2 text-primary hover:text-primary-bright font-medium transition-colors"
