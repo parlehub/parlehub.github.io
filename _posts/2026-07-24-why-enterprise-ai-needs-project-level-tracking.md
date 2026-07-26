@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Beyond the LLM Bill Shock: Why Enterprise AI Needs Project-Level Token Tracking and Budgeting"
-date: 2026-07-26 17:23:00 -0400
+date: 2026-07-24 17:23:00 -0400
 categories: [AI Governance, Enterprise Tech, FinOps]
 tags: [llm, token-tracking, budget, parlehub]
 author: ParleHub Team
