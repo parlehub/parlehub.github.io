@@ -66,6 +66,11 @@
 
       <nav class="hidden md:flex items-center gap-8">
         <a
+          href="/"
+          class="text-sm {% if page.nav == '' %}text-parchment{% else %}text-parchment-dim hover:text-parchment{% endif %} transition-colors"
+          >Home</a
+        >
+        <a
           href="/security.html"
           class="text-sm {% if page.nav == 'security' %}text-parchment{% else %}text-parchment-dim hover:text-parchment{% endif %} transition-colors"
           >Security</a
