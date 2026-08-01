@@ -117,8 +117,19 @@ Claims the existing posts got wrong — do not repeat these:
 | "Microsoft Teams folders" | **SharePoint** (Microsoft 365, least-privilege `Sites.Selected`) and **Google Shared Drives**. |
 | Google Drive / Google Workspace SSO as proven | Both are [SHIPPED], not yet live-verified against a real external tenant. Entra ID SSO and SharePoint storage *are* [LIVE]. |
 
-CTA links go to `https://app.parlehub.com` (root, no deep links) for "start / sign in"
-intent, or `https://parlehub.com` for "learn more" intent. Don't invent other URLs.
+**Links — always include the `www.`**. The apex domain `parlehub.com` has no DNS records
+and does not resolve; only `www.parlehub.com` is configured (it's what `CNAME` contains).
+A bare `https://parlehub.com` link is dead. Verified 2026-08-01.
+
+- "Start / sign in" intent → `https://app.parlehub.com` (root, no deep links)
+- "Learn more" intent → `https://www.parlehub.com/`, or a real marketing page:
+  `/security.html`, `/pricing.html`, `/blog/`. Those five pages plus `/terms.html` and
+  `/privacy.html` are the only ones that exist — don't invent paths.
+- Prefer an internal link written as a root-relative path (`/security.html`) for anything
+  on this site; use the absolute `www` form only in the closing CTA block.
+
+In the closing CTA block, the bolded question line needs **two trailing spaces** so the
+link renders on its own line rather than running on in the same paragraph.
 
 ## Step 7 — hand off
 

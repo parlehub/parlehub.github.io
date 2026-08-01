@@ -80,5 +80,5 @@ For teams that don't need external storage, ParleHub's managed storage is availa
 
 Your staff have already decided that AI is worth using. The only decision still open is whether their work leaves your tenant to make that happen.
 
-**Want AI your security team can actually sign off on?**
-[See how ParleHub keeps enterprise files in your own storage →](https://parlehub.com)
+**Want AI your security team can actually sign off on?**  
+[See how ParleHub keeps enterprise files in your own storage →](https://www.parlehub.com/security.html)
