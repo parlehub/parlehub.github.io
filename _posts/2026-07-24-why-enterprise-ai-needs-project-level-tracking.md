@@ -56,7 +56,7 @@ Budgeting by project aligns AI spending directly with business value. If Project
 ### 2. Real-Time Tracking and Guardrails
 Tracking tokens after the fact is insufficient. Enterprises need real-time orchestration layers that monitor token consumption as it happens *against* the project’s predefined budget. 
 
-This means implementing intelligent circuit breakers and guardrails. If a project reaches 80% of its monthly token allocation, automated alerts should notify the project lead. If it hits 100%, the system should gracefully throttle, require management sign-off for budget extensions, or redirect traffic to a more cost-effective model (switching from a heavy frontier model to a lighter, fine-tuned open-source model). 
+This means implementing genuine circuit breakers, not just warnings. If a project reaches 80% of its monthly token allocation, automated alerts should notify the project lead. If it hits 100%, the next request should be stopped *before* it is sent rather than logged after the fact, with a clear path for the blocked user to request an increase and for management to approve or reject it. 
 
 ### 3. Granular Attribution and Accountability
 When projects have clear financial boundaries, accountability naturally follows. Engineering leads, product managers, and department heads can see the exact cost-per-output of their AI workflows. This visibility completely changes how teams prompt, architect, and optimize. When engineers realize that poorly structured context windows or recursive loops are actively draining their project’s specific token bank, optimization becomes a priority rather than an afterthought.
@@ -74,7 +74,7 @@ We recognized that the enterprise software market was missing a critical layer: 
 With ParleHub, you can:
 * **Define and Allocate Budgets by Project:** Assign precise token limits to specific initiatives, teams, or clients, ensuring financial alignment with business goals.
 * **Monitor Consumption in Real-Time:** Track token velocity as work happens, eliminating nasty end-of-month billing surprises.
-* **Set Intelligent Guardrails:** Prevent runaway costs with automated alerts, throttling, and dynamic model routing before budgets are breached.
+* **Set Real Guardrails:** Prevent runaway costs with an 80% warning and pre-flight enforcement that blocks a request before it breaches the budget, plus self-serve increase requests routed to admins for approval.
 * **Tie Spend to Value:** Gain crystal-clear visibility into exactly which projects are driving your AI ROI and which ones need optimization.
 
 AI is too powerful, and too expensive, to manage in the dark. It’s time to stop guessing where your tokens are going, start budgeting by project, and take back control of your enterprise AI future.

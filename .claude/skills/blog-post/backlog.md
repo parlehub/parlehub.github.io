@@ -1,0 +1,138 @@
+# Blog topic backlog
+
+Each entry: a **thesis** (the argument, not the feature), the **failure modes** to name in
+section 3, and the **product payoff** with its status per `CLAUDE.md`. Only topics whose
+payoff is [LIVE] or [SHIPPED] are ready to write — [ROADMAP] payoffs are parked at the
+bottom.
+
+Mark `- [x]` when published. Keep the two shipped posts in mind so arguments don't overlap:
+- 2026-07-24 — project-level token tracking & budgeting (the FinOps argument)
+- 2026-07-25 — collaboration / single-player AI silos (the teamwork argument)
+
+---
+
+## Ready to write
+
+- [x] **Your AI vendor is a data residency decision you haven't made yet**
+  *Published 2026-08-01 — `_posts/2026-08-01-your-ai-vendor-is-a-data-residency-decision.md`*
+  *Thesis:* Every team that pastes a contract into a chat window has silently made an
+  enterprise data-governance decision — without security review, without a DPA, without
+  anyone knowing. The question isn't whether to allow AI; it's where the files land.
+  *Failure modes:* "Shadow AI"; the copy-paste perimeter breach; consumer-tier accounts
+  as an unmanaged data processor; the download-reupload loop.
+  *Payoff:* Project files stay in the org's own SharePoint site — least-privilege
+  `Sites.Selected`, native SharePoint search, deletes go to SharePoint's own recycle bin.
+  Files never leave the tenant. **[LIVE]** (Google Shared Drives **[SHIPPED]** — mention
+  as real and working, not battle-tested.)
+
+- [ ] **Bring your own key: why you shouldn't rent your AI relationship**
+  *Thesis:* Buying AI *through* a SaaS vendor means your model access, your rate limits,
+  your data terms, and your negotiating leverage all belong to someone else. Owning the
+  provider relationship and renting only the workspace is the more durable posture.
+  *Failure modes:* The markup-on-a-markup; provider lock-in by proxy; losing your own
+  enterprise agreement's terms; opaque per-seat pricing that hides token cost.
+  *Payoff:* BYOK across Anthropic, OpenAI, and Google Gemini, plus Azure OpenAI for
+  Azure-native orgs. Keys stored in Azure Key Vault, never exposed. **[LIVE]** for the
+  BYOK model overall; Gemini specifically **[SHIPPED]**. Do **not** mention managed
+  prepaid credits or Vertex AI.
+
+- [ ] **Append-only or it didn't happen: what compliance actually asks of your AI log**
+  *Thesis:* "We log everything" is not an audit trail. An audit trail is a log that a
+  compromised application credential cannot rewrite. Most AI tooling can't clear that bar.
+  *Failure modes:* App-level logging that the app itself can edit; retention as a
+  substitute for immutability; screenshots-as-evidence; the "who approved this spend"
+  question with no answer.
+  *Payoff:* Every sensitive action logged, enforced append-only at the **database** level
+  via SQL triggers — even a compromised app credential can't alter history. **[LIVE]**.
+  Hard constraint: this is a guarantee, **not** a self-service admin export or SIEM
+  integration. Do not imply either.
+
+- [ ] **The budget request nobody sends: what happens when AI spend hits its cap**
+  *Thesis:* Hard limits fail not because they're too strict but because there's no path
+  through them. A cap with no request-and-approve loop just teaches people to route
+  around governance with a personal account.
+  *Failure modes:* The Slack-DM budget increase; governance theater; the silent overage
+  discovered at invoice time; caps set once and never revisited.
+  *Payoff:* Pre-flight enforcement hard-blocks the send before it exceeds the project
+  budget, 80% warning ahead of it, and blocked users **self-serve a request** routed to
+  admins for approve/reject. Personal and org-wide caps as backstops. **[LIVE]**.
+  Careful: hard block, not throttling. No automatic model downgrade.
+
+- [ ] **Four roles, one hub: governing AI access without becoming the bottleneck**
+  *Thesis:* Centralizing AI usually means IT approves every request, which means IT is the
+  reason AI adoption stalls. Delegation is the whole design problem.
+  *Failure modes:* The ticket queue for model access; the org-admin-or-nothing permission
+  model; project sprawl with no owner; over-broad sharing because restricting is harder
+  than not restricting.
+  *Payoff:* Four-level RBAC (SystemAdmin → OrgAdmin → ProjectAdmin → ProjectMember),
+  member invites, and public-vs-restricted project visibility. **[LIVE]**
+  (restricted projects are Enterprise-tier).
+
+- [ ] **Your AI can't read the file you're asking it about**
+  *Thesis:* Most "AI assistants" are chat windows with an upload button — the model gets a
+  flattened blob of text, once, with no ability to search, cross-reference, or revise. The
+  gap between "can discuss a document" and "can work on a document" is the whole job.
+  *Failure modes:* Context-window stuffing as a document strategy; re-uploading the same
+  spreadsheet every session; the copy-paste-back-into-Excel loop; "summarize this PDF" as
+  the ceiling of usefulness.
+  *Payoff:* Real tool calls against project files — read, grep/glob/semantic search, exact
+  find-replace and multi-edit, outline, structured JSON/YAML queries, spreadsheet filter
+  and aggregate, PDF/Word/PowerPoint → markdown conversion. Plus inline preview for
+  markdown, code, PDF, images, video. **[LIVE]**. No code execution — don't imply it.
+
+- [ ] **Single sign-on is the cheapest AI security control you're not using**
+  *Thesis:* Before encryption, before DLP, before model choice: if AI access isn't tied to
+  your identity provider, offboarding doesn't work and you have no access review. Everything
+  else is downstream of that.
+  *Failure modes:* The departed employee whose AI account still works; password reuse into
+  an unmanaged tool; no way to answer "who has access" during an audit; per-tool user lists
+  that drift.
+  *Payoff:* Microsoft Entra ID (OIDC) with domain-based auto-provisioning, tenant-pinned,
+  and org-enforced SSO-only login — **[LIVE]**, verified in production. Google Workspace
+  (OIDC) **[SHIPPED]**. **Never mention SAML.**
+
+- [ ] **Cost per project is a product decision, not an accounting one**
+  *Thesis:* A follow-on to the token-tracking post, aimed one level up. Once you can see
+  spend per initiative, you can kill initiatives — and that's the actual point. Attribution
+  changes the roadmap, not just the ledger.
+  *Failure modes:* The pilot nobody will cancel; AI spend as fixed overhead; cost hidden
+  inside a platform team's budget; ROI arguments made with no denominator.
+  *Payoff:* Usage and spend analytics filtered/grouped by project, person, provider, or
+  model, with CSV export. **[LIVE]**.
+  *Note:* must extend, not repeat, the 2026-07-24 post — that one argued for attribution;
+  this one argues about what you do with it.
+
+- [ ] **Denial of wallet: the AI attack that doesn't steal anything**
+  *Thesis:* Traditional threat models assume the attacker wants your data. With metered AI,
+  making you spend money *is* the attack — and an agent loop can do it to you accidentally.
+  *Failure modes:* The unbounded agent loop; a leaked key as a metered liability rather than
+  a data breach; retry storms; no ceiling between a bug and the invoice.
+  *Payoff:* Denial-of-wallet protection via rate limits and bounded agent loops, two-vault
+  secret broker, managed-identity-first Azure auth with minimal static secrets, CSP/HSTS/
+  secure cookies. Budget caps as the financial backstop. **[LIVE]**.
+
+- [ ] **Everyone in the room, watching the same answer arrive**
+  *Thesis:* Narrower and more concrete than the 2026-07-25 collaboration post: what changes
+  in practice when a teammate can watch your prompt and the model's streamed reply in real
+  time. Prompting becomes a reviewable, teachable act instead of a private skill.
+  *Failure modes:* Prompt skill as tribal knowledge; the screenshot-of-a-chat handoff; two
+  people asking the same question an hour apart; good outputs with no provenance.
+  *Payoff:* Shared project threads visible to every member in real time, live presence
+  (viewing/typing/waiting), branching via edit-and-resend, keyword + semantic history
+  search, and promoting a personal chat into a shared project. **[LIVE]**.
+  *Note:* must go deeper than the 2026-07-25 post, not restate it.
+
+---
+
+## Parked — payoff is [ROADMAP], don't write yet
+
+- [ ] **Managed model credits / "buy tokens from us"** — billing, wallet, prepaid credits,
+  auto-recharge and ledger are built, but the Azure AI Foundry inference backend isn't
+  deployed, and Foundry's catalog does **not** include Anthropic or Gemini, so the
+  "credits transferable across providers" story is architecturally wrong. Per `CLAUDE.md`,
+  flag to the site owner before publishing anything that promises this.
+- [ ] **SAML / Okta / generic IdP** — not built. Do not mention.
+- [ ] **Vertex AI / enterprise GCP model access** — distinct from the shipped Gemini
+  Developer API provider, and not built.
+- [ ] **SIEM export / customer-facing audit-log UI** — the audit log is a database
+  guarantee, not an export feature. Don't write a post that implies a screen exists.

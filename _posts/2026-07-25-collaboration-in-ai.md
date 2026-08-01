@@ -50,7 +50,7 @@ ParleHub bridges the gap between powerful AI tools and the collaborative workflo
 AI conversations shouldn't be a monologue between one human and a bot. ParleHub makes AI chats inherently **multi-user**. Teams can brainstorm together in an ongoing chat, refine prompts collectively, and build upon the AI’s outputs in real time. 
 
 ### 2. Native Shared Storage
-No more copy-pasting AI outputs into private docs or lost email threads. ParleHub connects directly to your existing team storage, like Microsoft Teams folders or Google Shared Drives. When your team generates content, data analyses, or strategy docs, the outputs are stored natively where everyone can access, edit, and build on them.
+No more copy-pasting AI outputs into private docs or lost email threads. ParleHub connects directly to your existing team storage — a SharePoint site in Microsoft 365, or a Google Shared Drive. When your team generates content, data analyses, or strategy docs, the outputs are stored natively where everyone can access, edit, and build on them, inside the storage your organization already governs.
 
 ### 3. Open, Collaborative, and Controlled
 Moving away from isolated AI doesn't mean sacrificing security or governance. ParleHub gives organizations a centralized, controlled way to deploy AI, ensuring work remains open and shared within your team while staying secure and compliant.
