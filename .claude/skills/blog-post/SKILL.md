@@ -29,8 +29,6 @@ the premise.
 
 ## Step 3 — follow the house structure
 
-Both existing posts use this arc. Keep it.
-
 1. **Cold open on an industry pattern.** No preamble, no "In today's fast-paced world."
    Start mid-observation, with something concrete and recognizable.
    *Models: "enterprise enthusiasm for Generative AI has followed a familiar, predictable
@@ -69,6 +67,7 @@ question, then a link.
   pileups. No bullet lists in the opening two sections — prose first, structure later.
 - Numbers and money read as ledger figures; state them concretely ("$15,000 of budget in
   a weekend", "500,000 tokens per month") rather than vaguely.
+- Don't use the em dash, prefer commas or semicolons. Avoid "however" and "therefore" as   sentence openers. Avoid "but" as a sentence opener. Avoid "so" as a sentence opener. Avoid "yet" as a sentence opener. 
 
 ## Step 5 — front matter
 
@@ -117,9 +116,8 @@ Claims the existing posts got wrong — do not repeat these:
 | "Microsoft Teams folders" | **SharePoint** (Microsoft 365, least-privilege `Sites.Selected`) and **Google Shared Drives**. |
 | Google Drive / Google Workspace SSO as proven | Both are [SHIPPED], not yet live-verified against a real external tenant. Entra ID SSO and SharePoint storage *are* [LIVE]. |
 
-**Links — always include the `www.`**. The apex domain `parlehub.com` has no DNS records
-and does not resolve; only `www.parlehub.com` is configured (it's what `CNAME` contains).
-A bare `https://parlehub.com` link is dead. Verified 2026-08-01.
+**Links — always include the `www.`**. The apex domain `parlehub.com` does work but we prefer to use the www in links. 
+A bare `https://parlehub.com` link is not preferred.
 
 - "Start / sign in" intent → `https://app.parlehub.com` (root, no deep links)
 - "Learn more" intent → `https://www.parlehub.com/`, or a real marketing page:
