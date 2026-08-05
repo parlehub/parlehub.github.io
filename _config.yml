@@ -5,6 +5,20 @@ markdown: kramdown
 permalink: /blog/:year/:month/:day/:title/
 timezone: America/New_York
 
+# Never published. Jekyll copies any unrecognised root file into _site, so internal
+# docs must be listed here or they end up served at www.parlehub.com/<path>.
+# (Directories starting with "_" or "." are already ignored; the entries below are
+# explicit so the intent survives a rename.)
+exclude:
+  - CLAUDE.md
+  - _marketing/
+  - .claude/
+  - test.html
+  - node_modules/
+  - vendor/
+  - Gemfile
+  - Gemfile.lock
+
 collections:
   posts:
     output: true
