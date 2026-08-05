@@ -75,16 +75,16 @@ recharge it, price it into a fixed fee, or cancel the engagement type where it d
 > feature grid.
 >
 > **The project code field is the detail that makes this claim land, and it was missing from
-> the site entirely.** Confirmed by the site owner 2026-08-05. Every competitor can say "see
-> your usage". Almost none can say the cost carries *your* expense code, which is the
-> difference between a dashboard a partner glances at and a number that reconciles into the
-> system the firm actually bills from. It is a small field doing very large work in this
-> argument. Say it explicitly in the hero section, not in a bullet list.
+> the site entirely.** Confirmed by the site owner 2026-08-05, **and the code appears in the
+> CSV export**, which is what the field exists for. Every competitor can say "see your usage".
+> Almost none can say the cost carries *your* expense code, all the way through to an export
+> that reconciles into the system the firm actually bills from. It is a small field doing very
+> large work in this argument.
 >
-> *Before it becomes headline copy, confirm the code appears as a column in the analytics CSV
-> export.* If it does, the story is complete end to end. If the code lives only on the project
-> record while the export keys on project name, the claim needs softening to "projects carry
-> your expense code" without implying the export is drop-in reconcilable.
+> **The claim is therefore complete end to end and needs no hedging:** project budget, project
+> code, ledger, export, general ledger. Say it in the hero, not in a bullet list. This is the
+> one place on the site where we can make a claim a services firm has not heard from any other
+> AI vendor.
 
 ---
 
@@ -250,18 +250,18 @@ let arbitrary code near a client general ledger.
 Current homepage order is Collaboration, Reporting, Models, Agent tooling, Budgeting, then
 governance and pricing teasers. It is a feature tour. Proposed replacement, pain-first:
 
-1. **Hero** — theme B. The differentiated claim, in the buyer's own vocabulary. Something in
+1. **Hero**: theme B. The differentiated claim, in the buyer's own vocabulary. Something in
    the shape of *"Every hour in your firm has a client code. Your AI spend doesn't."* The hub
    diagram stays; it already encodes collaboration and budgeting at once.
-2. **Theme A** — shadow AI. The pain that makes them keep reading, and the one where our
+2. **Theme A**: shadow AI. The pain that makes them keep reading, and the one where our
    answer is strongest.
-3. **Theme B expanded** — the AI timesheet, with `billing.png` and `budget.png`.
-4. **Theme D** — context in closed tabs, with `projectlist.png`.
-5. **Theme E** — derivation and supervision, with `agent-tools.png`. Write this one last and
+3. **Theme B expanded**: the AI timesheet, with `billing.png` and `budget.png`.
+4. **Theme D**: context in closed tabs, with `projectlist.png`.
+5. **Theme E**: derivation and supervision, with `agent-tools.png`. Write this one last and
    most carefully.
-6. **Theme C** — the ceiling. Shorter, sits naturally under B.
-7. **Theme F** — governance block, largely as it is today, pointing to `/security.html`.
-8. **Theme G** — capacity, as the closing upside before the pricing teaser and CTA.
+6. **Theme C**: the ceiling. Shorter, sits naturally under B.
+7. **Theme F**: governance block, largely as it is today, pointing to `/security.html`.
+8. **Theme G**: capacity, as the closing upside before the pricing teaser and CTA.
 
 Themes F and G can stay closer to feature-shaped than the others; by that point the reader has
 self-identified and is checking boxes.
@@ -325,19 +325,17 @@ what is actually true then.
 
 These block or weaken specific copy, and several appear in more than one persona:
 
-1. **Does the project code appear as a column in the analytics CSV export?** The project code
-   field itself is confirmed **[LIVE]**. This one detail decides whether theme B's allocation
-   claim is complete end to end or needs softening. Highest-value open question now.
-2. **Do we have a penetration test summary or a subprocessor list?** SOC 2 is answered, these
-   two are not, and Robin (05) asks for all three together.
-3. **Do projects support instructions, a system prompt, or a brief applied to every
+1. **Do we have a penetration test summary or a subprocessor list?** SOC 2 is answered (we do
+   not have one), these two are not, and Robin (05) asks for all three together. Highest-value
+   open question now.
+2. **Do projects support instructions, a system prompt, or a brief applied to every
    conversation?** Toni (06) and Sam (02) both need it; it is the top agency-segment gap.
-4. **Is there any conversation or thread export?** Sam (02), Morgan (03), and Jess (04) all
+3. **Is there any conversation or thread export?** Sam (02), Morgan (03), and Jess (04) all
    want a handover artefact.
-5. **How are external collaborators handled?** Freelancers and contractors are not in the
+4. **How are external collaborators handled?** Freelancers and contractors are not in the
    firm's IdP. Practical adoption blocker for Toni (06).
-6. **Does our token ledger reconcile to the provider invoice, and within what tolerance?**
+5. **Does our token ledger reconcile to the provider invoice, and within what tolerance?**
    Dale (07) will ask, and improvising a number would be bad.
-7. **Is there an API or programmatic access?** Raised by Casey (08) and implied by Alex's (01)
+6. **Is there an API or programmatic access?** Raised by Casey (08) and implied by Alex's (01)
    billing-system integration need.
-8. **Is there image generation?** Toni (06) asks in the first ten minutes.
+7. **Is there image generation?** Toni (06) asks in the first ten minutes.

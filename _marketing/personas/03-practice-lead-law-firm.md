@@ -1,4 +1,4 @@
-# 03 — Morgan Vaziri, Practice Group Leader, mid-size law firm
+# 03. Morgan Vaziri, Practice Group Leader, mid-size law firm
 
 **Rank: 3 (high-value buyer, highest scrutiny, longest cycle).** The hardest sale in this
 folder and the most defensible one. If our story survives Morgan's review it survives
@@ -88,7 +88,7 @@ does not respect that boundary is worse than no AI workspace.
 
 ## How ParleHub answers it
 
-**Pain 1 — outside counsel guidelines.** We do not answer the guideline; we answer the
+**Pain 1, outside counsel guidelines.** We do not answer the guideline; we answer the
 questions inside it. Where does the data go: project files can live in the firm's own
 SharePoint site under least-privilege, per-site `Sites.Selected` Graph access **[LIVE]**, so
 matter documents never leave the firm's tenant, and deletes go to SharePoint's own recycle
@@ -98,11 +98,11 @@ keys held in Azure Key Vault and never exposed, rather than on an associate's co
 account terms. Who has access: Microsoft Entra ID SSO **[LIVE]**, tenant-pinned, with
 org-enforced SSO-only login.
 
-**Pain 2 — confidentiality.** The same combination, plus four-level RBAC **[LIVE]** and an
+**Pain 2, confidentiality.** The same combination, plus four-level RBAC **[LIVE]** and an
 audit log enforced append-only by database triggers **[LIVE]**, so sensitive actions are
 recorded in a way a compromised application credential cannot rewrite.
 
-**Pain 3 — supervision.** This is the strongest fit and needs the most careful language. The
+**Pain 3, supervision.** This is the strongest fit and needs the most careful language. The
 associate's work happens in a shared project thread that Morgan can open and read
 **[LIVE]**: the questions asked, the replies, which model produced each one, and the
 branches taken when the associate edited and resent. The agent's file tooling **[LIVE]**
@@ -115,13 +115,13 @@ rewrites, so a reviewer can see what changed.
 > let this section drift into implying we prevent fabricated citations. What we prevent is
 > the situation where there is nothing to review.
 
-**Pain 4 — matter economics.** A project maps to a matter. Project-scoped budgets with
+**Pain 4, matter economics.** A project maps to a matter. Project-scoped budgets with
 pre-flight enforcement **[LIVE]** cap AI spend on the matter, with an 80% warning and a
 one-click increase request routed to an admin. Usage and spend analytics **[LIVE]** break
 consumption down by project, person, provider, and model, with CSV export, which is the raw
 material for putting AI cost against a matter number.
 
-**Pain 5 — walls between matters.** Restricted project visibility **[LIVE]**, Enterprise
+**Pain 5, walls between matters.** Restricted project visibility **[LIVE]**, Enterprise
 tier, combined with four-level RBAC. A project is visible only to its members.
 > *Honest limit:* this is access control, not a conflicts system. It enforces a wall you
 > define; it does not detect that a wall is needed.

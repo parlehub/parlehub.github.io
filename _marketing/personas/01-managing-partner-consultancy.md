@@ -1,4 +1,4 @@
-# 01 — Alex Renner, Managing Partner, boutique strategy consultancy
+# 01. Alex Renner, Managing Partner, boutique strategy consultancy
 
 **Rank: 1 (primary economic buyer).** Signs the contract, sets the mandate, and is the only
 person who can make a firm-wide tool stick. Everything else in this folder is either the
@@ -82,7 +82,7 @@ there is nothing shared to look at.
 
 ## How ParleHub answers it
 
-**Pain 1 — shadow AI.** The answer is a combination, not one switch. Microsoft Entra ID SSO
+**Pain 1, shadow AI.** The answer is a combination, not one switch. Microsoft Entra ID SSO
 with domain-based auto-provisioning and org-enforced SSO-only login **[LIVE]** means access
 is tied to the firm's identity provider, so offboarding actually works and access review is
 possible. Bring-your-own-key **[LIVE]** means model calls run under the firm's own provider
@@ -91,25 +91,25 @@ live in the firm's own SharePoint site via least-privilege `Sites.Selected` acce
 **[LIVE]**, so client material never leaves the tenant. Four-level RBAC **[LIVE]** decides
 who sees which engagement.
 
-**Pain 2 — unallocated spend.** Project-scoped budgets **[LIVE]** put a cap on the
+**Pain 2, unallocated spend.** Project-scoped budgets **[LIVE]** put a cap on the
 engagement rather than on the person, which matches how the firm already thinks. Usage and
 spend analytics **[LIVE]** break the same ledger down by project, person, provider, or
 model, with CSV export. Together that is the AI timesheet: consumption attributed to the
 engagement that caused it, in a format finance can reconcile.
 
-**Pain 3 — the RFP answer.** The combination is the answer: a named identity provider,
+**Pain 3, the RFP answer.** The combination is the answer: a named identity provider,
 files resident in the firm's own tenant, per-engagement spend caps with pre-flight
 enforcement, role-based access, and an audit log enforced append-only at the database level
 **[LIVE]** so that even a compromised application credential cannot rewrite history.
 *Honest limit:* that audit guarantee is architectural, not a report Alex can attach to a
 questionnaire. See Unmet needs.
 
-**Pain 4 — leverage.** Shared project threads visible to every member in real time
+**Pain 4, leverage.** Shared project threads visible to every member in real time
 **[LIVE]**, promoting a personal chat into a shared project **[LIVE]**, and keyword plus
 semantic search across the whole project history **[LIVE]**. The strong consultant's method
 becomes a firm asset that a new joiner can search rather than a habit that walks out.
 
-**Pain 5 — partner disagreement.** Shared threads mean the derivation is visible before the
+**Pain 5, partner disagreement.** Shared threads mean the derivation is visible before the
 output reaches a client. A cautious partner can read how an answer was reached, against
 which project files, using which model, rather than being handed a paragraph with no
 history. Agent file tooling **[LIVE]** works against the actual project documents with

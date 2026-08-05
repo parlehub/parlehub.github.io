@@ -1,4 +1,4 @@
-# 06 — Toni Marchetti, COO, marketing and creative agency
+# 06. Toni Marchetti, COO, marketing and creative agency
 
 **Rank: 6 (fast-moving buyer, lower deal value, best proof-point source).** Agencies decide
 quickly, adopt AI enthusiastically, and are the segment most likely to convert from a free
@@ -73,25 +73,25 @@ Some want disclosure. Some restrict it. One wrote it into a renewal.
 
 ## How ParleHub answers it
 
-**Pain 1 and 4 — account and pitch economics.** A project maps to an account, and a pitch
+**Pain 1 and 4, account and pitch economics.** A project maps to an account, and a pitch
 gets its own project. Project-scoped budgets **[LIVE]** cap spend where the work happens,
 with an 80% warning and pre-flight blocking rather than a surprise. Usage and spend analytics
 **[LIVE]** break it down by project, person, provider, and model with CSV export, which is
 the number Toni takes into a renewal conversation.
 
-**Pain 2 — the freelance bench.** Four-level RBAC **[LIVE]** with per-project membership, so
+**Pain 2, the freelance bench.** Four-level RBAC **[LIVE]** with per-project membership, so
 a freelancer is a member of one project and sees one account. Restricted project visibility
 **[LIVE]**, Enterprise tier. Access tied to the identity provider through Entra ID
 **[LIVE]** or Google Workspace **[SHIPPED]** SSO, so removing them is one action in the
 system Toni already uses.
 
-**Pain 3 — consistency.** Shared project threads visible to every member in real time
+**Pain 3, consistency.** Shared project threads visible to every member in real time
 **[LIVE]** plus keyword and semantic search across the account's whole history **[LIVE]**.
 The prompt that nailed the client's tone is in the account's thread where the next writer can
 find it, rather than in one copywriter's private tab. A personal chat that turns out to be
 the good one can be promoted into the shared project **[LIVE]**.
 
-**Pain 5 — client questions.** The practice becomes describable: work happens in the
+**Pain 5, client questions.** The practice becomes describable: work happens in the
 account's project, against the account's files, under the agency's own provider keys
 **[LIVE]**, with the history retained and reviewable. If the client requires that their
 material not sit in a third-party system, project files can live in the agency's own

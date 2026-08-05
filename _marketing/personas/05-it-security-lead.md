@@ -1,4 +1,4 @@
-# 05 — Robin Achebe, IT and Security Lead, professional services firm
+# 05. Robin Achebe, IT and Security Lead, professional services firm
 
 **Rank: 5 (gatekeeper).** Robin cannot buy ParleHub and can absolutely stop it. Every deal
 above passes through this persona. `security.html` is written for Robin and should be judged
@@ -71,7 +71,7 @@ Each one is hours of work, and the AI section is currently unanswerable.
 
 ## How ParleHub answers it
 
-**Pain 1 and 2 — identity and inventory.** Microsoft Entra ID via OIDC **[LIVE]**, verified
+**Pain 1 and 2, identity and inventory.** Microsoft Entra ID via OIDC **[LIVE]**, verified
 in production, with domain-based auto-provisioning, tenant pinning, and org-enforced
 SSO-only login so local credentials can be turned off entirely. Google Workspace via OIDC
 **[SHIPPED]**, fully built and tested, with a live round trip against a real Google tenant
@@ -80,7 +80,7 @@ ProjectMember. Restricted project visibility on Enterprise.
 > **Never mention SAML to this persona or any other.** It is not built, and Robin is exactly
 > the person who will ask a follow-up question we cannot answer.
 
-**Pain 3 — the review itself.** Give Robin the specifics rather than assurances, because
+**Pain 3, the review itself.** Give Robin the specifics rather than assurances, because
 specifics are what shorten a review. Project files can stay in the firm's own SharePoint site
 using per-site `Sites.Selected` Graph access **[LIVE]**, which is least-privilege by
 construction rather than tenant-wide read. Deletes go to SharePoint's own recycle bin. Google
@@ -90,12 +90,12 @@ resolved at call time, never exposed **[LIVE]**. Azure authentication is managed
 first with minimal static secrets, behind a two-vault secret broker, with CSP, HSTS, and
 secure cookies **[LIVE]**.
 
-**Pain 4 — denial of wallet.** Named and addressed directly: rate limits and bounded agent
+**Pain 4, denial of wallet.** Named and addressed directly: rate limits and bounded agent
 loops **[LIVE]**, with project, personal, and org-wide spend caps as the financial backstop
 and pre-flight enforcement that blocks the send rather than discovering the overage on an
 invoice **[LIVE]**.
 
-**Pain 5 — the questionnaire.** The combination above is most of the AI section: named IdP
+**Pain 5, the questionnaire.** The combination above is most of the AI section: named IdP
 with enforced SSO, role-based access, tenant-resident storage under least privilege, secrets
 in a managed vault, spend bounded by policy, and an audit log enforced append-only by
 database triggers so that even a compromised application credential cannot alter history

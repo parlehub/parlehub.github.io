@@ -111,14 +111,19 @@ body {
   }
 }
 
+/* The translate(-50%, -50%) must be repeated in both keyframes: this animation is
+   `forwards`, so its final transform replaces the element's `-translate-x-1/2
+   -translate-y-1/2` utility classes outright. Without it the card renders with its
+   top-left corner on the hub's centre point instead of centred on it, overlapping the
+   Gemini node. `hub-node-in` above carries the same translate for the same reason. */
 @keyframes hub-center-in {
   from {
     opacity: 0;
-    transform: scale(0.96);
+    transform: translate(-50%, -50%) scale(0.96);
   }
   to {
     opacity: 1;
-    transform: scale(1);
+    transform: translate(-50%, -50%) scale(1);
   }
 }
 

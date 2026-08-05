@@ -122,11 +122,12 @@ the end of [pain-point-map.md](pain-point-map.md).
 - [x] ~~Confirm whether we have a SOC 2 report.~~ We do not, as of 2026-08-05. See the
       handling guidance in `pain-point-map.md` and the sequencing note above.
 - [x] ~~Confirm whether projects carry a client or cost-centre code.~~ They carry a project
-      code field for expense reporting **[LIVE]**. This materially strengthens theme B and
-      should appear in the hero copy.
-- [ ] Answer the eight remaining open questions at the end of `pain-point-map.md`. Question 1,
-      whether the project code reaches the CSV export, is now the important one.
-- [ ] Rewrite `index.html` against the proposed homepage structure in `pain-point-map.md`.
+      code field for expense reporting, **and it carries through into the CSV export**
+      **[LIVE]**. The allocation chain is complete end to end with no manual join. This is the
+      hero claim.
+- [ ] Answer the seven remaining open questions at the end of `pain-point-map.md`.
+- [x] ~~Rewrite `index.html` against the proposed homepage structure.~~ Done 2026-08-05,
+      pain-first, hero leading on theme B.
 - [ ] Re-read `security.html` against persona 05 and add the two honest limits before Robin
       finds them.
 - [ ] Replace the simulated testimonials with real ones as customers land. Start with agencies

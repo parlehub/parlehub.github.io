@@ -1,4 +1,4 @@
-# 04 — Jess Alderman, Partner, accounting and advisory firm
+# 04. Jess Alderman, Partner, accounting and advisory firm
 
 **Rank: 4 (high-value buyer, strong structural fit).** Accounting firms already run the exact
 mental model we sell: engagement codes, documentation standards, cost recovery, and a
@@ -80,7 +80,7 @@ Three months of the year the firm cannot take more work at any price.
 
 ## How ParleHub answers it
 
-**Pain 1 — documentation.** Work happens in a shared project thread that is retained,
+**Pain 1, documentation.** Work happens in a shared project thread that is retained,
 searchable by keyword and semantic search, and readable by the reviewer **[LIVE]**. The
 agent's operations on files are real tool calls against the engagement's own documents
 **[LIVE]**, and edits are exact find-and-replace and diffs rather than silent rewrites, so
@@ -91,7 +91,7 @@ it.
 > *Honest limit:* this is a retained and reviewable record. It is not workpaper documentation
 > and we must never call it that. See Unmet needs.
 
-**Pain 2 — client data.** Project files can live in the firm's own SharePoint site through
+**Pain 2, client data.** Project files can live in the firm's own SharePoint site through
 least-privilege, per-site `Sites.Selected` access **[LIVE]**, so client data never leaves the
 tenant. Bring-your-own-key **[LIVE]** puts the model call under the firm's own provider
 agreement, with keys in Azure Key Vault and never exposed. Microsoft Entra ID SSO **[LIVE]**
@@ -101,17 +101,17 @@ seasonal hire actually removes their access.
 > aggregating them, with **no code execution** **[LIVE]**. For a firm that will not allow
 > arbitrary code near a client general ledger, that constraint is a feature.
 
-**Pain 3 — the firm's own standard.** Four-level RBAC, restricted project visibility on
+**Pain 3, the firm's own standard.** Four-level RBAC, restricted project visibility on
 Enterprise, enforced SSO, tenant-resident storage, per-project spend caps, and the
 append-only log. This is a describable control set, which is what Jess needs when the peer
 reviewer asks.
 
-**Pain 4 — engagement allocation.** Project-scoped budgets **[LIVE]** with pre-flight
+**Pain 4, engagement allocation.** Project-scoped budgets **[LIVE]** with pre-flight
 enforcement, an 80% warning, and a self-serve increase request routed to an admin. Usage and
 spend analytics **[LIVE]** grouped by project, person, provider, or model with CSV export.
 Engagement code becomes project; AI cost lands where every other cost already lands.
 
-**Pain 5 — busy season.** The agent file tooling is the direct answer: filter and aggregate
+**Pain 5, busy season.** The agent file tooling is the direct answer: filter and aggregate
 Excel and CSV, convert PDF, Word, and PowerPoint to searchable markdown, query structured
 JSON and YAML, semantic search across everything **[LIVE]**. The multiplier on top is shared
 threads: a seasonal senior joins an engagement and reads the existing work rather than

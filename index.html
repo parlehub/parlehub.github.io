@@ -17,10 +17,10 @@
     </script>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <title>ParleHub | The Shared Hub for Team AI Conversations</title>
+    <title>ParleHub | Shared, budgeted AI for firms that bill by client</title>
     <meta
       name="description"
-      content="ParleHub is the shared, budgeted, audited workspace for your team's AI conversations — project-based spend control, enterprise SSO, native SharePoint/Drive storage, and every major model. Start free at app.parlehub.com."
+      content="Your team's AI in shared projects, each with its own budget and your own expense code, carried through to the export. Built for consultancies, firms, and agencies that bill by client. Start free at app.parlehub.com."
     />
     <link
       href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,500;0,600;1,500;1,600&family=Inter:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
@@ -134,20 +134,20 @@
               <span
                 class="w-1.5 h-1.5 rounded-full bg-primary shadow-[0_0_8px_rgba(77,142,255,0.8)]"
               ></span>
-              A shared hub for team AI
+              For firms that bill by the client
             </span>
             <h1
               class="font-display text-display-lg-mobile md:text-display-lg text-parchment"
             >
-              One shared
-              <em class="italic primary-text not-italic md:italic">hub</em>
-              for every AI conversation your team has.
+              Every hour has a
+              <em class="italic primary-text not-italic md:italic"
+                >client code</em
+              >. Your AI spend has none.
             </h1>
             <p class="text-lg leading-relaxed text-parchment-dim max-w-lg">
-              Shared threads, project-scoped budgets, and a full audit trail —
-              built for teams juggling a dozen projects at once, not a dozen
-              private browser tabs. Bring the models and the storage you already
-              trust, or let ParleHub manage it.
+              ParleHub gives every project a shared thread, its own budget, and
+              your own expense code. AI cost lands on the engagement that caused
+              it, and exports straight into the system you already bill from.
             </p>
             <div class="flex flex-wrap items-center gap-gutter pt-stack-sm">
               <a
@@ -237,11 +237,16 @@
             <div
               class="hub-center ledger-card absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-72 rounded-xl p-4 space-y-3 z-10 [animation-delay:700ms]"
             >
-              <div class="flex items-center justify-between">
-                <span class="eyebrow text-parchment-dim"
-                  >Project · Q3 Roadmap</span
-                >
-                <div class="flex -space-x-2">
+              <div class="flex items-start justify-between gap-2">
+                <div class="space-y-0.5">
+                  <span class="eyebrow text-parchment-dim block"
+                    >Project · Ashworth M&amp;A</span
+                  >
+                  <span class="font-mono text-[10px] text-verdigris"
+                    >ENG-4417</span
+                  >
+                </div>
+                <div class="flex -space-x-2 shrink-0">
                   <span
                     class="w-5 h-5 rounded-full bg-primary border-2 border-ink-raised"
                   ></span>
@@ -262,8 +267,8 @@
                 <div
                   class="bg-primary/10 border border-primary/20 rounded-lg rounded-tr-none px-3 py-2 text-parchment w-fit max-w-[90%] ml-auto"
                 >
-                  Clause 4 caps liability at 12 months' fees — flagging for
-                  legal review<span
+                  Clause 4 caps liability at 12 months' fees. Flagging for legal
+                  review<span
                     class="inline-block w-1.5 h-3 bg-primary ml-0.5 align-middle animate-pulse"
                   ></span>
                 </div>
@@ -282,14 +287,19 @@
             </div>
           </div>
 
-          <!-- Hub diagram (mobile fallback — no absolute layout) -->
+          <!-- Hub diagram (mobile fallback, no absolute layout) -->
           <div class="md:hidden space-y-6">
             <div class="ledger-card rounded-xl p-4 space-y-3 mx-auto max-w-sm">
-              <div class="flex items-center justify-between">
-                <span class="eyebrow text-parchment-dim"
-                  >Project · Q3 Roadmap</span
-                >
-                <div class="flex -space-x-2">
+              <div class="flex items-start justify-between gap-2">
+                <div class="space-y-0.5">
+                  <span class="eyebrow text-parchment-dim block"
+                    >Project · Ashworth M&amp;A</span
+                  >
+                  <span class="font-mono text-[10px] text-verdigris"
+                    >ENG-4417</span
+                  >
+                </div>
+                <div class="flex -space-x-2 shrink-0">
                   <span
                     class="w-5 h-5 rounded-full bg-primary border-2 border-ink-raised"
                   ></span>
@@ -310,8 +320,8 @@
                 <div
                   class="bg-primary/10 border border-primary/20 rounded-lg rounded-tr-none px-3 py-2 text-parchment w-fit max-w-[90%] ml-auto"
                 >
-                  Clause 4 caps liability at 12 months' fees — flagging for
-                  legal review
+                  Clause 4 caps liability at 12 months' fees. Flagging for legal
+                  review
                 </div>
               </div>
               <div class="space-y-1 pt-2 border-t border-ink-line">
@@ -369,150 +379,46 @@
         class="max-w-[1440px] mx-auto px-margin-mobile md:px-margin-desktop space-y-24 py-24"
         id="product-deep-dive"
       >
-        <!-- Entry: Collaboration -->
+        <!-- Entry: Shadow AI / visibility -->
         <div class="grid grid-cols-1 md:grid-cols-2 gap-gutter items-center">
           <div class="space-y-4">
-            <span class="eyebrow text-primary">Collaboration</span>
+            <span class="eyebrow text-primary">Visibility</span>
             <h2 class="font-display text-display-md text-parchment">
-              Projects, not private tabs
+              Your team is already using AI on client work
             </h2>
             <p class="text-parchment-dim text-lg leading-relaxed">
-              Every project has shared conversation threads that the whole team
-              can see and join — live. No exporting a chat to Slack, no "let me
-              forward you this."
+              On personal accounts, with client documents, under terms nobody
+              reviewed. You cannot say which clients, which files, or whose
+              agreement covered it. That is also the honest answer to the AI
+              section of every client security questionnaire you sign.
             </p>
             <ul class="space-y-3 pt-2">
               <li class="flex items-start gap-3 text-parchment-dim">
                 <span class="material-symbols-outlined text-verdigris mt-0.5"
                   >check_circle</span
                 >
-                Shared threads, visible to every project member in real time
+                Access tied to Microsoft Entra ID, so offboarding actually
+                removes it
               </li>
               <li class="flex items-start gap-3 text-parchment-dim">
                 <span class="material-symbols-outlined text-verdigris mt-0.5"
                   >check_circle</span
                 >
-                Live presence — see who's viewing, typing, or waiting on a reply
+                Project files stay in your own SharePoint site, under per-site
+                permissions, never leaving your tenant
               </li>
               <li class="flex items-start gap-3 text-parchment-dim">
                 <span class="material-symbols-outlined text-verdigris mt-0.5"
                   >check_circle</span
                 >
-                Branch a conversation by editing and resending, without losing
-                the original
+                Model calls run on your provider keys and your agreement, not a
+                consumer account
               </li>
               <li class="flex items-start gap-3 text-parchment-dim">
                 <span class="material-symbols-outlined text-verdigris mt-0.5"
                   >check_circle</span
                 >
-                Full keyword and semantic search across every project
-                conversation
-              </li>
-            </ul>
-          </div>
-          <div
-            class="ledger-card rounded-xl border border-ink-line/60 aspect-video flex items-center justify-center overflow-hidden"
-          >
-            <img
-              src="/images/projectlist.png"
-              alt="Screenshot of the ParleHub projects view, showing a team's shared projects and conversation threads visible to every member"
-              class="w-full h-full object-cover"
-            />
-          </div>
-        </div>
-
-        <!-- Entry: Budgeting -->
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-gutter items-center">
-          <div
-            class="ledger-card rounded-xl border border-ink-line/60 aspect-video flex items-center justify-center order-2 md:order-1 overflow-hidden"
-          >
-            <img
-              src="/images/billing.png"
-              alt="Screenshot of ParleHub's organization usage analytics — token spend and cost across projects over the last 30 days, shown as a per-project bar chart with filters and summary totals"
-              class="w-full h-full object-cover"
-            />
-          </div>
-          <div class="space-y-4 order-1 md:order-2">
-            <span class="eyebrow text-verdigris">Reporting</span>
-            <h2 class="font-display text-display-md text-parchment">
-              See exactly where the money went
-            </h2>
-            <p class="text-parchment-dim text-lg leading-relaxed">
-              Every dollar of AI spend, attributed to the right project, person,
-              provider, and model — in one reporting view you can filter, chart,
-              and export.
-            </p>
-            <ul class="space-y-3 pt-2">
-              <li class="flex items-start gap-3 text-parchment-dim">
-                <span class="material-symbols-outlined text-verdigris mt-0.5"
-                  >check_circle</span
-                >
-                Break spend and token usage down by project, person, provider,
-                or model
-              </li>
-              <li class="flex items-start gap-3 text-parchment-dim">
-                <span class="material-symbols-outlined text-verdigris mt-0.5"
-                  >check_circle</span
-                >
-                Filter to any time range and read it as an interactive chart
-              </li>
-              <li class="flex items-start gap-3 text-parchment-dim">
-                <span class="material-symbols-outlined text-verdigris mt-0.5"
-                  >check_circle</span
-                >
-                Export the full breakdown to CSV for finance or billing
-                reconciliation
-              </li>
-              <li class="flex items-start gap-3 text-parchment-dim">
-                <span class="material-symbols-outlined text-verdigris mt-0.5"
-                  >check_circle</span
-                >
-                Backed by the canonical token ledger — the same source budgets
-                enforce against
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        <!-- Entry: Models -->
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-gutter items-center">
-          <div class="space-y-4">
-            <span class="eyebrow text-primary">Models</span>
-            <h2 class="font-display text-display-md text-parchment">
-              Bring the models you already pay for
-            </h2>
-            <p class="text-parchment-dim text-lg leading-relaxed">
-              Connect your own provider keys and give your team one interface
-              across every major model — switch mid-conversation without losing
-              context.
-            </p>
-            <ul class="space-y-3 pt-2">
-              <li class="flex items-start gap-3 text-parchment-dim">
-                <span class="material-symbols-outlined text-verdigris mt-0.5"
-                  >check_circle</span
-                >
-                Bring-your-own-key support for Anthropic, OpenAI, Google Gemini,
-                and Azure OpenAI
-              </li>
-              <li class="flex items-start gap-3 text-parchment-dim">
-                <span class="material-symbols-outlined text-verdigris mt-0.5"
-                  >check_circle</span
-                >
-                Keys are encrypted and never exposed — resolved at call time via
-                Azure Key Vault
-              </li>
-              <li class="flex items-start gap-3 text-parchment-dim">
-                <span class="material-symbols-outlined text-verdigris mt-0.5"
-                  >check_circle</span
-                >
-                Curate exactly which models each project is allowed to use
-              </li>
-              <li class="flex items-start gap-3 text-parchment-dim">
-                <span class="material-symbols-outlined text-verdigris mt-0.5"
-                  >check_circle</span
-                >
-                Switch models mid-chat — every reply shows which model produced
-                it
+                Four levels of role, and projects only their members can see
               </li>
             </ul>
           </div>
@@ -527,89 +433,98 @@
           </div>
         </div>
 
-        <!-- Entry: Agent tooling -->
+        <!-- Entry: Cost allocation / the AI timesheet -->
         <div class="grid grid-cols-1 md:grid-cols-2 gap-gutter items-center">
           <div
             class="ledger-card rounded-xl border border-ink-line/60 aspect-video flex items-center justify-center order-2 md:order-1 overflow-hidden"
           >
             <img
-              src="/images/agent-tools.png"
-              alt="Screenshot of the ParleHub AI assistant reading and querying a spreadsheet file inside a project conversation"
+              src="/images/billing.png"
+              alt="Screenshot of ParleHub's organization usage analytics: token spend and cost across projects over the last 30 days, shown as a per-project bar chart with filters and summary totals"
               class="w-full h-full object-cover"
             />
           </div>
           <div class="space-y-4 order-1 md:order-2">
-            <span class="eyebrow text-primary">Agent tooling</span>
+            <span class="eyebrow text-verdigris">Cost allocation</span>
             <h2 class="font-display text-display-md text-parchment">
-              A coworker that can actually open the file
+              Timesheets for your AI agents
             </h2>
             <p class="text-parchment-dim text-lg leading-relaxed">
-              Your project files aren't just attachments — the assistant can
-              search, read, edit, and reason over them directly, in the
-              conversation.
+              Your people book their hours to a client. Your AI books nothing.
+              It arrives as one provider invoice with no client on it and lands
+              in overhead, where the practices that barely touch AI quietly
+              subsidise the ones that live on it.
             </p>
             <ul class="space-y-3 pt-2">
               <li class="flex items-start gap-3 text-parchment-dim">
                 <span class="material-symbols-outlined text-verdigris mt-0.5"
                   >check_circle</span
                 >
-                Search, grep, and read files without leaving the thread
+                A budget scoped to the project, not the person, because your
+                people work across six of them
               </li>
               <li class="flex items-start gap-3 text-parchment-dim">
                 <span class="material-symbols-outlined text-verdigris mt-0.5"
                   >check_circle</span
                 >
-                Query and summarize spreadsheets (Excel/CSV) — no macros, no
-                code execution
+                Your own project code on every project, carried through to the
+                export
               </li>
               <li class="flex items-start gap-3 text-parchment-dim">
                 <span class="material-symbols-outlined text-verdigris mt-0.5"
                   >check_circle</span
                 >
-                Convert PDFs, Word, and PowerPoint files to searchable markdown
+                Spend and token usage broken down by project, person, provider,
+                or model, over any range
               </li>
               <li class="flex items-start gap-3 text-parchment-dim">
                 <span class="material-symbols-outlined text-verdigris mt-0.5"
                   >check_circle</span
                 >
-                Precise, auditable edits — exact find-and-replace and diffs, not
-                silent rewrites
+                One canonical token ledger behind both the report and the
+                enforcement, so there is a single number
               </li>
             </ul>
+            <p class="text-parchment text-lg leading-relaxed pt-2">
+              Every project carries your own expense code, straight through to
+              the export. AI cost lands where every other cost already lands, so
+              you can recharge it, price it into a fixed fee, or cut the
+              engagement type that does not pay.
+            </p>
           </div>
         </div>
 
-        <!-- Entry: Budgeting -->
+        <!-- Entry: Budget enforcement -->
         <div class="grid grid-cols-1 md:grid-cols-2 gap-gutter items-center">
           <div class="space-y-4">
-            <span class="eyebrow text-verdigris">Budgeting</span>
+            <span class="eyebrow text-verdigris">Control</span>
             <h2 class="font-display text-display-md text-parchment">
-              Budgets by project, not by person
+              Find out before the invoice, not after
             </h2>
             <p class="text-parchment-dim text-lg leading-relaxed">
-              Built for people who work across half a dozen projects at once —
-              cap spend where the work actually happens, and let every project
-              carry its own ledger.
+              Metered spend with no ceiling is the opposite of how a firm plans.
+              One enthusiastic user, one runaway loop, and the number turns up
+              at month end with an explanation attached to it.
             </p>
             <ul class="space-y-3 pt-2">
               <li class="flex items-start gap-3 text-parchment-dim">
                 <span class="material-symbols-outlined text-verdigris mt-0.5"
                   >check_circle</span
                 >
-                Pre-flight enforcement blocks an over-budget send before it
-                happens
+                Pre-flight enforcement blocks the send before it exceeds the
+                project budget
               </li>
               <li class="flex items-start gap-3 text-parchment-dim">
                 <span class="material-symbols-outlined text-verdigris mt-0.5"
                   >check_circle</span
                 >
-                80% warning state, so teams see it coming
+                An 80% warning state, so the team sees it coming
               </li>
               <li class="flex items-start gap-3 text-parchment-dim">
                 <span class="material-symbols-outlined text-verdigris mt-0.5"
                   >check_circle</span
                 >
-                Personal and org-wide budgets stack as backstops above every
+                Personal and org-wide caps stacked as backstops above every
                 project
               </li>
               <li class="flex items-start gap-3 text-parchment-dim">
@@ -620,6 +535,11 @@
                 admin
               </li>
             </ul>
+            <p class="text-parchment text-lg leading-relaxed pt-2">
+              The ceiling becomes a number you set rather than a number you
+              discover, and it does not stop the work, because there is a path
+              through it.
+            </p>
           </div>
           <div
             class="ledger-card rounded-xl border border-ink-line/60 aspect-video flex items-center justify-center overflow-hidden"
@@ -627,6 +547,127 @@
             <img
               src="/images/budget.png"
               alt="Screenshot of a ParleHub project's Budget tab, showing 40% of a $1,000 budget used with spent/budget/remaining totals, a set-budget control, a platform-consumption billing-mode option, and a per-conversation spend breakdown with message counts"
+              class="w-full h-full object-cover"
+            />
+          </div>
+        </div>
+
+        <!-- Entry: Shared context -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-gutter items-center">
+          <div
+            class="ledger-card rounded-xl border border-ink-line/60 aspect-video flex items-center justify-center order-2 md:order-1 overflow-hidden"
+          >
+            <img
+              src="/images/projectlist.png"
+              alt="Screenshot of the ParleHub projects view, showing a team's shared projects and conversation threads visible to every member"
+              class="w-full h-full object-cover"
+            />
+          </div>
+          <div class="space-y-4 order-1 md:order-2">
+            <span class="eyebrow text-primary">Shared context</span>
+            <h2 class="font-display text-display-md text-parchment">
+              The best work your firm did last week is in a closed tab
+            </h2>
+            <p class="text-parchment-dim text-lg leading-relaxed">
+              Private chat histories mean context rebuilt from scratch at every
+              client switch, by every person. Two people on the same engagement
+              ask the same question a day apart, against different documents,
+              and get different answers. When someone rolls off, what they
+              worked out leaves with them.
+            </p>
+            <ul class="space-y-3 pt-2">
+              <li class="flex items-start gap-3 text-parchment-dim">
+                <span class="material-symbols-outlined text-verdigris mt-0.5"
+                  >check_circle</span
+                >
+                Shared project threads every member can see, live
+              </li>
+              <li class="flex items-start gap-3 text-parchment-dim">
+                <span class="material-symbols-outlined text-verdigris mt-0.5"
+                  >check_circle</span
+                >
+                Presence indicators for who is viewing, typing, or waiting on a
+                reply
+              </li>
+              <li class="flex items-start gap-3 text-parchment-dim">
+                <span class="material-symbols-outlined text-verdigris mt-0.5"
+                  >check_circle</span
+                >
+                Keyword and semantic search across every conversation in the
+                project
+              </li>
+              <li class="flex items-start gap-3 text-parchment-dim">
+                <span class="material-symbols-outlined text-verdigris mt-0.5"
+                  >check_circle</span
+                >
+                Promote a personal chat into a shared project when it turns out
+                to matter
+              </li>
+              <li class="flex items-start gap-3 text-parchment-dim">
+                <span class="material-symbols-outlined text-verdigris mt-0.5"
+                  >check_circle</span
+                >
+                Branch by editing and resending, without losing the original
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Entry: Defensible work -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-gutter items-center">
+          <div class="space-y-4">
+            <span class="eyebrow text-primary">Defensible work</span>
+            <h2 class="font-display text-display-md text-parchment">
+              When a partner asks where the number came from
+            </h2>
+            <p class="text-parchment-dim text-lg leading-relaxed">
+              Work nobody can review gets re-done by whoever has to sign it, at
+              their rate. In regulated practice it cannot be used at all, so the
+              engagement pays for the analysis twice: once quickly, once
+              defensibly.
+            </p>
+            <ul class="space-y-3 pt-2">
+              <li class="flex items-start gap-3 text-parchment-dim">
+                <span class="material-symbols-outlined text-verdigris mt-0.5"
+                  >check_circle</span
+                >
+                The whole exchange stays in the thread: the question, the reply,
+                and which model produced it
+              </li>
+              <li class="flex items-start gap-3 text-parchment-dim">
+                <span class="material-symbols-outlined text-verdigris mt-0.5"
+                  >check_circle</span
+                >
+                Real tool calls against the project's own files, so the work is
+                grounded in your documents
+              </li>
+              <li class="flex items-start gap-3 text-parchment-dim">
+                <span class="material-symbols-outlined text-verdigris mt-0.5"
+                  >check_circle</span
+                >
+                Exact find-and-replace and diffs, so a reviewer sees what
+                changed, not a silent rewrite
+              </li>
+              <li class="flex items-start gap-3 text-parchment-dim">
+                <span class="material-symbols-outlined text-verdigris mt-0.5"
+                  >check_circle</span
+                >
+                Sensitive actions in an audit log enforced append-only at the
+                database level
+              </li>
+            </ul>
+            <p class="text-parchment text-lg leading-relaxed pt-2">
+              You still check the work. The difference is that there is
+              something to check, instead of a paragraph that appeared from
+              nowhere.
+            </p>
+          </div>
+          <div
+            class="ledger-card rounded-xl border border-ink-line/60 aspect-video flex items-center justify-center overflow-hidden"
+          >
+            <img
+              src="/images/agent-tools.png"
+              alt="Screenshot of the ParleHub AI assistant reading and querying a spreadsheet file inside a project conversation"
               class="w-full h-full object-cover"
             />
           </div>
@@ -640,11 +681,11 @@
         <div class="text-center space-y-4 mb-16 max-w-2xl mx-auto">
           <span class="eyebrow text-verdigris">Governance</span>
           <h2 class="font-display text-display-md text-parchment">
-            Built for the admins who have to answer for it
+            Built for the person who fills in the security questionnaire
           </h2>
           <p class="text-parchment-dim text-lg leading-relaxed">
             Enterprise SSO, files that never leave your own tenant, and an audit
-            trail that can't be quietly edited.
+            trail that cannot be quietly edited.
           </p>
         </div>
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-gutter">
@@ -718,6 +759,68 @@
         </div>
       </section>
 
+      <!-- CAPACITY -->
+      <section
+        class="max-w-[1440px] mx-auto px-margin-mobile md:px-margin-desktop py-24"
+      >
+        <div class="text-center space-y-4 mb-16 max-w-2xl mx-auto">
+          <span class="eyebrow text-primary">Capacity</span>
+          <h2 class="font-display text-display-md text-parchment">
+            Fixed headcount, variable demand
+          </h2>
+          <p class="text-parchment-dim text-lg leading-relaxed">
+            Three months a year, or every time a bid lands, you cannot take more
+            work at any price. Leverage is the only capacity lever that does not
+            require hiring.
+          </p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+          <div class="ledger-card rounded-xl p-stack-md space-y-3">
+            <span class="material-symbols-outlined text-verdigris"
+              >description</span
+            >
+            <p
+              class="font-mono text-xs text-parchment uppercase tracking-widest"
+            >
+              Works the actual files
+            </p>
+            <p class="text-sm text-parchment-dim">
+              Search and read project documents, query spreadsheets, and convert
+              PDF, Word, and PowerPoint to searchable markdown, as real tool
+              calls. No code execution anywhere near your client data.
+            </p>
+          </div>
+          <div class="ledger-card rounded-xl p-stack-md space-y-3">
+            <span class="material-symbols-outlined text-verdigris"
+              >group_add</span
+            >
+            <p
+              class="font-mono text-xs text-parchment uppercase tracking-widest"
+            >
+              Ramp in a day
+            </p>
+            <p class="text-sm text-parchment-dim">
+              Someone joining an engagement reads the thread the team already
+              built instead of rebuilding it. The context belongs to the
+              project, not to whoever happened to open the chat.
+            </p>
+          </div>
+          <div class="ledger-card rounded-xl p-stack-md space-y-3">
+            <span class="material-symbols-outlined text-verdigris">hub</span>
+            <p
+              class="font-mono text-xs text-parchment uppercase tracking-widest"
+            >
+              Every major model
+            </p>
+            <p class="text-sm text-parchment-dim">
+              Anthropic, OpenAI, Google Gemini, and Azure OpenAI on your own
+              keys. Curate which models a project may use, and switch mid-chat
+              without losing the thread.
+            </p>
+          </div>
+        </div>
+      </section>
+
       <!-- PRICING TEASER -->
       <section
         class="max-w-[1440px] mx-auto px-margin-mobile md:px-margin-desktop py-24"
@@ -725,7 +828,7 @@
         <div class="text-center space-y-4 mb-16 max-w-2xl mx-auto">
           <span class="eyebrow text-primary">Pricing</span>
           <h2 class="font-display text-display-md text-parchment">
-            Free to start. Built to scale with your org.
+            Free to start. Prove it on one engagement.
           </h2>
         </div>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
@@ -783,7 +886,7 @@
           <h2
             class="font-display text-display-md text-parchment max-w-2xl mx-auto"
           >
-            Bring your team's AI into one governed hub.
+            Put a client code on every dollar of AI your firm spends.
           </h2>
           <a
             href="https://app.parlehub.com"

@@ -1,4 +1,4 @@
-# CLAUDE.md — `_marketing/`
+# CLAUDE.md for `_marketing/`
 
 Internal positioning workspace. **Nothing in this folder is ever published.** It is excluded
 in `_config.yml` and the directory name starts with `_`, so Jekyll ignores it twice over.
@@ -67,16 +67,16 @@ The shared shape across all of them, and the reason ParleHub fits:
 
 Every persona, every section of site copy, every testimonial follows the same four beats:
 
-1. **Pain** — a concrete, recognisable situation. Not "lack of visibility"; rather "the
+1. **Pain**: a concrete, recognisable situation. Not "lack of visibility"; rather "the
    associate re-uploads the same eleven exhibits every morning".
-2. **Cost or opportunity cost** — what that situation actually takes from the firm, in
+2. **Cost or opportunity cost**: what that situation actually takes from the firm, in
    money, hours, risk, or missed upside. Name a unit. Unbillable hours, realisation points,
    a client security questionnaire that cannot be answered honestly, a pitch not won.
-3. **Our answer** — the specific thing ParleHub does about it. Usually a *combination* of
+3. **Our answer**: the specific thing ParleHub does about it. Usually a *combination* of
    features rather than one, and it is fine to say so. Project budgets alone are not the
    answer to cost allocation; project budgets plus per-project usage analytics plus CSV
    export are.
-4. **The turn** — the same situation after ParleHub, stated as gain rather than as relief.
+4. **The turn**: the same situation after ParleHub, stated as gain rather than as relief.
    The cost becomes an opportunity. "AI spend stops being overhead and becomes a line item
    on the engagement that either earns its margin or gets cut."
 
@@ -89,20 +89,20 @@ If a draft has beats 1 and 3 but not 2 and 4, it has reverted to feature copy. S
 One file per persona in `personas/`, named `NN-role-vertical.md`, numbered by current
 priority rank. Every file carries these sections, in this order:
 
-- **Snapshot** — name, role, firm type and size, who they report to, what they control
+- **Snapshot**: name, role, firm type and size, who they report to, what they control
   (budget authority, veto power, or neither).
-- **Their world** — a paragraph of narrative. What the week looks like. What is on fire.
-- **Goals** — what they are measured on. Three to five, phrased as their own words, not ours.
-- **Pains** — numbered. Each pain gets its own **Cost** line stating what it takes from the
+- **Their world**: a paragraph of narrative. What the week looks like. What is on fire.
+- **Goals**: what they are measured on. Three to five, phrased as their own words, not ours.
+- **Pains**: numbered. Each pain gets its own **Cost** line stating what it takes from the
   firm. This is the section that generates site copy.
-- **How ParleHub answers it** — mapped pain by pain, naming the specific capabilities and
+- **How ParleHub answers it**: mapped pain by pain, naming the specific capabilities and
   their status. Combinations encouraged.
-- **Unmet needs** — what they want that we do **not** have today. Be honest and specific.
+- **Unmet needs**: what they want that we do **not** have today. Be honest and specific.
   This section feeds the product backlog, and it is the reason this folder is worth keeping
   current. Never quietly delete an entry here because it is inconvenient.
-- **Objections** — what they say when they want to say no, with the honest answer.
-- **Testimonial** — see below.
-- **Buying signals** — observable triggers that mean this persona is in market now.
+- **Objections**: what they say when they want to say no, with the honest answer.
+- **Testimonial**: see below.
+- **Buying signals**: observable triggers that mean this persona is in market now.
 
 ## Testimonial rules
 

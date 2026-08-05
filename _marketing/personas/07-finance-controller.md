@@ -1,4 +1,4 @@
-# 07 — Dale Fontaine, Financial Controller, professional services firm
+# 07. Dale Fontaine, Financial Controller, professional services firm
 
 **Rank: 7 (influencer, and the strongest business case writer in the building).** Dale will
 not champion ParleHub unprompted and will enthusiastically build the numbers that justify it
@@ -71,7 +71,7 @@ Anything new that requires a spreadsheet and a judgement call makes close longer
 
 ## How ParleHub answers it
 
-**Pain 1 and 4 — allocation and recovery.** Usage and spend analytics **[LIVE]** grouped and
+**Pain 1 and 4, allocation and recovery.** Usage and spend analytics **[LIVE]** grouped and
 filtered by project, person, provider, or model, over any time range, with CSV export. The
 project is the engagement, so the export is a per-engagement cost record. It is backed by the
 canonical token ledger, the same source that budgets enforce against, so the reporting number
@@ -84,13 +84,12 @@ site owner 2026-08-05. This matters more than it sounds. It means the allocation
 on a project *name*, which drifts and gets renamed and never matches the client master. It
 joins on the code the firm already uses. For Dale this is the difference between an export
 that needs a judgement call every month and one that reconciles.
-> *One thing still to confirm before this becomes headline copy: does the project code appear
-> as a column in the analytics CSV export?* If it does, the allocation story is complete end
-> to end and should be said plainly on the site. If the code lives only on the project record
-> and the export keys on name, Dale still has a manual join and we should describe it more
-> carefully. See open questions in `pain-point-map.md`.
+**The code appears in the CSV export** **[LIVE]**, confirmed 2026-08-05; carrying it through
+to the export is what the field exists for. So the chain is complete without a manual step
+anywhere in it: project budget, project code, token ledger, export, general ledger. For Dale
+that is the whole ask, answered.
 
-**Pain 2 — forecastability.** Project-scoped budgets with pre-flight enforcement **[LIVE]**
+**Pain 2, forecastability.** Project-scoped budgets with pre-flight enforcement **[LIVE]**
 turn an open-ended variable into a bounded one. The send is blocked before it exceeds the
 budget, with an 80% warning ahead of it and a self-serve increase request routed to an admin
 so the control does not simply stop the work. Personal per-user and org-wide caps stack above
@@ -99,12 +98,12 @@ Dale sets rather than a number discovered.
 > Language discipline: it is a **hard block**, not throttling, and there is no automatic
 > downgrade to a cheaper model. Do not soften this.
 
-**Pain 3 — expense sprawl.** Consolidation onto a firm account with SSO through Entra ID
+**Pain 3, expense sprawl.** Consolidation onto a firm account with SSO through Entra ID
 **[LIVE]** or Google Workspace **[SHIPPED]**, with subscription billing through Stripe on
 Free, Team, or Enterprise tiers **[LIVE]**, and bring-your-own-key so model consumption runs
 on the firm's own provider contracts rather than on personal cards.
 
-**Pain 5 — close.** One export in a consistent shape, from one system, rather than
+**Pain 5, close.** One export in a consistent shape, from one system, rather than
 reconciling three provider invoices against a pile of expense claims.
 
 ## Unmet needs

@@ -1,4 +1,4 @@
-# 08 — Casey Lindqvist, Director of Delivery, recruitment firm
+# 08. Casey Lindqvist, Director of Delivery, recruitment firm
 
 **Rank: 8 (secondary, evaluate before investing).** Real pains and a genuine fit on cost
 allocation and shared context. Ranked last because the biggest workflow gap, the applicant
@@ -81,7 +81,7 @@ The knowledge is in people's heads and their private histories.
 
 ## How ParleHub answers it
 
-**Pain 1 — candidate data.** Project files can stay in the firm's own SharePoint site under
+**Pain 1, candidate data.** Project files can stay in the firm's own SharePoint site under
 least-privilege per-site access **[LIVE]**, or Google Shared Drives **[SHIPPED]**, so
 candidate material never leaves the firm's tenant. Bring-your-own-key **[LIVE]** puts the
 model call under the firm's own provider agreement rather than consumer terms. Entra ID SSO
@@ -91,18 +91,18 @@ which client's material.
 > provide retention scheduling or erasure workflows, which is what a data subject request
 > actually requires. See Unmet needs.
 
-**Pain 2 — per-role economics.** A project per client, or per retained search, with
+**Pain 2, per-role economics.** A project per client, or per retained search, with
 project-scoped budgets and pre-flight enforcement **[LIVE]**, plus usage and spend analytics
 by project, person, provider, and model with CSV export **[LIVE]**. Casey gets cost per
 client and per search against fee income, which is the number that decides which business is
 worth taking.
 
-**Pain 3 and 5 — consistency and ramp.** Shared project threads visible to every member in
+**Pain 3 and 5, consistency and ramp.** Shared project threads visible to every member in
 real time **[LIVE]**, with live presence. A new consultant reads how the firm's best
 consultant actually works a search rather than being told about it. Keyword and semantic
 search across every project conversation **[LIVE]**.
 
-**Pain 4 — duplicated research.** Semantic search across project history **[LIVE]** means
+**Pain 4, duplicated research.** Semantic search across project history **[LIVE]** means
 the sector map from three weeks ago is findable. Agent file tooling **[LIVE]** works against
 the firm's own research documents directly: search, read, outline, convert PDF and Word to
 searchable markdown, filter and aggregate spreadsheets.

@@ -1,4 +1,4 @@
-# 02 — Sam Okonjo, Engagement Manager, four live client accounts
+# 02. Sam Okonjo, Engagement Manager, four live client accounts
 
 **Rank: 2 (primary champion and daily user).** Does not sign anything. Feels every pain we
 solve, every day, and is the person who brings ParleHub to Alex. Most of our best site copy
@@ -81,19 +81,19 @@ usage on it is a rounding error or a margin problem.
 
 ## How ParleHub answers it
 
-**Pain 1 — context reload.** A project is the unit, not a chat. Project files live with the
+**Pain 1, context reload.** A project is the unit, not a chat. Project files live with the
 project, and the agent can search, read, and reason over them directly with real tool calls
 **[LIVE]**: grep and glob and semantic search, outline, structured JSON and YAML queries,
 spreadsheet filter and aggregate over Excel and CSV, and PDF, Word, and PowerPoint converted
 to searchable markdown. Sam stops re-uploading because the documents were never uploaded to a
 chat in the first place; they belong to the engagement.
 
-**Pain 2 — duplicated and divergent work.** Shared project threads visible to every member
+**Pain 2, duplicated and divergent work.** Shared project threads visible to every member
 in real time, with live presence showing who is viewing, typing, or waiting on a response
 **[LIVE]**. An analyst can see that the question was already asked this morning, and read the
 answer, instead of asking it again against a different document set.
 
-**Pain 3 — derivation.** The whole exchange lives in the shared thread: the question, the
+**Pain 3, derivation.** The whole exchange lives in the shared thread: the question, the
 files the agent actually opened, the reply, and which model produced it. Branching by
 edit-and-resend **[LIVE]** keeps the original when someone explores an alternative, so the
 path is preserved rather than overwritten. Precise, auditable edits, exact find-and-replace
@@ -101,12 +101,12 @@ and diffs rather than silent rewrites **[LIVE]**, mean a reviewer can see what c
 document. *Honest limit:* this is a retained, searchable, reviewable history, not per-claim
 citation or a provenance export. See Unmet needs.
 
-**Pain 4 — knowledge walking out.** The history belongs to the project, not the person.
+**Pain 4, knowledge walking out.** The history belongs to the project, not the person.
 Keyword and semantic search across every project conversation **[LIVE]** means the incoming
 analyst reads what was already worked out. A personal chat that turns out to matter can be
 promoted into the shared project **[LIVE]** rather than stranded.
 
-**Pain 5 — cost visibility.** Project-scoped budgets with pre-flight enforcement **[LIVE]**:
+**Pain 5, cost visibility.** Project-scoped budgets with pre-flight enforcement **[LIVE]**:
 the send is blocked before it exceeds the engagement budget, with an 80% warning ahead of it,
 and a one-click increase request routed to an admin so Sam is not blocked with no path
 forward. Per-project usage analytics **[LIVE]** turn "I have no idea" into a number Sam can
