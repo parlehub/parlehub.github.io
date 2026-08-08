@@ -1,1 +1,7 @@
 test.html
+
+# Local Jekyll build output. GitHub Pages builds from source on push, so these
+# should never be committed.
+_site/
+.jekyll-cache/
+.jekyll-metadata

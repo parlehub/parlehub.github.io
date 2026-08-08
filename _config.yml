@@ -19,6 +19,9 @@ exclude:
   - Gemfile
   - Gemfile.lock
 
+plugins:
+  - jekyll-sitemap
+
 collections:
   posts:
     output: true
