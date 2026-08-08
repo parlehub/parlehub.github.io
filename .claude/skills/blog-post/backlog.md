@@ -91,7 +91,8 @@ Mark `- [x]` when published. Keep the two shipped posts in mind so arguments don
   and org-enforced SSO-only login — **[LIVE]**, verified in production. Google Workspace
   (OIDC) **[SHIPPED]**. **Never mention SAML.**
 
-- [ ] **Cost per project is a product decision, not an accounting one**
+- [x] **Cost per project is a product decision, not an accounting one**
+  *Published 2026-08-06: `_posts/2026-08-06-cost-per-project-is-a-product-decision.md`*
   *Thesis:* A follow-on to the token-tracking post, aimed one level up. Once you can see
   spend per initiative, you can kill initiatives — and that's the actual point. Attribution
   changes the roadmap, not just the ledger.
