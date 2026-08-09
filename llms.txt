@@ -1,0 +1,122 @@
+# ParleHub
+
+> ParleHub is a team-based shared workspace for AI conversations, built for organizations rather than solo users. Projects hold shared AI threads every member can see live, each with its own budget, the customer's own expense code, and a token ledger that exports to CSV. Teams either bring their own model provider keys or use models ParleHub hosts, and can run both at once. Sign up at https://app.parlehub.com.
+
+ParleHub is made by ParleHub LLC (North Carolina, USA). This file describes the marketing site at
+https://parlehub.com. The product itself lives at https://app.parlehub.com.
+
+## What ParleHub does
+
+- **Shared project workspaces.** A project contains AI conversation threads visible to every member
+  in real time, not per-person silos. Live presence shows who is viewing, typing, or waiting on a
+  response; a teammate's in-flight message and the streamed reply appear live to everyone watching.
+  Conversations support branching (edit and resend), rename/archive, keyword and semantic history
+  search, and promoting a personal chat into a shared project.
+- **Budgets scoped to projects, not just people.** Built for people who work across several
+  engagements at once. Pre-flight enforcement blocks a send before it would exceed the project
+  budget, with an 80% warning state; personal (per-user) and org-wide caps stack above as backstops.
+  A blocked user can request an increase in one click, routed to an admin to approve or reject.
+- **Cost that reconciles to the customer's own books.** Each project carries the customer's own
+  project/matter/engagement code, and that code carries through the token ledger into the analytics
+  CSV export — so AI cost joins to existing client coding with no manual reconciliation step.
+- **Two ways to access models.** An organization can bring its own provider API keys (stored in
+  Azure Key Vault, never exposed), use models ParleHub hosts with no key or provider account at all,
+  or run both modes at once. Governance is identical either way: the same project budgets, personal
+  and org caps, 80% warning, pre-flight hard block, token ledger, project code, and CSV export.
+- **Enterprise SSO and enterprise-native storage.** Microsoft Entra ID and Google Workspace OIDC
+  sign-in, with domain-based auto-provisioning and optional SSO-only enforcement. Project files can
+  live in the organization's own SharePoint site or Google Shared Drive so they never leave the
+  customer's tenant; managed storage (Azure Blob) is available on every tier.
+- **AI that works the actual files.** The assistant makes real tool calls against project files:
+  read, grep/glob/semantic search, exact find-and-replace and multi-edit, diffs, outlining,
+  structured-data queries (JSON/YAML), spreadsheet work (Excel/CSV filter and aggregate, no code
+  execution), and document conversion (PDF/Word/PowerPoint to markdown). Inline preview covers
+  markdown, syntax-highlighted code, PDF, images/SVG, video, and sandboxed HTML.
+- **Governance and audit.** Four role levels (SystemAdmin, OrgAdmin, ProjectAdmin, ProjectMember),
+  member invites, project visibility controls, and a sensitive-action audit log enforced append-only
+  at the database level by SQL triggers. Usage and spend analytics filter and group by project,
+  person, provider, or model, with CSV export.
+
+## Model providers
+
+Bring-your-own-key providers: Anthropic, OpenAI, Google Gemini (via the Gemini Developer API /
+AI Studio key), and Azure OpenAI. Model spend on these lands on the customer's own provider contract
+at the customer's own rate. Google Vertex AI is not a supported provider.
+
+Hosted models run on Azure AI Foundry under ParleHub's managed identity, priced per token and drawn
+from a credit balance the organization tops up. The hosted catalog is deliberately curated rather
+than exhaustive, and it reaches beyond the three large model vendors to open-weight models a
+customer would otherwise have no contract with. Models can be switched per conversation.
+
+## Who it is for
+
+Consultancies, law firms, accounting and advisory practices, agencies, and other organizations that
+bill by client or engagement and need AI usage centralized, cost-attributed, budget-capped, and
+auditable — rather than spread across individual accounts under terms nobody reviewed.
+
+## Plans
+
+- **Free** — $0. 3 seats, 3 projects, model spend capped at $10/month, 2 GB managed storage,
+  10 MB max file size.
+- **Team** — flat monthly. 10 seats, 10 projects, uncapped model spend, 10 GB managed storage,
+  25 MB max file size, Enterprise SSO.
+- **Enterprise** — per seat. Unlimited seats and projects, uncapped model spend, private
+  (restricted) projects, SharePoint or Google Drive storage or 1 GB/seat managed, Enterprise SSO.
+
+The monthly model-spend cap is mode-neutral: it limits model spend whether tokens run on the
+customer's own keys or on models ParleHub hosts. Paid tiers include a 7-day trial. Billing is
+Stripe-backed.
+
+## Pages
+
+- [Home](https://parlehub.com/): Positioning and core features — shared projects, project budgets,
+  cost allocation by client code, model access, and governance.
+- [Security & Compliance](https://parlehub.com/security/): SSO, enterprise-native file storage,
+  role-based access, the append-only audit trail, and platform hardening details.
+- [Pricing](https://parlehub.com/pricing/): Free, Team, and Enterprise plan comparison, plus FAQs on
+  keys, hosted models, and spend caps.
+- [Blog](https://parlehub.com/blog/): Product notes and writing on AI governance, cost attribution,
+  collaboration, and data residency.
+- [Blog archive](https://parlehub.com/blog/archive/): Chronological index of every post.
+- [Compare](https://parlehub.com/compare/): Hub for head-to-head comparisons against the model
+  vendors' own team products.
+- [ParleHub vs Claude Team & Enterprise](https://parlehub.com/compare/parlehub-vs-claude/):
+  Comparison on budget scope, cost allocation, shared threads, and model access.
+- [ParleHub vs ChatGPT Business & Enterprise](https://parlehub.com/compare/parlehub-vs-chatgpt/):
+  Comparison on credit limits, shared projects, live collaboration, and model access.
+- [ParleHub vs Google Gemini & Vertex AI](https://parlehub.com/compare/parlehub-vs-gemini/):
+  Comparison on Cloud Billing budgets, sharing model, and how ParleHub connects to Gemini.
+- [Terms of Service](https://parlehub.com/terms/): The agreement between ParleHub LLC and
+  organizations using the service.
+- [Privacy Policy](https://parlehub.com/privacy/): What data is collected, how it is used, who it is
+  shared with, and privacy rights.
+
+## Blog posts
+
+- [Bring Your Own Key: Why You Shouldn't Rent Your AI Relationship](https://parlehub.com/blog/2026/08/09/bring-your-own-key-dont-rent-your-ai-relationship/):
+  Renting model access is the right way to evaluate a model and the wrong way to run production
+  work. Own the provider relationship; rent only the workspace.
+- [Cost Per Project Is a Product Decision, Not an Accounting One](https://parlehub.com/blog/2026/08/06/cost-per-project-is-a-product-decision/):
+  Knowing what AI costs per project only matters if it changes what you build.
+- [Your AI Vendor Is a Data Residency Decision You Haven't Made Yet](https://parlehub.com/blog/2026/08/01/your-ai-vendor-is-a-data-residency-decision/):
+  Every file pasted into a chat window is an unreviewed data-governance decision; the fix is keeping
+  files in your own tenant.
+- [Why AI is Stuck in a Silo (and How Collaboration Fixes It)](https://parlehub.com/blog/2026/07/25/collaboration-in-ai/):
+  Why isolated AI tools duplicate work, and what multiplayer AI with shared storage changes.
+- [Beyond the LLM Bill Shock: Why Enterprise AI Needs Project-Level Token Tracking and Budgeting](https://parlehub.com/blog/2026/07/24/why-enterprise-ai-needs-project-level-tracking/):
+  Why traditional software cost governance fails for LLM spend, and what project-level tracking
+  fixes.
+
+## Contact
+
+- Sign up or sign in: https://app.parlehub.com
+- Legal: legal@parlehub.com
+- Privacy: privacy@parlehub.com
+
+## Notes for retrieval
+
+- Every canonical URL on this site ends in a trailing slash; `.html` URLs redirect.
+- The canonical host is the apex domain `parlehub.com` (no `www.`).
+- A machine-readable page index is at https://parlehub.com/sitemap.xml.
+- ParleHub is not affiliated with or endorsed by Anthropic, OpenAI, Google, or Microsoft. Product
+  names referenced on the comparison pages are trademarks of their respective owners.
