@@ -430,10 +430,12 @@ permalink: /compare/parlehub-vs-claude/
               One vendor's models, or the models you already pay for
             </h2>
             <p class="text-parchment-dim text-lg leading-relaxed">
-              Claude Team and Enterprise are a way to buy Claude. That is a
-              reasonable thing to want, and the price includes the usage. It also
-              means the workspace and the model are the same commercial decision,
-              and changing your mind about one changes the other.
+              Claude Team and Enterprise are a way to buy Claude. Enterprise is
+              priced per seat plus the tokens your org consumes, so the meter is
+              running either way; what you are buying is Anthropic's meter rather
+              than your own. It also means the workspace and the model are the
+              same commercial decision, and changing your mind about one changes
+              the other.
             </p>
             <ul class="space-y-3 pt-2">
               <li class="flex items-start gap-3 text-parchment-dim">
@@ -763,9 +765,15 @@ permalink: /compare/parlehub-vs-claude/
                 <td class="p-4">Anthropic's</td>
               </tr>
               <tr class="border-b border-ink-line/60">
-                <td class="p-4 text-parchment">Model usage included in price</td>
-                <td class="p-4">No, bring your own key</td>
-                <td class="p-4 text-parchment">Yes</td>
+                <td class="p-4 text-parchment">How model usage is paid for</td>
+                <td class="p-4">
+                  Metered on your own provider contract, at your rate; our
+                  subscription is separate
+                </td>
+                <td class="p-4">
+                  Per seat plus metered consumption, billed by Anthropic at
+                  Anthropic's rate
+                </td>
               </tr>
               <tr class="border-b border-ink-line/60">
                 <td class="p-4 text-parchment">
@@ -838,12 +846,13 @@ permalink: /compare/parlehub-vs-claude/
               >
               <span
                 ><strong class="text-parchment"
-                  >You want the usage included in the price.</strong
+                  >You want one vendor and one invoice.</strong
                 >
-                Claude Team and Enterprise bundle the model consumption. ParleHub
-                asks you to bring your own provider keys, which means a provider
-                account, a card, and someone owning it. Managed model access from
-                us is not available today.</span
+                Anthropic meters the tokens and bills them with the seats, so
+                there is nothing to set up. ParleHub asks you to bring your own
+                provider keys, which means a provider account, a card, and
+                someone owning it. Managed model access from us is not available
+                today.</span
               >
             </li>
             <li class="flex items-start gap-3 text-parchment-dim">
@@ -885,21 +894,31 @@ permalink: /compare/parlehub-vs-claude/
           <div class="ledger-card rounded-2xl p-8 space-y-4">
             <span class="eyebrow text-primary">Also compare</span>
             <h3 class="font-display text-display-sm text-parchment">
-              ParleHub vs ChatGPT Business &amp; Enterprise
+              The other two head-to-heads
             </h3>
             <p class="text-sm text-parchment-dim leading-relaxed">
-              OpenAI's shared projects, credit budgets, and admin console,
-              measured against the same set of questions.
+              The same questions, asked of OpenAI's and Google's team products.
             </p>
-            <a
-              href="/compare/parlehub-vs-chatgpt/"
-              class="inline-flex items-center gap-2 text-primary-bright hover:text-parchment transition-colors text-sm font-medium"
-            >
-              Read the comparison
-              <span class="material-symbols-outlined text-base"
-                >arrow_forward</span
+            <div class="flex flex-col gap-3 pt-1">
+              <a
+                href="/compare/parlehub-vs-chatgpt/"
+                class="inline-flex items-center gap-2 text-primary-bright hover:text-parchment transition-colors text-sm font-medium"
               >
-            </a>
+                ParleHub vs ChatGPT Business &amp; Enterprise
+                <span class="material-symbols-outlined text-base"
+                  >arrow_forward</span
+                >
+              </a>
+              <a
+                href="/compare/parlehub-vs-gemini/"
+                class="inline-flex items-center gap-2 text-primary-bright hover:text-parchment transition-colors text-sm font-medium"
+              >
+                ParleHub vs Google Gemini &amp; Vertex AI
+                <span class="material-symbols-outlined text-base"
+                  >arrow_forward</span
+                >
+              </a>
+            </div>
           </div>
 
           <div class="ledger-card rounded-2xl p-8 space-y-4">

@@ -1,7 +1,7 @@
 ---
 # Front matter is required for jekyll-sitemap to see this page (it walks site.pages,
 # and a file with no front matter is a static file, not a page).
-permalink: /compare/parlehub-vs-chatgpt/
+permalink: /compare/parlehub-vs-gemini/
 ---
 <!doctype html>
 <html class="dark" lang="en">
@@ -22,10 +22,10 @@ permalink: /compare/parlehub-vs-chatgpt/
     </script>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <title>ParleHub vs ChatGPT Business &amp; Enterprise | ParleHub</title>
+    <title>ParleHub vs Google Gemini &amp; Vertex AI | ParleHub</title>
     <meta
       name="description"
-      content="A head-to-head comparison of ChatGPT's shared projects and credit spend controls with ParleHub's per-project budgets, project codes, live shared threads, and bring-your-own-key model access. Verified against vendor documentation, August 2026."
+      content="A head-to-head comparison of Gemini Enterprise and Vertex AI with ParleHub's per-engagement budgets, project codes, live shared threads, and multi-provider model access. Verified against Google's documentation, August 2026."
     />
     <link
       href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,500;0,600;1,500;1,600&family=Inter:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
@@ -133,23 +133,26 @@ permalink: /compare/parlehub-vs-chatgpt/
         <div class="absolute inset-0 hero-glow -z-10"></div>
         <div class="max-w-3xl space-y-stack-md">
           <span class="eyebrow text-primary">
-            <a href="/compare/" class="hover:text-primary-bright transition-colors"
+            <a
+              href="/compare/"
+              class="hover:text-primary-bright transition-colors"
               >Comparison</a
             >
-            &nbsp;/&nbsp; ChatGPT Business &amp; Enterprise
+            &nbsp;/&nbsp; Gemini Enterprise &amp; Vertex AI
           </span>
           <h1
             class="font-display text-display-lg-mobile md:text-display-lg text-parchment"
           >
-            ChatGPT caps the
-            <em class="italic primary-text not-italic md:italic">workspace</em>.
-            ParleHub caps the engagement.
+            Google sells a model platform and a chat box. Your team works
+            <em class="italic primary-text not-italic md:italic">in between</em>.
           </h1>
           <p class="text-lg leading-relaxed text-parchment-dim max-w-2xl">
-            OpenAI shipped credit budgets and a global admin console in June
-            2026, with workspace defaults, group caps, and per-user overrides.
-            The controls are real. They are organised around your org chart, and
-            a services firm bills its clients, not its departments.
+            Vertex AI is where your engineers build on models. Gemini Enterprise
+            is where your staff chat with one. The layer a services firm actually
+            needs sits between them: a shared room per client engagement, with a
+            budget on it and your own expense code attached. Google does not sell
+            that layer, and the two products it does sell each stop short of it
+            from opposite directions.
           </p>
           <div class="flex flex-wrap items-center gap-gutter pt-stack-sm">
             <a
@@ -169,7 +172,7 @@ permalink: /compare/parlehub-vs-chatgpt/
             </a>
           </div>
           <p class="font-mono text-xs text-parchment-dim/70 pt-2">
-            Checked against OpenAI's published documentation, August 2026.
+            Checked against Google's published documentation, August 2026.
             Sources listed at the foot of this page.
           </p>
         </div>
@@ -179,16 +182,26 @@ permalink: /compare/parlehub-vs-chatgpt/
       <section
         class="max-w-[1440px] mx-auto px-margin-mobile md:px-margin-desktop pb-16"
       >
-        <div class="ledger-card rounded-2xl p-8 md:p-10 max-w-3xl">
+        <div class="ledger-card rounded-2xl p-8 md:p-10 max-w-3xl space-y-4">
           <span class="eyebrow text-verdigris">Read this first</span>
-          <p class="text-parchment-dim leading-relaxed mt-3">
-            ParleHub runs on OpenAI. GPT models are one of the four provider
-            families you can connect, alongside Anthropic, Google Gemini, and
-            Azure OpenAI, and Azure OpenAI is there for firms that want the whole
-            thing inside their Azure subscription. This page is not an argument
-            against the models. It compares OpenAI's own team workspace with
-            ours, for a firm deciding where the conversations should live and how
-            the cost gets booked.
+          <p class="text-parchment-dim leading-relaxed">
+            ParleHub runs on Gemini. It is one of the four provider families you
+            can connect, alongside Anthropic, OpenAI, and Azure OpenAI, and it is
+            a real, working provider with full tool calling, vision and PDF
+            attachments, and streaming. This page is not an argument against
+            Google's models.
+          </p>
+          <p class="text-parchment-dim leading-relaxed">
+            One thing to get out of the way before you read the rest, because you
+            will ask it in the first five minutes: we connect Gemini through the
+            <strong class="text-parchment">Gemini Developer API</strong>, using a
+            Google AI Studio key, the same one-key-per-provider shape as every
+            other provider. <strong class="text-parchment">Vertex AI is not a
+            provider we support today.</strong> If your organization's policy is
+            that model calls must run inside your own Google Cloud project under
+            your GCP contract, that is a genuine reason to wait for us rather
+            than a detail to discover later. Everything below is written on that
+            assumption.
           </p>
         </div>
       </section>
@@ -207,37 +220,36 @@ permalink: /compare/parlehub-vs-chatgpt/
           <div class="ledger-card rounded-2xl p-8 space-y-3">
             <span class="font-mono text-xs text-verdigris">01</span>
             <h3 class="font-display text-display-sm text-parchment">
-              The unit of the budget
+              Which project the budget means
             </h3>
             <p class="text-sm text-parchment-dim leading-relaxed">
-              ChatGPT sets credit limits on the workspace, on a group, and on a
-              user. ParleHub sets them on the project, which is the engagement,
-              matter, or account you already bill against. Personal and org-wide
-              caps sit underneath as backstops.
+              Google budgets a Cloud project, which is an infrastructure
+              container your consultants never see. ParleHub budgets a project
+              that is the engagement, matter, or account, created by the people
+              doing the work.
             </p>
           </div>
           <div class="ledger-card rounded-2xl p-8 space-y-3">
             <span class="font-mono text-xs text-verdigris">02</span>
             <h3 class="font-display text-display-sm text-parchment">
-              Whose code the cost carries
+              What a shared conversation is
             </h3>
             <p class="text-sm text-parchment-dim leading-relaxed">
-              ChatGPT exports spend by user, group, product, and model. ParleHub
-              exports it under your own project code, the client reference your
-              general ledger already recognises, so finance imports it rather
-              than rebuilding it.
+              Sharing a Gemini Enterprise conversation creates a link to the
+              content as it stood; the recipient sees nothing added afterwards.
+              In ParleHub the thread stays live for everyone in the project.
             </p>
           </div>
           <div class="ledger-card rounded-2xl p-8 space-y-3">
             <span class="font-mono text-xs text-verdigris">03</span>
             <h3 class="font-display text-display-sm text-parchment">
-              Where the documents sit
+              Who has to assemble it
             </h3>
             <p class="text-sm text-parchment-dim leading-relaxed">
-              ChatGPT reads your SharePoint and Drive through connectors, and
-              files uploaded into a project are held in the OpenAI workspace. On
-              ParleHub Enterprise your own SharePoint site or Shared Drive is the
-              store of record.
+              On Google the per-client answer is a project layout, labels, a
+              BigQuery billing export, and someone who maintains all three.
+              ParleHub ships the answer: a project code on the spend, in the
+              export.
             </p>
           </div>
         </div>
@@ -251,44 +263,52 @@ permalink: /compare/parlehub-vs-chatgpt/
           <div class="space-y-4">
             <span class="eyebrow text-verdigris">Cost allocation</span>
             <h2 class="font-display text-display-md text-parchment">
-              A workspace cap tells you the total. Your partners asked about one
-              client.
+              Google does budget per project. It is not your kind of project.
             </h2>
             <p class="text-parchment-dim text-lg leading-relaxed">
-              Credit limits on the workspace stop the invoice being a surprise,
-              which is worth having. They do not tell you what the Ashworth deal
-              cost, because the four people who worked it also worked six other
-              engagements that month. The allocation gets rebuilt by hand from a
-              report that was organised around people.
+              Cloud Billing gives every Google Cloud project a budget, and in
+              preview a spend cap that blocks new usage of one eligible service
+              in one project once the target is passed. That is a real control,
+              and more than most vendors offer. The unit is a Cloud project: an
+              infrastructure container with IAM, quotas, and an engineer who owns
+              it. Running one per client matter means standing up and retiring
+              cloud projects at the pace your firm opens and closes engagements.
+            </p>
+            <p class="text-parchment-dim text-lg leading-relaxed">
+              Two details matter if a partner is relying on the number. Cloud
+              spend cap enforcement runs on estimated costs and is not
+              instantaneous, and in-flight requests complete after the cap trips.
+              ParleHub checks before the send, so the block lands ahead of the
+              spend rather than behind it.
             </p>
             <ul class="space-y-3 pt-2">
               <li class="flex items-start gap-3 text-parchment-dim">
                 <span class="material-symbols-outlined text-verdigris mt-0.5"
                   >check_circle</span
                 >
-                Budgets set on the project, with per-user and org-wide caps
-                stacked underneath
+                Budgets on the engagement, set by a project admin, no cloud
+                console involved
               </li>
               <li class="flex items-start gap-3 text-parchment-dim">
                 <span class="material-symbols-outlined text-verdigris mt-0.5"
                   >check_circle</span
                 >
-                A send that would take the project over budget is blocked before
-                it runs, with a warning at 80%
+                Pre-flight enforcement: the send is blocked before it runs, with
+                a warning at 80%
               </li>
               <li class="flex items-start gap-3 text-parchment-dim">
                 <span class="material-symbols-outlined text-verdigris mt-0.5"
                   >check_circle</span
                 >
-                Anyone blocked can request an increase in one click, routed to an
-                admin to approve or reject
+                A project code on every project, carried into the CSV export, so
+                cost reconciles without a BigQuery job
               </li>
               <li class="flex items-start gap-3 text-parchment-dim">
                 <span class="material-symbols-outlined text-verdigris mt-0.5"
                   >check_circle</span
                 >
-                Analytics group by project, person, provider, or model, and
-                export as CSV under your project code
+                Personal and org-wide caps underneath, and a one-click increase
+                request routed to an admin
               </li>
             </ul>
           </div>
@@ -296,21 +316,19 @@ permalink: /compare/parlehub-vs-chatgpt/
           <!-- Two ledgers graphic -->
           <div class="grid grid-cols-1 sm:grid-cols-2 gap-4" aria-hidden="true">
             <div class="ledger-card rounded-xl p-5 space-y-3">
-              <p class="eyebrow text-parchment-dim">Budgeted by workspace</p>
+              <p class="eyebrow text-parchment-dim">Budgeted by cloud project</p>
               <div class="space-y-2 font-mono text-[11px] text-parchment-dim">
                 <div class="flex items-center justify-between">
-                  <span>Workspace</span><span>$4,120 / $6,000</span>
-                </div>
-                <div class="h-1.5 rounded-full bg-ink-line overflow-hidden">
-                  <div
-                    class="h-full w-[69%] rounded-full bg-parchment-dim/60"
-                  ></div>
-                </div>
-                <div class="flex items-center justify-between pt-2">
-                  <span>Advisory group</span><span>$1,940</span>
+                  <span>acme-prod-ai</span><span>$2,410</span>
                 </div>
                 <div class="flex items-center justify-between">
-                  <span>Legal group</span><span>$1,180</span>
+                  <span>acme-sandbox</span><span>$318</span>
+                </div>
+                <div class="flex items-center justify-between">
+                  <span>label:team=advisory</span><span>$1,940</span>
+                </div>
+                <div class="flex items-center justify-between">
+                  <span>export → BigQuery</span><span>·</span>
                 </div>
               </div>
               <p
@@ -320,7 +338,7 @@ permalink: /compare/parlehub-vs-chatgpt/
               </p>
             </div>
             <div class="ledger-card rounded-xl p-5 space-y-3 border-primary/40">
-              <p class="eyebrow text-primary">Budgeted by project</p>
+              <p class="eyebrow text-primary">Budgeted by engagement</p>
               <div class="space-y-3 font-mono text-[11px] text-parchment-dim">
                 <div class="space-y-1">
                   <div class="flex items-center justify-between">
@@ -377,107 +395,99 @@ permalink: /compare/parlehub-vs-chatgpt/
           <div class="space-y-4 order-1 md:order-2">
             <span class="eyebrow text-primary">Collaboration</span>
             <h2 class="font-display text-display-md text-parchment">
-              A shared folder you check, or a room you are both in
+              A snapshot of a conversation is not a conversation
             </h2>
             <p class="text-parchment-dim text-lg leading-relaxed">
-              Shared projects put the files and the chats in one place for the
-              members of that project, which closes the worst of the gap. What
-              they are not is live: you cannot watch a colleague work a problem,
-              and two people cannot sit in the same conversation at once. The
-              answer arrives later, in a list, and reading it back is a separate
-              act of will.
+              Gemini Enterprise lets a user share a conversation, and Google's
+              documentation is precise about what the recipient gets: the content
+              as it stood when the link was made, with none of the prompts or
+              responses that come after. Sharing is a deliberate act, one
+              conversation at a time, and admins decide whether it is allowed at
+              all. The result is a firm whose AI work is a pile of links of
+              varying freshness, which is closer to emailing a document than to
+              working in one.
             </p>
             <ul class="space-y-3 pt-2">
               <li class="flex items-start gap-3 text-parchment-dim">
                 <span class="material-symbols-outlined text-verdigris mt-0.5"
                   >check_circle</span
                 >
-                Live presence shows who is viewing, typing, or waiting on a
-                response
+                Every thread in a ParleHub project is visible to its members as
+                it happens, with no share step
               </li>
               <li class="flex items-start gap-3 text-parchment-dim">
                 <span class="material-symbols-outlined text-verdigris mt-0.5"
                   >check_circle</span
                 >
-                A teammate's in-flight message and the streamed reply appear to
-                everyone watching the thread
+                Live presence shows who is viewing, typing, or waiting on a
+                response, and the streamed reply appears to everyone watching
               </li>
               <li class="flex items-start gap-3 text-parchment-dim">
                 <span class="material-symbols-outlined text-verdigris mt-0.5"
                   >check_circle</span
                 >
                 Keyword and semantic search across every conversation in the
-                project, so a new joiner reads the work instead of rebuilding it
+                project, so the work is findable a quarter later
               </li>
               <li class="flex items-start gap-3 text-parchment-dim">
                 <span class="material-symbols-outlined text-verdigris mt-0.5"
                   >check_circle</span
                 >
-                Branch by edit-and-resend without losing the path that was
-                already taken
+                A useful personal chat can be promoted into the shared project
               </li>
             </ul>
           </div>
         </div>
       </section>
 
-      <!-- DEEP DIVE: MODELS -->
+      <!-- DEEP DIVE: THE TWO PRODUCTS -->
       <section
         class="max-w-[1440px] mx-auto px-margin-mobile md:px-margin-desktop pb-24"
       >
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-gutter items-center">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-gutter items-start">
           <div class="space-y-4">
-            <span class="eyebrow text-primary">Model access</span>
+            <span class="eyebrow text-verdigris">The gap</span>
             <h2 class="font-display text-display-md text-parchment">
-              One vendor's models, or the models you already pay for
+              Neither product is aimed at the person doing client work
             </h2>
             <p class="text-parchment-dim text-lg leading-relaxed">
-              ChatGPT Business and Enterprise are a way to buy OpenAI. Ordinary
-              chat is covered by the seat, which is genuinely clean, and the
-              heavier agentic work draws on a credit pool you buy separately. It
-              also ties the workspace and the model together, and a firm that has
-              already signed an enterprise agreement with a provider is paying
-              for the same tokens twice.
+              Vertex AI is a developer platform. It assumes an engineer, a cloud
+              project, and something being built. A consultant with eleven
+              exhibits and a deadline is not its user, and no amount of
+              configuration turns it into their workspace.
             </p>
-            <ul class="space-y-3 pt-2">
-              <li class="flex items-start gap-3 text-parchment-dim">
-                <span class="material-symbols-outlined text-verdigris mt-0.5"
-                  >check_circle</span
-                >
-                Connect OpenAI, Anthropic, Google Gemini, and Azure OpenAI with
-                your own keys, held in Azure Key Vault and never exposed
-              </li>
-              <li class="flex items-start gap-3 text-parchment-dim">
-                <span class="material-symbols-outlined text-verdigris mt-0.5"
-                  >check_circle</span
-                >
-                Azure OpenAI for firms that want inference inside their own Azure
-                subscription
-              </li>
-              <li class="flex items-start gap-3 text-parchment-dim">
-                <span class="material-symbols-outlined text-verdigris mt-0.5"
-                  >check_circle</span
-                >
-                Calls run under your firm's own provider agreement, which is the
-                agreement your client questionnaire asks about
-              </li>
-              <li class="flex items-start gap-3 text-parchment-dim">
-                <span class="material-symbols-outlined text-verdigris mt-0.5"
-                  >check_circle</span
-                >
-                Switch model per conversation, deliberately, with no automatic
-                routing or silent downgrade
-              </li>
-            </ul>
+            <p class="text-parchment-dim text-lg leading-relaxed">
+              Gemini Enterprise is aimed at that consultant, and it is good at
+              being close to their mail and their documents. What it is not is
+              organised around the engagement: there is no room where a matter
+              team's work accumulates, carries a budget, and can be read by the
+              person who joins in week three.
+            </p>
           </div>
-          <div
-            class="ledger-card rounded-xl border border-ink-line/60 aspect-video flex items-center justify-center overflow-hidden"
-          >
-            <img
-              src="/images/modelconnection.png"
-              alt="Screenshot of ParleHub's organization model-provider settings, where each provider connects with your own API key; OpenAI is connected with its available models listed and a default selected"
-              class="w-full h-full object-cover"
-            />
+
+          <div class="space-y-4">
+            <div class="ledger-card rounded-xl p-6 space-y-3">
+              <p class="eyebrow text-parchment-dim">Vertex AI</p>
+              <p class="text-sm text-parchment-dim leading-relaxed">
+                Model plane. Engineers, cloud projects, quotas, IAM, billing
+                exports. Stops before there is a workspace.
+              </p>
+            </div>
+            <div class="ledger-card rounded-xl p-6 space-y-3">
+              <p class="eyebrow text-parchment-dim">Gemini Enterprise</p>
+              <p class="text-sm text-parchment-dim leading-relaxed">
+                Chat plane. Individual users, per-seat licences, conversations
+                shared as links. Stops before there is an engagement.
+              </p>
+            </div>
+            <div class="ledger-card rounded-xl p-6 space-y-3 border-primary/40">
+              <p class="eyebrow text-primary">ParleHub</p>
+              <p class="text-sm text-parchment-dim leading-relaxed">
+                The layer between: shared threads per engagement, a budget and
+                your expense code on each, files in your own Shared Drive, and
+                Gemini as one of four providers underneath.
+              </p>
+            </div>
           </div>
         </div>
       </section>
@@ -490,20 +500,16 @@ permalink: /compare/parlehub-vs-chatgpt/
           <div class="space-y-4">
             <span class="eyebrow text-verdigris">Portability</span>
             <h2 class="font-display text-display-md text-parchment">
-              Lock-in is a price you pay in the second year
+              Standardising on one cloud's models is a decision you make once
             </h2>
             <p class="text-parchment-dim text-lg leading-relaxed">
-              Credits make the first year simple. The second year is where it
-              costs you, because a competing model will get cheaper, or better at
-              the specific work your firm sells, and the only question that
-              matters then is what it takes to act on that. When the projects,
-              the instructions, the uploaded files, and the searchable history
-              all live in one vendor's workspace, acting on it means rebuilding
-              all of it somewhere else.
-            </p>
-            <p class="text-parchment-dim text-lg leading-relaxed">
-              ParleHub keeps the provider at the edge. Everything your team
-              builds sits above it and does not move when the model does.
+              Committing the workspace to a single vendor's model is cheap on the
+              day you do it and expensive the day a competitor gets better at the
+              work you sell. When the projects, the instructions, and the history
+              live in that vendor's product, acting on the change means
+              rebuilding all of it. ParleHub keeps the provider at the edge, so
+              everything your team builds sits above it and does not move when
+              the model does.
             </p>
             <ul class="space-y-3 pt-2">
               <li class="flex items-start gap-3 text-parchment-dim">
@@ -526,17 +532,16 @@ permalink: /compare/parlehub-vs-chatgpt/
                 <span class="material-symbols-outlined text-verdigris mt-0.5"
                   >check_circle</span
                 >
-                Your keys and your provider contracts, so moving spend to a
-                cheaper model is a commercial decision rather than a migration
-                project
+                Run Gemini for the work it wins on and something else for the
+                rest, in the same workspace, on the same ledger
               </li>
               <li class="flex items-start gap-3 text-parchment-dim">
                 <span class="material-symbols-outlined text-verdigris mt-0.5"
                   >check_circle</span
                 >
-                One ledger measures every provider, so the comparison that
-                justifies the move comes from your own usage rather than a
-                vendor's pricing page
+                Your keys and your provider contracts, so moving spend to a
+                cheaper model is a commercial decision rather than a migration
+                project
               </li>
             </ul>
           </div>
@@ -569,7 +574,7 @@ permalink: /compare/parlehub-vs-chatgpt/
             >
               <span
                 class="px-2.5 py-1 rounded-full border border-ink-line text-parchment-dim"
-                >OpenAI</span
+                >Gemini</span
               >
               <span
                 class="px-2.5 py-1 rounded-full border border-ink-line text-parchment-dim"
@@ -577,7 +582,7 @@ permalink: /compare/parlehub-vs-chatgpt/
               >
               <span
                 class="px-2.5 py-1 rounded-full border border-ink-line text-parchment-dim"
-                >Gemini</span
+                >OpenAI</span
               >
               <span
                 class="px-2.5 py-1 rounded-full border border-ink-line text-parchment-dim"
@@ -598,44 +603,45 @@ permalink: /compare/parlehub-vs-chatgpt/
           >
             <img
               src="/images/storage.png"
-              alt="Screenshot of ParleHub's organization file storage settings, showing SharePoint (Microsoft 365) connected as the document library so project files stay in the organization's own Microsoft 365 tenant"
+              alt="Screenshot of ParleHub's organization file storage settings, listing managed cloud storage, SharePoint, and Google Drive Shared Drives as the places a project's files can live, so files can stay in the organization's own tenant"
               class="w-full h-full object-cover"
             />
           </div>
           <div class="space-y-4 order-1 md:order-2">
             <span class="eyebrow text-verdigris">Where the files live</span>
             <h2 class="font-display text-display-md text-parchment">
-              Reading your SharePoint is not the same as living in it
+              Google-native, without giving up the Google part
             </h2>
             <p class="text-parchment-dim text-lg leading-relaxed">
-              A connector lets ChatGPT answer from your OneDrive and SharePoint,
-              which is genuinely useful. The working set a team uploads into a
-              project is a different thing, and it sits in the OpenAI workspace.
-              On ParleHub Enterprise, a project points at a named SharePoint site
-              or Google Shared Drive of yours and the files never leave it.
+              Moving your team's AI work off Google's own product does not mean
+              moving your documents. A ParleHub Enterprise project can point at a
+              named Google Shared Drive of yours, and the files stay in it: your
+              retention policy, your permissions, your sharing rules. Sign-in
+              runs through Google Workspace, so joiners and leavers are handled
+              where they already are.
             </p>
             <ul class="space-y-3 pt-2">
               <li class="flex items-start gap-3 text-parchment-dim">
                 <span class="material-symbols-outlined text-verdigris mt-0.5"
                   >check_circle</span
                 >
-                SharePoint with least-privilege, per-site
-                <span class="font-mono text-sm">Sites.Selected</span> access,
-                verified against a real production tenant
+                Google Shared Drives as project storage, with native Drive search
+                and Docs, Sheets, and Slides export, verified against a real
+                production Drive
               </li>
               <li class="flex items-start gap-3 text-parchment-dim">
                 <span class="material-symbols-outlined text-verdigris mt-0.5"
                   >check_circle</span
                 >
-                Deletes go to your own recycle bin, under your own retention
-                policy
+                Google Workspace single sign-on, verified in production, with
+                SSO-only login enforceable org-wide
               </li>
               <li class="flex items-start gap-3 text-parchment-dim">
                 <span class="material-symbols-outlined text-verdigris mt-0.5"
                   >check_circle</span
                 >
-                Google Shared Drives, with native Drive search and Docs, Sheets,
-                and Slides export, verified against a real production Drive
+                SharePoint too, for the firms running both, and managed storage
+                on every tier
               </li>
               <li class="flex items-start gap-3 text-parchment-dim">
                 <span class="material-symbols-outlined text-verdigris mt-0.5"
@@ -664,18 +670,17 @@ permalink: /compare/parlehub-vs-chatgpt/
             The full comparison
           </h2>
           <p class="text-parchment-dim leading-relaxed">
-            The ChatGPT column describes the Business and Enterprise plans as
-            documented by OpenAI in August 2026, after the June 2026 spend
-            controls update. Where a capability is Enterprise-only on either
-            side, the cell says so.
+            Gemini Enterprise and Vertex AI get their own columns because they
+            are different products sold to different people, and merging them
+            would flatter both. Described as documented by Google in August 2026.
           </p>
         </div>
         <div class="ledger-card rounded-xl overflow-x-auto">
-          <table class="ledger-table w-full text-sm min-w-[720px]">
+          <table class="ledger-table w-full text-sm min-w-[880px]">
             <thead>
               <tr class="border-b border-ink-line">
                 <th
-                  class="text-left font-mono text-xs uppercase tracking-widest text-parchment-dim p-4 w-[28%]"
+                  class="text-left font-mono text-xs uppercase tracking-widest text-parchment-dim p-4 w-[24%]"
                 >
                   Capability
                 </th>
@@ -687,22 +692,63 @@ permalink: /compare/parlehub-vs-chatgpt/
                 <th
                   class="text-left font-mono text-xs uppercase tracking-widest text-parchment-dim p-4"
                 >
-                  ChatGPT Business &amp; Enterprise
+                  Gemini Enterprise
+                </th>
+                <th
+                  class="text-left font-mono text-xs uppercase tracking-widest text-parchment-dim p-4"
+                >
+                  Vertex AI
                 </th>
               </tr>
             </thead>
             <tbody class="text-parchment-dim">
               <tr class="border-b border-ink-line/60">
-                <td class="p-4 text-parchment">Budget scoped to a project</td>
+                <td class="p-4 text-parchment">Who it is built for</td>
+                <td class="p-4">Teams billing client work</td>
+                <td class="p-4">Individual Workspace users</td>
+                <td class="p-4">Engineers building on models</td>
+              </tr>
+              <tr class="border-b border-ink-line/60">
                 <td class="p-4 text-parchment">
-                  Yes, the primary budget unit
+                  Budget scoped to a client engagement
+                </td>
+                <td class="p-4 text-parchment">
+                  Yes, the project is the engagement
                 </td>
                 <td class="p-4">No</td>
+                <td class="p-4">No; the unit is a Cloud project</td>
               </tr>
               <tr class="border-b border-ink-line/60">
                 <td class="p-4 text-parchment">Other budget scopes</td>
                 <td class="p-4">Per user, org-wide</td>
-                <td class="p-4">Workspace, group, per user</td>
+                <td class="p-4">Per-seat licence, consumption beyond quota</td>
+                <td class="p-4">Cloud project, per-project API quotas</td>
+              </tr>
+              <tr class="border-b border-ink-line/60">
+                <td class="p-4 text-parchment">Hard block on spend</td>
+                <td class="p-4 text-parchment">
+                  Yes, pre-flight, warning at 80%
+                </td>
+                <td class="p-4">Via Cloud Billing, as at right</td>
+                <td class="p-4">
+                  Spend cap budgets (preview): one project, one eligible service,
+                  monthly
+                </td>
+              </tr>
+              <tr class="border-b border-ink-line/60">
+                <td class="p-4 text-parchment">Behaviour at the cap</td>
+                <td class="p-4">Send blocked before it runs</td>
+                <td class="p-4">As at right</td>
+                <td class="p-4">
+                  New usage blocked, in-flight completes; enforcement not
+                  instantaneous, based on estimated cost
+                </td>
+              </tr>
+              <tr class="border-b border-ink-line/60">
+                <td class="p-4 text-parchment">Self-serve increase request</td>
+                <td class="p-4">Yes, routed to an admin</td>
+                <td class="p-4">Admin licence change</td>
+                <td class="p-4">Quota or budget change in the cloud console</td>
               </tr>
               <tr class="border-b border-ink-line/60">
                 <td class="p-4 text-parchment">Your expense code on spend</td>
@@ -710,33 +756,21 @@ permalink: /compare/parlehub-vs-chatgpt/
                   Project code field, carried into the CSV export
                 </td>
                 <td class="p-4">No</td>
-              </tr>
-              <tr class="border-b border-ink-line/60">
-                <td class="p-4 text-parchment">Budget period</td>
-                <td class="p-4">Per project budget, plus monthly caps</td>
-                <td class="p-4">Monthly credit limits</td>
-              </tr>
-              <tr class="border-b border-ink-line/60">
-                <td class="p-4 text-parchment">Behaviour at the cap</td>
                 <td class="p-4">
-                  Send blocked before it runs, warning at 80%
+                  Labels, assembled by you via BigQuery billing export
                 </td>
-                <td class="p-4">Limit reached, alerts to admins and the user</td>
-              </tr>
-              <tr class="border-b border-ink-line/60">
-                <td class="p-4 text-parchment">Self-serve increase request</td>
-                <td class="p-4">Yes, routed to an admin</td>
-                <td class="p-4">Yes, routed to an admin</td>
               </tr>
               <tr class="border-b border-ink-line/60">
                 <td class="p-4 text-parchment">Cost reporting dimensions</td>
                 <td class="p-4">Project, person, provider, model</td>
-                <td class="p-4">User, group, product, model</td>
+                <td class="p-4">Admin usage reporting</td>
+                <td class="p-4">Service, project, label, SKU</td>
               </tr>
               <tr class="border-b border-ink-line/60">
                 <td class="p-4 text-parchment">Usage export</td>
-                <td class="p-4">CSV</td>
-                <td class="p-4">Export to financial systems, Cost API</td>
+                <td class="p-4">CSV, no query to write</td>
+                <td class="p-4">Admin reporting</td>
+                <td class="p-4">BigQuery billing export</td>
               </tr>
               <tr class="border-b border-ink-line/60">
                 <td class="p-4 text-parchment">
@@ -745,7 +779,18 @@ permalink: /compare/parlehub-vs-chatgpt/
                 <td class="p-4 text-parchment">
                   Yes, every thread in the project
                 </td>
-                <td class="p-4">Yes, within a shared project</td>
+                <td class="p-4">
+                  No; a shared conversation is a link to a point in time
+                </td>
+                <td class="p-4">No chat workspace</td>
+              </tr>
+              <tr class="border-b border-ink-line/60">
+                <td class="p-4 text-parchment">
+                  Later turns visible to the people you shared with
+                </td>
+                <td class="p-4 text-parchment">Yes, live</td>
+                <td class="p-4">No</td>
+                <td class="p-4">Not applicable</td>
               </tr>
               <tr class="border-b border-ink-line/60">
                 <td class="p-4 text-parchment">
@@ -753,36 +798,27 @@ permalink: /compare/parlehub-vs-chatgpt/
                 </td>
                 <td class="p-4 text-parchment">Yes</td>
                 <td class="p-4">No</td>
+                <td class="p-4">Not applicable</td>
               </tr>
               <tr class="border-b border-ink-line/60">
                 <td class="p-4 text-parchment">Model choice</td>
-                <td class="p-4">
-                  OpenAI, Anthropic, Gemini, Azure OpenAI
-                </td>
-                <td class="p-4">OpenAI models</td>
-              </tr>
-              <tr class="border-b border-ink-line/60">
-                <td class="p-4 text-parchment">Whose provider agreement</td>
-                <td class="p-4">Yours, your own keys</td>
-                <td class="p-4">OpenAI's</td>
-              </tr>
-              <tr class="border-b border-ink-line/60">
-                <td class="p-4 text-parchment">How model usage is paid for</td>
-                <td class="p-4">
-                  Metered on your own provider contract, at your rate; our
-                  subscription is separate
-                </td>
+                <td class="p-4">Gemini, Anthropic, OpenAI, Azure OpenAI</td>
+                <td class="p-4">Gemini</td>
                 <td class="p-4 text-parchment">
-                  Seat covers ordinary chat; advanced and agentic use draws on a
-                  purchased credit pool
+                  Gemini plus the Vertex model garden
                 </td>
               </tr>
               <tr class="border-b border-ink-line/60">
                 <td class="p-4 text-parchment">
-                  Switch a live conversation to another vendor's model
+                  How we connect to Gemini
                 </td>
-                <td class="p-4 text-parchment">Yes, the thread carries over</td>
-                <td class="p-4">No, OpenAI models only</td>
+                <td class="p-4">
+                  Gemini Developer API key. <span class="text-parchment"
+                    >Vertex AI not supported today</span
+                  >
+                </td>
+                <td class="p-4">Not applicable</td>
+                <td class="p-4">Not applicable</td>
               </tr>
               <tr class="border-b border-ink-line/60">
                 <td class="p-4 text-parchment">
@@ -793,57 +829,65 @@ permalink: /compare/parlehub-vs-chatgpt/
                   stay put
                 </td>
                 <td class="p-4">Rebuild the workspace elsewhere</td>
+                <td class="p-4">Rebuild the integration</td>
+              </tr>
+              <tr class="border-b border-ink-line/60">
+                <td class="p-4 text-parchment">How model usage is paid for</td>
+                <td class="p-4">
+                  Metered on your own provider contract, at your rate; our
+                  subscription is separate
+                </td>
+                <td class="p-4">
+                  Seat includes a quota; consumption charged beyond it
+                </td>
+                <td class="p-4">Metered, on your Google Cloud contract</td>
               </tr>
               <tr class="border-b border-ink-line/60">
                 <td class="p-4 text-parchment">
                   Project files in your own tenant
                 </td>
                 <td class="p-4 text-parchment">
-                  SharePoint or Google Shared Drive (Enterprise)
+                  Google Shared Drive or SharePoint (Enterprise)
                 </td>
-                <td class="p-4">
-                  No; connectors read from SharePoint and Drive
-                </td>
+                <td class="p-4">Workspace-native</td>
+                <td class="p-4">You build it</td>
               </tr>
               <tr class="border-b border-ink-line/60">
                 <td class="p-4 text-parchment">Single sign-on</td>
                 <td class="p-4">
-                  Microsoft Entra ID, Google Workspace (Team &amp; Enterprise)
+                  Google Workspace, Microsoft Entra ID (Team &amp; Enterprise)
                 </td>
-                <td class="p-4">Yes</td>
-              </tr>
-              <tr class="border-b border-ink-line/60">
-                <td class="p-4 text-parchment">Role model</td>
-                <td class="p-4">Four levels, org through project member</td>
-                <td class="p-4">Roles and groups, directory-provisioned</td>
+                <td class="p-4">Google Workspace</td>
+                <td class="p-4">Google Cloud IAM</td>
               </tr>
               <tr>
                 <td class="p-4 text-parchment">Audit log</td>
                 <td class="p-4">
                   Append-only, enforced by database triggers
                 </td>
-                <td class="p-4">Yes, with a compliance API</td>
+                <td class="p-4">Workspace admin audit</td>
+                <td class="p-4">Cloud Audit Logs</td>
               </tr>
             </tbody>
           </table>
         </div>
       </section>
 
-      <!-- WHERE CHATGPT WINS -->
+      <!-- WHERE GOOGLE WINS -->
       <section
         class="max-w-[1440px] mx-auto px-margin-mobile md:px-margin-desktop pb-24"
       >
         <div class="ledger-card rounded-2xl p-8 md:p-12 max-w-3xl space-y-6">
           <span class="eyebrow text-verdigris"
-            >Where ChatGPT is the better buy</span
+            >Where Google is the better buy</span
           >
           <h2 class="font-display text-display-md text-parchment">
-            Three reasons to pick OpenAI instead
+            Four reasons to stay on Google
           </h2>
           <p class="text-parchment-dim leading-relaxed">
             A comparison page that finds nothing good to say about the other
             product is a sales sheet. These are the cases where we would tell you
-            to buy ChatGPT.
+            to buy Google, and the first one is a straight gap on our side.
           </p>
           <ul class="space-y-4">
             <li class="flex items-start gap-3 text-parchment-dim">
@@ -852,13 +896,13 @@ permalink: /compare/parlehub-vs-chatgpt/
               >
               <span
                 ><strong class="text-parchment"
-                  >You want one invoice and no keys to manage.</strong
+                  >Your policy requires model calls inside your own Google Cloud
+                  project.</strong
                 >
-                Everyday chat comes with the seat and the rest comes out of a
-                credit pool, all on one bill. ParleHub asks you to bring your own
-                provider keys, which means a provider account, a card, and
-                someone owning it. Managed model access from us is not available
-                today.</span
+                We connect Gemini through the Gemini Developer API, not Vertex
+                AI. If inference has to run under your GCP contract, in your
+                project, against your IAM, Vertex is the answer today and we are
+                not.</span
               >
             </li>
             <li class="flex items-start gap-3 text-parchment-dim">
@@ -867,11 +911,12 @@ permalink: /compare/parlehub-vs-chatgpt/
               >
               <span
                 ><strong class="text-parchment"
-                  >Your cost centres are departments, not clients.</strong
+                  >You want AI inside Docs, Gmail, and Meet.</strong
                 >
-                If AI spend belongs to Marketing and Legal rather than to
-                engagements, workspace and group caps mapped from your directory
-                are a closer fit than project budgets, and OpenAI has them.</span
+                Gemini Enterprise sits in the tools your staff already have open
+                all day. ParleHub is a separate place your team goes on purpose,
+                which is the trade for having the work accumulate somewhere the
+                firm owns.</span
               >
             </li>
             <li class="flex items-start gap-3 text-parchment-dim">
@@ -880,12 +925,27 @@ permalink: /compare/parlehub-vs-chatgpt/
               >
               <span
                 ><strong class="text-parchment"
-                  >You need the widest app and connector surface.</strong
+                  >You are building a product, not running engagements.</strong
                 >
-                OpenAI connects to a long list of business systems and ships new
-                ones constantly. Our file tooling is deep on documents and
-                spreadsheets inside a project; it is not a directory of
-                integrations.</span
+                Vertex is a developer platform with training, tuning, endpoints,
+                and a model garden. ParleHub is not a developer platform and has
+                no coding harness.</span
+              >
+            </li>
+            <li class="flex items-start gap-3 text-parchment-dim">
+              <span class="material-symbols-outlined text-primary mt-0.5"
+                >arrow_right_alt</span
+              >
+              <span
+                ><strong class="text-parchment"
+                  >You want a quota in the seat price and no keys to
+                  manage.</strong
+                >
+                A Gemini Enterprise seat carries a usage quota, with consumption
+                charged beyond it, all on one Google bill. ParleHub asks you to
+                bring your own provider keys, which means a provider account, a
+                card, and someone owning it. Managed model access from us is not
+                available today.</span
               >
             </li>
           </ul>
@@ -903,7 +963,7 @@ permalink: /compare/parlehub-vs-chatgpt/
               The other two head-to-heads
             </h3>
             <p class="text-sm text-parchment-dim leading-relaxed">
-              The same questions, asked of Anthropic's and Google's team
+              The same questions, asked of Anthropic's and OpenAI's team
               products.
             </p>
             <div class="flex flex-col gap-3 pt-1">
@@ -917,10 +977,10 @@ permalink: /compare/parlehub-vs-chatgpt/
                 >
               </a>
               <a
-                href="/compare/parlehub-vs-gemini/"
+                href="/compare/parlehub-vs-chatgpt/"
                 class="inline-flex items-center gap-2 text-primary-bright hover:text-parchment transition-colors text-sm font-medium"
               >
-                ParleHub vs Google Gemini &amp; Vertex AI
+                ParleHub vs ChatGPT Business &amp; Enterprise
                 <span class="material-symbols-outlined text-base"
                   >arrow_forward</span
                 >
@@ -931,45 +991,55 @@ permalink: /compare/parlehub-vs-chatgpt/
           <div class="ledger-card rounded-2xl p-8 space-y-4">
             <span class="eyebrow text-parchment-dim">Sources</span>
             <p class="text-sm text-parchment-dim leading-relaxed">
-              Every claim about ChatGPT on this page comes from OpenAI's own
-              documentation and announcements, read in August 2026. Products
-              move; if something here has gone out of date, we would rather fix
-              it than keep it.
+              Every claim about Google on this page comes from Google's own
+              documentation, read in August 2026. Products move; if something
+              here has gone out of date, we would rather fix it than keep it.
             </p>
             <ul class="space-y-2 text-sm">
               <li>
                 <a
-                  href="https://help.openai.com/en/articles/20001155-managing-credits-and-spend-controls-in-chatgpt-business"
+                  href="https://docs.cloud.google.com/gemini/enterprise/docs/share-conversations"
                   rel="noopener nofollow"
                   target="_blank"
                   class="text-primary-bright hover:text-parchment underline underline-offset-4 transition-colors"
-                  >Managing credits and spend controls in ChatGPT Business</a
+                  >Gemini Enterprise: share your conversations</a
                 >
               </li>
               <li>
                 <a
-                  href="https://openai.com/index/more-ways-to-work-with-your-team/"
+                  href="https://docs.cloud.google.com/billing/docs/how-to/budgets-spend-caps"
                   rel="noopener nofollow"
                   target="_blank"
                   class="text-primary-bright hover:text-parchment underline underline-offset-4 transition-colors"
-                  >More ways to work with your team and tools in ChatGPT</a
+                  >Cloud Billing: manage spend cap budgets</a
                 >
               </li>
               <li>
                 <a
-                  href="https://help.openai.com/en/articles/11391654-chatgpt-business-release-notes"
+                  href="https://docs.cloud.google.com/docs/security/security-best-practices-genai/billing-controls"
                   rel="noopener nofollow"
                   target="_blank"
                   class="text-primary-bright hover:text-parchment underline underline-offset-4 transition-colors"
-                  >ChatGPT Business release notes</a
+                  >Cloud Billing controls for generative AI use cases</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://workspaceupdates.googleblog.com/2026/04/streamlining-admin-controls-for-gemini-enterprise-in-the-Google-Workspace-Admin-console.html"
+                  rel="noopener nofollow"
+                  target="_blank"
+                  class="text-primary-bright hover:text-parchment underline underline-offset-4 transition-colors"
+                  >Admin controls for Gemini Enterprise in the Workspace Admin
+                  console</a
                 >
               </li>
             </ul>
             <p
               class="font-mono text-[11px] leading-relaxed text-parchment-dim/70 pt-4 border-t border-ink-line"
             >
-              ChatGPT and OpenAI are trademarks of OpenAI. ParleHub is not
-              affiliated with or endorsed by OpenAI.
+              Google, Gemini, Google Workspace, Google Cloud, and Vertex AI are
+              trademarks of Google LLC. ParleHub is not affiliated with or
+              endorsed by Google.
             </p>
           </div>
         </div>
@@ -986,9 +1056,9 @@ permalink: /compare/parlehub-vs-chatgpt/
             Keep the models. Move the workspace.
           </h2>
           <p class="text-parchment-dim max-w-xl mx-auto">
-            Connect the OpenAI key you already have, put one live engagement in a
-            project, and give it a budget and a code. The first export tells you
-            whether the argument holds.
+            Connect a Gemini key, sign in with Google Workspace, point a project
+            at one of your Shared Drives, and give it a budget and a code. The
+            first export tells you whether the argument holds.
           </p>
           <a
             href="https://app.parlehub.com"

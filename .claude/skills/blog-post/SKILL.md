@@ -123,9 +123,9 @@ costs a needless hop. Write `https://parlehub.com/...`.
 - "Start / sign in" intent → `https://app.parlehub.com` (root, no deep links)
 - "Learn more" intent → `https://parlehub.com/`, or a real marketing page:
   `/security/`, `/pricing/`, `/blog/`, `/compare/`,
-  `/compare/parlehub-vs-claude/`, `/compare/parlehub-vs-chatgpt/`. Those pages
-  plus `/terms/` and `/privacy/` are the only ones that exist — don't invent
-  paths.
+  `/compare/parlehub-vs-claude/`, `/compare/parlehub-vs-chatgpt/`,
+  `/compare/parlehub-vs-gemini/`. Those pages plus `/terms/` and `/privacy/` are
+  the only ones that exist — don't invent paths.
 - Prefer an internal link written as a root-relative path (`/security/`) for anything
   on this site; use the absolute `https://parlehub.com/...` form only in the closing CTA
   block. **Always the trailing slash, never `.html`** — `/security.html` still forwards,
