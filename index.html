@@ -36,6 +36,110 @@ permalink: /
     <link href="/assets/site.css" rel="stylesheet" />
     <link rel="icon" type="image/png" href="/images/grad-215x215.png" />
     <link rel="apple-touch-icon" href="/images/apple-touch-icon.png" />
+    <!--
+      Schema.org structured data (JSON-LD). Renders nothing; it states the product
+      category, plan pricing, and feature list as machine-readable fields so search
+      engines and AI crawlers don't have to infer them from the marketing copy.
+      Companion to /llms.txt (same facts, prose form) - keep the two in sync.
+
+      Prices here MUST match what pricing.html actually shows a visitor. Structured
+      data that claims a price the page doesn't display is a Google structured-data
+      policy violation, so if a plan price changes, change it in three places:
+      pricing.html, llms.txt, and here.
+    -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Organization",
+            "@id": "https://parlehub.com/#organization",
+            "name": "ParleHub",
+            "legalName": "ParleHub LLC",
+            "url": "https://parlehub.com",
+            "logo": "https://parlehub.com/images/grad-215x215.png",
+            "email": "legal@parlehub.com"
+          },
+          {
+            "@type": "SoftwareApplication",
+            "@id": "https://parlehub.com/#software",
+            "name": "ParleHub",
+            "applicationCategory": "BusinessApplication",
+            "applicationSubCategory": "Team collaboration and AI governance",
+            "operatingSystem": "Web browser (Chrome, Edge, Safari, Firefox); installable as a PWA",
+            "url": "https://parlehub.com",
+            "installUrl": "https://app.parlehub.com",
+            "publisher": { "@id": "https://parlehub.com/#organization" },
+            "screenshot": "https://parlehub.com/images/projectlist.png",
+            "description": "A team-based shared workspace for AI conversations. Projects hold shared AI threads every member can see live, each with its own budget, your own expense code, and a token ledger that exports to CSV. Bring your own model provider keys, use models ParleHub hosts, or run both.",
+            "featureList": [
+              "Shared project threads visible to every member in real time, with presence indicators",
+              "Budgets scoped to projects, with pre-flight enforcement that blocks a send before it exceeds the budget",
+              "Personal and organization-wide spend caps as backstops, with an 80% warning state",
+              "Your own project or engagement code on every project, carried through to the CSV export",
+              "Usage and spend analytics by project, person, provider, or model",
+              "Bring your own provider keys (Anthropic, OpenAI, Google Gemini, Azure OpenAI) or use models ParleHub hosts",
+              "Per-conversation model switching",
+              "Enterprise SSO via Microsoft Entra ID and Google Workspace",
+              "Project files stored in your own SharePoint site or Google Shared Drive",
+              "AI tool calls against project files: search, read, edit, spreadsheets, and document conversion",
+              "Role-based access control across organization, project admin, and member levels",
+              "Append-only audit log enforced at the database level"
+            ],
+            "offers": [
+              {
+                "@type": "Offer",
+                "name": "Free",
+                "price": "0",
+                "priceCurrency": "USD",
+                "url": "https://parlehub.com/pricing/",
+                "description": "3 seats, 3 projects, model spend capped at $10 per month, 2 GB managed storage."
+              },
+              {
+                "@type": "Offer",
+                "name": "Team",
+                "price": "10",
+                "priceCurrency": "USD",
+                "url": "https://parlehub.com/pricing/",
+                "description": "Flat $10 per month. 10 seats, 10 projects, uncapped model spend, 10 GB managed storage, Enterprise SSO. Model spend is billed separately, either on your own provider keys or per token on models ParleHub hosts.",
+                "priceSpecification": {
+                  "@type": "UnitPriceSpecification",
+                  "price": "10",
+                  "priceCurrency": "USD",
+                  "unitCode": "MON",
+                  "unitText": "month"
+                }
+              },
+              {
+                "@type": "Offer",
+                "name": "Enterprise",
+                "price": "5",
+                "priceCurrency": "USD",
+                "url": "https://parlehub.com/pricing/",
+                "description": "$5 per seat per month, 10-seat minimum. Unlimited seats and projects, uncapped model spend, private projects, SharePoint or Google Drive storage, Enterprise SSO. Model spend is billed separately.",
+                "priceSpecification": {
+                  "@type": "UnitPriceSpecification",
+                  "price": "5",
+                  "priceCurrency": "USD",
+                  "unitCode": "MON",
+                  "unitText": "seat per month",
+                  "referenceQuantity": {
+                    "@type": "QuantitativeValue",
+                    "value": 1,
+                    "unitText": "seat"
+                  },
+                  "eligibleQuantity": {
+                    "@type": "QuantitativeValue",
+                    "minValue": 10,
+                    "unitText": "seat"
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      }
+    </script>
   </head>
   <body class="font-body selection:bg-primary/30 selection:text-parchment">
     <!-- HEADER -->

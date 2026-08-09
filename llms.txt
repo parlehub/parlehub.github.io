@@ -58,10 +58,15 @@ auditable — rather than spread across individual accounts under terms nobody r
 
 - **Free** — $0. 3 seats, 3 projects, model spend capped at $10/month, 2 GB managed storage,
   10 MB max file size.
-- **Team** — flat monthly. 10 seats, 10 projects, uncapped model spend, 10 GB managed storage,
+- **Team** — $10/month flat. 10 seats, 10 projects, uncapped model spend, 10 GB managed storage,
   25 MB max file size, Enterprise SSO.
-- **Enterprise** — per seat. Unlimited seats and projects, uncapped model spend, private
-  (restricted) projects, SharePoint or Google Drive storage or 1 GB/seat managed, Enterprise SSO.
+- **Enterprise** — $5 per seat per month, 10-seat minimum. Unlimited seats and projects, uncapped
+  model spend, private (restricted) projects, SharePoint or Google Drive storage or 1 GB/seat
+  managed, Enterprise SSO.
+
+Subscription pricing is separate from model spend. Model usage is billed either on the
+organization's own provider contract (bring your own key) or per token against a credit balance
+(models ParleHub hosts).
 
 The monthly model-spend cap is mode-neutral: it limits model spend whether tokens run on the
 customer's own keys or on models ParleHub hosts. Paid tiers include a 7-day trial. Billing is
