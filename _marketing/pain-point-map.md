@@ -260,7 +260,7 @@ governance and pricing teasers. It is a feature tour. Proposed replacement, pain
 5. **Theme E**: derivation and supervision, with `agent-tools.png`. Write this one last and
    most carefully.
 6. **Theme C**: the ceiling. Shorter, sits naturally under B.
-7. **Theme F**: governance block, largely as it is today, pointing to `/security.html`.
+7. **Theme F**: governance block, largely as it is today, pointing to `/security/`.
 8. **Theme G**: capacity, as the closing upside before the pricing teaser and CTA.
 
 Themes F and G can stay closer to feature-shaped than the others; by that point the reader has

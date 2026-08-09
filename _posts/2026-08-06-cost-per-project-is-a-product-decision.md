@@ -92,4 +92,4 @@ You cannot design a menu from a grocery bill.
 ***
 
 **Want to know what AI costs you per project, per client, per engagement?**  
-[See how ParleHub budgets and attributes AI spend →](https://www.parlehub.com/pricing.html)
+[See how ParleHub budgets and attributes AI spend →](https://parlehub.com/pricing/)

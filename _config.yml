@@ -1,12 +1,15 @@
 title: ParleHub
-url: "https://www.parlehub.com"
+# Must match CNAME. jekyll-sitemap stamps this onto every <loc> in sitemap.xml and
+# onto the Sitemap: line in robots.txt, so a mismatch publishes a sitemap of URLs
+# that all 301, which Search Console reports as "Page with redirect".
+url: "https://parlehub.com"
 baseurl: ""
 markdown: kramdown
 permalink: /blog/:year/:month/:day/:title/
 timezone: America/New_York
 
 # Never published. Jekyll copies any unrecognised root file into _site, so internal
-# docs must be listed here or they end up served at www.parlehub.com/<path>.
+# docs must be listed here or they end up served at parlehub.com/<path>.
 # (Directories starting with "_" or "." are already ignored; the entries below are
 # explicit so the intent survives a rename.)
 exclude:

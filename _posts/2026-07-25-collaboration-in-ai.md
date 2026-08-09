@@ -68,4 +68,4 @@ Stop prompt-engineering in the dark. It’s time to bring AI out of the silos an
 ***
 
 **Ready to transform how your team works with AI?**  
-[Discover how ParleHub brings multiplayer AI to your workflow →](https://www.parlehub.com/)
+[Discover how ParleHub brings multiplayer AI to your workflow →](https://parlehub.com/)
