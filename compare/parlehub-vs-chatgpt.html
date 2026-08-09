@@ -25,7 +25,7 @@ permalink: /compare/parlehub-vs-chatgpt/
     <title>ParleHub vs ChatGPT Business &amp; Enterprise | ParleHub</title>
     <meta
       name="description"
-      content="A head-to-head comparison of ChatGPT's shared projects and credit spend controls with ParleHub's per-project budgets, project codes, live shared threads, and bring-your-own-key model access. Verified against vendor documentation, August 2026."
+      content="A head-to-head comparison of ChatGPT's shared projects and credit spend controls with ParleHub's per-project budgets, project codes, live shared threads, and flexible model access on your own keys or ours. Verified against vendor documentation, August 2026."
     />
     <link
       href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,500;0,600;1,500;1,600&family=Inter:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
@@ -437,7 +437,21 @@ permalink: /compare/parlehub-vs-chatgpt/
               heavier agentic work draws on a credit pool you buy separately. It
               also ties the workspace and the model together, and a firm that has
               already signed an enterprise agreement with a provider is paying
-              for the same tokens twice.
+              for the same tokens twice. With us the two are separate purchases:
+              bring that agreement, or use models we host and pay for what you
+              use.
+            </p>
+            <p class="text-parchment-dim text-lg leading-relaxed">
+              There is a third case neither vendor covers. A good deal of the
+              cheap, capable capacity now comes from labs your firm will never
+              contract with, because a forty-person practice is not a procurement
+              target for anyone and self-hosting an open-weight model is an
+              infrastructure project nobody asked for. We host those models, so
+              routine drafting and summarising can run on something that costs a
+              fraction of a frontier call while the analysis a partner signs stays
+              on the model you trust for it. Spend is tracked per project either
+              way, so whether the cheaper model was good enough stops being an
+              argument and becomes a number on the engagement.
             </p>
             <ul class="space-y-3 pt-2">
               <li class="flex items-start gap-3 text-parchment-dim">
@@ -446,6 +460,20 @@ permalink: /compare/parlehub-vs-chatgpt/
                 >
                 Connect OpenAI, Anthropic, Google Gemini, and Azure OpenAI with
                 your own keys, held in Azure Key Vault and never exposed
+              </li>
+              <li class="flex items-start gap-3 text-parchment-dim">
+                <span class="material-symbols-outlined text-verdigris mt-0.5"
+                  >check_circle</span
+                >
+                Or skip the keys entirely and use models we host, charged by what
+                you use. Run both at once if you want, on the same ledger
+              </li>
+              <li class="flex items-start gap-3 text-parchment-dim">
+                <span class="material-symbols-outlined text-verdigris mt-0.5"
+                  >check_circle</span
+                >
+                That includes open-weight models from outside the big three, which
+                your firm will never sign a contract with and should not have to
               </li>
               <li class="flex items-start gap-3 text-parchment-dim">
                 <span class="material-symbols-outlined text-verdigris mt-0.5"
@@ -526,9 +554,9 @@ permalink: /compare/parlehub-vs-chatgpt/
                 <span class="material-symbols-outlined text-verdigris mt-0.5"
                   >check_circle</span
                 >
-                Your keys and your provider contracts, so moving spend to a
-                cheaper model is a commercial decision rather than a migration
-                project
+                Your keys or ours, so moving spend to a cheaper model is a
+                commercial decision rather than a migration project. The same
+                budgets, caps, project codes and ledger apply either way
               </li>
               <li class="flex items-start gap-3 text-parchment-dim">
                 <span class="material-symbols-outlined text-verdigris mt-0.5"
@@ -756,23 +784,35 @@ permalink: /compare/parlehub-vs-chatgpt/
               </tr>
               <tr class="border-b border-ink-line/60">
                 <td class="p-4 text-parchment">Model choice</td>
-                <td class="p-4">
-                  OpenAI, Anthropic, Gemini, Azure OpenAI
+                <td class="p-4 text-parchment">
+                  OpenAI, Anthropic, Gemini, Azure OpenAI on your own keys, plus
+                  open-weight models we host
                 </td>
                 <td class="p-4">OpenAI models</td>
               </tr>
               <tr class="border-b border-ink-line/60">
+                <td class="p-4 text-parchment">
+                  Models you have no contract with
+                </td>
+                <td class="p-4 text-parchment">
+                  Available, hosted by us, no procurement
+                </td>
+                <td class="p-4">Not applicable</td>
+              </tr>
+              <tr class="border-b border-ink-line/60">
                 <td class="p-4 text-parchment">Whose provider agreement</td>
-                <td class="p-4">Yours, your own keys</td>
+                <td class="p-4">
+                  Yours on your own keys, or ours on models we host
+                </td>
                 <td class="p-4">OpenAI's</td>
               </tr>
               <tr class="border-b border-ink-line/60">
                 <td class="p-4 text-parchment">How model usage is paid for</td>
-                <td class="p-4">
-                  Metered on your own provider contract, at your rate; our
-                  subscription is separate
-                </td>
                 <td class="p-4 text-parchment">
+                  Your choice: on your own provider contract at your rate, or by
+                  consumption on models we host, with no key at all
+                </td>
+                <td class="p-4">
                   Seat covers ordinary chat; advanced and agentic use draws on a
                   purchased credit pool
                 </td>
@@ -852,13 +892,13 @@ permalink: /compare/parlehub-vs-chatgpt/
               >
               <span
                 ><strong class="text-parchment"
-                  >You want one invoice and no keys to manage.</strong
+                  >You want a flat per-head cost with no meter running.</strong
                 >
-                Everyday chat comes with the seat and the rest comes out of a
-                credit pool, all on one bill. ParleHub asks you to bring your own
-                provider keys, which means a provider account, a card, and
-                someone owning it. Managed model access from us is not available
-                today.</span
+                Everyday chat comes with the ChatGPT seat, so ordinary use is
+                predictable per person and nobody watches a balance. We can host
+                your models with no key to manage, but hosted usage is charged by
+                consumption, which is a different budgeting shape even when it
+                costs less.</span
               >
             </li>
             <li class="flex items-start gap-3 text-parchment-dim">
@@ -1009,7 +1049,7 @@ permalink: /compare/parlehub-vs-chatgpt/
         <div class="text-center py-4 border-y border-ink-line/40">
           <p class="eyebrow text-primary-dim">
             Works with Anthropic &middot; OpenAI &middot; Google Gemini &middot;
-            Azure OpenAI
+            Azure OpenAI &middot; and open-weight models we host
           </p>
         </div>
         <div

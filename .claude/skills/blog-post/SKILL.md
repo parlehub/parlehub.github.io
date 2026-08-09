@@ -100,9 +100,13 @@ Rules:
   battle-tested or field-proven at scale.
 - **[ROADMAP]** — do not present as available. Only tease as "coming soon" if the post is
   explicitly forward-looking, and tell the user you did.
-- **Managed prepaid model credits are [ROADMAP]** and the "credits transferable across
-  OpenAI/Anthropic/Gemini" framing is architecturally wrong. Flag this to the user before
-  publishing any copy that touches it.
+- **There are two model-access modes and both are [LIVE]:** bring your own provider keys,
+  or use models ParleHub hosts, charged by consumption. Never write that ParleHub is
+  BYOK-only — that was true until Aug 2026 and a lot of older copy still says it. Two
+  cautions survive: don't imply a broad hosted catalog (it is curated and small), and don't
+  write "buy tokens from us" or "credits transferable across OpenAI/Anthropic/Gemini" —
+  architecturally wrong, and the reselling-vs-bundling question is still open. Say "models
+  we host, charged by what you use".
 - **Never mention SAML** — not built.
 - **Never claim SIEM export or a customer-facing audit-log UI.** The audit log is a
   database-level append-only guarantee, not an admin export screen.

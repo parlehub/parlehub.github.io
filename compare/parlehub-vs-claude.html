@@ -25,7 +25,7 @@ permalink: /compare/parlehub-vs-claude/
     <title>ParleHub vs Claude Team &amp; Enterprise | ParleHub</title>
     <meta
       name="description"
-      content="A head-to-head comparison of Claude's Projects and spend controls with ParleHub's per-project budgets, project codes, shared threads, and bring-your-own-key model access. Verified against vendor documentation, August 2026."
+      content="A head-to-head comparison of Claude's Projects and spend controls with ParleHub's per-project budgets, project codes, shared threads, and flexible model access on your own keys or ours. Verified against vendor documentation, August 2026."
     />
     <link
       href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,500;0,600;1,500;1,600&family=Inter:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
@@ -435,7 +435,21 @@ permalink: /compare/parlehub-vs-claude/
               running either way; what you are buying is Anthropic's meter rather
               than your own. It also means the workspace and the model are the
               same commercial decision, and changing your mind about one changes
-              the other.
+              the other. With us the two are separate purchases: bring the
+              provider contract you already signed, or use models we host and pay
+              for what you use.
+            </p>
+            <p class="text-parchment-dim text-lg leading-relaxed">
+              There is a third case neither vendor covers. A good deal of the
+              cheap, capable capacity now comes from labs your firm will never
+              contract with, because a forty-person practice is not a procurement
+              target for anyone and self-hosting an open-weight model is an
+              infrastructure project nobody asked for. We host those models, so
+              routine drafting and summarising can run on something that costs a
+              fraction of a frontier call while the analysis a partner signs stays
+              on the model you trust for it. Spend is tracked per project either
+              way, so whether the cheaper model was good enough stops being an
+              argument and becomes a number on the engagement.
             </p>
             <ul class="space-y-3 pt-2">
               <li class="flex items-start gap-3 text-parchment-dim">
@@ -444,6 +458,20 @@ permalink: /compare/parlehub-vs-claude/
                 >
                 Connect Anthropic, OpenAI, Google Gemini, and Azure OpenAI with
                 your own keys, held in Azure Key Vault and never exposed
+              </li>
+              <li class="flex items-start gap-3 text-parchment-dim">
+                <span class="material-symbols-outlined text-verdigris mt-0.5"
+                  >check_circle</span
+                >
+                Or skip the keys entirely and use models we host, charged by what
+                you use. Run both at once if you want, on the same ledger
+              </li>
+              <li class="flex items-start gap-3 text-parchment-dim">
+                <span class="material-symbols-outlined text-verdigris mt-0.5"
+                  >check_circle</span
+                >
+                That includes open-weight models from outside the big three, which
+                your firm will never sign a contract with and should not have to
               </li>
               <li class="flex items-start gap-3 text-parchment-dim">
                 <span class="material-symbols-outlined text-verdigris mt-0.5"
@@ -525,9 +553,9 @@ permalink: /compare/parlehub-vs-claude/
                 <span class="material-symbols-outlined text-verdigris mt-0.5"
                   >check_circle</span
                 >
-                Your keys and your provider contracts, so moving spend to a
-                cheaper model is a commercial decision rather than a migration
-                project
+                Your keys or ours, so moving spend to a cheaper model is a
+                commercial decision rather than a migration project. The same
+                budgets, caps, project codes and ledger apply either way
               </li>
               <li class="flex items-start gap-3 text-parchment-dim">
                 <span class="material-symbols-outlined text-verdigris mt-0.5"
@@ -754,21 +782,33 @@ permalink: /compare/parlehub-vs-claude/
               </tr>
               <tr class="border-b border-ink-line/60">
                 <td class="p-4 text-parchment">Model choice</td>
-                <td class="p-4">
-                  Anthropic, OpenAI, Gemini, Azure OpenAI
+                <td class="p-4 text-parchment">
+                  Anthropic, OpenAI, Gemini, Azure OpenAI on your own keys, plus
+                  open-weight models we host
                 </td>
                 <td class="p-4">Claude models</td>
               </tr>
               <tr class="border-b border-ink-line/60">
+                <td class="p-4 text-parchment">
+                  Models you have no contract with
+                </td>
+                <td class="p-4 text-parchment">
+                  Available, hosted by us, no procurement
+                </td>
+                <td class="p-4">Not applicable</td>
+              </tr>
+              <tr class="border-b border-ink-line/60">
                 <td class="p-4 text-parchment">Whose provider agreement</td>
-                <td class="p-4">Yours, your own keys</td>
+                <td class="p-4">
+                  Yours on your own keys, or ours on models we host
+                </td>
                 <td class="p-4">Anthropic's</td>
               </tr>
               <tr class="border-b border-ink-line/60">
                 <td class="p-4 text-parchment">How model usage is paid for</td>
-                <td class="p-4">
-                  Metered on your own provider contract, at your rate; our
-                  subscription is separate
+                <td class="p-4 text-parchment">
+                  Your choice: on your own provider contract at your rate, or by
+                  consumption on models we host, with no key at all
                 </td>
                 <td class="p-4">
                   Per seat plus metered consumption, billed by Anthropic at
@@ -846,13 +886,13 @@ permalink: /compare/parlehub-vs-claude/
               >
               <span
                 ><strong class="text-parchment"
-                  >You want one vendor and one invoice.</strong
+                  >You want Anthropic's whole model line, first-party.</strong
                 >
-                Anthropic meters the tokens and bills them with the seats, so
-                there is nothing to set up. ParleHub asks you to bring your own
-                provider keys, which means a provider account, a card, and
-                someone owning it. Managed model access from us is not available
-                today.</span
+                Every Claude model Anthropic ships, on the day it ships, metered
+                by the company that built it. We can run Anthropic models on your
+                own key, and we host a curated set of models ourselves, but a
+                curated set is a choice someone made and the first-party line is
+                not.</span
               >
             </li>
             <li class="flex items-start gap-3 text-parchment-dim">
@@ -1010,7 +1050,7 @@ permalink: /compare/parlehub-vs-claude/
         <div class="text-center py-4 border-y border-ink-line/40">
           <p class="eyebrow text-primary-dim">
             Works with Anthropic &middot; OpenAI &middot; Google Gemini &middot;
-            Azure OpenAI
+            Azure OpenAI &middot; and open-weight models we host
           </p>
         </div>
         <div

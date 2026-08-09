@@ -33,8 +33,21 @@ Mark `- [x]` when published. Keep the two shipped posts in mind so arguments don
   enterprise agreement's terms; opaque per-seat pricing that hides token cost.
   *Payoff:* BYOK across Anthropic, OpenAI, and Google Gemini, plus Azure OpenAI for
   Azure-native orgs. Keys stored in Azure Key Vault, never exposed. **[LIVE]** for the
-  BYOK model overall; Gemini specifically **[SHIPPED]**. Do **not** mention managed
-  prepaid credits or Vertex AI.
+  BYOK model overall; Gemini specifically **[SHIPPED]**. Hosted models are now **[LIVE]**
+  too and the post should say both modes exist. Do **not** mention Vertex AI, describe the
+  hosted catalog as broad, or write "buy tokens from us".
+
+- [ ] **Two doors to the same room: owning the model relationship, or not**
+  *Thesis:* The choice between bringing your own provider contract and using a vendor's
+  hosted models is usually framed as convenience versus control, and that framing is wrong.
+  It is a question about *which* costs you want to be legible: a firm with an enterprise
+  agreement already has a negotiated rate worth using, and a firm without one is paying a
+  procurement tax to get one.
+  *Failure modes:* buying a key you cannot justify to finance; being forced to open a
+  provider account before anyone has proven the tool is useful; the pilot that dies in
+  procurement rather than on the merits.
+  *Payoff:* both modes are **[LIVE]** and can run side by side in one org, on one ledger,
+  under the same project budgets and the same expense code. Same caveats as above.
 
 - [ ] **Append-only or it didn't happen: what compliance actually asks of your AI log**
   *Thesis:* "We log everything" is not an audit trail. An audit trail is a log that a
@@ -127,11 +140,8 @@ Mark `- [x]` when published. Keep the two shipped posts in mind so arguments don
 
 ## Parked — payoff is [ROADMAP], don't write yet
 
-- [ ] **Managed model credits / "buy tokens from us"** — billing, wallet, prepaid credits,
-  auto-recharge and ledger are built, but the Azure AI Foundry inference backend isn't
-  deployed, and Foundry's catalog does **not** include Anthropic or Gemini, so the
-  "credits transferable across providers" story is architecturally wrong. Per `CLAUDE.md`,
-  flag to the site owner before publishing anything that promises this.
+- [ ] **SIEM / audit export, customer-facing audit UI** — the log is append-only at the
+  database level, but there is no customer-facing read path. Tracked as APP-252.
 - [ ] **SAML / Okta / generic IdP** — not built. Do not mention.
 - [ ] **Vertex AI / enterprise GCP model access** — distinct from the shipped Gemini
   Developer API provider, and not built.

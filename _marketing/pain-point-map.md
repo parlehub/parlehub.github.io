@@ -33,6 +33,7 @@ measurement will happen during an incident.
 | Project files in the org's own SharePoint site, least-privilege per-site `Sites.Selected` | **[LIVE]** |
 | Project files in the org's own Google Shared Drive | **[LIVE]** |
 | BYOK: model calls run under the firm's own provider agreement, keys in Azure Key Vault, never exposed | **[LIVE]** |
+| Models we host: no provider key at all, charged by consumption, same budgets and ledger | **[LIVE]** |
 | Four-level RBAC, restricted project visibility (Enterprise) | **[LIVE]** |
 
 **The turn.** AI stops being an unmeasured liability and becomes a described control. The
@@ -273,8 +274,11 @@ Consolidated from the root `CLAUDE.md` so nobody has to go looking:
 - No **SAML**, Okta, or generic IdP. Do not mention.
 - No **SIEM export** and no **customer-facing audit-log UI**. The audit log is a database
   guarantee. There is no `audit-log.png` and there must not be one.
-- No **managed prepaid credits**. **[ROADMAP]**, and the cross-provider framing is
-  architecturally wrong. Flag to the site owner before publishing anything touching it.
+- **Managed / hosted models are [LIVE]** as of 2026-08-09, charged by consumption. Two
+  residual cautions: do not imply a broad hosted catalog (it is curated and small), and do
+  not describe it as "buy tokens from us" or a credit portable across providers, which is
+  both architecturally wrong and possibly barred by the underlying Azure terms (gate G1 on
+  APP-142). Say "models we host, charged by what you use".
 - No **Vertex AI** or enterprise GCP model access. Distinct from the shipped Gemini Developer
   API provider.
 - No **throttling**, **dynamic model routing**, or **automatic downgrade to a cheaper model**.
