@@ -34,7 +34,7 @@ https://parlehub.com. The product itself lives at https://app.parlehub.com.
   markdown, syntax-highlighted code, PDF, images/SVG, video, and sandboxed HTML.
 - **Governance and audit.** Four role levels (SystemAdmin, OrgAdmin, ProjectAdmin, ProjectMember),
   member invites, project visibility controls, and a sensitive-action audit log enforced append-only
-  at the database level by SQL triggers. Usage and spend analytics filter and group by project,
+  at the core platform level. Usage and spend analytics filter and group by project,
   person, provider, or model, with CSV export.
 
 ## Model providers

@@ -85,7 +85,7 @@ searchable by keyword and semantic search, and readable by the reviewer **[LIVE]
 agent's operations on files are real tool calls against the engagement's own documents
 **[LIVE]**, and edits are exact find-and-replace and diffs rather than silent rewrites, so
 what changed is visible. Sensitive actions are captured in an audit log enforced append-only
-at the database level by SQL triggers **[LIVE]**, which is the property a controls reviewer
+at the core platform level **[LIVE]**, which is the property a controls reviewer
 actually cares about: not that a log exists, but that the application itself cannot rewrite
 it.
 > *Honest limit:* this is a retained and reviewable record. It is not workpaper documentation

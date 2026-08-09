@@ -175,7 +175,7 @@ worse.
 | Agent works via real tool calls against the project's own files, not from recollection | **[LIVE]** |
 | Precise edits: exact find-and-replace, multi-edit, diffs. Not silent rewrites | **[LIVE]** |
 | Branching preserves the path taken rather than overwriting it | **[LIVE]** |
-| Audit log for sensitive actions, enforced append-only by database triggers | **[LIVE]** |
+| Audit log for sensitive actions, enforced append-only at the core platform level | **[LIVE]** |
 
 **The turn.** The work becomes reviewable, so it can be supervised at the rate it should be
 supervised at, and AI-assisted work becomes usable in the places that currently forbid it.
@@ -315,7 +315,7 @@ ParleHub. That is not a dodge; it is a real architectural consequence of BYOK pl
 tenant-resident storage, and it is a better answer than most vendors holding a report can
 give. Follow it with the specific control set: enforced SSO with tenant pinning, four-level
 RBAC, least-privilege `Sites.Selected`, Key Vault behind a two-vault broker,
-managed-identity-first auth, an audit log enforced append-only by database triggers, bounded
+managed-identity-first auth, an audit log enforced append-only at the core platform level, bounded
 agent loops, CSP and HSTS.
 
 **Know where it is fatal versus survivable.** Survivable with Robin (05), whose job is

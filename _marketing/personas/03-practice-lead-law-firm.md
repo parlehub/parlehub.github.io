@@ -99,7 +99,7 @@ account terms. Who has access: Microsoft Entra ID SSO **[LIVE]**, tenant-pinned,
 org-enforced SSO-only login.
 
 **Pain 2, confidentiality.** The same combination, plus four-level RBAC **[LIVE]** and an
-audit log enforced append-only by database triggers **[LIVE]**, so sensitive actions are
+audit log enforced append-only at the core platform level **[LIVE]**, so sensitive actions are
 recorded in a way a compromised application credential cannot rewrite.
 
 **Pain 3, supervision.** This is the strongest fit and needs the most careful language. The

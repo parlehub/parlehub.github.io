@@ -96,10 +96,10 @@ invoice **[LIVE]**.
 
 **Pain 5, the questionnaire.** The combination above is most of the AI section: named IdP
 with enforced SSO, role-based access, tenant-resident storage under least privilege, secrets
-in a managed vault, spend bounded by policy, and an audit log enforced append-only by
-database triggers so that even a compromised application credential cannot alter history
-**[LIVE]**.
-> *Honest limit, and Robin will find it:* the audit log is a database-level guarantee. There
+in a managed vault, spend bounded by policy, and an audit log enforced append-only at the core
+platform level, below the application, so that even a compromised application credential cannot
+alter history **[LIVE]**.
+> *Honest limit, and Robin will find it:* the audit log is a core-platform-level guarantee. There
 > is no admin-facing audit log screen and no SIEM export. Say this before Robin asks.
 
 ## Unmet needs
@@ -137,7 +137,7 @@ AI you can see and AI you cannot.
 The honest answer respects the question, because Robin is right that a chat front end over
 Azure OpenAI is a weekend. What is not a weekend is per-project budgets with pre-flight
 enforcement, four-level RBAC, real-time shared threads, spend analytics by project and person
-and model, an append-only audit log enforced by database triggers, and agent file tooling
+and model, an append-only audit log enforced at the core platform level, and agent file tooling
 against SharePoint. Ask what happens to that build when the person who wrote it leaves.
 
 **"Where are our keys and who can read them?"**
@@ -148,7 +148,7 @@ behind a two-vault secret broker with managed-identity-first authentication.
 No, and say so plainly and early. What we can put in front of Robin instead is specific and
 checkable: enforced SSO through Entra with tenant pinning, least-privilege `Sites.Selected`
 rather than tenant-wide read, keys in Azure Key Vault behind a two-vault broker,
-managed-identity-first Azure auth, an audit log enforced append-only by database triggers,
+managed-identity-first Azure auth, an audit log enforced append-only at the core platform level,
 bounded agent loops and rate limits, and CSP, HSTS, and secure cookies. Then make the scope
 argument: with files in the firm's own SharePoint and calls under the firm's own provider
 keys, most of what an attestation would cover does not sit with us. Robin is capable of

@@ -61,8 +61,8 @@ Mark `- [x]` when published. Keep the two shipped posts in mind so arguments don
   *Failure modes:* App-level logging that the app itself can edit; retention as a
   substitute for immutability; screenshots-as-evidence; the "who approved this spend"
   question with no answer.
-  *Payoff:* Every sensitive action logged, enforced append-only at the **database** level
-  via SQL triggers — even a compromised app credential can't alter history. **[LIVE]**.
+  *Payoff:* Every sensitive action logged, enforced append-only at the **core
+  platform** level — even a compromised app credential can't alter history. **[LIVE]**.
   Hard constraint: this is a guarantee, **not** a self-service admin export or SIEM
   integration. Do not imply either.
 
@@ -146,8 +146,8 @@ Mark `- [x]` when published. Keep the two shipped posts in mind so arguments don
 
 ## Parked — payoff is [ROADMAP], don't write yet
 
-- [ ] **SIEM / audit export, customer-facing audit UI** — the log is append-only at the
-  database level, but there is no customer-facing read path. Tracked as APP-252.
+- [ ] **SIEM / audit export, customer-facing audit UI** — the log is append-only, enforced at the
+  core platform level, but there is no customer-facing read path. Tracked as APP-252.
 - [ ] **SAML / Okta / generic IdP** — not built. Do not mention.
 - [ ] **Vertex AI / enterprise GCP model access** — distinct from the shipped Gemini
   Developer API provider, and not built.

@@ -99,7 +99,7 @@ engagement that caused it, in a format finance can reconcile.
 
 **Pain 3, the RFP answer.** The combination is the answer: a named identity provider,
 files resident in the firm's own tenant, per-engagement spend caps with pre-flight
-enforcement, role-based access, and an audit log enforced append-only at the database level
+enforcement, role-based access, and an audit log enforced append-only at the core platform level
 **[LIVE]** so that even a compromised application credential cannot rewrite history.
 *Honest limit:* that audit guarantee is architectural, not a report Alex can attach to a
 questionnaire. See Unmet needs.
@@ -119,7 +119,7 @@ changed.
 ## Unmet needs
 
 - **A governance report Alex can hand to a client's procurement team.** The audit log is a
-  database-level guarantee with no self-service export and no SIEM integration. Alex wants a
+  core-platform-level guarantee with no self-service export and no SIEM integration. Alex wants a
   PDF or a CSV that says "here is our AI control posture", and today the answer is a
   conversation, not an artefact. *Confirmed gap.*
 - **SAML and Okta.** Entra ID and Google Workspace are OIDC only. A meaningful share of

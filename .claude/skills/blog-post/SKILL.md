@@ -108,8 +108,8 @@ Rules:
   architecturally wrong, and the reselling-vs-bundling question is still open. Say "models
   we host, charged by what you use".
 - **Never mention SAML** — not built.
-- **Never claim SIEM export or a customer-facing audit-log UI.** The audit log is a
-  database-level append-only guarantee, not an admin export screen.
+- **Never claim SIEM export or a customer-facing audit-log UI.** The audit log is an
+  append-only guarantee enforced at the core platform level, not an admin export screen.
 
 Claims the existing posts got wrong — do not repeat these:
 

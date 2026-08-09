@@ -313,7 +313,8 @@ redirect_from:
               <span class="material-symbols-outlined text-verdigris mt-0.5"
                 >check_circle</span
               >
-              Append-only enforcement at the core level, no app overrides
+              Append-only enforcement at the core platform level, no app
+              overrides
             </li>
             <li class="flex items-start gap-3 text-parchment-dim">
               <span class="material-symbols-outlined text-verdigris mt-0.5"
@@ -401,9 +402,9 @@ redirect_from:
           <p class="text-xs text-parchment-dim/70 leading-relaxed pt-1">
             Rows are only ever appended.
             <span class="text-parchment-dim">UPDATE</span> and
-            <span class="text-parchment-dim">DELETE</span> are blocked by a
-            database trigger — each entry is hash-chained to the one before it,
-            so any tampering is evident.
+            <span class="text-parchment-dim">DELETE</span> are blocked at the
+            core platform level, below the application — each entry is
+            hash-chained to the one before it, so any tampering is evident.
           </p>
         </div>
       </section>
