@@ -25,7 +25,13 @@ Mark `- [x]` when published. Keep the two shipped posts in mind so arguments don
   Files never leave the tenant. **[LIVE]**, and Google Shared Drives is **[LIVE]** too as of
   2026-08-08, so both halves can be claimed with equal confidence.
 
-- [ ] **Bring your own key: why you shouldn't rent your AI relationship**
+- [x] **Bring your own key: why you shouldn't rent your AI relationship**
+  *Published 2026-08-09 — `_posts/2026-08-09-bring-your-own-key-dont-rent-your-ai-relationship.md`*
+  *As written, the post argues renting is the right way to **evaluate** a model and owning
+  the provider relationship is the right way to **run** the work, with the rent→own→rent
+  move as the third pillar. That absorbs a chunk of the "Two doors to the same room" entry
+  below; if that one is written, it needs a distinct angle (procurement economics, not the
+  evaluate-vs-operate sequence).*
   *Thesis:* Buying AI *through* a SaaS vendor means your model access, your rate limits,
   your data terms, and your negotiating leverage all belong to someone else. Owning the
   provider relationship and renting only the workspace is the more durable posture.
