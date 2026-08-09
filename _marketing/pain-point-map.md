@@ -29,9 +29,9 @@ measurement will happen during an incident.
 | Capability | Status |
 | --- | --- |
 | Microsoft Entra ID SSO (OIDC), domain auto-provisioning, tenant-pinned, org-enforced SSO-only login | **[LIVE]** |
-| Google Workspace SSO (OIDC) | **[SHIPPED]** |
+| Google Workspace SSO (OIDC) | **[LIVE]** |
 | Project files in the org's own SharePoint site, least-privilege per-site `Sites.Selected` | **[LIVE]** |
-| Project files in the org's own Google Shared Drive | **[SHIPPED]** |
+| Project files in the org's own Google Shared Drive | **[LIVE]** |
 | BYOK: model calls run under the firm's own provider agreement, keys in Azure Key Vault, never exposed | **[LIVE]** |
 | Four-level RBAC, restricted project visibility (Enterprise) | **[LIVE]** |
 
@@ -204,7 +204,7 @@ the blame lands on one person.
 | Capability | Status |
 | --- | --- |
 | Entra ID SSO, verified in production, with enforced SSO-only login | **[LIVE]** |
-| Google Workspace SSO | **[SHIPPED]** |
+| Google Workspace SSO | **[LIVE]** |
 | Four-level RBAC: SystemAdmin, OrgAdmin, ProjectAdmin, ProjectMember | **[LIVE]** |
 | Restricted project visibility (Enterprise) | **[LIVE]** |
 | Two-vault secret broker, managed-identity-first Azure auth, CSP, HSTS, secure cookies | **[LIVE]** |
@@ -281,9 +281,11 @@ Consolidated from the root `CLAUDE.md` so nobody has to go looking:
   Budgets hard-block. Model switching is manual and per conversation.
 - No **code execution** in spreadsheet or file tooling.
 - No **citation verification** or **per-claim provenance**.
-- **Google Workspace SSO, Google Drive storage, and BYOK Gemini are [SHIPPED]**: real and
-  working, not field-proven at scale. Entra ID SSO and SharePoint storage are **[LIVE]** and
-  verified in production, so lead with those.
+- **BYOK Gemini is [SHIPPED]**: real and working, not field-proven at scale. Both SSO
+  providers (Entra ID, Google Workspace) and both enterprise storage providers (SharePoint,
+  Google Shared Drives) are **[LIVE]** and verified in production, Google on 2026-08-08, so
+  the Microsoft and Google stories can now be told with equal confidence. Copy written before
+  that date hedged the Google half; that hedge is stale, not a rule.
 - Not a **coding tool**. Never position against Copilot, Cursor, or engineering-team AI.
 - Never publish a **simulated testimonial** as a real one.
 

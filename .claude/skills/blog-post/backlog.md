@@ -22,8 +22,8 @@ Mark `- [x]` when published. Keep the two shipped posts in mind so arguments don
   as an unmanaged data processor; the download-reupload loop.
   *Payoff:* Project files stay in the org's own SharePoint site — least-privilege
   `Sites.Selected`, native SharePoint search, deletes go to SharePoint's own recycle bin.
-  Files never leave the tenant. **[LIVE]** (Google Shared Drives **[SHIPPED]** — mention
-  as real and working, not battle-tested.)
+  Files never leave the tenant. **[LIVE]**, and Google Shared Drives is **[LIVE]** too as of
+  2026-08-08, so both halves can be claimed with equal confidence.
 
 - [ ] **Bring your own key: why you shouldn't rent your AI relationship**
   *Thesis:* Buying AI *through* a SaaS vendor means your model access, your rate limits,
@@ -89,7 +89,7 @@ Mark `- [x]` when published. Keep the two shipped posts in mind so arguments don
   that drift.
   *Payoff:* Microsoft Entra ID (OIDC) with domain-based auto-provisioning, tenant-pinned,
   and org-enforced SSO-only login — **[LIVE]**, verified in production. Google Workspace
-  (OIDC) **[SHIPPED]**. **Never mention SAML.**
+  (OIDC) **[LIVE]** as well, verified 2026-08-08. **Never mention SAML.**
 
 - [x] **Cost per project is a product decision, not an accounting one**
   *Published 2026-08-06: `_posts/2026-08-06-cost-per-project-is-a-product-decision.md`*

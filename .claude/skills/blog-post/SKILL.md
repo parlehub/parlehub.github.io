@@ -114,7 +114,7 @@ Claims the existing posts got wrong — do not repeat these:
 | "dynamic model routing", "redirect to a cheaper model" | No automated routing. Budgets **hard-block** a send pre-flight, with an 80% warning and a self-serve increase request routed to admins. Model switching is manual, per conversation. |
 | "gracefully throttle" | It's a hard block, not throttling. |
 | "Microsoft Teams folders" | **SharePoint** (Microsoft 365, least-privilege `Sites.Selected`) and **Google Shared Drives**. |
-| Google Drive / Google Workspace SSO as proven | Both are [SHIPPED], not yet live-verified against a real external tenant. Entra ID SSO and SharePoint storage *are* [LIVE]. |
+| Google Drive / Google Workspace SSO as unproven | Both were [SHIPPED] and are now **[LIVE]**, verified in production 2026-08-08, alongside Entra ID SSO and SharePoint storage. Older posts hedge the Google half; don't copy that hedge forward. |
 
 **Links — never include the `www.`**. The canonical host is the apex `parlehub.com` (it's what
 `CNAME` contains). `www.parlehub.com` still resolves, it just 301-redirects, so a `www.` link
@@ -122,8 +122,10 @@ costs a needless hop. Write `https://parlehub.com/...`.
 
 - "Start / sign in" intent → `https://app.parlehub.com` (root, no deep links)
 - "Learn more" intent → `https://parlehub.com/`, or a real marketing page:
-  `/security/`, `/pricing/`, `/blog/`. Those five pages plus `/terms/` and
-  `/privacy/` are the only ones that exist — don't invent paths.
+  `/security/`, `/pricing/`, `/blog/`, `/compare/`,
+  `/compare/parlehub-vs-claude/`, `/compare/parlehub-vs-chatgpt/`. Those pages
+  plus `/terms/` and `/privacy/` are the only ones that exist — don't invent
+  paths.
 - Prefer an internal link written as a root-relative path (`/security/`) for anything
   on this site; use the absolute `https://parlehub.com/...` form only in the closing CTA
   block. **Always the trailing slash, never `.html`** — `/security.html` still forwards,

@@ -74,8 +74,7 @@ Each one is hours of work, and the AI section is currently unanswerable.
 **Pain 1 and 2, identity and inventory.** Microsoft Entra ID via OIDC **[LIVE]**, verified
 in production, with domain-based auto-provisioning, tenant pinning, and org-enforced
 SSO-only login so local credentials can be turned off entirely. Google Workspace via OIDC
-**[SHIPPED]**, fully built and tested, with a live round trip against a real Google tenant
-still outstanding. Four-level RBAC **[LIVE]**: SystemAdmin, OrgAdmin, ProjectAdmin,
+**[LIVE]**, verified in production 2026-08-08. Four-level RBAC **[LIVE]**: SystemAdmin, OrgAdmin, ProjectAdmin,
 ProjectMember. Restricted project visibility on Enterprise.
 > **Never mention SAML to this persona or any other.** It is not built, and Robin is exactly
 > the person who will ask a follow-up question we cannot answer.
@@ -84,7 +83,7 @@ ProjectMember. Restricted project visibility on Enterprise.
 specifics are what shorten a review. Project files can stay in the firm's own SharePoint site
 using per-site `Sites.Selected` Graph access **[LIVE]**, which is least-privilege by
 construction rather than tenant-wide read. Deletes go to SharePoint's own recycle bin. Google
-Shared Drives **[SHIPPED]**. Managed Azure Blob storage is the always-available default with
+Shared Drives **[LIVE]**, verified in production 2026-08-08. Managed Azure Blob storage is the always-available default with
 its own recycle bin and versioning. Provider API keys are held in Azure Key Vault and
 resolved at call time, never exposed **[LIVE]**. Azure authentication is managed-identity
 first with minimal static secrets, behind a two-vault secret broker, with CSP, HSTS, and

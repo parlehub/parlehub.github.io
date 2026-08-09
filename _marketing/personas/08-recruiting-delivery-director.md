@@ -82,7 +82,7 @@ The knowledge is in people's heads and their private histories.
 ## How ParleHub answers it
 
 **Pain 1, candidate data.** Project files can stay in the firm's own SharePoint site under
-least-privilege per-site access **[LIVE]**, or Google Shared Drives **[SHIPPED]**, so
+least-privilege per-site access **[LIVE]**, or Google Shared Drives **[LIVE]**, so
 candidate material never leaves the firm's tenant. Bring-your-own-key **[LIVE]** puts the
 model call under the firm's own provider agreement rather than consumer terms. Entra ID SSO
 **[LIVE]** with enforced SSO-only login and four-level RBAC **[LIVE]** control who reaches

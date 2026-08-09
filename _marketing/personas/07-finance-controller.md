@@ -99,7 +99,7 @@ Dale sets rather than a number discovered.
 > downgrade to a cheaper model. Do not soften this.
 
 **Pain 3, expense sprawl.** Consolidation onto a firm account with SSO through Entra ID
-**[LIVE]** or Google Workspace **[SHIPPED]**, with subscription billing through Stripe on
+**[LIVE]** or Google Workspace **[LIVE]**, with subscription billing through Stripe on
 Free, Team, or Enterprise tiers **[LIVE]**, and bring-your-own-key so model consumption runs
 on the firm's own provider contracts rather than on personal cards.
 

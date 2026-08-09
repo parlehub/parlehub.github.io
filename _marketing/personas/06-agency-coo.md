@@ -82,7 +82,7 @@ the number Toni takes into a renewal conversation.
 **Pain 2, the freelance bench.** Four-level RBAC **[LIVE]** with per-project membership, so
 a freelancer is a member of one project and sees one account. Restricted project visibility
 **[LIVE]**, Enterprise tier. Access tied to the identity provider through Entra ID
-**[LIVE]** or Google Workspace **[SHIPPED]** SSO, so removing them is one action in the
+**[LIVE]** or Google Workspace **[LIVE]** SSO, so removing them is one action in the
 system Toni already uses.
 
 **Pain 3, consistency.** Shared project threads visible to every member in real time
@@ -95,7 +95,7 @@ the good one can be promoted into the shared project **[LIVE]**.
 account's project, against the account's files, under the agency's own provider keys
 **[LIVE]**, with the history retained and reviewable. If the client requires that their
 material not sit in a third-party system, project files can live in the agency's own
-SharePoint **[LIVE]** or Google Shared Drive **[SHIPPED]**.
+SharePoint **[LIVE]** or Google Shared Drive **[LIVE]**.
 
 ## Unmet needs
 
