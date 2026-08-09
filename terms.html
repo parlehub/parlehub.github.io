@@ -1,7 +1,10 @@
 ---
 # Front matter is required for jekyll-sitemap to see this page (see index.html).
-# permalink keeps the literal .html URL; without it this becomes /terms/.
+# permalink is the canonical URL; redirect_from preserves the old .html URL,
+# which is still in Google's index and in published blog posts.
 permalink: /terms/
+redirect_from:
+  - /terms.html
 ---
 <!doctype html>
 <html class="dark" lang="en">

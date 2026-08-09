@@ -125,7 +125,9 @@ costs a needless hop. Write `https://parlehub.com/...`.
   `/security/`, `/pricing/`, `/blog/`. Those five pages plus `/terms/` and
   `/privacy/` are the only ones that exist — don't invent paths.
 - Prefer an internal link written as a root-relative path (`/security/`) for anything
-  on this site; use the absolute `www` form only in the closing CTA block.
+  on this site; use the absolute `https://parlehub.com/...` form only in the closing CTA
+  block. **Always the trailing slash, never `.html`** — `/security.html` still forwards,
+  it just costs a redirect.
 
 In the closing CTA block, the bolded question line needs **two trailing spaces** so the
 link renders on its own line rather than running on in the same paragraph.

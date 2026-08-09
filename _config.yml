@@ -24,6 +24,9 @@ exclude:
 
 plugins:
   - jekyll-sitemap
+  # Generates stub pages at the old /security.html style URLs that forward to the
+  # current /security/ ones. Driven by `redirect_from:` in each page's front matter.
+  - jekyll-redirect-from
 
 collections:
   posts:
