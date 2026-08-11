@@ -5,13 +5,30 @@ section 3, and the **product payoff** with its status per `CLAUDE.md`. Only topi
 payoff is [LIVE] or [SHIPPED] are ready to write — [ROADMAP] payoffs are parked at the
 bottom.
 
-Mark `- [x]` when published. Keep the two shipped posts in mind so arguments don't overlap:
+Mark `- [x]` when published. Keep the shipped posts in mind so arguments don't overlap:
 - 2026-07-24 — project-level token tracking & budgeting (the FinOps argument)
 - 2026-07-25 — collaboration / single-player AI silos (the teamwork argument)
+- 2026-08-01 — data residency / shadow AI (the security argument)
+- 2026-08-06 — cost per project changes the portfolio (the decision argument)
+- 2026-08-12 — project name vs client code (the allocation-mechanics argument)
 
 ---
 
 ## Ready to write
+
+- [x] **A project name is not a client code: why AI cost allocation stalls halfway**
+  *Published 2026-08-12 — `_posts/2026-08-12-a-project-name-is-not-a-client-code.md`*
+  *Thesis:* Theme B from `_marketing/pain-point-map.md`, narrowed to the mechanics. The
+  2026-08-06 post argued cost you can move is cost you can price; this one is about why the
+  moving breaks. Firms get accurate per-project numbers and still can't recharge, because a
+  name is a label and a code is an identifier. Allocation is an identifier problem.
+  *Failure modes:* The Overhead Bucket; The Month-End Join; The Absorbed Pass-Through;
+  The Unpriceable Input.
+  *Payoff:* The **project code field** set on the project itself, the code carrying through
+  into the analytics CSV export, project-scoped budgets, pre-flight hard block. All **[LIVE]**.
+  *Note:* deliberately extends 2026-08-06 (whose third pillar made the client-code point) and
+  links to it in-text. Did **not** claim ledger-to-provider-invoice reconciliation or any
+  billing-system integration (open questions 5 and 6 in the pain point map).
 
 - [x] **Your AI vendor is a data residency decision you haven't made yet**
   *Published 2026-08-01 — `_posts/2026-08-01-your-ai-vendor-is-a-data-residency-decision.md`*
