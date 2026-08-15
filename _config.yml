@@ -14,7 +14,12 @@ timezone: America/New_York
 # explicit so the intent survives a rename.)
 exclude:
   - CLAUDE.md
+  # The marketing workspace moved to the private parlehub/marketing repo on
+  # 2026-08-14. Both spellings stay listed as a guard: if that repo is ever
+  # cloned or copied in here, a directory without the leading underscore would
+  # otherwise be published straight to parlehub.com.
   - _marketing/
+  - marketing/
   - .claude/
   - test.html
   - node_modules/

@@ -19,7 +19,7 @@ Mark `- [x]` when published. Keep the shipped posts in mind so arguments don't o
 
 - [x] **A project name is not a client code: why AI cost allocation stalls halfway**
   *Published 2026-08-12 — `_posts/2026-08-12-a-project-name-is-not-a-client-code.md`*
-  *Thesis:* Theme B from `_marketing/pain-point-map.md`, narrowed to the mechanics. The
+  *Thesis:* Theme B from `pain-point-map.md` in the private marketing repo, narrowed to the mechanics. The
   2026-08-06 post argued cost you can move is cost you can price; this one is about why the
   moving breaks. Firms get accurate per-project numbers and still can't recharge, because a
   name is a label and a code is an identifier. Allocation is an identifier problem.
