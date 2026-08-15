@@ -98,6 +98,12 @@ Stripe-backed.
 
 ## Blog posts
 
+- [Append-Only or It Didn't Happen: What Compliance Actually Asks of Your AI Log](https://parlehub.com/blog/2026/08/14/append-only-or-it-didnt-happen/):
+  "We log everything" is not an audit trail. An audit trail is a record the application that wrote
+  it cannot go back and change.
+- [A Project Name Is Not a Client Code: Why AI Cost Allocation Stalls Halfway](https://parlehub.com/blog/2026/08/12/a-project-name-is-not-a-client-code/):
+  Most firms that set out to allocate AI spend to clients get the numbers right and the labels
+  wrong, then reconcile by hand every month until they stop.
 - [Bring Your Own Key: Why You Shouldn't Rent Your AI Relationship](https://parlehub.com/blog/2026/08/09/bring-your-own-key-dont-rent-your-ai-relationship/):
   Renting model access is the right way to evaluate a model and the wrong way to run production
   work. Own the provider relationship; rent only the workspace.
