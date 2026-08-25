@@ -98,6 +98,9 @@ Stripe-backed.
 
 ## Blog posts
 
+- [The Budget Request Nobody Sends: What Happens When AI Spend Hits Its Cap](https://parlehub.com/blog/2026/08/25/the-budget-request-nobody-sends/):
+  Hard limits on AI spend fail when there is no path through them; a cap needs a request-and-
+  approve loop or people route around governance.
 - [Append-Only or It Didn't Happen: What Compliance Actually Asks of Your AI Log](https://parlehub.com/blog/2026/08/14/append-only-or-it-didnt-happen/):
   "We log everything" is not an audit trail. An audit trail is a record the application that wrote
   it cannot go back and change.

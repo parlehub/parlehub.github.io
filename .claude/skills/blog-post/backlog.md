@@ -12,6 +12,7 @@ Mark `- [x]` when published. Keep the shipped posts in mind so arguments don't o
 - 2026-08-06 — cost per project changes the portfolio (the decision argument)
 - 2026-08-12 — project name vs client code (the allocation-mechanics argument)
 - 2026-08-14 — append-only audit log (the compliance/evidence argument)
+- 2026-08-25 — the budget request nobody sends (the exception-path argument)
 
 ---
 
@@ -85,7 +86,8 @@ Mark `- [x]` when published. Keep the shipped posts in mind so arguments don't o
   Hard constraint: this is a guarantee, **not** a self-service admin export or SIEM
   integration. Do not imply either.
 
-- [ ] **The budget request nobody sends: what happens when AI spend hits its cap**
+- [x] **The budget request nobody sends: what happens when AI spend hits its cap**
+  *Published 2026-08-25 — `_posts/2026-08-25-the-budget-request-nobody-sends.md`*
   *Thesis:* Hard limits fail not because they're too strict but because there's no path
   through them. A cap with no request-and-approve loop just teaches people to route
   around governance with a personal account.
