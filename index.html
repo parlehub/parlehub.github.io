@@ -243,7 +243,7 @@ permalink: /
               <span
                 class="w-1.5 h-1.5 rounded-full bg-primary shadow-[0_0_8px_rgba(77,142,255,0.8)]"
               ></span>
-              For firms that bill by the client
+              Shared AI workspace · For firms that bill by the client
             </span>
             <h1
               class="font-display text-display-lg-mobile md:text-display-lg text-parchment"
@@ -254,17 +254,19 @@ permalink: /
               >. Your AI spend has none.
             </h1>
             <p class="text-lg leading-relaxed text-parchment-dim max-w-lg">
-              ParleHub gives every project a shared workspace, its own budget,
-              and your own expense code. AI cost lands on the engagement that
-              caused it, and exports straight into the system you already bill
-              from.
+              <strong class="font-semibold text-parchment"
+                >ParleHub is a shared AI workspace for your whole team.</strong
+              >
+              Every project gets its own budget and your own expense code, so AI
+              cost lands on the engagement that caused it — and exports into the
+              system you already bill from.
             </p>
             <div class="flex flex-wrap items-center gap-gutter pt-stack-sm">
               <a
                 href="https://app.parlehub.com"
                 class="h-14 px-8 inline-flex items-center gap-2 bg-primary text-ink font-semibold rounded-lg hover:bg-primary-bright active:scale-[0.98] transition-all"
               >
-                Start free at app.parlehub.com
+                Start free
                 <span class="material-symbols-outlined text-lg"
                   >arrow_forward</span
                 >
@@ -279,11 +281,27 @@ permalink: /
           </div>
 
           <!-- Hub diagram (desktop) -->
-          <div class="relative hidden md:block hub-diagram" aria-hidden="true">
+          <!--
+            This block is real content, not decoration: the centre card is the
+            hero's proof (shared thread + presence + project code + budget
+            meter) and the pills name the providers we connect to. It used to
+            carry aria-hidden on the whole wrapper, which hid all of that from
+            screen readers and text extractors while the md:hidden mobile
+            fallback below exposed the same content. Only the connecting lines
+            are decorative, so aria-hidden lives on the <svg> alone now. Keep
+            the two blocks' exposed content in sync.
+          -->
+          <div class="relative hidden md:block hub-diagram">
+            <span class="sr-only"
+              >Example of a shared ParleHub project: a live team conversation
+              with its own project code and budget, connected to your model
+              providers, storage, and identity provider.</span
+            >
             <svg
               class="hub-lines absolute inset-0 w-full h-full"
               viewBox="0 0 100 100"
               preserveAspectRatio="none"
+              aria-hidden="true"
             >
               <line x1="50" y1="50" x2="50" y2="10"></line>
               <line x1="50" y1="50" x2="81" y2="22"></line>
@@ -399,6 +417,11 @@ permalink: /
 
           <!-- Hub diagram (mobile fallback, no absolute layout) -->
           <div class="md:hidden space-y-6">
+            <span class="sr-only"
+              >Example of a shared ParleHub project: a live team conversation
+              with its own project code and budget, connected to your model
+              providers, storage, and identity provider.</span
+            >
             <div class="ledger-card rounded-xl p-4 space-y-3 mx-auto max-w-sm">
               <div class="flex items-start justify-between gap-2">
                 <div class="space-y-0.5">
