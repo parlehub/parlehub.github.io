@@ -574,13 +574,17 @@ permalink: /
               </li>
             </ul>
           </div>
-          <div
-            class="ledger-card rounded-xl border border-ink-line/60 aspect-video flex items-center justify-center overflow-hidden"
-          >
+          <!--
+            No .ledger-card / border here, unlike the screenshot slots below:
+            this is a feathered illustration plate that dissolves into the page
+            ground, and a card border would draw the rectangle back around it.
+            See .illustration in assets/site.css.
+          -->
+          <div class="aspect-video flex items-center justify-center">
             <img
-              src="/images/modelconnection.png"
-              alt="Screenshot of ParleHub's organization model-provider settings, where each provider connects with your own API key; OpenAI is connected with its available models listed and a default selected"
-              class="w-full h-full object-cover"
+              src="/images/perimeter.jpg"
+              alt="Illustration: a single lit boundary line runs across a dark plane. Inside it, dozens of small glowing panels sit seated and aligned on an engraved grid, each wired into it. Outside it, the same panels drift loose in the dark at random angles, connected to nothing, several already dimming out."
+              class="w-full h-full object-cover illustration"
             />
           </div>
         </div>
