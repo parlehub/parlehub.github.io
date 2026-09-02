@@ -98,8 +98,9 @@ Mark `- [x]` when published. Keep the shipped posts in mind so arguments don't o
   *Payoff:* BYOK across Anthropic, OpenAI, and Google Gemini, plus Azure OpenAI for
   Azure-native orgs. Keys stored in Azure Key Vault, never exposed. **[LIVE]** for the
   BYOK model overall; Gemini specifically **[SHIPPED]**. Hosted models are now **[LIVE]**
-  too and the post should say both modes exist. Do **not** mention Vertex AI, describe the
-  hosted catalog as broad, or write "buy tokens from us".
+  too and the post should say both modes exist. Do **not** describe the hosted catalog as
+  broad or write "buy tokens from us". (The old "don't mention Vertex AI" rule is **retired**:
+  Vertex shipped as a provider and was confirmed deployed 2026-09-01.)
 
 - [ ] **Two doors to the same room: owning the model relationship, or not**
   *Thesis:* The choice between bringing your own provider contract and using a vendor's
@@ -209,7 +210,8 @@ Mark `- [x]` when published. Keep the shipped posts in mind so arguments don't o
 - [ ] **SIEM / audit export, customer-facing audit UI** — the log is append-only, enforced at the
   core platform level, but there is no customer-facing read path. Tracked as APP-252.
 - [ ] **SAML / Okta / generic IdP** — not built. Do not mention.
-- [ ] **Vertex AI / enterprise GCP model access** — distinct from the shipped Gemini
-  Developer API provider, and not built.
+- [ ] **Vertex AI / enterprise GCP model access** — **shipped** (APP-163, deployed 2026-09-01),
+  so this is no longer parked. Inference runs in the customer's own Cloud project under their GCP
+  contract and IAM, region-pinned. A post on "whose cloud does the inference run in" is now writable.
 - [ ] **SIEM export / customer-facing audit-log UI** — the audit log is a database
   guarantee, not an export feature. Don't write a post that implies a screen exists.

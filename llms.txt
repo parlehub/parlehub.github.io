@@ -60,8 +60,11 @@ https://parlehub.com. The product itself lives at https://app.parlehub.com.
 ## Model providers
 
 Bring-your-own-key providers: Anthropic, OpenAI, Google Gemini (via the Gemini Developer API /
-AI Studio key), and Azure OpenAI. Model spend on these lands on the customer's own provider contract
-at the customer's own rate. Google Vertex AI is not a supported provider.
+AI Studio key), Google Vertex AI, and Azure OpenAI. Model spend on these lands on the customer's own
+provider contract at the customer's own rate. Vertex AI is connected with the organization's own
+Google Cloud credentials, so inference runs in its Cloud project, under its GCP contract, against its
+IAM, pinned to a region it chooses; which models a region serves varies, so the region is part of the
+setup rather than an afterthought.
 
 Hosted models run on Azure AI Foundry under ParleHub's managed identity, priced per token and drawn
 from a credit balance the organization tops up. The hosted catalog is deliberately curated rather

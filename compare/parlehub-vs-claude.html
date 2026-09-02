@@ -25,7 +25,7 @@ permalink: /compare/parlehub-vs-claude/
     <title>ParleHub vs Claude Team &amp; Enterprise | ParleHub</title>
     <meta
       name="description"
-      content="A head-to-head comparison of Claude's Projects and spend controls with ParleHub's per-project budgets, project codes, shared threads, and flexible model access on your own keys or ours. Verified against vendor documentation, August 2026."
+      content="A head-to-head comparison of Claude's Projects and spend controls with ParleHub's per-project budgets, project codes, shared threads, and flexible model access on your own keys or ours. Verified against vendor documentation, September 2026."
     />
     <link
       href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,500;0,600;1,500;1,600&family=Inter:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
@@ -169,7 +169,7 @@ permalink: /compare/parlehub-vs-claude/
             </a>
           </div>
           <p class="font-mono text-xs text-parchment-dim/70 pt-2">
-            Checked against Anthropic's published documentation, August 2026.
+            Checked against Anthropic's published documentation, September 2026.
             Sources listed at the foot of this page.
           </p>
         </div>
@@ -635,11 +635,21 @@ permalink: /compare/parlehub-vs-claude/
               Client documents can stay in your tenant
             </h2>
             <p class="text-parchment-dim text-lg leading-relaxed">
-              Knowledge uploaded to a Claude Project is held by Anthropic. On
-              ParleHub Enterprise, a project can point at a specific SharePoint
-              site or Google Shared Drive of yours, and the files never leave it.
-              Your retention policy, your permissions, your recycle bin, and a
-              much shorter answer when a client asks where their documents went.
+              Anthropic's Microsoft 365 and Google Workspace connectors let
+              Claude search a person's own SharePoint, OneDrive and Drive
+              without uploading anything, which is a real answer to the
+              copy-everything problem. What it is not is a place for the
+              project's files to live: each member connects their own account
+              and searches what they personally can see, and anything you upload
+              to the project's knowledge base is held by Anthropic.
+            </p>
+            <p class="text-parchment-dim text-lg leading-relaxed">
+              On ParleHub Enterprise the project's storage <em>is</em> your
+              tenant. Files the team adds, and the ones the agent reads and
+              edits, sit in a specific SharePoint site or Google Shared Drive of
+              yours under your retention policy, your permissions and your
+              recycle bin, reachable by the whole project rather than by
+              whoever's account happened to be connected.
             </p>
             <ul class="space-y-3 pt-2">
               <li class="flex items-start gap-3 text-parchment-dim">
@@ -691,7 +701,7 @@ permalink: /compare/parlehub-vs-claude/
           </h2>
           <p class="text-parchment-dim leading-relaxed">
             Claude column describes the Team and Enterprise plans as documented
-            by Anthropic in August 2026. Where a capability is Enterprise-only on
+            by Anthropic in September 2026. Where a capability is Enterprise-only on
             either side, the cell says so.
           </p>
         </div>
@@ -742,8 +752,8 @@ permalink: /compare/parlehub-vs-claude/
                   Send blocked before it runs, warning at 80%
                 </td>
                 <td class="p-4">
-                  Current turn completes, then usage is limited; alerts at 75%
-                  and 95%
+                  Usage is limited once the limit is hit; admin alerts at 75%
+                  and 90%, in-app user notifications at 75% and 95%
                 </td>
               </tr>
               <tr class="border-b border-ink-line/60">
@@ -834,12 +844,33 @@ permalink: /compare/parlehub-vs-claude/
               </tr>
               <tr class="border-b border-ink-line/60">
                 <td class="p-4 text-parchment">
-                  Project files in your own tenant
+                  Where a project's files live
                 </td>
                 <td class="p-4 text-parchment">
-                  SharePoint or Google Shared Drive (Enterprise)
+                  Your own SharePoint site or Google Shared Drive, as the
+                  project's storage (Enterprise)
                 </td>
-                <td class="p-4">No</td>
+                <td class="p-4">
+                  Uploaded project knowledge is held by Anthropic; the Microsoft
+                  365 and Google Workspace connectors search your tenant instead
+                  of uploading, per user
+                </td>
+              </tr>
+              <tr class="border-b border-ink-line/60">
+                <td class="p-4 text-parchment">
+                  Answering from the firm's own documents
+                </td>
+                <td class="p-4 text-parchment">
+                  One org-wide corpus bound to your SharePoint or Drive library,
+                  with a per-project opt-out. Citations name the document, its
+                  version and its section; retiring a version removes it from
+                  the index
+                </td>
+                <td class="p-4">
+                  A knowledge base per project, plus per-user connector search
+                  across SharePoint, OneDrive and Drive; Google Docs added to a
+                  project sync from Drive
+                </td>
               </tr>
               <tr class="border-b border-ink-line/60">
                 <td class="p-4 text-parchment">Single sign-on</td>
@@ -872,7 +903,7 @@ permalink: /compare/parlehub-vs-claude/
         <div class="ledger-card rounded-2xl p-8 md:p-12 max-w-3xl space-y-6">
           <span class="eyebrow text-verdigris">Where Claude is the better buy</span>
           <h2 class="font-display text-display-md text-parchment">
-            Three reasons to pick Anthropic instead
+            Four reasons to pick Anthropic instead
           </h2>
           <p class="text-parchment-dim leading-relaxed">
             A comparison page that finds nothing good to say about the other
@@ -922,6 +953,21 @@ permalink: /compare/parlehub-vs-claude/
                 not competing for it.</span
               >
             </li>
+            <li class="flex items-start gap-3 text-parchment-dim">
+              <span class="material-symbols-outlined text-verdigris mt-0.5"
+                >arrow_right_alt</span
+              >
+              <span
+                ><strong class="text-parchment"
+                  >You want Claude across a person's whole working day.</strong
+                >
+                Anthropic's Microsoft 365 and Google Workspace connectors reach
+                one person's mail, calendar, Teams and drive, which is a wider
+                surface than ours. We bind a project to a document library the
+                firm publishes; we do not read your inbox, and for some teams
+                that is the more useful of the two.</span
+              >
+            </li>
           </ul>
         </div>
       </section>
@@ -965,7 +1011,7 @@ permalink: /compare/parlehub-vs-claude/
             <span class="eyebrow text-parchment-dim">Sources</span>
             <p class="text-sm text-parchment-dim leading-relaxed">
               Every claim about Claude on this page comes from Anthropic's own
-              documentation, read in August 2026. Products move; if something
+              documentation, read in September 2026. Products move; if something
               here has gone out of date, we would rather fix it than keep it.
             </p>
             <ul class="space-y-2 text-sm">
@@ -1003,6 +1049,24 @@ permalink: /compare/parlehub-vs-claude/
                   target="_blank"
                   class="text-primary-bright hover:text-parchment underline underline-offset-4 transition-colors"
                   >New analytics and cost controls for Claude Enterprise</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://support.claude.com/en/articles/12542951-set-up-the-microsoft-365-connector"
+                  rel="noopener nofollow"
+                  target="_blank"
+                  class="text-primary-bright hover:text-parchment underline underline-offset-4 transition-colors"
+                  >Set up the Microsoft 365 connector</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://support.claude.com/en/articles/10166901-using-the-google-docs-integration"
+                  rel="noopener nofollow"
+                  target="_blank"
+                  class="text-primary-bright hover:text-parchment underline underline-offset-4 transition-colors"
+                  >Use Google Workspace connectors</a
                 >
               </li>
             </ul>

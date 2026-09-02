@@ -25,7 +25,7 @@ permalink: /compare/parlehub-vs-gemini/
     <title>ParleHub vs Google Gemini &amp; Vertex AI | ParleHub</title>
     <meta
       name="description"
-      content="A head-to-head comparison of Gemini Enterprise and Vertex AI with ParleHub's per-engagement budgets, project codes, live shared threads, and multi-provider model access. Verified against Google's documentation, August 2026."
+      content="A head-to-head comparison of Gemini Enterprise and Vertex AI with ParleHub's per-engagement budgets, project codes, live shared threads, and multi-provider model access. Verified against Google's documentation, September 2026."
     />
     <link
       href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,500;0,600;1,500;1,600&family=Inter:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
@@ -173,7 +173,7 @@ permalink: /compare/parlehub-vs-gemini/
             </a>
           </div>
           <p class="font-mono text-xs text-parchment-dim/70 pt-2">
-            Checked against Google's published documentation, August 2026.
+            Checked against Google's published documentation, September 2026.
             Sources listed at the foot of this page.
           </p>
         </div>
@@ -194,15 +194,19 @@ permalink: /compare/parlehub-vs-gemini/
           </p>
           <p class="text-parchment-dim leading-relaxed">
             One thing to get out of the way before you read the rest, because you
-            will ask it in the first five minutes: we connect Gemini through the
-            <strong class="text-parchment">Gemini Developer API</strong>, using a
+            will ask it in the first five minutes: there are
+            <strong class="text-parchment">two ways</strong> to connect Google
+            models here. The
+            <strong class="text-parchment">Gemini Developer API</strong> takes a
             Google AI Studio key, the same one-key-per-provider shape as every
-            other provider. <strong class="text-parchment">Vertex AI is not a
-            provider we support today.</strong> If your organization's policy is
-            that model calls must run inside your own Google Cloud project under
-            your GCP contract, that is a genuine reason to wait for us rather
-            than a detail to discover later. Everything below is written on that
-            assumption.
+            other provider.
+            <strong class="text-parchment">Vertex AI</strong> is a separate
+            provider you connect with your own Google Cloud credentials, so
+            inference runs in your Cloud project, under your GCP contract,
+            against your IAM, pinned to a region you choose. If your policy
+            requires the second, it is supported rather than something to wait
+            for; note that which models a region serves varies, so pick the
+            region with the models you intend to use.
           </p>
         </div>
       </section>
@@ -688,7 +692,7 @@ permalink: /compare/parlehub-vs-gemini/
           <p class="text-parchment-dim leading-relaxed">
             Gemini Enterprise and Vertex AI get their own columns because they
             are different products sold to different people, and merging them
-            would flatter both. Described as documented by Google in August 2026.
+            would flatter both. Described as documented by Google in September 2026.
           </p>
         </div>
         <div class="ledger-card rounded-xl overflow-x-auto">
@@ -844,12 +848,31 @@ permalink: /compare/parlehub-vs-gemini/
                   How we connect to Gemini
                 </td>
                 <td class="p-4">
-                  Gemini Developer API key. <span class="text-parchment"
-                    >Vertex AI not supported today</span
+                  <span class="text-parchment"
+                    >Either: a Gemini Developer API key, or Vertex AI on your own
+                    Cloud project credentials, region-pinned</span
                   >
                 </td>
                 <td class="p-4">Not applicable</td>
                 <td class="p-4">Not applicable</td>
+              </tr>
+              <tr class="border-b border-ink-line/60">
+                <td class="p-4 text-parchment">
+                  Answering from the firm's own documents
+                </td>
+                <td class="p-4 text-parchment">
+                  One org-wide corpus bound to your SharePoint or Drive library,
+                  with a per-project opt-out. Citations name the document, its
+                  version and its section; retiring a version removes it from
+                  the index
+                </td>
+                <td class="p-4">
+                  Data stores over Drive, admin-scoped to chosen folders or
+                  shared drives
+                </td>
+                <td class="p-4">
+                  Data stores, built and scoped by an engineer
+                </td>
               </tr>
               <tr class="border-b border-ink-line/60">
                 <td class="p-4 text-parchment">
@@ -913,29 +936,14 @@ permalink: /compare/parlehub-vs-gemini/
             >Where Google is the better buy</span
           >
           <h2 class="font-display text-display-md text-parchment">
-            Four reasons to stay on Google
+            Three reasons to stay on Google
           </h2>
           <p class="text-parchment-dim leading-relaxed">
             A comparison page that finds nothing good to say about the other
             product is a sales sheet. These are the cases where we would tell you
-            to buy Google, and the first one is a straight gap on our side.
+            to buy Google.
           </p>
           <ul class="space-y-4">
-            <li class="flex items-start gap-3 text-parchment-dim">
-              <span class="material-symbols-outlined text-primary mt-0.5"
-                >arrow_right_alt</span
-              >
-              <span
-                ><strong class="text-parchment"
-                  >Your policy requires model calls inside your own Google Cloud
-                  project.</strong
-                >
-                We connect Gemini through the Gemini Developer API, not Vertex
-                AI. If inference has to run under your GCP contract, in your
-                project, against your IAM, Vertex is the answer today and we are
-                not.</span
-              >
-            </li>
             <li class="flex items-start gap-3 text-parchment-dim">
               <span class="material-symbols-outlined text-primary mt-0.5"
                 >arrow_right_alt</span
@@ -1022,7 +1030,7 @@ permalink: /compare/parlehub-vs-gemini/
             <span class="eyebrow text-parchment-dim">Sources</span>
             <p class="text-sm text-parchment-dim leading-relaxed">
               Every claim about Google on this page comes from Google's own
-              documentation, read in August 2026. Products move; if something
+              documentation, read in September 2026. Products move; if something
               here has gone out of date, we would rather fix it than keep it.
             </p>
             <ul class="space-y-2 text-sm">
@@ -1061,6 +1069,15 @@ permalink: /compare/parlehub-vs-gemini/
                   class="text-primary-bright hover:text-parchment underline underline-offset-4 transition-colors"
                   >Admin controls for Gemini Enterprise in the Workspace Admin
                   console</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://docs.cloud.google.com/gemini/enterprise/docs/connectors/gdrive/set-up-data-store"
+                  rel="noopener nofollow"
+                  target="_blank"
+                  class="text-primary-bright hover:text-parchment underline underline-offset-4 transition-colors"
+                  >Set up a Google Drive data store for Gemini Enterprise</a
                 >
               </li>
             </ul>
