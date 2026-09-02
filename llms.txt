@@ -32,6 +32,26 @@ https://parlehub.com. The product itself lives at https://app.parlehub.com.
   structured-data queries (JSON/YAML), spreadsheet work (Excel/CSV filter and aggregate, no code
   execution), and document conversion (PDF/Word/PowerPoint to markdown). Inline preview covers
   markdown, syntax-highlighted code, PDF, images/SVG, video, and sandboxed HTML.
+- **Ask the workspace about itself (Org Insight).** The assistant answers questions about live
+  workspace state: a project's budget, spend and headroom, which models the organization may use,
+  which external tools and file storage a project is connected to, and organization-wide spend.
+  Figures are looked up fresh at the moment of the question rather than read from an index, so an
+  answer is never a stale snapshot. In a shared project thread the assistant returns only what every
+  member could already see for themselves, so organization-wide spend is answered in a personal
+  conversation and withheld from shared ones; role entitlement still applies either way. The same
+  rule applies to the prepaid credit behind hosted models: a project conversation is told whether it
+  is healthy or exhausted, never the amount, because the amount is administrator-only on the screens
+  that show it. Models that cannot call tools are marked at selection, with what stops working.
+- **Answers from the firm's own documents, with citations (Org Knowledge).** An organization-wide
+  document corpus the assistant quotes with the document, version and section it came from, plus a
+  link back. The primary path binds the corpus to a library the organization already maintains, a
+  SharePoint site or Google Shared Drive reached through its existing storage connection, so the
+  source of truth never moves and editing a document at source is what updates the answers; the
+  corpus is reconciled against the source on a schedule, and administrators are alerted if a bound
+  source becomes unreachable. Managed upload is available as a fallback for organizations with no
+  library to bind. Retiring a document removes its passages from the index rather than hiding them,
+  so a withdrawn policy cannot be quoted and an older citation to it resolves to nothing. The corpus
+  is organization-wide, with a per-project opt-out.
 - **Governance and audit.** Four role levels (SystemAdmin, OrgAdmin, ProjectAdmin, ProjectMember),
   member invites, project visibility controls, and a sensitive-action audit log enforced append-only
   at the core platform level. Usage and spend analytics filter and group by project,
@@ -98,6 +118,12 @@ Stripe-backed.
 
 ## Blog posts
 
+- [Corrected at the Source: Why AI Should Point at Your Document Library, Not Copy It](https://parlehub.com/blog/2026/09/08/corrected-at-the-source/):
+  Uploading policies into an AI tool creates a second copy that goes stale silently. Point at the
+  library you already maintain, cite what you quote, and make retirement remove rather than hide.
+- [Looked Up, Not Remembered: Letting AI Answer Questions About Your Own Organization](https://parlehub.com/blog/2026/09/01/looked-up-not-remembered/):
+  Governance dashboards hold the right numbers on a screen nobody opens mid-task. Live state has to
+  be looked up rather than indexed, and a shared thread can only return what every member can see.
 - [The Budget Request Nobody Sends: What Happens When AI Spend Hits Its Cap](https://parlehub.com/blog/2026/08/25/the-budget-request-nobody-sends/):
   Hard limits on AI spend fail when there is no path through them; a cap needs a request-and-
   approve loop or people route around governance.

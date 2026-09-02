@@ -13,10 +13,49 @@ Mark `- [x]` when published. Keep the shipped posts in mind so arguments don't o
 - 2026-08-12 — project name vs client code (the allocation-mechanics argument)
 - 2026-08-14 — append-only audit log (the compliance/evidence argument)
 - 2026-08-25 — the budget request nobody sends (the exception-path argument)
+- 2026-09-01 — looked up, not remembered (Org Insight; the live-state argument)
+- 2026-09-08 — corrected at the source (Org Knowledge; the document-provenance argument)
 
 ---
 
 ## Ready to write
+
+- [x] **Looked up, not remembered: letting AI answer questions about your own organization**
+  *Published 2026-09-01 — `_posts/2026-09-01-looked-up-not-remembered.md`*
+  *Thesis:* Governance dashboards hold correct numbers on a screen nobody opens at the moment the
+  question arrives. The reflex fix, indexing operational data the way documents are indexed, is
+  worse than the dashboard: a stale figure and a current one are typographically identical. Live
+  state must be looked up; documents are quoted. Carries the audience rule as the second pillar.
+  *Failure modes:* The Screen You Have to Leave to Read; The Balance That Sounds Current; One
+  Answer, Every Badge in the Room; The Assistant That Answers From Memory.
+  *Payoff:* **Org Insight** (APP-227) — project budget/spend/headroom and managed-org credit
+  balance, which models the org may use, external tool connections and the project's file storage,
+  and org-wide spend answered in a *personal* conversation only. Plus the capability floor
+  (APP-247/245): models that cannot call tools are marked at selection. **[LIVE]**, built and
+  validated in production.
+  *Careful:* did **not** claim budget alerts delivered in conversation (out of scope by design), any
+  write/act-on-what-it-reads path (both halves are read-only), or reporting which storage providers
+  the org has enabled (deliberately refused under the audience rule).
+
+- [x] **Corrected at the source: why AI should point at your document library, not copy it**
+  *Published 2026-09-08 — `_posts/2026-09-08-corrected-at-the-source.md`*
+  *Thesis:* The upload reflex creates a second copy that forks silently, and a rescinded policy
+  quoted confidently is worse than no answer. Bind to the library the firm already maintains, cite
+  document + version + section, and make retirement structural rather than a display filter.
+  Deliberately paired with the Org Insight post (numbers looked up, documents quoted) and links to it.
+  *Failure modes:* The Second Copy; The Rescinded Policy, Quoted Perfectly; The Answer Nobody Can
+  Check; The Library Nobody Can Reach.
+  *Payoff:* **Org Knowledge** (APP-228, slices K1–K4) — source binding to a SharePoint site or
+  Google Shared Drive through the org's existing storage connection, scheduled reconciliation,
+  citation with document/version/section and a link back, retirement deleting chunks, org-wide
+  corpus with per-project opt-out, unreachable-source alert to OrgAdmins, the §4.8 on-screen trust
+  note, managed upload as fallback. **[SHIPPED]** — the post says so in its own voice rather than
+  implying production mileage.
+  *Careful:* K5 (provider change notifications) is **not built**, so the post says "reconciled on a
+  schedule" and never "reflected in minutes". Did **not** claim staleness surfaced on the answer
+  (APP-282 / K3b, unbuilt), per-team knowledge sets (deferred), or templates the agent writes from
+  (explicitly out of scope). Binding is gated to paid tiers and runs through enterprise storage, so
+  the post describes it as the org's existing storage connection rather than naming a tier.
 
 - [x] **A project name is not a client code: why AI cost allocation stalls halfway**
   *Published 2026-08-12 — `_posts/2026-08-12-a-project-name-is-not-a-client-code.md`*
