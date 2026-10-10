@@ -52,6 +52,27 @@ https://parlehub.com. The product itself lives at https://app.parlehub.com.
   library to bind. Retiring a document removes its passages from the index rather than hiding them,
   so a withdrawn policy cannot be quoted and an older citation to it resolves to nothing. The corpus
   is organization-wide, with a per-project opt-out.
+- **Microsoft Teams (Business Elite and Enterprise).** A project administrator connects a Teams
+  channel to a project; members then @mention Parle in the channel and the answer is posted in the
+  thread. The asker must be a project member, the same budget and send limits as the web app apply,
+  and every turn lands in the project's ledger. The answer is posted into the channel unless it
+  contains a guest or someone from outside the organization, in which case the channel gets a link
+  and a one-line reason; a project can require that everyone in the channel is on the project.
+- **Research Tasks (Business Elite and Enterprise).** A goal, acceptance criteria, a due date and a
+  spending limit go in; a plan, gather, answer, critique and write-up loop runs unattended and
+  delivers a Markdown document to the project. A cheaper model does the gathering and a stronger
+  model, in a fresh context, critiques and writes. The task begins its write-up at 85% of its limit
+  or ahead of its deadline, stops at the limit, checks project headroom before every model call, and
+  writes only to its own folder. It can read the project's connected Confluence and monday.com
+  (read-only, switchable per project). A managed feature: runs on hosted models and the credit balance.
+- **Live Artifacts (Business Elite and Enterprise).** A shared project view, drafted in conversation
+  and published after a preview, that reads current data from the project's connected tools through
+  a fixed list of read-only calls. Opening one makes no model call; results are cached. A banner
+  shows when a connected tool changes the shape of its data, and a Repair action drafts a fix for
+  review. Authoring is a managed feature that uses hosted models and the credit balance; viewing is live for Business Elite customers.
+- **Auto model routing (Business and above).** The organization names Everyday, Standard and
+  Frontier models and Auto chooses one when a conversation starts, so routine questions are not
+  answered by the most expensive model by default. A user can retry any answer with a stronger model.
 - **Governance and audit.** Four role levels (SystemAdmin, OrgAdmin, ProjectAdmin, ProjectMember),
   member invites, project visibility controls, and a sensitive-action audit log enforced append-only
   at the core platform level. Usage and spend analytics filter and group by project,
@@ -79,29 +100,31 @@ auditable — rather than spread across individual accounts under terms nobody r
 
 ## Plans
 
-- **Free** — $0. 3 seats, 3 projects, model spend capped at $10/month, 2 GB managed storage,
-  10 MB max file size.
-- **Team** — $10/month flat. 10 seats, 10 projects, uncapped model spend, 10 GB managed storage,
-  25 MB max file size, Enterprise SSO.
-- **Enterprise** — $5 per seat per month, 10-seat minimum. Unlimited seats and projects, uncapped
-  model spend, private (restricted) projects, SharePoint or Google Drive storage or 1 GB/seat
-  managed, Enterprise SSO.
+- **Team** — $6 per seat per month. 10 seats, 10 projects, Enterprise SSO.
+- **Business** — $12 per seat per month, 10-seat minimum. Unlimited seats and projects, private
+  (restricted) projects, SharePoint or Google Drive storage or 1 GB/seat managed, Enterprise SSO,
+  Auto model routing.
+- **Business Elite** — $38 per seat per month, 20-seat minimum. Everything in Business, plus
+  organization knowledge, Research Tasks, Live Artifacts and Microsoft Teams.
+- **Enterprise** — custom pricing, 50-seat minimum. Everything in Business Elite, plus extra
+  compliance and integration options.
 
 Subscription pricing is separate from model spend. Model usage is billed either on the
 organization's own provider contract (bring your own key) or per token against a credit balance
 (models ParleHub hosts).
 
-The monthly model-spend cap is mode-neutral: it limits model spend whether tokens run on the
-customer's own keys or on models ParleHub hosts. Paid tiers include a 7-day trial. Billing is
-Stripe-backed.
+Budgets and caps are mode-neutral: they limit model spend whether tokens run on the customer's own
+keys or on models ParleHub hosts. Paid tiers include a 7-day trial. Billing is Stripe-backed.
+ParleHub is priced per seat for the workspace, budgets, attribution and audit trail; it does not
+earn more when a customer uses more tokens.
 
 ## Pages
 
-- [Home](https://parlehub.com/): Positioning and core features — shared projects, project budgets,
-  cost allocation by client code, model access, and governance.
+- [Home](https://parlehub.com/): Positioning around four problems: team collaboration on deliverables, client
+  data separation and audit, budget control and cost attribution, and model flexibility.
 - [Security & Compliance](https://parlehub.com/security/): SSO, enterprise-native file storage,
   role-based access, the append-only audit trail, and platform hardening details.
-- [Pricing](https://parlehub.com/pricing/): Free, Team, and Enterprise plan comparison, plus FAQs on
+- [Pricing](https://parlehub.com/pricing/): Team, Business, Business Elite, and Enterprise plan comparison, plus FAQs on
   keys, hosted models, and spend caps.
 - [Blog](https://parlehub.com/blog/): Product notes and writing on AI governance, cost attribution,
   collaboration, and data residency.
@@ -121,6 +144,14 @@ Stripe-backed.
 
 ## Blog posts
 
+- [Live Artifacts: Project Dashboards That Cost No Tokens to Open](https://parlehub.com/blog/2026/10/09/live-artifacts-dashboards-that-cost-nothing-to-open/):
+  Announcement. Shared project views that read current data from connected tools and make no model
+  call when opened.
+- [Introducing Research Tasks: Hand Over the Brief, Get Back a Deliverable, Within a Budget You Set](https://parlehub.com/blog/2026/10/01/introducing-research-tasks/):
+  Announcement. Long-running research against a goal, criteria and a spending limit.
+- [ParleHub Arrives in Microsoft Teams: Ask the Project, Right in the Channel](https://parlehub.com/blog/2026/09/21/parlehub-arrives-in-microsoft-teams/):
+  Announcement. Mention Parle in a connected channel; the answer is grounded in the project and
+  governed by the same budget and access rules.
 - [Corrected at the Source: Why AI Should Point at Your Document Library, Not Copy It](https://parlehub.com/blog/2026/09/08/corrected-at-the-source/):
   Uploading policies into an AI tool creates a second copy that goes stale silently. Point at the
   library you already maintain, cite what you quote, and make retirement remove rather than hide.

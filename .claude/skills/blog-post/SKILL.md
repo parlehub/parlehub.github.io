@@ -115,7 +115,8 @@ Claims the existing posts got wrong — do not repeat these:
 
 | Don't write | Reality |
 | --- | --- |
-| "dynamic model routing", "redirect to a cheaper model" | No automated routing. Budgets **hard-block** a send pre-flight, with an 80% warning and a self-serve increase request routed to admins. Model switching is manual, per conversation. |
+| "dynamic model routing", "redirect to a cheaper model" | **Auto** (Business and above) picks a model once when a conversation starts from the org's Everyday/Standard/Frontier choices; a user can retry with a stronger model. It is not per-turn switching or cross-provider cost routing. Budgets still **hard-block** a send pre-flight, with an 80% warning and a self-serve increase request. |
+| "Microsoft Teams folders" is wrong, but Teams *is* now a feature | Parle in Microsoft Teams (Business Elite and Enterprise): @mention in a bound channel. Not a storage location. |
 | "gracefully throttle" | It's a hard block, not throttling. |
 | "Microsoft Teams folders" | **SharePoint** (Microsoft 365, least-privilege `Sites.Selected`) and **Google Shared Drives**. |
 | Google Drive / Google Workspace SSO as unproven | Both were [SHIPPED] and are now **[LIVE]**, verified in production 2026-08-08, alongside Entra ID SSO and SharePoint storage. Older posts hedge the Google half; don't copy that hedge forward. |

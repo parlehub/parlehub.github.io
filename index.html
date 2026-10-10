@@ -22,10 +22,10 @@ permalink: /
     </script>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <title>ParleHub | Shared, budgeted AI for firms that bill by client</title>
+    <title>ParleHub | Shared AI workspace with client separation, budgets and audit</title>
     <meta
       name="description"
-      content="Your team's AI in shared projects, each with its own budget and your own expense code, carried through to the export. Built for consultancies, firms, and agencies that bill by client. Start free at app.parlehub.com."
+      content="A shared AI workspace for teams delivering client work: shared projects, client data kept separate and audited, spend attributed by project, and your choice of models. Start at app.parlehub.com."
     />
     <link
       href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,500;0,600;1,500;1,600&family=Inter:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
@@ -84,53 +84,64 @@ permalink: /
               "Project files stored in your own SharePoint site or Google Shared Drive",
               "AI tool calls against project files: search, read, edit, spreadsheets, and document conversion",
               "Role-based access control across organization, project admin, and member levels",
-              "Append-only audit log enforced at the core platform level"
+              "Append-only audit log enforced at the core platform level",
+              "Microsoft Teams: mention Parle in a connected channel for an answer grounded in the project (Business Elite and Enterprise)",
+              "Research Tasks: long-running research against a goal, criteria and a spending limit, delivered as a document (Business Elite and Enterprise)",
+              "Live Artifacts: shared project views that read current data from connected tools and need no model call to open (Business Elite and Enterprise)",
+              "Auto model routing across Everyday, Standard and Frontier models the organization chooses (Business and above)"
             ],
             "offers": [
               {
                 "@type": "Offer",
-                "name": "Free",
-                "price": "0",
-                "priceCurrency": "USD",
-                "url": "https://parlehub.com/pricing/",
-                "description": "3 seats, 3 projects, model spend capped at $10 per month, 2 GB managed storage."
-              },
-              {
-                "@type": "Offer",
                 "name": "Team",
-                "price": "10",
+                "price": "6",
                 "priceCurrency": "USD",
                 "url": "https://parlehub.com/pricing/",
-                "description": "Flat $10 per month. 10 seats, 10 projects, uncapped model spend, 10 GB managed storage, Enterprise SSO. Model spend is billed separately, either on your own provider keys or per token on models ParleHub hosts.",
+                "description": "$6 per seat per month. 10 seats, 10 projects, Enterprise SSO. Model spend is billed separately, either on your own provider keys or on models ParleHub hosts.",
                 "priceSpecification": {
                   "@type": "UnitPriceSpecification",
-                  "price": "10",
+                  "price": "6",
                   "priceCurrency": "USD",
                   "unitCode": "MON",
-                  "unitText": "month"
+                  "unitText": "seat per month"
                 }
               },
               {
                 "@type": "Offer",
-                "name": "Enterprise",
-                "price": "5",
+                "name": "Business",
+                "price": "12",
                 "priceCurrency": "USD",
                 "url": "https://parlehub.com/pricing/",
-                "description": "$5 per seat per month, 10-seat minimum. Unlimited seats and projects, uncapped model spend, private projects, SharePoint or Google Drive storage, Enterprise SSO. Model spend is billed separately.",
+                "description": "$12 per seat per month, 10-seat minimum. Unlimited seats and projects, private projects, SharePoint or Google Drive storage, Enterprise SSO. Model spend is billed separately.",
                 "priceSpecification": {
                   "@type": "UnitPriceSpecification",
-                  "price": "5",
+                  "price": "12",
                   "priceCurrency": "USD",
                   "unitCode": "MON",
                   "unitText": "seat per month",
-                  "referenceQuantity": {
-                    "@type": "QuantitativeValue",
-                    "value": 1,
-                    "unitText": "seat"
-                  },
                   "eligibleQuantity": {
                     "@type": "QuantitativeValue",
                     "minValue": 10,
+                    "unitText": "seat"
+                  }
+                }
+              },
+              {
+                "@type": "Offer",
+                "name": "Business Elite",
+                "price": "38",
+                "priceCurrency": "USD",
+                "url": "https://parlehub.com/pricing/",
+                "description": "$38 per seat per month, 20-seat minimum. Adds Research Tasks, Live Artifacts, Microsoft Teams and organization knowledge. Model spend is billed separately.",
+                "priceSpecification": {
+                  "@type": "UnitPriceSpecification",
+                  "price": "38",
+                  "priceCurrency": "USD",
+                  "unitCode": "MON",
+                  "unitText": "seat per month",
+                  "eligibleQuantity": {
+                    "@type": "QuantitativeValue",
+                    "minValue": 20,
                     "unitText": "seat"
                   }
                 }
@@ -243,23 +254,21 @@ permalink: /
               <span
                 class="w-1.5 h-1.5 rounded-full bg-primary shadow-[0_0_8px_rgba(77,142,255,0.8)]"
               ></span>
-              Shared AI workspace · For firms that bill by the client
+              Shared AI workspace · For teams delivering client work
             </span>
             <h1
               class="font-display text-display-lg-mobile md:text-display-lg text-parchment"
             >
-              Every hour has a
-              <em class="italic primary-text not-italic md:italic"
-                >client code</em
-              >. Your AI spend has none.
+              AI your team can share, your clients can trust, and your finance team can
+              <em class="italic primary-text not-italic md:italic">read</em>.
             </h1>
             <p class="text-lg leading-relaxed text-parchment-dim max-w-lg">
               <strong class="font-semibold text-parchment"
                 >ParleHub is a shared AI workspace for your whole team.</strong
               >
-              Every project gets its own budget and your own expense code, so AI
-              cost lands on the engagement that caused it — and exports into the
-              system you already bill from.
+              Every project keeps its own context, budget and expense code, so
+              client work stays separate, the trail of how it was delivered stays
+              with the team, and AI cost lands on the engagement that caused it.
             </p>
             <div class="flex flex-wrap items-center gap-gutter pt-stack-sm">
               <a
@@ -526,303 +535,254 @@ permalink: /
         </a>
       </div>
 
+      <!-- FOUR PROBLEMS -->
+      <section class="max-w-[1440px] mx-auto px-margin-mobile md:px-margin-desktop pb-8">
+        <div class="text-center space-y-4 mb-12 max-w-2xl mx-auto">
+          <span class="eyebrow text-primary">What ParleHub solves</span>
+          <h2 class="font-display text-display-md text-parchment">
+            Four problems every firm using AI on client work runs into
+          </h2>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-gutter">
+          <a href="#collaboration" class="ledger-card p-stack-md rounded-xl space-y-3 hover:border-primary/40 transition-colors block">
+            <p class="font-mono text-xs text-primary uppercase tracking-widest">01</p>
+            <p class="font-display text-xl text-parchment">Teams delivering together</p>
+            <p class="text-sm text-parchment-dim">Share prompts and context, and get feedback while the work is still moving.</p>
+          </a>
+          <a href="#separation-and-audit" class="ledger-card p-stack-md rounded-xl space-y-3 hover:border-primary/40 transition-colors block">
+            <p class="font-mono text-xs text-primary uppercase tracking-widest">02</p>
+            <p class="font-display text-xl text-parchment">Client data kept apart, and on the record</p>
+            <p class="text-sm text-parchment-dim">No bleed between projects, a clear trail of how work was delivered, and nothing lost when someone leaves.</p>
+          </a>
+          <a href="#budget-and-attribution" class="ledger-card p-stack-md rounded-xl space-y-3 hover:border-primary/40 transition-colors block">
+            <p class="font-mono text-xs text-verdigris uppercase tracking-widest">03</p>
+            <p class="font-display text-xl text-parchment">Spend you can attribute</p>
+            <p class="text-sm text-parchment-dim">Every model's cost on the project it served, in a form finance can use.</p>
+          </a>
+          <a href="#model-flexibility" class="ledger-card p-stack-md rounded-xl space-y-3 hover:border-primary/40 transition-colors block">
+            <p class="font-mono text-xs text-primary uppercase tracking-widest">04</p>
+            <p class="font-display text-xl text-parchment">The right model, not the dearest one</p>
+            <p class="text-sm text-parchment-dim">Your keys or our hosted models, with routing that stops everything defaulting to the top tier.</p>
+          </a>
+        </div>
+      </section>
+
       <!-- PRODUCT DEEP DIVE -->
-      <section
-        class="max-w-[1440px] mx-auto px-margin-mobile md:px-margin-desktop space-y-24 py-24"
-        id="product-deep-dive"
-      >
-        <!-- Entry: Shadow AI / visibility -->
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-gutter items-center">
-          <div class="space-y-4">
-            <span class="eyebrow text-primary">Visibility</span>
-            <h2 class="font-display text-display-md text-parchment">
-              Your team is already using AI on client work
-            </h2>
-            <p class="text-parchment-dim text-lg leading-relaxed">
-              On personal accounts, with client documents, under terms nobody
-              reviewed. You cannot say which clients, which files, or whose
-              agreement covered it. That is also the honest answer to the AI
-              section of every client security questionnaire you sign.
-            </p>
-            <ul class="space-y-3 pt-2">
-              <li class="flex items-start gap-3 text-parchment-dim">
-                <span class="material-symbols-outlined text-verdigris mt-0.5"
-                  >check_circle</span
-                >
-                Access tied to Microsoft Entra ID, so offboarding actually
-                removes it
-              </li>
-              <li class="flex items-start gap-3 text-parchment-dim">
-                <span class="material-symbols-outlined text-verdigris mt-0.5"
-                  >check_circle</span
-                >
-                Project files stay in your own SharePoint site, under per-site
-                permissions, never leaving your tenant
-              </li>
-              <li class="flex items-start gap-3 text-parchment-dim">
-                <span class="material-symbols-outlined text-verdigris mt-0.5"
-                  >check_circle</span
-                >
-                Model calls run on your provider keys and your agreement, or on
-                models we host under ours, never a personal consumer account
-              </li>
-              <li class="flex items-start gap-3 text-parchment-dim">
-                <span class="material-symbols-outlined text-verdigris mt-0.5"
-                  >check_circle</span
-                >
-                Four levels of role, and projects only their members can see
-              </li>
-            </ul>
-          </div>
-          <div
-            class="ledger-card rounded-xl border border-ink-line/60 aspect-video flex items-center justify-center overflow-hidden"
-          >
-            <img
-              src="/images/modelconnection.png"
-              alt="Screenshot of ParleHub's organization model-provider settings, where each provider connects with your own API key; OpenAI is connected with its available models listed and a default selected"
-              class="w-full h-full object-cover"
-            />
-          </div>
-        </div>
-
-        <!-- Entry: Cost allocation / the AI timesheet -->
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-gutter items-center">
-          <div
-            class="ledger-card rounded-xl border border-ink-line/60 aspect-video flex items-center justify-center order-2 md:order-1 overflow-hidden"
-          >
-            <img
-              src="/images/billing.png"
-              alt="Screenshot of ParleHub's organization usage analytics: token spend and cost across projects over the last 30 days, shown as a per-project bar chart with filters and summary totals"
-              class="w-full h-full object-cover"
-            />
+      <section class="max-w-[1440px] mx-auto px-margin-mobile md:px-margin-desktop space-y-24 py-24" id="product-deep-dive">
+        <!-- Problem 01 -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-gutter items-center" id="collaboration">
+          <div class="ledger-card rounded-xl border border-ink-line/60 aspect-video flex items-center justify-center overflow-hidden order-2 md:order-1">
+            <img src="/images/projectlist.png" alt="Screenshot of the ParleHub projects view, showing a team's shared projects and conversation threads visible to every member" class="w-full h-full object-cover" />
           </div>
           <div class="space-y-4 order-1 md:order-2">
-            <span class="eyebrow text-verdigris">Cost allocation</span>
-            <h2 class="font-display text-display-md text-parchment">
-              Timesheets for your AI agents
-            </h2>
-            <p class="text-parchment-dim text-lg leading-relaxed">
-              Your people book their hours to a client. Your AI books nothing.
-              It arrives as one provider invoice with no client on it and lands
-              in overhead, where the practices that barely touch AI quietly
-              subsidise the ones that live on it.
-            </p>
+            <span class="eyebrow text-primary">01 · Collaboration</span>
+            <h2 class="font-display text-display-md text-parchment">Deliverables are built by teams. Your AI should not be a private tab.</h2>
+            <p class="text-parchment-dim text-lg leading-relaxed">Prompts, context and corrections end up in one person's chat history. A reviewer cannot see how an answer was reached, and a colleague starts again from nothing.</p>
             <ul class="space-y-3 pt-2">
               <li class="flex items-start gap-3 text-parchment-dim">
-                <span class="material-symbols-outlined text-verdigris mt-0.5"
-                  >check_circle</span
-                >
-                A budget scoped to the project, not the person, because your
-                people work across six of them
+                <span class="material-symbols-outlined text-verdigris mt-0.5">check_circle</span>
+                Shared project threads every member sees live, with presence for who is viewing, typing or waiting on a reply
               </li>
               <li class="flex items-start gap-3 text-parchment-dim">
-                <span class="material-symbols-outlined text-verdigris mt-0.5"
-                  >check_circle</span
-                >
-                Your own project code on every project, carried through to the
-                export
+                <span class="material-symbols-outlined text-verdigris mt-0.5">check_circle</span>
+                Prompts and context stay in the project. Promote a personal chat into a shared one when it turns out to matter
               </li>
               <li class="flex items-start gap-3 text-parchment-dim">
-                <span class="material-symbols-outlined text-verdigris mt-0.5"
-                  >check_circle</span
-                >
-                Spend and token usage broken down by project, person, provider,
-                or model, over any range
+                <span class="material-symbols-outlined text-verdigris mt-0.5">check_circle</span>
+                Instant feedback: a teammate joins the thread mid-answer, or branches by editing and resending without losing the original
               </li>
               <li class="flex items-start gap-3 text-parchment-dim">
-                <span class="material-symbols-outlined text-verdigris mt-0.5"
-                  >check_circle</span
-                >
-                One canonical token ledger behind both the report and the
-                enforcement, so there is a single number
+                <span class="material-symbols-outlined text-verdigris mt-0.5">check_circle</span>
+                <strong class="text-parchment">In Microsoft Teams:</strong> @mention Parle in a connected channel and the answer lands in the thread, under the same access rules
+              </li>
+              <li class="flex items-start gap-3 text-parchment-dim">
+                <span class="material-symbols-outlined text-verdigris mt-0.5">check_circle</span>
+                <strong class="text-parchment">Research Tasks:</strong> hand over a brief, acceptance criteria and a spending limit, and get a written deliverable back
+              </li>
+              <li class="flex items-start gap-3 text-parchment-dim">
+                <span class="material-symbols-outlined text-verdigris mt-0.5">check_circle</span>
+                <strong class="text-parchment">Live Artifacts:</strong> a shared project view, built once, that stays current without a model call each time it is opened
               </li>
             </ul>
-            <p class="text-parchment text-lg leading-relaxed pt-2">
-              Every project carries your own expense code, straight through to
-              the export. AI cost lands where every other cost already lands, so
-              you can recharge it, price it into a fixed fee, or cut the
-              engagement type that does not pay.
-            </p>
+            <p class="text-parchment text-lg leading-relaxed pt-2">Microsoft Teams, Research Tasks and Live Artifacts are on Business Elite and Enterprise plans. Research Tasks and Live Artifacts are managed features that run on models we host.</p>
           </div>
         </div>
 
-        <!-- Entry: Budget enforcement -->
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-gutter items-center">
+        <!-- Problem 02 -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-gutter items-center" id="separation-and-audit">
           <div class="space-y-4">
-            <span class="eyebrow text-verdigris">Control</span>
-            <h2 class="font-display text-display-md text-parchment">
-              Find out before the invoice, not after
-            </h2>
-            <p class="text-parchment-dim text-lg leading-relaxed">
-              Metered spend with no ceiling is the opposite of how a firm plans.
-              One enthusiastic user, one runaway loop, and the number turns up
-              at month end with an explanation attached to it.
-            </p>
+            <span class="eyebrow text-primary">02 · Client separation and audit</span>
+            <h2 class="font-display text-display-md text-parchment">Client A's context should never turn up in Client B's answer.</h2>
+            <p class="text-parchment-dim text-lg leading-relaxed">Personal AI accounts mix everything. Nobody can say which client's documents went where, and when a colleague leaves, what they worked out leaves with them.</p>
             <ul class="space-y-3 pt-2">
               <li class="flex items-start gap-3 text-parchment-dim">
-                <span class="material-symbols-outlined text-verdigris mt-0.5"
-                  >check_circle</span
-                >
-                Pre-flight enforcement blocks the send before it exceeds the
-                project budget
+                <span class="material-symbols-outlined text-verdigris mt-0.5">check_circle</span>
+                Each project is its own boundary, with its own threads, files, budget and code. A conversation draws on its own project, not on another client's
               </li>
               <li class="flex items-start gap-3 text-parchment-dim">
-                <span class="material-symbols-outlined text-verdigris mt-0.5"
-                  >check_circle</span
-                >
-                An 80% warning state, so the team sees it coming
+                <span class="material-symbols-outlined text-verdigris mt-0.5">check_circle</span>
+                Project files can live in your own SharePoint site or Google Shared Drive, so they never leave your tenant
               </li>
               <li class="flex items-start gap-3 text-parchment-dim">
-                <span class="material-symbols-outlined text-verdigris mt-0.5"
-                  >check_circle</span
-                >
-                Personal and org-wide caps stacked as backstops above every
-                project
+                <span class="material-symbols-outlined text-verdigris mt-0.5">check_circle</span>
+                Entra ID and Google Workspace sign-in, four role levels, and restricted projects only their members can see
               </li>
               <li class="flex items-start gap-3 text-parchment-dim">
-                <span class="material-symbols-outlined text-verdigris mt-0.5"
-                  >check_circle</span
-                >
-                Blocked? Request an increase in one click, routed straight to an
-                admin
+                <span class="material-symbols-outlined text-verdigris mt-0.5">check_circle</span>
+                The work belongs to the project, not an account. When someone rolls off, their threads, files and ledger entries stay
+              </li>
+              <li class="flex items-start gap-3 text-parchment-dim">
+                <span class="material-symbols-outlined text-verdigris mt-0.5">check_circle</span>
+                The whole exchange is kept: the question, the reply, the tool calls against project files, and which model produced it
+              </li>
+              <li class="flex items-start gap-3 text-parchment-dim">
+                <span class="material-symbols-outlined text-verdigris mt-0.5">check_circle</span>
+                Sensitive actions go in an audit log enforced append-only at the core platform level
               </li>
             </ul>
-            <p class="text-parchment text-lg leading-relaxed pt-2">
-              The ceiling becomes a number you set rather than a number you
-              discover, and it does not stop the work, because there is a path
-              through it.
-            </p>
+            <p class="text-parchment text-lg leading-relaxed pt-2">The only org-wide material is a firm library you choose to publish, and any project can opt out of it.</p>
           </div>
-          <div
-            class="ledger-card rounded-xl border border-ink-line/60 aspect-video flex items-center justify-center overflow-hidden"
-          >
-            <img
-              src="/images/budget.png"
-              alt="Screenshot of a ParleHub project's Budget tab, showing 40% of a $1,000 budget used with spent/budget/remaining totals, a set-budget control, a platform-consumption billing-mode option, and a per-conversation spend breakdown with message counts"
-              class="w-full h-full object-cover"
-            />
+          <div class="ledger-card rounded-xl border border-ink-line/60 aspect-video flex items-center justify-center overflow-hidden">
+            <img src="/images/storage.png" alt="Screenshot of ParleHub's organization File storage settings, where project files are connected to a customer's own storage" class="w-full h-full object-cover" />
           </div>
         </div>
 
-        <!-- Entry: Shared context -->
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-gutter items-center">
-          <div
-            class="ledger-card rounded-xl border border-ink-line/60 aspect-video flex items-center justify-center order-2 md:order-1 overflow-hidden"
-          >
-            <img
-              src="/images/projectlist.png"
-              alt="Screenshot of the ParleHub projects view, showing a team's shared projects and conversation threads visible to every member"
-              class="w-full h-full object-cover"
-            />
+        <!-- Problem 03 -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-gutter items-center" id="budget-and-attribution">
+          <div class="ledger-card rounded-xl border border-ink-line/60 aspect-video flex items-center justify-center overflow-hidden order-2 md:order-1">
+            <img src="/images/billing.png" alt="Screenshot of ParleHub's organization usage analytics: token spend and cost across projects over the last 30 days, shown as a per-project bar chart with filters and summary totals" class="w-full h-full object-cover" />
           </div>
           <div class="space-y-4 order-1 md:order-2">
-            <span class="eyebrow text-primary">Shared context</span>
-            <h2 class="font-display text-display-md text-parchment">
-              The best work your firm did last week is in a closed tab
-            </h2>
-            <p class="text-parchment-dim text-lg leading-relaxed">
-              Private chat histories mean context rebuilt from scratch at every
-              client switch, by every person. Two people on the same engagement
-              ask the same question a day apart, against different documents,
-              and get different answers. When someone rolls off, what they
-              worked out leaves with them.
-            </p>
+            <span class="eyebrow text-verdigris">03 · Budget and attribution</span>
+            <h2 class="font-display text-display-md text-parchment">Know what AI cost, which project it served, and what it delivered.</h2>
+            <p class="text-parchment-dim text-lg leading-relaxed">Your people book hours to a client. Your AI books nothing. It arrives as one provider invoice with no client on it, and lands in overhead.</p>
             <ul class="space-y-3 pt-2">
               <li class="flex items-start gap-3 text-parchment-dim">
-                <span class="material-symbols-outlined text-verdigris mt-0.5"
-                  >check_circle</span
-                >
-                Shared project threads every member can see, live
+                <span class="material-symbols-outlined text-verdigris mt-0.5">check_circle</span>
+                A budget scoped to the project, because your people work across several of them, with pre-flight enforcement before a send exceeds it and an 80% warning
               </li>
               <li class="flex items-start gap-3 text-parchment-dim">
-                <span class="material-symbols-outlined text-verdigris mt-0.5"
-                  >check_circle</span
-                >
-                Presence indicators for who is viewing, typing, or waiting on a
-                reply
+                <span class="material-symbols-outlined text-verdigris mt-0.5">check_circle</span>
+                Spend for every model, whether on your own keys or ours, on one canonical token ledger
               </li>
               <li class="flex items-start gap-3 text-parchment-dim">
-                <span class="material-symbols-outlined text-verdigris mt-0.5"
-                  >check_circle</span
-                >
-                Keyword and semantic search across every conversation in the
-                project
+                <span class="material-symbols-outlined text-verdigris mt-0.5">check_circle</span>
+                Your own expense code on every project, carried through to the CSV export, so operations and finance reconcile without a manual join
               </li>
               <li class="flex items-start gap-3 text-parchment-dim">
-                <span class="material-symbols-outlined text-verdigris mt-0.5"
-                  >check_circle</span
-                >
-                Promote a personal chat into a shared project when it turns out
-                to matter
+                <span class="material-symbols-outlined text-verdigris mt-0.5">check_circle</span>
+                Usage by project, person, provider or model, over any range
               </li>
               <li class="flex items-start gap-3 text-parchment-dim">
-                <span class="material-symbols-outlined text-verdigris mt-0.5"
-                  >check_circle</span
-                >
-                Branch by editing and resending, without losing the original
+                <span class="material-symbols-outlined text-verdigris mt-0.5">check_circle</span>
+                Personal and org-wide caps as backstops, and a one-click increase request routed to an admin when someone is blocked
+              </li>
+              <li class="flex items-start gap-3 text-parchment-dim">
+                <span class="material-symbols-outlined text-verdigris mt-0.5">check_circle</span>
+                Teams answers, Research Tasks and artifact building land in the same ledger, on the same project
               </li>
             </ul>
+            <p class="text-parchment text-lg leading-relaxed pt-2">The ceiling becomes a number you set rather than one you discover, and there is always a path through it.</p>
           </div>
         </div>
 
-        <!-- Entry: Defensible work -->
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-gutter items-center">
+        <!-- Problem 04 -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-gutter items-center" id="model-flexibility">
           <div class="space-y-4">
-            <span class="eyebrow text-primary">Defensible work</span>
-            <h2 class="font-display text-display-md text-parchment">
-              When a partner asks where the number came from
-            </h2>
-            <p class="text-parchment-dim text-lg leading-relaxed">
-              Work nobody can review gets re-done by whoever has to sign it, at
-              their rate. In regulated practice it cannot be used at all, so the
-              engagement pays for the analysis twice: once quickly, once
-              defensibly.
-            </p>
+            <span class="eyebrow text-primary">04 · Model flexibility and smart selection</span>
+            <h2 class="font-display text-display-md text-parchment">Use the models you choose, and stop defaulting to the dearest one.</h2>
+            <p class="text-parchment-dim text-lg leading-relaxed">There are two ways in, and you can run both. Governance is the same either way.</p>
             <ul class="space-y-3 pt-2">
               <li class="flex items-start gap-3 text-parchment-dim">
-                <span class="material-symbols-outlined text-verdigris mt-0.5"
-                  >check_circle</span
-                >
-                The whole exchange stays in the thread: the question, the reply,
-                and which model produced it
+                <span class="material-symbols-outlined text-verdigris mt-0.5">check_circle</span>
+                <strong class="text-parchment">Bring your own keys</strong> for Anthropic, OpenAI, Google Gemini, Google Vertex AI or Azure OpenAI. Spend lands on your own provider contract
               </li>
               <li class="flex items-start gap-3 text-parchment-dim">
-                <span class="material-symbols-outlined text-verdigris mt-0.5"
-                  >check_circle</span
-                >
-                Real tool calls against the project's own files, so the work is
-                grounded in your documents
+                <span class="material-symbols-outlined text-verdigris mt-0.5">check_circle</span>
+                <strong class="text-parchment">Or use models we host</strong>, with no provider account, charged by what you use. The hosted set reaches open-weight models you would not otherwise have a contract for
               </li>
               <li class="flex items-start gap-3 text-parchment-dim">
-                <span class="material-symbols-outlined text-verdigris mt-0.5"
-                  >check_circle</span
-                >
-                Exact find-and-replace and diffs, so a reviewer sees what
-                changed, not a silent rewrite
+                <span class="material-symbols-outlined text-verdigris mt-0.5">check_circle</span>
+                Curate which models each project may use, and switch model mid-conversation
               </li>
               <li class="flex items-start gap-3 text-parchment-dim">
-                <span class="material-symbols-outlined text-verdigris mt-0.5"
-                  >check_circle</span
-                >
-                Sensitive actions in an audit log enforced append-only at the
-                core platform level
+                <span class="material-symbols-outlined text-verdigris mt-0.5">check_circle</span>
+                <strong class="text-parchment">Auto routing:</strong> your organization names its Everyday, Standard and Frontier models, and Auto picks one when a conversation starts, so routine questions are not answered by the most expensive model by default
+              </li>
+              <li class="flex items-start gap-3 text-parchment-dim">
+                <span class="material-symbols-outlined text-verdigris mt-0.5">check_circle</span>
+                Not happy with an answer? Retry it with a stronger model in one click, or ask for Deep on a single message
               </li>
             </ul>
-            <p class="text-parchment text-lg leading-relaxed pt-2">
-              You still check the work. The difference is that there is
-              something to check, instead of a paragraph that appeared from
-              nowhere.
+            <p class="text-parchment text-lg leading-relaxed pt-2">Auto routing is available on Business plans and above.</p>
+          </div>
+          <div class="ledger-card rounded-xl border border-ink-line/60 aspect-video flex items-center justify-center overflow-hidden">
+            <img src="/images/modelconnection.png" alt="Screenshot of ParleHub's organization model-provider settings, where each provider connects with your own API key; OpenAI is connected with its available models listed and a default selected" class="w-full h-full object-cover" />
+          </div>
+        </div>
+
+      </section>
+
+      <!-- VALUEMAXXING -->
+      <section class="max-w-[1440px] mx-auto px-margin-mobile md:px-margin-desktop py-24">
+        <div class="ledger-card rounded-2xl p-10 md:p-16 grid grid-cols-1 md:grid-cols-2 gap-gutter items-center">
+          <div class="space-y-4">
+            <span class="eyebrow text-verdigris">How we are paid</span>
+            <h2 class="font-display text-display-md text-parchment">
+              We would rather you spent less per deliverable.
+            </h2>
+            <p class="text-parchment-dim text-lg leading-relaxed">
+              Model providers earn when you use more tokens, and so do pure token resellers. Both are rewarded for
+              tokenmaxxing. ParleHub is built around your own keys and priced per seat, for the workspace, the budgets, the
+              attribution and the audit trail. We are rewarded for valuemaxxing: more finished work for every dollar of model spend.
             </p>
           </div>
-          <div
-            class="ledger-card rounded-xl border border-ink-line/60 aspect-video flex items-center justify-center overflow-hidden"
-          >
-            <img
-              src="/images/agent-tools.png"
-              alt="Screenshot of the ParleHub AI assistant reading and querying a spreadsheet file inside a project conversation"
-              class="w-full h-full object-cover"
-            />
-          </div>
+          <ul class="space-y-3">
+              <li class="flex items-start gap-3 text-parchment-dim">
+                <span class="material-symbols-outlined text-verdigris mt-0.5">check_circle</span>
+                Bring your own keys and the token bill never passes through us. Managed models are a convenience, charged by what you use, on the same ledger and under the same caps
+              </li>
+              <li class="flex items-start gap-3 text-parchment-dim">
+                <span class="material-symbols-outlined text-verdigris mt-0.5">check_circle</span>
+                Auto routing keeps routine questions off the top-tier model
+              </li>
+              <li class="flex items-start gap-3 text-parchment-dim">
+                <span class="material-symbols-outlined text-verdigris mt-0.5">check_circle</span>
+                A Live Artifact costs no model call to open, however many people look
+              </li>
+              <li class="flex items-start gap-3 text-parchment-dim">
+                <span class="material-symbols-outlined text-verdigris mt-0.5">check_circle</span>
+                A Research Task starts writing up at 85% of the limit you set, instead of running on
+              </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- WHATS NEW -->
+      <section class="max-w-[1440px] mx-auto px-margin-mobile md:px-margin-desktop py-24">
+        <div class="text-center space-y-4 mb-16 max-w-2xl mx-auto">
+          <span class="eyebrow text-primary">Recently shipped</span>
+          <h2 class="font-display text-display-md text-parchment">Three new ways to deliver work</h2>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+          <a href="/blog/2026/09/21/parlehub-arrives-in-microsoft-teams/" class="ledger-card rounded-xl p-stack-md space-y-3 hover:border-primary/40 transition-colors block">
+            <span class="material-symbols-outlined text-primary">groups</span>
+            <p class="font-mono text-xs text-parchment uppercase tracking-widest">Parle in Microsoft Teams</p>
+            <p class="text-sm text-parchment-dim">Mention Parle in a connected channel and get an answer grounded in the project, under the same budget and access rules.</p>
+            <span class="text-sm text-primary">Read the announcement</span>
+          </a>
+          <a href="/blog/2026/10/01/introducing-research-tasks/" class="ledger-card rounded-xl p-stack-md space-y-3 hover:border-primary/40 transition-colors block">
+            <span class="material-symbols-outlined text-primary">travel_explore</span>
+            <p class="font-mono text-xs text-parchment uppercase tracking-widest">Research Tasks</p>
+            <p class="text-sm text-parchment-dim">A goal, criteria, a due date and a spending limit in. A written deliverable out.</p>
+            <span class="text-sm text-primary">Read the announcement</span>
+          </a>
+          <a href="/blog/2026/10/09/live-artifacts-dashboards-that-cost-nothing-to-open/" class="ledger-card rounded-xl p-stack-md space-y-3 hover:border-primary/40 transition-colors block">
+            <span class="material-symbols-outlined text-primary">dashboard</span>
+            <p class="font-mono text-xs text-parchment uppercase tracking-widest">Live Artifacts</p>
+            <p class="text-sm text-parchment-dim">Shared project views that read current data from your tools, and cost no tokens to open.</p>
+            <span class="text-sm text-primary">Read the announcement</span>
+          </a>
         </div>
       </section>
 
@@ -911,119 +871,36 @@ permalink: /
         </div>
       </section>
 
-      <!-- CAPACITY -->
-      <section
-        class="max-w-[1440px] mx-auto px-margin-mobile md:px-margin-desktop py-24"
-      >
-        <div class="text-center space-y-4 mb-16 max-w-2xl mx-auto">
-          <span class="eyebrow text-primary">Capacity</span>
-          <h2 class="font-display text-display-md text-parchment">
-            Fixed headcount, variable demand
-          </h2>
-          <p class="text-parchment-dim text-lg leading-relaxed">
-            Three months a year, or every time a bid lands, you cannot take more
-            work at any price. Leverage is the only capacity lever that does not
-            require hiring.
-          </p>
-        </div>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
-          <div class="ledger-card rounded-xl p-stack-md space-y-3">
-            <span class="material-symbols-outlined text-verdigris"
-              >description</span
-            >
-            <p
-              class="font-mono text-xs text-parchment uppercase tracking-widest"
-            >
-              Works the actual files
-            </p>
-            <p class="text-sm text-parchment-dim">
-              Search and read project documents, query spreadsheets, and convert
-              PDF, Word, and PowerPoint to searchable markdown, as real tool
-              calls. No code execution anywhere near your client data.
-            </p>
-          </div>
-          <div class="ledger-card rounded-xl p-stack-md space-y-3">
-            <span class="material-symbols-outlined text-verdigris"
-              >group_add</span
-            >
-            <p
-              class="font-mono text-xs text-parchment uppercase tracking-widest"
-            >
-              Ramp in a day
-            </p>
-            <p class="text-sm text-parchment-dim">
-              Someone joining an engagement reads the thread the team already
-              built instead of rebuilding it. The context belongs to the
-              project, not to whoever happened to open the chat.
-            </p>
-          </div>
-          <div class="ledger-card rounded-xl p-stack-md space-y-3">
-            <span class="material-symbols-outlined text-verdigris">hub</span>
-            <p
-              class="font-mono text-xs text-parchment uppercase tracking-widest"
-            >
-              Every major model
-            </p>
-            <p class="text-sm text-parchment-dim">
-              Anthropic, OpenAI, Google Gemini, and Azure OpenAI on your own
-              keys. Curate which models a project may use, and switch mid-chat
-              without losing the thread.
-            </p>
-          </div>
-        </div>
-      </section>
-
       <!-- PRICING TEASER -->
-      <section
-        class="max-w-[1440px] mx-auto px-margin-mobile md:px-margin-desktop py-24"
-      >
+      <section class="max-w-[1440px] mx-auto px-margin-mobile md:px-margin-desktop py-24">
         <div class="text-center space-y-4 mb-16 max-w-2xl mx-auto">
           <span class="eyebrow text-primary">Pricing</span>
-          <h2 class="font-display text-display-md text-parchment">
-            Free to start. Prove it on one engagement.
-          </h2>
+          <h2 class="font-display text-display-md text-parchment">Priced per seat. Model spend is separate and yours to cap.</h2>
         </div>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-gutter">
           <div class="ledger-card rounded-xl p-stack-md space-y-3">
-            <p
-              class="font-mono text-xs text-parchment-dim uppercase tracking-widest"
-            >
-              Free
-            </p>
-            <p class="font-display text-2xl text-parchment">$0</p>
-            <p class="text-sm text-parchment-dim">
-              3 seats, 3 projects, $10/mo of model spend.
-            </p>
+            <p class="font-mono text-xs text-parchment-dim uppercase tracking-widest">Team</p>
+            <p class="font-display text-2xl text-parchment">$6 per seat per month</p>
+            <p class="text-sm text-parchment-dim">10 seats, 10 projects, Enterprise SSO.</p>
           </div>
-          <div
-            class="ledger-card rounded-xl p-stack-md space-y-3 border-primary/40"
-          >
-            <p class="font-mono text-xs text-primary uppercase tracking-widest">
-              Team
-            </p>
-            <p class="font-display text-2xl text-parchment">Flat monthly</p>
-            <p class="text-sm text-parchment-dim">
-              10 seats, 10 projects, SSO, uncapped model spend.
-            </p>
+          <div class="ledger-card rounded-xl p-stack-md space-y-3 border-primary/40">
+            <p class="font-mono text-xs text-primary uppercase tracking-widest">Business</p>
+            <p class="font-display text-2xl text-parchment">$12 per seat per month</p>
+            <p class="text-sm text-parchment-dim">10-seat minimum. Unlimited projects, private projects, SharePoint or Google Drive storage, Auto routing.</p>
           </div>
           <div class="ledger-card rounded-xl p-stack-md space-y-3">
-            <p
-              class="font-mono text-xs text-parchment-dim uppercase tracking-widest"
-            >
-              Enterprise
-            </p>
-            <p class="font-display text-2xl text-parchment">Per seat</p>
-            <p class="text-sm text-parchment-dim">
-              Unlimited seats &amp; projects, private projects, SharePoint/Drive
-              storage.
-            </p>
+            <p class="font-mono text-xs text-parchment-dim uppercase tracking-widest">Business Elite</p>
+            <p class="font-display text-2xl text-parchment">$38 per seat per month</p>
+            <p class="text-sm text-parchment-dim">20-seat minimum. Adds Research Tasks, Live Artifacts, Microsoft Teams and organization knowledge.</p>
+          </div>
+          <div class="ledger-card rounded-xl p-stack-md space-y-3">
+            <p class="font-mono text-xs text-parchment-dim uppercase tracking-widest">Enterprise</p>
+            <p class="font-display text-2xl text-parchment">Custom</p>
+            <p class="text-sm text-parchment-dim">50-seat minimum. Everything in Business Elite, plus extra compliance and integration options.</p>
           </div>
         </div>
         <div class="text-center pt-stack-lg">
-          <a
-            href="/pricing/"
-            class="inline-flex items-center gap-2 text-primary hover:text-primary-bright font-medium transition-colors"
-          >
+          <a href="/pricing/" class="inline-flex items-center gap-2 text-primary hover:text-primary-bright font-medium transition-colors">
             See full plan comparison
             <span class="material-symbols-outlined text-lg">arrow_forward</span>
           </a>
@@ -1038,7 +915,7 @@ permalink: /
           <h2
             class="font-display text-display-md text-parchment max-w-2xl mx-auto"
           >
-            Put a client code on every dollar of AI your firm spends.
+            Share the work. Separate the clients. Attribute every dollar.
           </h2>
           <a
             href="https://app.parlehub.com"
