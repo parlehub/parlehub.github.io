@@ -1,0 +1,207 @@
+---
+# Front matter is required for jekyll-sitemap to see this page (see index.html).
+permalink: /contact/
+---
+<!doctype html>
+<html class="dark" lang="en">
+
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-K1NCXZH6M5"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "G-K1NCXZH6M5");
+  </script>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Contact | Parle</title>
+  <meta name="description"
+    content="Talk to Parle about Enterprise pricing, security questions, or how Parle fits your firm. Send us a message and we will reply by email." />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,500;0,600;1,500;1,600&family=Inter:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+    rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script src="/assets/tailwind.config.js"></script>
+  <link href="/assets/site.css" rel="stylesheet" />
+  <link rel="icon" type="image/png" href="/images/grad-215x215.png" />
+  <link rel="apple-touch-icon" href="/images/apple-touch-icon.png" />
+</head>
+
+<body class="font-body selection:bg-primary/30 selection:text-parchment">
+  <!-- HEADER -->
+  <header
+    class="w-full max-w-[1440px] mx-auto px-margin-mobile md:px-margin-desktop py-6 flex items-center justify-between"
+    id="main-header">
+    <a href="/" class="flex items-center space-x-3 group">
+      <div
+        class="w-9 h-9 rounded-lg bg-gradient-to-tr from-[#005ac2] via-[#4d8eff] to-[#adc6ff] flex items-center justify-center shadow-lg transition-transform duration-300 group-hover:scale-105">
+        <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+          stroke-linecap="round" stroke-linejoin="round">
+          <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+        </svg>
+      </div>
+      <span
+        class="font-display font-semibold text-lg tracking-tight text-parchment group-hover:text-primary transition-colors">Parle</span>
+    </a>
+
+    <nav class="hidden md:flex items-center gap-8">
+      <a href="/" class="text-sm text-parchment transition-colors">Home</a>
+      <a href="/security/" class="text-sm text-parchment-dim hover:text-parchment transition-colors">Security</a>
+      <a href="/blog/" class="text-sm text-parchment-dim hover:text-parchment transition-colors">Blog</a>
+    </nav>
+
+    <div class="flex items-center gap-4 md:gap-6">
+      <a href="https://app.parlehub.com"
+        class="hidden sm:inline text-sm text-parchment-dim hover:text-parchment transition-colors">Sign in</a>
+      <a href="https://app.parlehub.com"
+        class="h-10 px-5 inline-flex items-center rounded-lg bg-primary text-ink font-semibold text-sm hover:bg-primary-bright transition-colors">
+        Start free
+      </a>
+    </div>
+  </header>
+
+  <div class="md:hidden flex items-center justify-center gap-6 pb-4 -mt-2 border-b border-ink-line/40">
+    <a href="/security/" class="text-sm text-parchment-dim hover:text-parchment transition-colors">Security</a>
+    <a href="/pricing/" class="text-sm text-parchment-dim hover:text-parchment transition-colors">Pricing</a>
+    <a href="/blog/" class="text-sm text-parchment-dim hover:text-parchment transition-colors">Blog</a>
+    <a href="https://app.parlehub.com" class="text-sm text-parchment-dim hover:text-parchment transition-colors">Sign
+      in</a>
+  </div>
+
+  <main class="relative">
+    <section class="relative max-w-[1440px] mx-auto px-margin-mobile md:px-margin-desktop pt-stack-lg pb-24">
+      <div class="absolute inset-0 hero-glow -z-10"></div>
+      <div class="max-w-2xl mx-auto">
+        <div class="text-center space-y-4 mb-12">
+          <span class="eyebrow text-primary">Contact</span>
+          <h1 class="font-display text-display-lg-mobile md:text-display-lg text-parchment">
+            Talk to us about Enterprise.
+          </h1>
+          <p class="text-lg leading-relaxed text-parchment-dim">
+            Tell us a little about your organization and what you are trying to solve. A person reads every message and
+            replies by email, usually within one business day.
+          </p>
+        </div>
+
+        <form id="contact-form" class="ledger-card rounded-2xl p-6 md:p-10 space-y-6"
+          action="https://formspree.io/f/maeqjpkr" method="POST">
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+            <div>
+              <label for="name" class="block text-sm text-parchment mb-2">Name</label>
+              <input id="name" name="name" type="text" required autocomplete="name" class="w-full rounded-lg bg-ink border border-ink-line text-parchment placeholder:text-parchment-dim/60 focus:border-primary focus:ring-primary" />
+            </div>
+            <div>
+              <label for="email" class="block text-sm text-parchment mb-2">Work email</label>
+              <input id="email" name="email" type="email" required autocomplete="email" class="w-full rounded-lg bg-ink border border-ink-line text-parchment placeholder:text-parchment-dim/60 focus:border-primary focus:ring-primary" />
+            </div>
+            <div>
+              <label for="company" class="block text-sm text-parchment mb-2">Company</label>
+              <input id="company" name="company" type="text" required autocomplete="organization" class="w-full rounded-lg bg-ink border border-ink-line text-parchment placeholder:text-parchment-dim/60 focus:border-primary focus:ring-primary" />
+            </div>
+            <div>
+              <label for="seats" class="block text-sm text-parchment mb-2">Approximate seats</label>
+              <select id="seats" name="seats" class="w-full rounded-lg bg-ink border border-ink-line text-parchment placeholder:text-parchment-dim/60 focus:border-primary focus:ring-primary">
+                <option value="">Not sure yet</option>
+                <option>Under 50</option>
+                <option>50 to 200</option>
+                <option>200 to 1,000</option>
+                <option>More than 1,000</option>
+              </select>
+            </div>
+          </div>
+          <div>
+            <label for="message" class="block text-sm text-parchment mb-2">How can we help?</label>
+            <textarea id="message" name="message" rows="5" required class="w-full rounded-lg bg-ink border border-ink-line text-parchment placeholder:text-parchment-dim/60 focus:border-primary focus:ring-primary"></textarea>
+          </div>
+
+          <!-- Honeypot: hidden from people, filled in by simple bots. Formspree discards submissions where it is set. -->
+          <div class="hidden" aria-hidden="true">
+            <label for="_gotcha">Leave this field empty</label>
+            <input id="_gotcha" name="_gotcha" type="text" tabindex="-1" autocomplete="off" />
+          </div>
+          <input type="hidden" name="_subject" value="Parle contact form enquiry" />
+
+          <button type="submit" id="contact-submit"
+            class="h-12 px-8 inline-flex items-center justify-center rounded-lg bg-primary text-ink font-semibold hover:bg-primary-bright transition-colors">
+            Send message
+          </button>
+          <p id="contact-status" class="text-sm text-parchment-dim" role="status" aria-live="polite"></p>
+          <p class="text-xs text-parchment-dim/80">
+            We use your details only to reply to this enquiry. The form is processed by Formspree on our behalf; see our
+            <a href="/privacy/" class="text-primary hover:text-primary-bright">Privacy Policy</a>.
+          </p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    (function () {
+      var form = document.getElementById("contact-form");
+      var status = document.getElementById("contact-status");
+      var button = document.getElementById("contact-submit");
+      if (!form || !window.fetch) return; // without fetch the form still posts normally
+      form.addEventListener("submit", function (event) {
+        event.preventDefault();
+        button.disabled = true;
+        status.textContent = "Sending...";
+        fetch(form.action, {
+          method: "POST",
+          body: new FormData(form),
+          headers: { Accept: "application/json" }
+        }).then(function (response) {
+          if (response.ok) {
+            form.reset();
+            status.textContent = "Thank you. We have your message and will reply by email.";
+          } else {
+            throw new Error("rejected");
+          }
+        }).catch(function () {
+          status.textContent = "Sorry, that did not send. Please try again, or email sales@parlehub.com.";
+        }).finally(function () {
+          button.disabled = false;
+        });
+      });
+    })();
+  </script>
+
+  <!-- FOOTER -->
+  <footer class="w-full border-t border-ink-line/60" id="main-footer">
+    <div class="max-w-[1440px] mx-auto px-margin-mobile md:px-margin-desktop py-16 space-y-12">
+      <div class="text-center py-4 border-y border-ink-line/40">
+        <p class="eyebrow text-primary-dim">
+          Works with Anthropic &middot; OpenAI &middot; Google Gemini &middot;
+          Azure OpenAI &middot; and open-weight models we host
+        </p>
+      </div>
+      <div class="flex flex-col sm:flex-row items-center justify-between gap-6 text-xs text-parchment-dim/70">
+        <div class="flex items-center gap-2.5">
+          <div
+            class="w-6 h-6 rounded-md bg-gradient-to-tr from-[#005ac2] via-[#4d8eff] to-[#adc6ff] flex items-center justify-center">
+            <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+            </svg>
+          </div>
+          <span class="font-mono">© 2026 Parle</span>
+        </div>
+        <nav class="flex flex-wrap items-center justify-center gap-x-6 gap-y-2">
+          <a href="/security/" class="hover:text-parchment transition-colors">Security</a>
+          <a href="/pricing/" class="hover:text-parchment transition-colors">Pricing</a>
+          <a href="/compare/" class="hover:text-parchment transition-colors">Compare</a>
+          <a href="/blog/" class="hover:text-parchment transition-colors">Blog</a>
+          <a href="/terms/" class="hover:text-parchment transition-colors">Terms</a>
+          <a href="/privacy/" class="hover:text-parchment transition-colors">Privacy</a>
+          <a href="/contact/" class="hover:text-parchment transition-colors">Contact</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
