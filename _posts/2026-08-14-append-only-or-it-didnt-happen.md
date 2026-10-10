@@ -4,7 +4,7 @@ title: "Append-Only or It Didn't Happen: What Compliance Actually Asks of Your A
 date: 2026-08-14 10:00:00 -0400
 categories: [Compliance, AI Governance, Security]
 tags: [audit-trail, append-only, compliance, governance, parlehub]
-author: ParleHub Team
+author: Parle Team
 description: "Logging everything is not an audit trail. An audit trail is a record the application that wrote it cannot go back and change, which is a much shorter list."
 ---
 
@@ -76,9 +76,9 @@ The practical version is simpler. A firm whose systems emit evidence continuousl
 
 ---
 
-## Where ParleHub Fits
+## Where Parle Fits
 
-That's precisely why we built **ParleHub** with the audit trail as a property of the platform rather than as a feature of the application.
+That's precisely why we built **Parle** with the audit trail as a property of the platform rather than as a feature of the application.
 
 * **Sensitive actions are logged append-only, enforced at the core platform level.** The guarantee is not that our code behaves well. It is that history cannot be rewritten even by an application credential in the wrong hands, which is the condition *The Self-Marking Exam* fails and the reason retention alone was never the answer to *The Seven-Year Promise*.
 * **Authority is recorded, not just consumption.** Role changes across the four levels of access, member invitations, provider key changes, project visibility, and storage connections are all sensitive actions in their own right. The control plane is logged, not only the conversations it governs, which is what section two is really asking for.
@@ -92,4 +92,4 @@ Governance behaves identically whether the tokens ran on your own provider keys 
 Your firm already keeps one book it cannot edit, because a hundred years of practice established that a record the writer controls is not a record at all. AI is a system that spends money, reaches client documents, and grants access, which puts it on that list.
 
 **Want AI governance that produces evidence continuously instead of during audit season?**  
-[See how ParleHub handles access, spend, and the audit trail →](https://parlehub.com/security/)
+[See how Parle handles access, spend, and the audit trail →](https://parlehub.com/security/)

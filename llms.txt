@@ -1,11 +1,11 @@
-# ParleHub
+# Parle
 
-> ParleHub is a team-based shared workspace for AI conversations, built for organizations rather than solo users. Projects hold shared AI threads every member can see live, each with its own budget, the customer's own expense code, and a token ledger that exports to CSV. Teams either bring their own model provider keys or use models ParleHub hosts, and can run both at once. Sign up at https://app.parlehub.com.
+> Parle is a team-based shared workspace for AI conversations, built for organizations rather than solo users. Projects hold shared AI threads every member can see live, each with its own budget, the customer's own expense code, and a token ledger that exports to CSV. Teams either bring their own model provider keys or use models Parle hosts, and can run both at once. Sign up at https://app.parlehub.com.
 
-ParleHub is made by ParleHub LLC (North Carolina, USA). This file describes the marketing site at
+Parle is made by ParleHub LLC (North Carolina, USA). This file describes the marketing site at
 https://parlehub.com. The product itself lives at https://app.parlehub.com.
 
-## What ParleHub does
+## What Parle does
 
 - **Shared project workspaces.** A project contains AI conversation threads visible to every member
   in real time, not per-person silos. Live presence shows who is viewing, typing, or waiting on a
@@ -20,7 +20,7 @@ https://parlehub.com. The product itself lives at https://app.parlehub.com.
   project/matter/engagement code, and that code carries through the token ledger into the analytics
   CSV export — so AI cost joins to existing client coding with no manual reconciliation step.
 - **Two ways to access models.** An organization can bring its own provider API keys (stored in
-  Azure Key Vault, never exposed), use models ParleHub hosts with no key or provider account at all,
+  Azure Key Vault, never exposed), use models Parle hosts with no key or provider account at all,
   or run both modes at once. Governance is identical either way: the same project budgets, personal
   and org caps, 80% warning, pre-flight hard block, token ledger, project code, and CSV export.
 - **Enterprise SSO and enterprise-native storage.** Microsoft Entra ID and Google Workspace OIDC
@@ -87,7 +87,7 @@ Google Cloud credentials, so inference runs in its Cloud project, under its GCP 
 IAM, pinned to a region it chooses; which models a region serves varies, so the region is part of the
 setup rather than an afterthought.
 
-Hosted models run on Azure AI Foundry under ParleHub's managed identity, priced per token and drawn
+Hosted models run on Azure AI Foundry under Parle's managed identity, priced per token and drawn
 from a credit balance the organization tops up. The hosted catalog is deliberately curated rather
 than exhaustive, and it reaches beyond the three large model vendors to open-weight models a
 customer would otherwise have no contract with. Models can be switched per conversation.
@@ -111,11 +111,11 @@ auditable — rather than spread across individual accounts under terms nobody r
 
 Subscription pricing is separate from model spend. Model usage is billed either on the
 organization's own provider contract (bring your own key) or per token against a credit balance
-(models ParleHub hosts).
+(models Parle hosts).
 
 Budgets and caps are mode-neutral: they limit model spend whether tokens run on the customer's own
-keys or on models ParleHub hosts. Paid tiers include a 7-day trial. Billing is Stripe-backed.
-ParleHub is priced per seat for the workspace, budgets, attribution and audit trail; it does not
+keys or on models Parle hosts. Paid tiers include a 7-day trial. Billing is Stripe-backed.
+Parle is priced per seat for the workspace, budgets, attribution and audit trail; it does not
 earn more when a customer uses more tokens.
 
 ## Pages
@@ -131,12 +131,12 @@ earn more when a customer uses more tokens.
 - [Blog archive](https://parlehub.com/blog/archive/): Chronological index of every post.
 - [Compare](https://parlehub.com/compare/): Hub for head-to-head comparisons against the model
   vendors' own team products.
-- [ParleHub vs Claude Team & Enterprise](https://parlehub.com/compare/parlehub-vs-claude/):
+- [Parle vs Claude Team & Enterprise](https://parlehub.com/compare/parlehub-vs-claude/):
   Comparison on budget scope, cost allocation, shared threads, and model access.
-- [ParleHub vs ChatGPT Business & Enterprise](https://parlehub.com/compare/parlehub-vs-chatgpt/):
+- [Parle vs ChatGPT Business & Enterprise](https://parlehub.com/compare/parlehub-vs-chatgpt/):
   Comparison on credit limits, shared projects, live collaboration, and model access.
-- [ParleHub vs Google Gemini & Vertex AI](https://parlehub.com/compare/parlehub-vs-gemini/):
-  Comparison on Cloud Billing budgets, sharing model, and how ParleHub connects to Gemini.
+- [Parle vs Google Gemini & Vertex AI](https://parlehub.com/compare/parlehub-vs-gemini/):
+  Comparison on Cloud Billing budgets, sharing model, and how Parle connects to Gemini.
 - [Terms of Service](https://parlehub.com/terms/): The agreement between ParleHub LLC and
   organizations using the service.
 - [Privacy Policy](https://parlehub.com/privacy/): What data is collected, how it is used, who it is
@@ -149,7 +149,7 @@ earn more when a customer uses more tokens.
   call when opened.
 - [Introducing Research Tasks: Hand Over the Brief, Get Back a Deliverable, Within a Budget You Set](https://parlehub.com/blog/2026/10/01/introducing-research-tasks/):
   Announcement. Long-running research against a goal, criteria and a spending limit.
-- [ParleHub Arrives in Microsoft Teams: Ask the Project, Right in the Channel](https://parlehub.com/blog/2026/09/21/parlehub-arrives-in-microsoft-teams/):
+- [Parle Arrives in Microsoft Teams: Ask the Project, Right in the Channel](https://parlehub.com/blog/2026/09/21/parle-arrives-in-microsoft-teams/):
   Announcement. Mention Parle in a connected channel; the answer is grounded in the project and
   governed by the same budget and access rules.
 - [Corrected at the Source: Why AI Should Point at Your Document Library, Not Copy It](https://parlehub.com/blog/2026/09/08/corrected-at-the-source/):
@@ -192,5 +192,5 @@ earn more when a customer uses more tokens.
 - Every canonical URL on this site ends in a trailing slash; `.html` URLs redirect.
 - The canonical host is the apex domain `parlehub.com` (no `www.`).
 - A machine-readable page index is at https://parlehub.com/sitemap.xml.
-- ParleHub is not affiliated with or endorsed by Anthropic, OpenAI, Google, or Microsoft. Product
+- Parle is not affiliated with or endorsed by Anthropic, OpenAI, Google, or Microsoft. Product
   names referenced on the comparison pages are trademarks of their respective owners.

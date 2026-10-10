@@ -4,7 +4,7 @@ title: "Looked Up, Not Remembered: Letting AI Answer Questions About Your Own Or
 date: 2026-09-01 10:00:00 -0400
 categories: [AI Governance, FinOps, Enterprise Tech]
 tags: [governance, spend-visibility, agent-tools, permissions, parlehub]
-author: ParleHub Team
+author: Parle Team
 description: "Governance dashboards hold the right numbers on a screen nobody opens mid-task. Making an assistant answer from live state, not a stale index, is harder than it looks."
 ---
 
@@ -82,9 +82,9 @@ We learned this the expensive way. An early version of the tool that reports con
 
 ---
 
-## Where ParleHub Fits
+## Where Parle Fits
 
-This is precisely the problem we created **ParleHub** to solve, and **Org Insight** is the part of it that lets a person ask the workspace about itself without leaving the conversation they are in.
+This is precisely the problem we created **Parle** to solve, and **Org Insight** is the part of it that lets a person ask the workspace about itself without leaving the conversation they are in.
 
 * **Budget, spend and headroom answered from the live record.** Ask what a project has left and the figure is fetched at that moment from the same rows the budget panel reads. For organizations on models we host, the answer also says whether the prepaid credit behind them is healthy or exhausted, which is a different question from the project budget and is sometimes the one actually stopping a send. This is the answer to *The Balance That Sounds Current*: there is no index of your spend to go stale, because there is no index of your spend.
 * **Organization-wide spend is answered privately and withheld from shared threads on purpose.** It is the one question the assistant will decline in a project conversation and answer in a personal one, and entitlement still applies, so asking privately gets you your own numbers unless your role covers more. The same rule trims the credit answer above: a shared thread gets the standing and never the amount, because the amount is administrator-only on every screen that shows it. That is *One Answer, Every Badge in the Room*, resolved by design rather than by omission.
@@ -100,4 +100,4 @@ Everything above behaves identically whether tokens run on your own provider key
 A dashboard waits to be visited. A balance waits to be asked.
 
 **Want your team to stop guessing at their own numbers?**  
-[See how ParleHub handles projects, budgets and access →](https://parlehub.com/pricing/)
+[See how Parle handles projects, budgets and access →](https://parlehub.com/pricing/)

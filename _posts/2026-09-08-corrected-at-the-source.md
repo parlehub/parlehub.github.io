@@ -4,7 +4,7 @@ title: "Corrected at the Source: Why AI Should Point at Your Document Library, N
 date: 2026-09-08 10:00:00 -0400
 categories: [AI Governance, Knowledge Management, Enterprise Tech]
 tags: [knowledge, citation, document-governance, sharepoint, parlehub]
-author: ParleHub Team
+author: Parle Team
 description: "Uploading your policies into an AI tool creates a second copy that goes stale silently. The safer build points at the library you already maintain and cites what it quotes."
 ---
 
@@ -16,7 +16,7 @@ The moment any firm gets serious about AI, someone proposes putting that folder 
 
 Consider how a working ship handles this. A nautical chart is not a static object; corrections arrive continuously, and a navigator applies them by hand to the chart in the drawer. The chart is authoritative because it is the one that gets corrected. The dangerous artifact is the photocopy somebody made last spring for convenience: perfectly legible, official-looking, indistinguishable from the real thing at a glance, and missing the shoal that was added in June. Nobody would run a vessel off a photocopy. Almost everybody is about to run their firm's expertise off one.
 
-We built the document half of ParleHub around refusing to become that photocopy, and the refusal turned out to shape nearly every decision in it.
+We built the document half of Parle around refusing to become that photocopy, and the refusal turned out to shape nearly every decision in it.
 
 ---
 
@@ -74,22 +74,22 @@ Carry it one step further, to where the answer is *read*: a citation sitting in 
 
 ---
 
-## Where ParleHub Fits
+## Where Parle Fits
 
-That's precisely why we built **ParleHub** to treat the firm's documents and the firm's live numbers as two different features with opposite mechanics. Live state is [looked up fresh on every question](/blog/2026/09/01/looked-up-not-remembered/), because being current is what makes it correct. Documents are indexed and quoted, because being *attributable* is what makes them correct. **Org Knowledge** is the second half.
+That's precisely why we built **Parle** to treat the firm's documents and the firm's live numbers as two different features with opposite mechanics. Live state is [looked up fresh on every question](/blog/2026/09/01/looked-up-not-remembered/), because being current is what makes it correct. Documents are indexed and quoted, because being *attributable* is what makes them correct. **Org Knowledge** is the second half.
 
-* **Bind the corpus to a library your firm already maintains.** An administrator points ParleHub at a SharePoint site or a Google Shared Drive through the organization's existing storage connection, and ParleHub reads it; the documents stay in [your own tenant](/blog/2026/08/01/your-ai-vendor-is-a-data-residency-decision/), under your retention and your access controls. The corpus is reconciled against the source on a schedule, so an edit made at source flows through without anyone re-uploading anything. This is the answer to *The Second Copy*: there is no second copy to diverge. Managed upload remains available for firms with nothing to bind to.
+* **Bind the corpus to a library your firm already maintains.** An administrator points Parle at a SharePoint site or a Google Shared Drive through the organization's existing storage connection, and Parle reads it; the documents stay in [your own tenant](/blog/2026/08/01/your-ai-vendor-is-a-data-residency-decision/), under your retention and your access controls. The corpus is reconciled against the source on a schedule, so an edit made at source flows through without anyone re-uploading anything. This is the answer to *The Second Copy*: there is no second copy to diverge. Managed upload remains available for firms with nothing to bind to.
 * **Every answer names the document, the version and the section, and links back.** The citable fields come from the document record and the indexed passage, never from the model's own prose, which is what makes them checkable rather than merely present. *The Answer Nobody Can Check* becomes an answer with a footnote you can click.
 * **Retiring a document removes its passages from the index.** A withdrawn policy is not filtered from a list, it is gone from what can be retrieved, and a citation to it in an older message resolves to nothing rather than reopening it. *The Rescinded Policy, Quoted Perfectly* is closed at both ends.
 * **The corpus is organization-wide, with a per-project opt-out, and it says what it is unsure about.** Any project that should not draw on it can be switched out, in which case the capability is neither offered nor served there. When a bound library stops being reachable, the administrators who can fix it are told rather than the corpus quietly aging.
 
 One thing we put on screen rather than in documentation, because it is a real trust boundary and it belongs to you rather than to us: everyone who can write to the folder you bind is, in effect, contributing to what the assistant reads across the whole organization. Choose the location accordingly. We say so at the moment you choose it.
 
-Org Knowledge is new, and we would rather describe it accurately than enthusiastically: it is built, it works end to end, and it has not yet been through the years of production mileage that the budgeting and storage side of ParleHub has.
+Org Knowledge is new, and we would rather describe it accurately than enthusiastically: it is built, it works end to end, and it has not yet been through the years of production mileage that the budgeting and storage side of Parle has.
 
 ***
 
 Your firm already wrote down what it knows. The question is whether the copy your AI reads is the one that gets corrected.
 
 **Want your own methodology answering questions instead of sitting in a folder?**  
-[See how ParleHub handles enterprise storage and knowledge →](https://parlehub.com/security/)
+[See how Parle handles enterprise storage and knowledge →](https://parlehub.com/security/)

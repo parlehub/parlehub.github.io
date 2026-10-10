@@ -4,13 +4,13 @@ title: "Introducing Research Tasks: Hand Over the Brief, Get Back a Deliverable,
 date: 2026-10-01 10:00:00 -0400
 categories: [Product News, Research Tasks, Cost Control]
 tags: [announcement, research-tasks, budgets, agents, parlehub]
-author: ParleHub Team
+author: Parle Team
 description: "Research Tasks work a brief for hours or days against a spending limit you set, check their own work against your criteria, and deliver a document to the project."
 ---
 
-*A new kind of AI work for long jobs: you state the goal, the acceptance criteria, the due date and the most you are willing to spend. ParleHub does the rest and files the result with the project.*
+*A new kind of AI work for long jobs: you state the goal, the acceptance criteria, the due date and the most you are willing to spend. Parle does the rest and files the result with the project.*
 
-**October 1, 2026:** ParleHub today announced **Research Tasks**, a way to give the platform a long, defined piece of work and walk away from it. A task takes a goal, ordered acceptance criteria, a due date and a spending limit. It then works unattended, for as long as the job needs, and delivers a written document into the project.
+**October 1, 2026:** Parle today announced **Research Tasks**, a way to give the platform a long, defined piece of work and walk away from it. A task takes a goal, ordered acceptance criteria, a due date and a spending limit. It then works unattended, for as long as the job needs, and delivers a written document into the project.
 
 ## Why this matters
 
@@ -56,17 +56,17 @@ If the organization's credit balance runs out mid-task, the task pauses and reco
 
 Our customers asked for the long, slow work that a chat is bad at: the market scan, the precedent search, the competitor read, the due-diligence first pass. These jobs are where AI spend grows fastest and where it is least accountable, because the work is large and the reading is thin.
 
-ParleHub is paid for by the seat and the governance, not by the token. A task that fits a stated budget, shows its plan, and tells you what it checked is exactly what a firm that cares about the cost of a deliverable would want. We make our money when you trust the result, not when the job runs long.
+Parle is paid for by the seat and the governance, not by the token. A task that fits a stated budget, shows its plan, and tells you what it checked is exactly what a firm that cares about the cost of a deliverable would want. We make our money when you trust the result, not when the job runs long.
 
 ## Availability
 
-Research Tasks are available on Business Elite and Enterprise plans. Research Tasks are a managed feature: they run on models ParleHub hosts and draw on the organization's credit balance, a trade-off that lets us guarantee the availability and quality a long unattended job needs. An organization that otherwise brings only its own keys enables managed models for this one purpose. Research Tasks are new, and the deliverable should be reviewed the way any research draft is.
+Research Tasks are available on Business Elite and Enterprise plans. Research Tasks are a managed feature: they run on models Parle hosts and draw on the organization's credit balance, a trade-off that lets us guarantee the availability and quality a long unattended job needs. An organization that otherwise brings only its own keys enables managed models for this one purpose. Research Tasks are new, and the deliverable should be reviewed the way any research draft is.
 
-## About ParleHub
+## About Parle
 
-ParleHub is a shared workspace for AI conversations, built for organizations that bill by client or engagement. Projects hold shared threads every member can see live, each with its own budget and expense code, on provider keys you bring or models ParleHub hosts. Learn more at [parlehub.com](/) or see [pricing](/pricing/).
+Parle is a shared workspace for AI conversations, built for organizations that bill by client or engagement. Projects hold shared threads every member can see live, each with its own budget and expense code, on provider keys you bring or models Parle hosts. Learn more at [parlehub.com](/) or see [pricing](/pricing/).
 
 ***
 
 **Have a long piece of research you would rather budget than babysit?**  
-[Try Research Tasks on ParleHub →](https://app.parlehub.com)
+[Try Research Tasks on Parle →](https://app.parlehub.com)

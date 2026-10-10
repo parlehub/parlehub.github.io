@@ -4,13 +4,13 @@ title: "Live Artifacts: Project Dashboards That Cost No Tokens to Open"
 date: 2026-10-09 10:00:00 -0400
 categories: [Product News, Live Artifacts, Cost Control]
 tags: [announcement, live-artifacts, dashboards, integrations, parlehub]
-author: ParleHub Team
-description: "Describe a view once; ParleHub builds it, publishes it to the project, and refreshes it from your connected tools without calling a model each time someone looks."
+author: Parle Team
+description: "Describe a view once; Parle builds it, publishes it to the project, and refreshes it from your connected tools without calling a model each time someone looks."
 ---
 
-*Describe the report you keep asking an assistant to rebuild. ParleHub builds it once, shares it with the project, and keeps it current without spending tokens every time a teammate opens it.*
+*Describe the report you keep asking an assistant to rebuild. Parle builds it once, shares it with the project, and keeps it current without spending tokens every time a teammate opens it.*
 
-**October 9, 2026:** ParleHub today announced **Live Artifacts**. A Live Artifact is a small, shared view inside a project, such as a status board, a weekly summary or a spend table, that reads current data from the project's connected tools. It is created in conversation, reviewed before it goes live, and costs nothing in model usage to view.
+**October 9, 2026:** Parle today announced **Live Artifacts**. A Live Artifact is a small, shared view inside a project, such as a status board, a weekly summary or a spend table, that reads current data from the project's connected tools. It is created in conversation, reviewed before it goes live, and costs nothing in model usage to view.
 
 ## Why this matters
 
@@ -24,7 +24,7 @@ Two things published together. The first is a **view**: a page that shows the da
 
 You describe what you want to the artifact builder in an ordinary conversation. It drafts both parts, tests them against your real data, and shows you a preview with that data in it. Nothing is visible to the rest of the project until you publish.
 
-Once published, opening the artifact **does not involve a model at all**. ParleHub runs the spec, caches the result for a period you control, and renders the view. A hundred people opening it costs the same in tokens as one: none.
+Once published, opening the artifact **does not involve a model at all**. Parle runs the spec, caches the result for a period you control, and renders the view. A hundred people opening it costs the same in tokens as one: none.
 
 ## What keeps it safe
 
@@ -52,17 +52,17 @@ Each artifact counts its daily active viewers, and the organization sees which a
 
 The cheapest token is the one you never spend, and the most expensive use of AI is asking the same question again. A Live Artifact turns a repeated question into an asset that belongs to the project, with the work done once and the answer available to everyone.
 
-ParleHub is paid for by the seat, not the token, so we have no interest in a design that makes people call a model more often. Artifacts are the opposite of that: the value goes up each time someone opens one, and the cost does not.
+Parle is paid for by the seat, not the token, so we have no interest in a design that makes people call a model more often. Artifacts are the opposite of that: the value goes up each time someone opens one, and the cost does not.
 
 ## Availability
 
-Live Artifacts are live now for Business Elite and Enterprise organizations with integrations enabled. Building and repairing an artifact is a managed feature: it runs on a model ParleHub hosts and draws on the organization's credit balance, a trade-off that lets us guarantee availability and quality for it. An organization that otherwise brings only its own keys enables managed models for this one purpose. Viewing and publishing never call a model, and the library of supported tools is growing.
+Live Artifacts are live now for Business Elite and Enterprise organizations with integrations enabled. Building and repairing an artifact is a managed feature: it runs on a model Parle hosts and draws on the organization's credit balance, a trade-off that lets us guarantee availability and quality for it. An organization that otherwise brings only its own keys enables managed models for this one purpose. Viewing and publishing never call a model, and the library of supported tools is growing.
 
-## About ParleHub
+## About Parle
 
-ParleHub is a shared workspace for AI conversations, built for organizations that bill by client or engagement. Projects hold shared threads every member can see live, each with its own budget and expense code, on provider keys you bring or models ParleHub hosts. Learn more at [parlehub.com](/) or see [pricing](/pricing/).
+Parle is a shared workspace for AI conversations, built for organizations that bill by client or engagement. Projects hold shared threads every member can see live, each with its own budget and expense code, on provider keys you bring or models Parle hosts. Learn more at [parlehub.com](/) or see [pricing](/pricing/).
 
 ***
 
 **Tired of paying for the same weekly report twice?**  
-[Build your first Live Artifact on ParleHub →](https://app.parlehub.com)
+[Build your first Live Artifact on Parle →](https://app.parlehub.com)

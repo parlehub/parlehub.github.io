@@ -1,9 +1,9 @@
 ---
 name: blog-post
-description: Draft a new ParleHub blog post in _posts/ matching the established house voice, structure, and product-accuracy rules. Use when asked to write, draft, or add a blog post / article / entry for the ParleHub site.
+description: Draft a new Parle blog post in _posts/ matching the established house voice, structure, and product-accuracy rules. Use when asked to write, draft, or add a blog post / article / entry for the Parle site.
 ---
 
-# Writing a ParleHub blog post
+# Writing a Parle blog post
 
 Produce one file at `_posts/YYYY-MM-DD-<kebab-slug>.md`. Nothing else needs to change —
 `blog/index.html` iterates `site.posts` automatically and `_config.yml` applies
@@ -41,7 +41,7 @@ the premise.
 4. **The reframe** — an H2 introducing the correct model, with **exactly three** numbered
    H3 pillars beneath it.
 5. **Product entry, ~70% of the way in.** Literally: "This is precisely the problem we
-   created **ParleHub** to solve" or "That's precisely why we built **ParleHub**." Never
+   created **Parle** to solve" or "That's precisely why we built **Parle**." Never
    mention the product before this point.
 6. **Capability bullets** with bolded lead-ins — 3–4 of them, each tied back to a failure
    mode named in step 3.
@@ -62,7 +62,7 @@ question, then a link.
   Tomorrow, Sarah in Strategy needs the exact same thing." Use they/them for invented
   people unless the name is unambiguous in context.
 - **Bold** introduces a term being defined. *Italics* for rhetorical emphasis only.
-- **Voice:** confident, plain, declarative. "We" = ParleHub. "You" = the reader's org.
+- **Voice:** confident, plain, declarative. "We" = Parle. "You" = the reader's org.
   Zero hype adjectives (revolutionary, game-changing, cutting-edge, seamless). No em-dash
   pileups. No bullet lists in the opening two sections — prose first, structure later.
 - Numbers and money read as ledger figures; state them concretely ("$15,000 of budget in
@@ -78,7 +78,7 @@ title: "Sentence-case Title: With an Optional Colon Subtitle"
 date: YYYY-MM-DD HH:MM:00 -0400
 categories: [Two To Three, Title Case, Buckets]
 tags: [lowercase-kebab, always-include, parlehub]
-author: ParleHub Team
+author: Parle Team
 description: "One sentence, under 160 chars, for search results and social cards."
 ---
 ```
@@ -89,7 +89,7 @@ the real current date; the offset is `-0400` (site timezone is `America/New_York
 
 ## Step 6 — fact-check before you hand it over (do not skip)
 
-`CLAUDE.md` in the repo root is the source of truth for what ParleHub actually does, with
+`CLAUDE.md` in the repo root is the source of truth for what Parle actually does, with
 a **[LIVE] / [SHIPPED] / [ROADMAP]** status legend. Re-read the feature section before
 writing any product claim, and hold every sentence in the capability bullets against it.
 
@@ -101,7 +101,7 @@ Rules:
 - **[ROADMAP]** — do not present as available. Only tease as "coming soon" if the post is
   explicitly forward-looking, and tell the user you did.
 - **There are two model-access modes and both are [LIVE]:** bring your own provider keys,
-  or use models ParleHub hosts, charged by consumption. Never write that ParleHub is
+  or use models Parle hosts, charged by consumption. Never write that Parle is
   BYOK-only — that was true until Aug 2026 and a lot of older copy still says it. Two
   cautions survive: don't imply a broad hosted catalog (it is curated and small), and don't
   write "buy tokens from us" or "credits transferable across OpenAI/Anthropic/Gemini" —
