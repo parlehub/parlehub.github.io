@@ -15,6 +15,7 @@ Mark `- [x]` when published. Keep the shipped posts in mind so arguments don't o
 - 2026-08-25 — the budget request nobody sends (the exception-path argument)
 - 2026-09-01 — looked up, not remembered (Org Insight; the live-state argument)
 - 2026-09-08 — corrected at the source (Org Knowledge; the document-provenance argument)
+- 2026-10-10 — three press-release style announcements: Microsoft Teams, Research Tasks, Live Artifacts
 
 ---
 

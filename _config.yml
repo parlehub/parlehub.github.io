@@ -1,4 +1,4 @@
-title: ParleHub
+title: Parle
 # Must match CNAME. jekyll-sitemap stamps this onto every <loc> in sitemap.xml and
 # onto the Sitemap: line in robots.txt, so a mismatch publishes a sitemap of URLs
 # that all 301, which Search Console reports as "Page with redirect".

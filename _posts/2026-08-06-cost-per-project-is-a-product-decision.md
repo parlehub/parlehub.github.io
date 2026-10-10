@@ -4,7 +4,7 @@ title: "Cost Per Project Is a Product Decision, Not an Accounting One"
 date: 2026-08-06 10:00:00 -0400
 categories: [AI Governance, FinOps, Enterprise Tech]
 tags: [cost-attribution, finops, budget, roi, parlehub]
-author: ParleHub Team
+author: Parle Team
 description: "Knowing what AI costs per project only matters if it changes what you build. Attribution is a decision-making tool, not a reporting one."
 ---
 
@@ -76,9 +76,9 @@ Any firm that delivers work for other companies already runs this discipline on 
 
 ---
 
-## Where ParleHub Fits
+## Where Parle Fits
 
-That's precisely why we built **ParleHub**. We treat the project as the financial unit, and we make the number arrive early enough to change the outcome.
+That's precisely why we built **Parle**. We treat the project as the financial unit, and we make the number arrive early enough to change the outcome.
 
 * **Budgets are scoped to projects, not just to people.** A project maps to whatever you actually decide about: an initiative, an engagement, a matter, a client. Personal and organization-wide caps stack above as backstops. An initiative with its own ledger is one that someone can choose to stop, which is the answer to *The Pilot That Cannot Fail*.
 * **Enforcement happens before the spend, not after it.** A request that would exceed the project's budget is blocked pre-flight, with a warning at 80% and a one-click increase request routed to an admin to approve or reject. A hard stop with a path through it turns *AI as Weather* back into a decision somebody makes.
@@ -92,4 +92,4 @@ You cannot design a menu from a grocery bill.
 ***
 
 **Want to know what AI costs you per project, per client, per engagement?**  
-[See how ParleHub budgets and attributes AI spend →](https://parlehub.com/pricing/)
+[See how Parle budgets and attributes AI spend →](https://parlehub.com/pricing/)

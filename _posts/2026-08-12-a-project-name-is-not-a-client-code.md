@@ -4,7 +4,7 @@ title: "A Project Name Is Not a Client Code: Why AI Cost Allocation Stalls Halfw
 date: 2026-08-12 10:00:00 -0400
 categories: [FinOps, AI Governance, Professional Services]
 tags: [cost-allocation, project-code, chargeback, budget, parlehub]
-author: ParleHub Team
+author: Parle Team
 description: "Most firms that set out to allocate AI spend to clients get the numbers right and the labels wrong, then reconcile by hand every month until they stop."
 ---
 
@@ -74,9 +74,9 @@ Coded data trapped in a vendor dashboard is still uncoded as far as the general 
 
 ---
 
-## Where ParleHub Fits
+## Where Parle Fits
 
-That's precisely why we built **ParleHub** around the firm's own coding rather than around a usage chart.
+That's precisely why we built **Parle** around the firm's own coding rather than around a usage chart.
 
 * **Every project carries your expense code, set on the project itself.** Your matter number, job code, or engagement code lives on the project from the moment it exists, alongside the name people actually read. It is a small field, and it is the one that ends *The Month-End Join*: the identifier is recorded at the source instead of reconstructed later from a label that has since changed.
 * **The code travels with the spend into the export.** Usage and spend analytics filter and group by project, person, provider, or model over any date range, and the CSV export carries the project code out with the rows. Finance receives data that is already coded, which turns recharge and practice-level allocation into a posting exercise rather than an investigation, and takes AI out of *The Overhead Bucket*. That coded row is also the evidence *The Absorbed Pass-Through* was missing: an amount, a date, and a matter number, in the same shape as every other recharged cost.
@@ -90,4 +90,4 @@ Reporting and enforcement read from the same token ledger, so the figure finance
 Your firm decided a long time ago that every input worth buying is worth identifying. AI is the only one still going by name.
 
 **Want AI spend that arrives already coded to the engagement?**  
-[See how ParleHub scopes budgets and reporting to each project →](https://www.parlehub.com/)
+[See how Parle scopes budgets and reporting to each project →](https://www.parlehub.com/)

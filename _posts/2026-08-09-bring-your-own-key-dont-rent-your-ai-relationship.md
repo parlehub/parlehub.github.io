@@ -4,7 +4,7 @@ title: "Bring Your Own Key: Why You Shouldn't Rent Your AI Relationship"
 date: 2026-08-09 10:00:00 -0400
 categories: [AI Governance, Procurement, Enterprise Tech]
 tags: [byok, model-access, vendor-strategy, procurement, parlehub]
-author: ParleHub Team
+author: Parle Team
 description: "Renting model access is the right way to evaluate a model and the wrong way to run production work. Own the provider relationship; rent only the workspace."
 ---
 
@@ -72,12 +72,12 @@ What makes both modes safe is that moving between them costs a settings change r
 
 ---
 
-## Where ParleHub Fits
+## Where Parle Fits
 
-This is precisely the problem we created **ParleHub** to solve. We treat model access as a setting rather than as the product, so the sequence above is one you can run.
+This is precisely the problem we created **Parle** to solve. We treat model access as a setting rather than as the product, so the sequence above is one you can run.
 
 * **Two ways in, and you can run both at once.** Bring your own keys for Anthropic, OpenAI, Google Gemini, or Azure OpenAI, held in Azure Key Vault and never exposed. Or use models we host, charged by what you use, with no provider account at all. That set is curated rather than exhaustive, and it reaches past the big three to open-weight models most firms will never hold a contract with. That is the toe in the water: a model on real work this afternoon, no procurement cycle in front of it.
-* **When you get serious, the spend moves and the work does not.** Connect your own key at the org level and model spend lands on your provider contract, at your rate, under the terms your legal team negotiated rather than the ones we did, which retires *Terms You Did Not Negotiate*. Projects, conversations, files, budgets, roles, and history stay put, because they live in ParleHub rather than in the provider. Changing provider is a settings change, and it runs in reverse just as cheaply next quarter when something new ships.
+* **When you get serious, the spend moves and the work does not.** Connect your own key at the org level and model spend lands on your provider contract, at your rate, under the terms your legal team negotiated rather than the ones we did, which retires *Terms You Did Not Negotiate*. Projects, conversations, files, budgets, roles, and history stay put, because they live in Parle rather than in the provider. Changing provider is a settings change, and it runs in reverse just as cheaply next quarter when something new ships.
 * **Governance is identical whichever way the tokens are paid for.** Project budgets, personal and organization-wide caps, the warning at 80%, the hard block on a send that would breach a budget, the token ledger, your own project code, and the CSV export behave the same on our models and on yours. One ledger breaks spend down by project, person, provider, and model, whoever's meter it landed on, which is what *The Markup You Cannot See* and *Spend That Never Adds Up* come down to.
 * **The model is chosen per conversation, by a person.** Nothing reroutes your traffic to a cheaper model on our behalf, because our margin does not depend on the answer.
 
@@ -88,4 +88,4 @@ Try every model you like. Own the one you come to rely on.
 ***
 
 **Want to evaluate a model this week and still own the relationship next quarter?**  
-[See how ParleHub handles model access and spend →](https://parlehub.com/pricing/)
+[See how Parle handles model access and spend →](https://parlehub.com/pricing/)
