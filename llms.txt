@@ -126,6 +126,7 @@ earn more when a customer uses more tokens.
   role-based access, the append-only audit trail, and platform hardening details.
 - [Pricing](https://parlehub.com/pricing/): Team, Business, Business Elite, and Enterprise plan comparison, plus FAQs on
   keys, hosted models, and spend caps.
+- [Contact](https://parlehub.com/contact/): Enquiry form for Enterprise pricing and sales questions.
 - [Blog](https://parlehub.com/blog/): Product notes and writing on AI governance, cost attribution,
   collaboration, and data residency.
 - [Blog archive](https://parlehub.com/blog/archive/): Chronological index of every post.
