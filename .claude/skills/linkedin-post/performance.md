@@ -23,6 +23,15 @@ names, commenter names, or private figures here; this repo is public.
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | (confirm) | 2026-09-21-parle-arrives-in-microsoft-teams | Core idea (confirm) | Reversal | The hard part of putting AI in a Teams channel is the guest list. | ~1186 | Screenshots | First comment | | | | | | URL: https://www.linkedin.com/feed/update/urn:li:ugcPost:7516303689469382656/ |
 
+Rows whose Posted cell starts with "Scheduled" are queued on LinkedIn but not yet live.
+Replace it with the real date once published, then fill the metrics a week later.
+
+| Posted | Source | Angle | Hook type | Hook | Chars | Media | Link | Impr. | React. | Comm. | Reposts | Clicks | Notes |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Scheduled (date?) | 2026-10-01-introducing-research-tasks | Core idea | Reversal | The most expensive AI research is the kind nobody budgeted. | ~1222 | None | First comment | | | | | | Series 1 of 3. Includes the batch-at-about-half-price line; batch was not confirmed live in production when drafted |
+| Scheduled (date?) | 2026-10-01-introducing-research-tasks | Section mini-lesson (the loop) | Named pattern | A model that marks its own homework will pass itself. | ~1258 | None | First comment | | | | | | Series 2 of 3. Batch paragraph scoped to sub-question answers on tasks with a day or more before the due date |
+| Scheduled (date?) | 2026-10-01-introducing-research-tasks | Concrete scene (limits) | Number | At 85% of its budget, a Research Task stops researching and starts writing. | ~1075 | None | First comment | | | | | | Series 3 of 3. Mentions the cost card showing what batching saved |
+
 ## What the log has taught us
 
 Update this section after every 3 to 5 rows. Until there is data, it stays empty; do not
