@@ -143,7 +143,7 @@ Non-negotiable:
   hosts charged by consumption. Never write that Parle is BYOK-only, never "we resell
   tokens", never name a specific hosted model.
 - Budgets **hard-block**; they do not throttle or reroute. No "dynamic model routing".
-- No SOC 2 claims of any kind. No SIEM export. The audit log is "enforced at the core
+- No SOC 2 claims of any kind. No SIEM export, audit API or webhook (the Org Admin audit view and CSV / JSON export on Business and above are real). The audit log is "enforced at the core
   platform level", never "at the database level" or "by triggers".
 - Statements about competitors must come from the compare pages, which cite sources. If the
   blog post made a competitor claim, drop it from the LinkedIn version unless it is on a

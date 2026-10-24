@@ -124,8 +124,8 @@ Mark `- [x]` when published. Keep the shipped posts in mind so arguments don't o
   question with no answer.
   *Payoff:* Every sensitive action logged, enforced append-only at the **core
   platform** level — even a compromised app credential can't alter history. **[LIVE]**.
-  Hard constraint: this is a guarantee, **not** a self-service admin export or SIEM
-  integration. Do not imply either.
+  Hard constraint: do not imply a SIEM integration or audit API (not built). An Org Admin
+  view and CSV / JSON export exist on Business and above; never say tamper-proof or immutable.
 
 - [x] **The budget request nobody sends: what happens when AI spend hits its cap**
   *Published 2026-08-25 — `_posts/2026-08-25-the-budget-request-nobody-sends.md`*
@@ -208,11 +208,12 @@ Mark `- [x]` when published. Keep the shipped posts in mind so arguments don't o
 
 ## Parked — payoff is [ROADMAP], don't write yet
 
-- [ ] **SIEM / audit export, customer-facing audit UI** — the log is append-only, enforced at the
-  core platform level, but there is no customer-facing read path. Tracked as APP-252.
+- [ ] **SIEM / audit API** — the log is append-only, enforced at the core platform level. An Org Admin
+  view with CSV / JSON export shipped (APP-252, Business and above); a SIEM-pull API is planned
+  (APP-1246) and is not built, so do not write about it as available.
 - [ ] **SAML / Okta / generic IdP** — not built. Do not mention.
 - [ ] **Vertex AI / enterprise GCP model access** — **shipped** (APP-163, deployed 2026-09-01),
   so this is no longer parked. Inference runs in the customer's own Cloud project under their GCP
   contract and IAM, region-pinned. A post on "whose cloud does the inference run in" is now writable.
-- [ ] **SIEM export / customer-facing audit-log UI** — the audit log is a database
-  guarantee, not an export feature. Don't write a post that implies a screen exists.
+- [ ] **SIEM export** — not built (APP-1246). The Org Admin audit view and CSV / JSON export exist
+  (Business and above); don't write a post that implies a SIEM feed or audit API.

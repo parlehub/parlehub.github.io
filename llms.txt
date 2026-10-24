@@ -75,7 +75,8 @@ https://parlehub.com. The product itself lives at https://app.parlehub.com.
   answered by the most expensive model by default. A user can retry any answer with a stronger model.
 - **Governance and audit.** Four role levels (SystemAdmin, OrgAdmin, ProjectAdmin, ProjectMember),
   member invites, project visibility controls, and a sensitive-action audit log enforced append-only
-  at the core platform level. Usage and spend analytics filter and group by project,
+  at the core platform level. Org Admins on Business and above can read, filter and export
+  their organization's audit log (CSV or JSON), and export an organization data archive. Usage and spend analytics filter and group by project,
   person, provider, or model, with CSV export.
 
 ## Model providers

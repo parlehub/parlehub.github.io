@@ -108,8 +108,10 @@ Rules:
   architecturally wrong, and the reselling-vs-bundling question is still open. Say "models
   we host, charged by what you use".
 - **Never mention SAML** — not built.
-- **Never claim SIEM export or a customer-facing audit-log UI.** The audit log is an
-  append-only guarantee enforced at the core platform level, not an admin export screen.
+- **Never claim a SIEM export, audit API or webhook** (planned, not built). The audit log is an
+  append-only guarantee enforced at the core platform level. Org Admins on Business and above can
+  read and export (CSV / JSON) their own org's log; say no more than that. Never say tamper-proof,
+  tamper-evident, immutable or hash-chained.
 
 Claims the existing posts got wrong — do not repeat these:
 
