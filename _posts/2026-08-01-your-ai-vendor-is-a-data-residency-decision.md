@@ -4,7 +4,7 @@ title: "Your AI Vendor Is a Data Residency Decision You Haven't Made Yet"
 date: 2026-08-01 10:00:00 -0400
 categories: [Security, AI Governance, Enterprise Tech]
 tags: [data-residency, compliance, sharepoint, byok, parlehub]
-author: Parle Team
+author: Parlé Team
 description: "Every file pasted into a chat window is an unreviewed data-governance decision. The fix isn't a stricter policy, it's keeping the files in your own tenant."
 ---
 
@@ -64,21 +64,21 @@ Governance isn't only about where a file sits; it's about what happens to it ove
 
 ---
 
-## Where Parle Fits
+## Where Parlé Fits
 
-This is precisely the problem we created **Parle** to solve. We built a shared workspace where teams run their AI conversations together, and then made the storage layer answer to the customer's tenant rather than to us.
+This is precisely the problem we created **Parlé** to solve. We built a shared workspace where teams run their AI conversations together, and then made the storage layer answer to the customer's tenant rather than to us.
 
-* **Project files can live in your own enterprise store.** Connect a project to your organization's SharePoint site, and the files stay in SharePoint. Parle's AI reads, searches, and edits them in place. There is no copy in our storage to ask questions about, because the document never left Microsoft 365. This is verified in production against a real customer tenant today. Google Shared Drives is also fully built and tested, with native Docs, Sheets, and Slides export and Drive full-text search, a real, working option, though we haven't yet run it against a live external Drive.
+* **Project files can live in your own enterprise store.** Connect a project to your organization's SharePoint site, and the files stay in SharePoint. Parlé's AI reads, searches, and edits them in place. There is no copy in our storage to ask questions about, because the document never left Microsoft 365. This is verified in production against a real customer tenant today. Google Shared Drives is also fully built and tested, with native Docs, Sheets, and Slides export and Drive full-text search, a real, working option, though we haven't yet run it against a live external Drive.
 * **Access is per-site, not per-tenant.** SharePoint access uses Microsoft Graph's least-privilege `Sites.Selected` permission, the connection reaches exactly the site an admin designated and nothing else. Enabling it is deliberately two-step: an org admin turns the provider on, then a project connects one specific site. Nobody grants an AI tool blanket access to the intranet by accident.
 * **Deletes and search behave like the platform, not like a shim.** File search runs through SharePoint's own index, and deleting a file from a project sends it to SharePoint's recycle bin, the same one your administrators already know how to restore from. The file's lifecycle stays a SharePoint lifecycle.
 * **Identity is your identity.** Sign-in runs through Microsoft Entra ID with domain-based provisioning and tenant pinning, and an organization can require SSO for every login. Offboarding a person in your directory offboards their AI access, which is the control that makes every other control meaningful. Google Workspace sign-in is built and tested as well.
 * **The record of who did what resists editing.** Sensitive actions are written to an audit log that is append-only, enforced at the core platform level rather than by application code, so ordinary writes cannot rewrite history; altering the record would take a deliberate, privileged change.
 
-For teams that don't need external storage, Parle's managed storage is available on every tier, with its own recycle bin, versioning, and inline previews. External storage is an Enterprise-tier option for organizations whose compliance posture requires that files stay home.
+For teams that don't need external storage, Parlé's managed storage is available on every tier, with its own recycle bin, versioning, and inline previews. External storage is an Enterprise-tier option for organizations whose compliance posture requires that files stay home.
 
 ***
 
 Your staff have already decided that AI is worth using. The only decision still open is whether their work leaves your tenant to make that happen.
 
 **Want AI your security team can actually sign off on?**  
-[See how Parle keeps enterprise files in your own storage →](https://parlehub.com/security/)
+[See how Parlé keeps enterprise files in your own storage →](https://parlehub.com/security/)
