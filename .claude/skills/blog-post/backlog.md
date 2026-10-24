@@ -117,15 +117,18 @@ Mark `- [x]` when published. Keep the shipped posts in mind so arguments don't o
 
 - [x] **Append-only or it didn't happen: what compliance actually asks of your AI log**
   *Published 2026-08-14 — `_posts/2026-08-14-append-only-or-it-didnt-happen.md`*
-  *Thesis:* "We log everything" is not an audit trail. An audit trail is a log that a
-  compromised application credential cannot rewrite. Most AI tooling can't clear that bar.
+  *Thesis:* "We log everything" is not an audit trail. An audit trail is a log whose
+  application's ordinary writes, even from a compromised credential, are rejected if they try
+  to amend or delete it. Most AI tooling can't clear that bar.
   *Failure modes:* App-level logging that the app itself can edit; retention as a
-  substitute for immutability; screenshots-as-evidence; the "who approved this spend"
+  substitute for append-only enforcement; screenshots-as-evidence; the "who approved this spend"
   question with no answer.
   *Payoff:* Every sensitive action logged, enforced append-only at the **core
-  platform** level — even a compromised app credential can't alter history. **[LIVE]**.
+  platform** level — ordinary updates and deletes are rejected even from the app's own
+  credential; altering the record takes a deliberate, privileged change. **[LIVE]**.
   Hard constraint: do not imply a SIEM integration or audit API (not built). An Org Admin
-  view and CSV / JSON export exist on Business and above; never say tamper-proof or immutable.
+  view and CSV / JSON export exist on Business and above; never say tamper-proof, immutable,
+  or that history "cannot be rewritten" (a privileged schema change can get past it).
 
 - [x] **The budget request nobody sends: what happens when AI spend hits its cap**
   *Published 2026-08-25 — `_posts/2026-08-25-the-budget-request-nobody-sends.md`*

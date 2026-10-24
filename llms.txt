@@ -165,7 +165,7 @@ earn more when a customer uses more tokens.
   approve loop or people route around governance.
 - [Append-Only or It Didn't Happen: What Compliance Actually Asks of Your AI Log](https://parlehub.com/blog/2026/08/14/append-only-or-it-didnt-happen/):
   "We log everything" is not an audit trail. An audit trail is a record the application that wrote
-  it cannot go back and change.
+  it can add to but cannot amend or delete through its ordinary writes.
 - [A Project Name Is Not a Client Code: Why AI Cost Allocation Stalls Halfway](https://parlehub.com/blog/2026/08/12/a-project-name-is-not-a-client-code/):
   Most firms that set out to allocate AI spend to clients get the numbers right and the labels
   wrong, then reconcile by hand every month until they stop.

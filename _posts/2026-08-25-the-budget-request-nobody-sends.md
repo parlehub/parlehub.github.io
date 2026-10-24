@@ -72,7 +72,7 @@ This is what makes strictness affordable. A hard block with a fast, legible requ
 
 ### 3. The Decision Has to Be a Record, Not a Memory
 
-An increase from $2,000 to $6,000 is a financial decision by any ordinary definition. Somebody should be able to ask, in July, who requested it, who approved it, and against which engagement, and get an answer that is not an archaeology project. We have argued that [an audit trail is a record the writing application cannot revise](/blog/2026/08/14/append-only-or-it-didnt-happen/); budget approvals are exactly the class of event that belongs in one, and routinely the class AI tooling does not capture at all.
+An increase from $2,000 to $6,000 is a financial decision by any ordinary definition. Somebody should be able to ask, in July, who requested it, who approved it, and against which engagement, and get an answer that is not an archaeology project. We have argued that [an audit trail is a record the writing application can only add to](/blog/2026/08/14/append-only-or-it-didnt-happen/); budget approvals are exactly the class of event that belongs in one, and routinely the class AI tooling does not capture at all.
 
 ---
 
