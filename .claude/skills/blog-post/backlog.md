@@ -118,8 +118,9 @@ Mark `- [x]` when published. Keep the shipped posts in mind so arguments don't o
 - [x] **Append-only or it didn't happen: what compliance actually asks of your AI log**
   *Published 2026-08-14 — `_posts/2026-08-14-append-only-or-it-didnt-happen.md`*
   *Thesis:* "We log everything" is not an audit trail. An audit trail is a log whose
-  application's ordinary writes, even from a compromised credential, are rejected if they try
-  to amend or delete it. Most AI tooling can't clear that bar.
+  application's ordinary writes, even on the app's own credential, are rejected if they try
+  to amend or delete it (a principal with schema privileges can still change the schema,
+  which is a deliberate act). Most AI tooling can't clear that bar.
   *Failure modes:* App-level logging that the app itself can edit; retention as a
   substitute for append-only enforcement; screenshots-as-evidence; the "who approved this spend"
   question with no answer.
