@@ -1,11 +1,11 @@
-# Parle
+# Parlé
 
-> Parle is a team-based shared workspace for AI conversations, built for organizations rather than solo users. Projects hold shared AI threads every member can see live, each with its own budget, the customer's own expense code, and a token ledger that exports to CSV. Teams either bring their own model provider keys or use models Parle hosts, and can run both at once. Sign up at https://app.parlehub.com.
+> Parlé is a team-based shared workspace for AI conversations, built for organizations rather than solo users. Projects hold shared AI threads every member can see live, each with its own budget, the customer's own expense code, and a token ledger that exports to CSV. Teams either bring their own model provider keys or use models Parlé hosts, and can run both at once. Sign up at https://app.parlehub.com.
 
-Parle is made by ParleHub LLC (North Carolina, USA). This file describes the marketing site at
+Parlé is made by ParleHub LLC (North Carolina, USA). This file describes the marketing site at
 https://parlehub.com. The product itself lives at https://app.parlehub.com.
 
-## What Parle does
+## What Parlé does
 
 - **Shared project workspaces.** A project contains AI conversation threads visible to every member
   in real time, not per-person silos. Live presence shows who is viewing, typing, or waiting on a
@@ -20,7 +20,7 @@ https://parlehub.com. The product itself lives at https://app.parlehub.com.
   project/matter/engagement code, and that code carries through the token ledger into the analytics
   CSV export — so AI cost joins to existing client coding with no manual reconciliation step.
 - **Two ways to access models.** An organization can bring its own provider API keys (stored in
-  Azure Key Vault, never exposed), use models Parle hosts with no key or provider account at all,
+  Azure Key Vault, never exposed), use models Parlé hosts with no key or provider account at all,
   or run both modes at once. Governance is identical either way: the same project budgets, personal
   and org caps, 80% warning, pre-flight hard block, token ledger, project code, and CSV export.
 - **Enterprise SSO and enterprise-native storage.** Microsoft Entra ID and Google Workspace OIDC
@@ -53,7 +53,7 @@ https://parlehub.com. The product itself lives at https://app.parlehub.com.
   so a withdrawn policy cannot be quoted and an older citation to it resolves to nothing. The corpus
   is organization-wide, with a per-project opt-out.
 - **Microsoft Teams (Business Elite and Enterprise).** A project administrator connects a Teams
-  channel to a project; members then @mention Parle in the channel and the answer is posted in the
+  channel to a project; members then @mention Parlé in the channel and the answer is posted in the
   thread. The asker must be a project member, the same budget and send limits as the web app apply,
   and every turn lands in the project's ledger. The answer is posted into the channel unless it
   contains a guest or someone from outside the organization, in which case the channel gets a link
@@ -77,7 +77,8 @@ https://parlehub.com. The product itself lives at https://app.parlehub.com.
   Member) — a Business Admin runs agents, organization knowledge, project creation and project
   budgets, sees a restricted project only if they are a member of it, and has no access to keys, SSO,
   storage, integrations or billing — member invites, project visibility controls, and a sensitive-action audit log enforced append-only
-  at the core platform level. Usage and spend analytics filter and group by project,
+  at the core platform level. Org Admins on Business and above can read, filter and export
+  their organization's audit log (CSV or JSON), and export an organization data archive. Usage and spend analytics filter and group by project,
   person, provider, or model, with CSV export.
 
 ## Model providers
@@ -89,7 +90,7 @@ Google Cloud credentials, so inference runs in its Cloud project, under its GCP 
 IAM, pinned to a region it chooses; which models a region serves varies, so the region is part of the
 setup rather than an afterthought.
 
-Hosted models run on Azure AI Foundry under Parle's managed identity, priced per token and drawn
+Hosted models run on Azure AI Foundry under Parlé's managed identity, priced per token and drawn
 from a credit balance the organization tops up. The hosted catalog is deliberately curated rather
 than exhaustive, and it reaches beyond the three large model vendors to open-weight models a
 customer would otherwise have no contract with. Models can be switched per conversation.
@@ -113,11 +114,11 @@ auditable — rather than spread across individual accounts under terms nobody r
 
 Subscription pricing is separate from model spend. Model usage is billed either on the
 organization's own provider contract (bring your own key) or per token against a credit balance
-(models Parle hosts).
+(models Parlé hosts).
 
 Budgets and caps are mode-neutral: they limit model spend whether tokens run on the customer's own
-keys or on models Parle hosts. Paid tiers include a 7-day trial. Billing is Stripe-backed.
-Parle is priced per seat for the workspace, budgets, attribution and audit trail; it does not
+keys or on models Parlé hosts. Paid tiers include a 7-day trial. Billing is Stripe-backed.
+Parlé is priced per seat for the workspace, budgets, attribution and audit trail; it does not
 earn more when a customer uses more tokens.
 
 ## Pages
@@ -134,12 +135,12 @@ earn more when a customer uses more tokens.
 - [Blog archive](https://parlehub.com/blog/archive/): Chronological index of every post.
 - [Compare](https://parlehub.com/compare/): Hub for head-to-head comparisons against the model
   vendors' own team products.
-- [Parle vs Claude Team & Enterprise](https://parlehub.com/compare/parlehub-vs-claude/):
+- [Parlé vs Claude Team & Enterprise](https://parlehub.com/compare/parlehub-vs-claude/):
   Comparison on budget scope, cost allocation, shared threads, and model access.
-- [Parle vs ChatGPT Business & Enterprise](https://parlehub.com/compare/parlehub-vs-chatgpt/):
+- [Parlé vs ChatGPT Business & Enterprise](https://parlehub.com/compare/parlehub-vs-chatgpt/):
   Comparison on credit limits, shared projects, live collaboration, and model access.
-- [Parle vs Google Gemini & Vertex AI](https://parlehub.com/compare/parlehub-vs-gemini/):
-  Comparison on Cloud Billing budgets, sharing model, and how Parle connects to Gemini.
+- [Parlé vs Google Gemini & Vertex AI](https://parlehub.com/compare/parlehub-vs-gemini/):
+  Comparison on Cloud Billing budgets, sharing model, and how Parlé connects to Gemini.
 - [Terms of Service](https://parlehub.com/terms/): The agreement between ParleHub LLC and
   organizations using the service.
 - [Privacy Policy](https://parlehub.com/privacy/): What data is collected, how it is used, who it is
@@ -152,8 +153,8 @@ earn more when a customer uses more tokens.
   call when opened.
 - [Introducing Research Tasks: Hand Over the Brief, Get Back a Deliverable, Within a Budget You Set](https://parlehub.com/blog/2026/10/01/introducing-research-tasks/):
   Announcement. Long-running research against a goal, criteria and a spending limit.
-- [Parle Arrives in Microsoft Teams: Ask the Project, Right in the Channel](https://parlehub.com/blog/2026/09/21/parle-arrives-in-microsoft-teams/):
-  Announcement. Mention Parle in a connected channel; the answer is grounded in the project and
+- [Parlé Arrives in Microsoft Teams: Ask the Project, Right in the Channel](https://parlehub.com/blog/2026/09/21/parle-arrives-in-microsoft-teams/):
+  Announcement. Mention Parlé in a connected channel; the answer is grounded in the project and
   governed by the same budget and access rules.
 - [Corrected at the Source: Why AI Should Point at Your Document Library, Not Copy It](https://parlehub.com/blog/2026/09/08/corrected-at-the-source/):
   Uploading policies into an AI tool creates a second copy that goes stale silently. Point at the
@@ -166,7 +167,7 @@ earn more when a customer uses more tokens.
   approve loop or people route around governance.
 - [Append-Only or It Didn't Happen: What Compliance Actually Asks of Your AI Log](https://parlehub.com/blog/2026/08/14/append-only-or-it-didnt-happen/):
   "We log everything" is not an audit trail. An audit trail is a record the application that wrote
-  it cannot go back and change.
+  it can add to but cannot amend or delete through its ordinary writes.
 - [A Project Name Is Not a Client Code: Why AI Cost Allocation Stalls Halfway](https://parlehub.com/blog/2026/08/12/a-project-name-is-not-a-client-code/):
   Most firms that set out to allocate AI spend to clients get the numbers right and the labels
   wrong, then reconcile by hand every month until they stop.
@@ -195,5 +196,5 @@ earn more when a customer uses more tokens.
 - Every canonical URL on this site ends in a trailing slash; `.html` URLs redirect.
 - The canonical host is the apex domain `parlehub.com` (no `www.`).
 - A machine-readable page index is at https://parlehub.com/sitemap.xml.
-- Parle is not affiliated with or endorsed by Anthropic, OpenAI, Google, or Microsoft. Product
+- Parlé is not affiliated with or endorsed by Anthropic, OpenAI, Google, or Microsoft. Product
   names referenced on the comparison pages are trademarks of their respective owners.

@@ -4,7 +4,7 @@ title: "The Budget Request Nobody Sends: What Happens When AI Spend Hits Its Cap
 date: 2026-08-25 10:00:00 -0400
 categories: [AI Governance, FinOps, Enterprise Tech]
 tags: [budget, spend-controls, approvals, governance, parlehub]
-author: Parle Team
+author: Parlé Team
 description: "Hard limits on AI spend don't fail because they are too strict. They fail because there is no path through them, and people route around governance instead."
 ---
 
@@ -72,13 +72,13 @@ This is what makes strictness affordable. A hard block with a fast, legible requ
 
 ### 3. The Decision Has to Be a Record, Not a Memory
 
-An increase from $2,000 to $6,000 is a financial decision by any ordinary definition. Somebody should be able to ask, in July, who requested it, who approved it, and against which engagement, and get an answer that is not an archaeology project. We have argued that [an audit trail is a record the writing application cannot revise](/blog/2026/08/14/append-only-or-it-didnt-happen/); budget approvals are exactly the class of event that belongs in one, and routinely the class AI tooling does not capture at all.
+An increase from $2,000 to $6,000 is a financial decision by any ordinary definition. Somebody should be able to ask, in July, who requested it, who approved it, and against which engagement, and get an answer that is not an archaeology project. We have argued that [an audit trail is a record the writing application can only add to](/blog/2026/08/14/append-only-or-it-didnt-happen/); budget approvals are exactly the class of event that belongs in one, and routinely the class AI tooling does not capture at all.
 
 ---
 
-## Where Parle Fits
+## Where Parlé Fits
 
-That's precisely why we built **Parle** so that the block and the way through it are the same feature rather than a feature and an absence.
+That's precisely why we built **Parlé** so that the block and the way through it are the same feature rather than a feature and an absence.
 
 * **The send is stopped before it spends, with a warning state at 80 percent.** Enforcement is pre-flight against the project budget, which is what *The Overage You Meet at Invoice Time* is missing. Nothing is throttled and nothing is rerouted to a cheaper model; switching models stays a deliberate, per-conversation choice a person makes.
 * **A blocked person requests an increase, and an administrator approves or rejects it in the product.** The request carries its own context and the decision is an event in the system, which is the answer to *The Slack-DM Amendment*. The route through the wall is a product feature, so the wall does not have to come down.
@@ -92,4 +92,4 @@ Governance behaves identically whether the tokens ran on your own provider keys 
 A limit with no way through it is not a policy. It is a detour sign, and traffic obeys detour signs by finding another road.
 
 **Want spend controls your team works with rather than around?**  
-[See how Parle handles project budgets and approvals →](https://parlehub.com/pricing/)
+[See how Parlé handles project budgets and approvals →](https://parlehub.com/pricing/)

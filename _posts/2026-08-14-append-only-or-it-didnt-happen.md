@@ -4,8 +4,8 @@ title: "Append-Only or It Didn't Happen: What Compliance Actually Asks of Your A
 date: 2026-08-14 10:00:00 -0400
 categories: [Compliance, AI Governance, Security]
 tags: [audit-trail, append-only, compliance, governance, parlehub]
-author: Parle Team
-description: "Logging everything is not an audit trail. An audit trail is a record the application that wrote it cannot go back and change, which is a much shorter list."
+author: Parlé Team
+description: "Logging everything is not an audit trail. An audit trail is a record the application that wrote it can add to but cannot amend or delete through its ordinary writes, which is a much shorter list."
 ---
 
 Every regulated industry keeps at least one document that exists purely to be doubted. The bank's transaction journal, the hospital's medication administration record, the airline's maintenance log. None of them are written to be read on an ordinary Tuesday. They are written for the single day somebody asks what happened, in a room where at least one person would prefer a different answer.
@@ -58,7 +58,7 @@ Strip away the frameworks and the questions reduce to three properties. None of 
 
 ### 1. The Writer Must Not Be Able to Reach the Record
 
-An audit trail earns the name when the component being audited cannot alter what was written about it. The application inserts and the application's story ends there, with no path back to amend, no path to delete, and no difference in outcome if its credentials are stolen tomorrow.
+An audit trail earns the name when the component being audited cannot alter what was written about it in the ordinary course of its work. The application inserts and its ordinary path ends there: an update to amend or a delete to remove is refused, and refused just the same when it arrives on the application's own credential. Getting past that should take a deliberate, privileged change to the schema itself, not a write.
 
 This is the same instinct behind separation of duties, applied to memory rather than to people. The person who raises the invoice does not approve the payment. The system that performs the action does not get to edit the account of it.
 
@@ -76,11 +76,11 @@ The practical version is simpler. A firm whose systems emit evidence continuousl
 
 ---
 
-## Where Parle Fits
+## Where Parlé Fits
 
-That's precisely why we built **Parle** with the audit trail as a property of the platform rather than as a feature of the application.
+That's precisely why we built **Parlé** with the audit trail as a property of the platform rather than as a feature of the application.
 
-* **Sensitive actions are logged append-only, enforced at the core platform level.** The guarantee is not that our code behaves well. It is that history cannot be rewritten even by an application credential in the wrong hands, which is the condition *The Self-Marking Exam* fails and the reason retention alone was never the answer to *The Seven-Year Promise*.
+* **Sensitive actions are logged append-only, enforced at the core platform level.** The guarantee is not that our code behaves well. It is that ordinary updates and deletes are rejected below the application, including when they come from the application's own credential; a principal with schema privileges could still change the schema, but that is a deliberate, privileged act, not an ordinary write. That is the condition *The Self-Marking Exam* fails and the reason retention alone was never the answer to *The Seven-Year Promise*.
 * **Authority is recorded, not just consumption.** Role changes across the four levels of access, member invitations, provider key changes, project visibility, and storage connections are all sensitive actions in their own right. The control plane is logged, not only the conversations it governs, which is what section two is really asking for.
 * **Budget approvals happen inside the system that records them.** A send that would breach a project budget is blocked pre-flight, with a warning state at 80% before it, and the blocked person requests an increase that an administrator approves or rejects in the product. The request and its decision are events, so *The Question With No Row* has a row. Nothing is throttled and nothing is quietly swapped to a cheaper model, so there is no automated behavior to reconstruct later.
 * **Entries name a person, because identity comes from your directory.** Access ties to Microsoft Entra ID or Google Workspace through OIDC, with domain-based provisioning and the option to enforce SSO-only login, so an entry points at a real employee in your tenant rather than a shared login somebody set up in a browser. That is what makes it evidence instead of a *screenshot*.
@@ -89,7 +89,7 @@ Governance behaves identically whether the tokens ran on your own provider keys 
 
 ***
 
-Your firm already keeps one book it cannot edit, because a hundred years of practice established that a record the writer controls is not a record at all. AI is a system that spends money, reaches client documents, and grants access, which puts it on that list.
+Your firm already keeps one book that is only ever added to, because a hundred years of practice established that a record the writer controls is not a record at all. AI is a system that spends money, reaches client documents, and grants access, which puts it on that list.
 
 **Want AI governance that produces evidence continuously instead of during audit season?**  
-[See how Parle handles access, spend, and the audit trail →](https://parlehub.com/security/)
+[See how Parlé handles access, spend, and the audit trail →](https://parlehub.com/security/)
