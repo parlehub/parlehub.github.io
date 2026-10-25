@@ -73,8 +73,10 @@ https://parlehub.com. The product itself lives at https://app.parlehub.com.
 - **Auto model routing (Business and above).** The organization names Everyday, Standard and
   Frontier models and Auto chooses one when a conversation starts, so routine questions are not
   answered by the most expensive model by default. A user can retry any answer with a stronger model.
-- **Governance and audit.** Four role levels (SystemAdmin, OrgAdmin, ProjectAdmin, ProjectMember),
-  member invites, project visibility controls, and a sensitive-action audit log enforced append-only
+- **Governance and audit.** Four role levels (Org Admin, Business Admin, Project Admin, Project
+  Member) — a Business Admin runs agents, organization knowledge, project creation and project
+  budgets, sees a restricted project only if they are a member of it, and has no access to keys, SSO,
+  storage, integrations or billing — member invites, project visibility controls, and a sensitive-action audit log enforced append-only
   at the core platform level. Org Admins on Business and above can read, filter and export
   their organization's audit log (CSV or JSON), and export an organization data archive. Usage and spend analytics filter and group by project,
   person, provider, or model, with CSV export.
