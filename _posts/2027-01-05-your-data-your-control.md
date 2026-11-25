@@ -1,14 +1,14 @@
 ---
 layout: post
-title: "Your Data, Your Control: Explore, Forget and Switch Off the Work Graph"
+title: "Your Data, Your Control: Explore, Forget and Switch Off Project IQ"
 date: 2027-01-05 10:00:00 -0400
-categories: [Product News, Work Graph, Privacy]
-tags: [work-graph, privacy, data-controls, erasure, retention, parlehub]
+categories: [Product News, Project IQ, Privacy]
+tags: [project-iq, privacy, data-controls, erasure, retention, parlehub]
 author: Parle Team
-description: "People can see what the Work Graph holds about them, authorized users can forget items for good, and admins can exclude sources, set retention and switch it off."
+description: "People can see what Project IQ holds about them, authorized users can forget items for good, and admins can exclude sources, set retention and switch it off."
 ---
 
-*Part 10 of the Work Graph series. A system that remembers has to be able to forget, and it has to be able to show you what it remembers first.*
+*Part 10 of Project IQ series. A system that remembers has to be able to forget, and it has to be able to show you what it remembers first.*
 
 Any tool that gathers the traces of work, meetings, names, documents and decisions, raises the same three questions from the people it describes. What do you have on me? Can you delete it? And will it come back next week? Most products answer the first with a support ticket, the second with a promise, and the third with silence.
 
@@ -28,7 +28,7 @@ The choices are everything or nothing. A firm that wants to keep a sensitive cha
 
 ## See what Parle holds
 
-**What Parle knows about me.** Any person can open a page that shows what the Work Graph holds about them: the meetings, items and links that mention them, and what is derived from those. It is the person's own view of themselves, with counts only where the person asks to see them.
+**What Parle knows about me.** Any person can open a page that shows what Project IQ holds about them: the meetings, items and links that mention them, and what is derived from those. It is the person's own view of themselves, with counts only where the person asks to see them.
 
 **Explore a project, a client or a department.** Authorized users can see what the graph holds about a project, a client or a department in the same way, and act on what they are allowed to act on.
 
@@ -44,13 +44,13 @@ Confirmed decisions and action items are the firm's records and are kept, with t
 
 ## Draw the boundary yourself
 
-**Switch the graph, or one source, on or off.** An administrator can turn off the Work Graph entirely, or turn off a single source of data. Turning a source off hides what came from it; a separate action deletes it.
+**Switch the graph, or one source, on or off.** An administrator can turn off Project IQ entirely, or turn off a single source of data. Turning a source off hides what came from it; a separate action deletes it.
 
 **Exclusions.** Name the channels, sites, mail domains or addresses that must stay out of the graph, and Parle keeps them out.
 
 **Retention.** Set how long unconfirmed items are kept; confirmed records are retained.
 
-**Export.** What the Work Graph holds, including decisions, actions, tasks and deliverables, is part of the organization's data export, so no table is left out silently.
+**Export.** What Project IQ holds, including decisions, actions, tasks and deliverables, is part of the organization's data export, so no table is left out silently.
 
 ## What forgetting does not do
 
@@ -58,10 +58,10 @@ We state the limits because a quiet limit is a broken promise. Forgetting does n
 
 ## Why we built it
 
-The case for a Work Graph is that it gives a firm back its memory. That case holds only if the people in the memory can see it, correct it and, when appropriate, remove it. Controls that are available on day one are what make it reasonable to switch it on.
+The case for Project IQ is that it gives a firm back its memory. That case holds only if the people in the memory can see it, correct it and, when appropriate, remove it. Controls that are available on day one are what make it reasonable to switch it on.
 
 ## Availability
 
-These controls are available with the Work Graph on Business Elite and Enterprise. The administrator export of one person's data in response to a subject access request is still being completed.
+These controls are available with Project IQ on Business Elite and Enterprise. The administrator export of one person's data in response to a subject access request is still being completed.
 
-Next and last in the series: [built so it cannot score your people](/blog/2027/01/07/built-so-it-cannot-score-your-people/). Start with the [introduction to the Work Graph](/blog/2026/11/24/introducing-the-work-graph/), or read about [how we handle audit](/blog/2026/08/14/append-only-or-it-didnt-happen/).
+Next and last in the series: [built so it cannot score your people](/blog/2027/01/07/built-so-it-cannot-score-your-people/). Start with the [introduction to Project IQ](/blog/2026/11/24/introducing-project-iq/), or read about [how we handle audit](/blog/2026/08/14/append-only-or-it-didnt-happen/).

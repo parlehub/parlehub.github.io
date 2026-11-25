@@ -1,14 +1,14 @@
 ---
 layout: post
-title: "Who Can See What: The Work Graph Never Shows More Than the Source Would"
+title: "Who Can See What: Project IQ Never Shows More Than the Source Would"
 date: 2026-12-29 10:00:00 -0400
-categories: [Product News, Work Graph, Security]
-tags: [work-graph, permissions, visibility, access-control, security, parlehub]
+categories: [Product News, Project IQ, Security]
+tags: [project-iq, permissions, visibility, access-control, security, parlehub]
 author: Parle Team
 description: "Parle shows a person only what they could already see or what was shared with their project, and in a shared conversation only what every member can see."
 ---
 
-*Part 9 of the Work Graph series. A connected record of a project is useful only if it is safe to ask. Here is the rule that makes it safe.*
+*Part 9 of Project IQ series. A connected record of a project is useful only if it is safe to ask. Here is the rule that makes it safe.*
 
 The first question a careful buyer asks about any assistant that "knows your work" is the right one: what happens when it knows something I should not? A system that gathers meetings, documents and people into one place has, by construction, gathered things that different people are allowed to see. The risk is not that the assistant is malicious. It is that it is helpful, and a helpful system will happily answer a junior's question with a partner's confidential note.
 
@@ -30,7 +30,7 @@ In a shared conversation, an answer goes to everyone. A fact that one member may
 
 ## The rule
 
-The Work Graph follows one rule, applied the same way everywhere it is read.
+Project IQ follows one rule, applied the same way everywhere it is read.
 
 **You see an item only if you could already see it, or it was shared with a project you are in.** More precisely, an item that came from a connected source is visible to a person when that person's own access fetched it. Everyone else sees it only through an explicit share to a project they belong to. Parle does not copy a source's permissions into its own tables and trust them later; it records what each person's access actually retrieved, and it re-confirms it regularly. An observation that is not re-confirmed expires, and one disappears at once when a person's connection is retired.
 
@@ -56,6 +56,6 @@ We could have copied every source's permissions into Parle and trusted them. We 
 
 ## Availability
 
-These rules apply to every part of the Work Graph, on Business Elite and Enterprise. Sharing a Microsoft 365 channel or folder with a project as a delegated source is part of what we are still finishing, and we will describe it when it ships.
+These rules apply to every part of Project IQ, on Business Elite and Enterprise. Sharing a Microsoft 365 channel or folder with a project as a delegated source is part of what we are still finishing, and we will describe it when it ships.
 
-Next in the series: [your data, your control](/blog/2027/01/05/your-data-your-control/). Start from the [introduction to the Work Graph](/blog/2026/11/24/introducing-the-work-graph/) if you are new here, or read about the rest of our approach on the [security page](/security/).
+Next in the series: [your data, your control](/blog/2027/01/05/your-data-your-control/). Start from the [introduction to Project IQ](/blog/2026/11/24/introducing-project-iq/) if you are new here, or read about the rest of our approach on the [security page](/security/).

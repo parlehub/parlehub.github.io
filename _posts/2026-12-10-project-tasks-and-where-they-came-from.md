@@ -2,13 +2,13 @@
 layout: post
 title: "Project Tasks: All the Work People Need to Do, and Why Each Item Exists"
 date: 2026-12-10 10:00:00 -0400
-categories: [Product News, Work Graph, Project Delivery]
-tags: [work-graph, tasks, deliverables, planner, jira, parlehub]
+categories: [Product News, Project IQ, Project Delivery]
+tags: [project-iq, tasks, deliverables, planner, jira, parlehub]
 author: Parle Team
 description: "One task list per project shows each task's source, whether a SOW, a meeting, a chat or typed in, and where it lives, in Parle or in another tool."
 ---
 
-*Part 5 of the Work Graph series. A task list tells you what to do. A list that also tells you why each item exists tells you which ones to push back on.*
+*Part 5 of Project IQ series. A task list tells you what to do. A list that also tells you why each item exists tells you which ones to push back on.*
 
 Every project has more than one list of things to do. The SOW implies one. Last Tuesday's meeting produced another. A client asked for something in a chat, and a manager keeps a private list in a notebook. Some of the work is tracked in a proper tool and some of it is tracked in people's heads. Asking "what is everyone working on" produces three different answers, and none of them can say why a given item is on the list.
 
@@ -44,7 +44,7 @@ This is where the connected record pays off. The reason a task exists is not a n
 
 ## What it will not do
 
-It does not show a count of tasks per person, a completion rate or a ranking. An owner is a name on a task. A column of "tasks per person" would be a productivity measure, and the Work Graph is built so that it cannot produce one.
+It does not show a count of tasks per person, a completion rate or a ranking. An owner is a name on a task. A column of "tasks per person" would be a productivity measure, and Project IQ is built so that it cannot produce one.
 
 It does not claim a task is done when it cannot tell. If a linked task has been deleted in the other tool, the row says **Gone from Planner**. If Parle could not reach the tool on the last check, it says **Couldn't check Planner**, with the time of the last successful check, rather than showing a stale state.
 
@@ -54,6 +54,6 @@ The point of knowing a task's origin is not bureaucracy; it is leverage. A proje
 
 ## Availability
 
-The Tasks view, Parle-held project tasks, promoting action items and linking to Planner or Jira tasks are available with the Work Graph on Business Elite and Enterprise. Live titles from external tools, and matching the same task across tools, are not part of this release.
+The Tasks view, Parle-held project tasks, promoting action items and linking to Planner or Jira tasks are available with Project IQ on Business Elite and Enterprise. Live titles from external tools, and matching the same task across tools, are not part of this release.
 
-Next in the series: [meeting briefs](/blog/2026/12/15/meeting-briefs/). Start with the [introduction to the Work Graph](/blog/2026/11/24/introducing-the-work-graph/) if you are new to the series.
+Next in the series: [meeting briefs](/blog/2026/12/15/meeting-briefs/). Start with the [introduction to Project IQ](/blog/2026/11/24/introducing-project-iq/) if you are new to the series.

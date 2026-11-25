@@ -2,13 +2,13 @@
 layout: post
 title: "Meeting Briefs: Get Caught Up and Walk In Ready"
 date: 2026-12-15 10:00:00 -0400
-categories: [Product News, Work Graph, Meetings]
-tags: [work-graph, meeting-brief, preparation, professional-services, parlehub]
+categories: [Product News, Project IQ, Meetings]
+tags: [project-iq, meeting-brief, preparation, professional-services, parlehub]
 author: Parle Team
 description: "A one-page brief for an upcoming meeting shows who is coming, what happened last time, the open actions and the documents that changed since."
 ---
 
-*Part 6 of the Work Graph series. The best five minutes before a meeting are the ones you do not spend hunting for context.*
+*Part 6 of Project IQ series. The best five minutes before a meeting are the ones you do not spend hunting for context.*
 
 Ninety seconds before a client call, a project lead opens a calendar invite. The invite says who is coming and nothing else. The notes from last time are in a document somebody wrote. The open actions are in two places. The proposal that changed on Friday is in a library with forty similar files. The lead walks in with a general sense of the project and a specific fear of being asked about something they have not read.
 
@@ -30,7 +30,7 @@ The fallback is to message a colleague. It works, and it costs the colleague's t
 
 ## One page for one meeting
 
-Every meeting in the Work Graph has a **brief**, reached from a **Brief** button on the meeting page and on upcoming meetings in the project's meetings list. It is a single page with four sections:
+Every meeting in Project IQ has a **brief**, reached from a **Brief** button on the meeting page and on upcoming meetings in the project's meetings list. It is a single page with four sections:
 
 **Who's coming.** The attendees with their role and, for external attendees, the client they represent. The brief shows no "last met" date and no count for any person.
 
@@ -46,7 +46,7 @@ Where there is little to show, the brief says so plainly. A first meeting in a s
 
 At the top of the page are two actions. **Chat about this meeting** opens a new conversation with the meeting already attached, ready for a question. **Add notes** opens the dialog for attaching notes or a transcript.
 
-Opening the brief itself does not call a model. It is assembled from records the Work Graph already holds, at the moment you open it, from what you are allowed to see. The assistant's own meeting-brief tool uses the **same assembler** with a smaller cap on its response, so the page and the agent never disagree about what was open or what had changed.
+Opening the brief itself does not call a model. It is assembled from records Project IQ already holds, at the moment you open it, from what you are allowed to see. The assistant's own meeting-brief tool uses the **same assembler** with a smaller cap on its response, so the page and the agent never disagree about what was open or what had changed.
 
 ## Shown only what you could already see
 
@@ -58,6 +58,6 @@ Preparing for a meeting should be reading, not searching. The brief turns the co
 
 ## Availability
 
-Meeting briefs are available with the Work Graph on Business Elite and Enterprise. If the Work Graph is switched off for your organization, the brief page explains that, and the meeting and its content remain. Sending a brief to attendees before the meeting is not part of this release.
+Meeting briefs are available with Project IQ on Business Elite and Enterprise. If Project IQ is switched off for your organization, the brief page explains that, and the meeting and its content remain. Sending a brief to attendees before the meeting is not part of this release.
 
-Next in the series: [the project timeline](/blog/2026/12/17/the-project-timeline/). New to the series? Start with the [introduction to the Work Graph](/blog/2026/11/24/introducing-the-work-graph/).
+Next in the series: [the project timeline](/blog/2026/12/17/the-project-timeline/). New to the series? Start with the [introduction to Project IQ](/blog/2026/11/24/introducing-project-iq/).

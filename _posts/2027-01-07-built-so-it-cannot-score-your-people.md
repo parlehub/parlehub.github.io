@@ -2,13 +2,13 @@
 layout: post
 title: "Built So It Cannot Score Your People"
 date: 2027-01-07 10:00:00 -0400
-categories: [Product News, Work Graph, Privacy]
-tags: [work-graph, privacy, guard-rails, works-council, ai-act, parlehub]
+categories: [Product News, Project IQ, Privacy]
+tags: [project-iq, privacy, guard-rails, works-council, ai-act, parlehub]
 author: Parle Team
-description: "The Work Graph is built so it cannot rank people: no per-person scores, no per-person activity figures, and no group figures for fewer than five people."
+description: "Project IQ is built so it cannot rank people: no per-person scores, no per-person activity figures, and no group figures for fewer than five people."
 ---
 
-*Part 11 of the Work Graph series. The last post is about what the Work Graph will not do, and why we made that a property of the build instead of a promise.*
+*Part 11 of Project IQ series. The last post is about what Project IQ will not do, and why we made that a property of the build instead of a promise.*
 
 A system that knows who attended which meeting, who owns which task and who decided what is, by accident, a system that can produce a league table. Meetings attended, tasks closed, replies sent, hours active. The data is there, and the temptation to turn it into a number is strong, because numbers look like insight. For the people being counted, they look like surveillance.
 
@@ -30,13 +30,13 @@ A policy says "we do not rate people." Policy is a sentence, and the next featur
 
 ## A property of the build
 
-The Work Graph holds one rule: **no per-person number is shown to anyone else.** No screen, response or agent tool carries a count, rate, duration, ratio or score derived from a person's activity. People appear as names on records, never as numbers.
+Project IQ holds one rule: **no per-person number is shown to anyone else.** No screen, response or agent tool carries a count, rate, duration, ratio or score derived from a person's activity. People appear as names on records, never as numbers.
 
 We enforce it in four places, each as an automated check that fails the build.
 
 **The data.** A scan of the whole database model fails if any table that refers to a person has a column named like a score, rank or rating. New tables are covered the day they are created.
 
-**The responses.** A check over everything the Work Graph returns, including what the assistant's tools return, fails if a type that identifies a person carries a numeric measure of their activity. The assistant cannot be handed a per-person metric, so it cannot repeat one.
+**The responses.** A check over everything Project IQ returns, including what the assistant's tools return, fails if a type that identifies a person carries a numeric measure of their activity. The assistant cannot be handed a per-person metric, so it cannot repeat one.
 
 **The routes.** A scan of the registered endpoints fails on anything that looks like per-person analytics, such as a leaderboard, a ranking or an activity-by-person path.
 
@@ -52,10 +52,10 @@ We have not asked counsel to rule on how any particular regulation applies to yo
 
 ## Why we built it
 
-The Work Graph connects people to work. That is valuable and sensitive in equal measure. We think a team will keep using a tool that gives the project a memory and gives no one a score. The guard rails exist so that remains true when we are not paying attention.
+Project IQ connects people to work. That is valuable and sensitive in equal measure. We think a team will keep using a tool that gives the project a memory and gives no one a score. The guard rails exist so that remains true when we are not paying attention.
 
 ## Availability
 
-These guard rails apply to every part of the Work Graph, on Business Elite and Enterprise, and are ungated: they apply to the product's code, not to a plan.
+These guard rails apply to every part of Project IQ, on Business Elite and Enterprise, and are ungated: they apply to the product's code, not to a plan.
 
-That completes the series. The [introduction to the Work Graph](/blog/2026/11/24/introducing-the-work-graph/) links all eleven posts. To try it on a project of your own, [start a free trial](https://app.parlehub.com) or look at the [pricing](/pricing/).
+That completes the series. The [introduction to Project IQ](/blog/2026/11/24/introducing-project-iq/) links all eleven posts. To try it on a project of your own, [start a free trial](https://app.parlehub.com) or look at the [pricing](/pricing/).

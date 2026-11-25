@@ -2,13 +2,13 @@
 layout: post
 title: "The Project Timeline: How We Got Here, in One Scroll"
 date: 2026-12-17 10:00:00 -0400
-categories: [Product News, Work Graph, Project Delivery]
-tags: [work-graph, timeline, onboarding, project-history, parlehub]
+categories: [Product News, Project IQ, Project Delivery]
+tags: [project-iq, timeline, onboarding, project-history, parlehub]
 author: Parle Team
 description: "A project's meetings, decisions, documents and people joining or leaving appear in one scrollable history, so a newcomer can read the story instead of asking for it."
 ---
 
-*Part 7 of the Work Graph series. Every project has a story. The timeline is what lets someone read it instead of being told it.*
+*Part 7 of Project IQ series. Every project has a story. The timeline is what lets someone read it instead of being told it.*
 
 A new consultant joins an engagement in month four. They are capable, and they are missing four months of context. Someone, usually the busiest person on the team, gives them a briefing. The briefing is accurate and partial; it reflects what that person remembers and thinks is important. The newcomer then spends their first fortnight finding out what was left out.
 
@@ -37,13 +37,13 @@ The **Timeline** view in the project's **Work** tab is a single, scrollable hist
 - **Documents**, as they were added or changed.
 - **People joining or leaving** the project.
 
-Because these are connected in the Work Graph and not merely sorted by date, each entry links to the others. A decision links to its meeting, the meeting to its attendees, and a document to the project it belongs to. Scrolling back through a month is reading what happened in the order it happened, with the reasons beside the results.
+Because these are connected in Project IQ and not merely sorted by date, each entry links to the others. A decision links to its meeting, the meeting to its attendees, and a document to the project it belongs to. Scrolling back through a month is reading what happened in the order it happened, with the reasons beside the results.
 
 The milestones and dates accepted from the [statement of work](/blog/2026/11/26/from-sow-to-project-plan/) anchor the same history, so the plan and what actually happened sit on one line.
 
 ## The default view of a project
 
-For projects using the Work Graph, the timeline is one part of the **project dashboard**, which is the first thing a member sees on opening the project. It shows the timeline, the deliverables, the meetings, the active conversations, new files and the budget burn together. A member returning after two weeks away sees where the project stands before asking anyone.
+For projects using Project IQ, the timeline is one part of the **project dashboard**, which is the first thing a member sees on opening the project. It shows the timeline, the deliverables, the meetings, the active conversations, new files and the budget burn together. A member returning after two weeks away sees where the project stands before asking anyone.
 
 ## Who sees what
 
@@ -57,6 +57,6 @@ A project's history is an asset that most firms treat as a by-product. The timel
 
 ## Availability
 
-The project timeline and the project dashboard are available with the Work Graph on Business Elite and Enterprise.
+The project timeline and the project dashboard are available with Project IQ on Business Elite and Enterprise.
 
-Next in the series: [ask your agent about the work](/blog/2026/12/22/ask-your-agent-about-the-work/). If you are starting here, read the [introduction to the Work Graph](/blog/2026/11/24/introducing-the-work-graph/).
+Next in the series: [ask your agent about the work](/blog/2026/12/22/ask-your-agent-about-the-work/). If you are starting here, read the [introduction to Project IQ](/blog/2026/11/24/introducing-project-iq/).

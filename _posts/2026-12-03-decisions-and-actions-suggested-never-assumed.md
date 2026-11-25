@@ -2,13 +2,13 @@
 layout: post
 title: "Decisions and Action Items: Suggested by Parle, Confirmed by You"
 date: 2026-12-03 10:00:00 -0400
-categories: [Product News, Work Graph, Meetings]
-tags: [work-graph, action-items, decisions, extraction, review, parlehub]
+categories: [Product News, Project IQ, Meetings]
+tags: [project-iq, action-items, decisions, extraction, review, parlehub]
 author: Parle Team
 description: "Parle reads a meeting's transcript or notes and proposes the decisions and action items, each linked to the passage it came from, for a person to confirm."
 ---
 
-*Part 3 of the Work Graph series. Writing up a meeting is the task everyone agrees matters and nobody wants. Parle drafts it; you decide what counts.*
+*Part 3 of Project IQ series. Writing up a meeting is the task everyone agrees matters and nobody wants. Parle drafts it; you decide what counts.*
 
 The minutes of a meeting are valuable for exactly one reason: someone can later point at them. That value is lost the moment the write-up is late, partial or skipped, and in most teams it is all three. The person who volunteers to take notes is rarely the person who owns the follow-up, and the follow-up depends on the notes.
 
@@ -60,6 +60,6 @@ A tool that writes up your meetings and files the results without asking would b
 
 ## Availability
 
-Suggested decisions and action items, the review queue, and the decisions and actions panel on the meeting page are available with the Work Graph on Business Elite and Enterprise.
+Suggested decisions and action items, the review queue, and the decisions and actions panel on the meeting page are available with Project IQ on Business Elite and Enterprise.
 
-Next in the series: [every decision on the project in one place](/blog/2026/12/08/every-decision-on-the-project-in-one-place/). To start from the beginning, read the [introduction to the Work Graph](/blog/2026/11/24/introducing-the-work-graph/).
+Next in the series: [every decision on the project in one place](/blog/2026/12/08/every-decision-on-the-project-in-one-place/). To start from the beginning, read the [introduction to Project IQ](/blog/2026/11/24/introducing-project-iq/).
