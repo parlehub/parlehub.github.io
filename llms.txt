@@ -148,6 +148,37 @@ earn more when a customer uses more tokens.
 
 ## Blog posts
 
+Project IQ series (Business Elite and Enterprise; published twice weekly from 2026-11-24):
+
+- [Built So It Cannot Score Your People](https://parlehub.com/blog/2027/01/07/built-so-it-cannot-score-your-people/):
+  Project IQ part 11. No per-person scores or activity figures, and no group figures under five
+  people, enforced by checks in the build.
+- [Your Data, Your Control: Explore, Forget and Switch Off Project IQ](https://parlehub.com/blog/2027/01/05/your-data-your-control/):
+  Project IQ part 10. See what is held, forget with tombstones, exclusions, retention and export.
+- [Who Can See What: Project IQ Never Shows More Than the Source Would](https://parlehub.com/blog/2026/12/29/who-can-see-what/):
+  Project IQ part 9. Visibility by observed access, shared-conversation audiences and live reads.
+- [Ask Your Agent About the Work: Answers That Cite the Records](https://parlehub.com/blog/2026/12/22/ask-your-agent-about-the-work/):
+  Project IQ part 8. The Project IQ skill and its fixed, permission-filtered tools.
+- [The Project Timeline: How We Got Here, in One Scroll](https://parlehub.com/blog/2026/12/17/the-project-timeline/):
+  Project IQ part 7. Meetings, decisions, documents and people joining or leaving in one history.
+- [Meeting Briefs: Get Caught Up and Walk In Ready](https://parlehub.com/blog/2026/12/15/meeting-briefs/):
+  Project IQ part 6. One page per meeting: who is coming, last time, open actions, key documents.
+- [Project Tasks: All the Work People Need to Do, and Why Each Item Exists](https://parlehub.com/blog/2026/12/10/project-tasks-and-where-they-came-from/):
+  Project IQ part 5. One task list showing each task's source and where it is mastered.
+- [The Decision Register: Every Decision on the Project, and Where It Came From](https://parlehub.com/blog/2026/12/08/every-decision-on-the-project-in-one-place/):
+  Project IQ part 4. Decisions as records with date, decider and a link to the source.
+- [Decisions and Action Items: Suggested by Parle, Confirmed by You](https://parlehub.com/blog/2026/12/03/decisions-and-actions-suggested-never-assumed/):
+  Project IQ part 3. Suggestions from transcripts and notes, linked to the passage, reviewed by a person.
+- [Meetings That Belong to the Project, Not to Someone's Calendar](https://parlehub.com/blog/2026/12/01/meetings-that-belong-to-the-project/):
+  Project IQ part 2. Meetings as project records with attendees, series, transcripts and notes.
+- [From SOW to Project Plan: Dates, Milestones and Deliverables Without the Re-Typing](https://parlehub.com/blog/2026/11/26/from-sow-to-project-plan/):
+  Project IQ part 1. Upload a statement of work and review proposed dates, milestones and deliverables.
+- [Introducing Project IQ: Parle Now Knows What Your Projects Know](https://parlehub.com/blog/2026/11/24/introducing-project-iq/):
+  Announcement. A connected, permission-safe record of the meetings, decisions, tasks and
+  deliverables on a project, and the index of the series.
+
+Earlier posts:
+
 - [Live Artifacts: Project Dashboards That Cost No Tokens to Open](https://parlehub.com/blog/2026/10/09/live-artifacts-dashboards-that-cost-nothing-to-open/):
   Announcement. Shared project views that read current data from connected tools and make no model
   call when opened.
